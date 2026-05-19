@@ -47,7 +47,7 @@ const faqData = [
 ];
 
 export default function SikkerhedFAQ() {
-  const [open, setOpen] = useState<number | null>(null);
+  const [open, setOpen] = useState<number | null>(0);
 
   return (
     <section className="py-16 px-6 md:py-[120px] md:px-16">
@@ -63,7 +63,7 @@ export default function SikkerhedFAQ() {
                 <button
                   type="button"
                   onClick={() => setOpen(isOpen ? null : i)}
-                  className="w-full flex items-center justify-between gap-6 py-7 text-left cursor-pointer"
+                  className="w-full flex items-center justify-between gap-6 py-7 text-left cursor-pointer hover:bg-sand/30 transition-colors px-2 -mx-2"
                   aria-expanded={isOpen}
                 >
                   <span className="font-sans text-[15px] font-medium text-evergreen leading-[1.5]">

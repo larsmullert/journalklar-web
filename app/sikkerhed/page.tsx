@@ -13,84 +13,132 @@ function Rule() {
   return <hr className="border-none border-t border-sand m-0" />;
 }
 
-function CheckIcon({ light = false }: { light?: boolean }) {
+function CheckSm({ light = false }: { light?: boolean }) {
   return (
-    <svg className="flex-shrink-0" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true" className="flex-shrink-0">
       <polyline
-        points="1.5,6 4.5,9.5 10.5,3"
+        points="1.5,5.5 4,8 9.5,2.5"
         stroke={light ? "#B5CEC5" : "#1D3A2F"}
-        strokeOpacity={light ? 1 : 0.65}
-        strokeWidth="1.3"
+        strokeOpacity={light ? 1 : 0.7}
+        strokeWidth="1.4"
         fill="none"
         strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
 }
 
-function CrossIcon() {
+function CrossSm() {
   return (
-    <svg className="flex-shrink-0" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-      <line x1="3" y1="3" x2="9" y2="9" stroke="#A09890" strokeWidth="1.3" strokeLinecap="round"/>
-      <line x1="9" y1="3" x2="3" y2="9" stroke="#A09890" strokeWidth="1.3" strokeLinecap="round"/>
+    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true" className="flex-shrink-0">
+      <line x1="3" y1="3" x2="8" y2="8" stroke="#A09890" strokeWidth="1.4" strokeLinecap="round"/>
+      <line x1="8" y1="3" x2="3" y2="8" stroke="#A09890" strokeWidth="1.4" strokeLinecap="round"/>
     </svg>
   );
 }
+
+function Badge({
+  children,
+  variant = "neutral",
+}: {
+  children: React.ReactNode;
+  variant?: "neutral" | "positive" | "caution";
+}) {
+  const styles = {
+    neutral:  "bg-sand text-muted",
+    positive: "bg-evergreen/[0.08] text-evergreen",
+    caution:  "bg-orange/[0.08] text-orange",
+  };
+  return (
+    <span className={`inline-block font-sans text-[10px] font-medium tracking-[0.08em] uppercase px-[8px] py-[3px] ${styles[variant]}`}>
+      {children}
+    </span>
+  );
+}
+
+function TechChip({ children }: { children: React.ReactNode }) {
+  return (
+    <span className="inline-block font-sans text-[10px] font-medium bg-sand text-muted px-[8px] py-[3px] mt-[6px]">
+      {children}
+    </span>
+  );
+}
+
+// ─── Data ───────────────────────────────────────────────────────────────
+
+const trustItems = [
+  "Ingen sessionoptagelse",
+  "Ingen AI-træning på dine input",
+  "EU-behandling",
+  "Journalnoter gemmes ikke efter generering",
+];
 
 const kortSagt = [
   {
     title: "Vi gemmer ikke dine journalnoter",
     text: "Dine noter bruges til at generere et journaludkast. Når svaret er leveret, gemmes klientindholdet ikke i JournalKlar.",
+    note: "Klientindhold fjernes fra serveren umiddelbart efter generering",
   },
   {
     title: "AI'en trænes ikke på dine klienter",
-    text: "Dine input bruges ikke til at gøre modellen klogere. Det er kontraktuelt fastsat med vores AI-udbyder — ikke bare en hensigtserklæring.",
+    text: "Dine input bruges ikke til at forbedre modellen. Det er kontraktuelt fastsat med vores AI-udbyder — ikke bare en hensigtserklæring.",
+    note: "Kontraktuelt fastsat med AWS — ikke bare hensigtserklæring",
   },
   {
     title: "Behandling sker inden for EU",
     text: "Både app og AI-behandling er placeret inden for EU. Ingen klientoplysninger behandles uden for EU's databeskyttelsesramme.",
+    note: "AWS Bedrock eu-central-1, Frankfurt · Scannet VPS, Danmark",
   },
   {
-    title: "Du får dokumentation",
+    title: "Du får fuld dokumentation",
     text: "Du kan læse databehandleraftale, underleverandørgennemgang, datatyper og behandlingsgrundlag — og vise det til din DPO.",
+    note: "Databehandleraftale, underleverandøroversigt og teknisk flow tilgængeligt",
   },
 ];
 
-const steps = [
+const steps: { num: string; title: string; text: string; chip: string }[] = [
   {
     num: "1",
-    title: "Du skriver dine noter i JournalKlar",
+    title: "Du skriver dine noter",
     text: "Du indtaster de oplysninger, du vurderer er relevante for journaludkastet — umiddelbart efter sessionen.",
+    chip: "Kun det du selv skriver ind",
   },
   {
     num: "2",
-    title: "Noterne sendes krypteret til JournalKlar",
-    text: "Forbindelsen er beskyttet med HTTPS/TLS 1.3, så data ikke sendes åbent over nettet.",
+    title: "Noterne sendes krypteret",
+    text: "Forbindelsen er beskyttet, så data ikke sendes åbent over nettet.",
+    chip: "HTTPS · TLS 1.3",
   },
   {
     num: "3",
     title: "JournalKlar kontrollerer din adgang",
-    text: "Systemet tjekker, at du er logget ind, og at din konto har adgang til funktionen.",
+    text: "Systemet tjekker, at du er logget ind og at din konto har adgang til funktionen.",
+    chip: "Session-tjek · Adgangskontrol",
   },
   {
     num: "4",
     title: "Noterne sendes til AI-behandling inden for EU",
-    text: "JournalKlar bruger en AI-model (AWS Bedrock Sonnet) placeret i eu-central-1 (Frankfurt). Inputtet bruges til at generere udkastet — ikke til træning.",
+    text: "En AI-model strukturerer dine noter til et journaludkast. Inputtet bruges kun til at generere — ikke til modeltræning.",
+    chip: "AWS Bedrock Sonnet · eu-central-1, Frankfurt",
   },
   {
     num: "5",
     title: "Udkastet kontrolleres for mulige AI-tilføjelser",
-    text: "Et ekstra valideringstrin (AWS Bedrock Haiku) markerer formuleringer, der ikke tydeligt kan spores til dine noter.",
+    text: "Et ekstra valideringstrin markerer formuleringer, der ikke tydeligt kan spores til dine noter.",
+    chip: "Bedrock Haiku · Hallucinationsvalidering",
   },
   {
     num: "6",
     title: "Du får udkastet tilbage",
-    text: "Udkastet vises i din browser. Klientindholdet gemmes ikke i JournalKlar efter genereringen — det forsvinder fra serveren.",
+    text: "Udkastet vises i din browser. Klientindholdet gemmes ikke i JournalKlar efter genereringen.",
+    chip: "No-cache · No-store · RAM cleared",
   },
   {
     num: "7",
     title: "Kun teknisk brugsmetadata gemmes",
-    text: "JournalKlar gemmer bruger-id, tidspunkt, svartid, tokenforbrug og antal valideringsmarkeringer. Ikke klientnoter. Ikke journaludkast.",
+    text: "JournalKlar gemmer tidspunkt, svartid og tokenforbrug. Ikke klientnoter. Ikke journaludkast.",
+    chip: "userId · latency · tokens · flag_count",
   },
 ];
 
@@ -109,55 +157,54 @@ const journalklarItems = [
   "Fagligt skøn før AI-behandling",
 ];
 
-const tableRows: {
-  area: string;
+const systemCards: {
+  name: string;
   sub?: string;
-  purpose: string;
-  clientData: string | null;
+  role: string;
+  region: string;
+  clientData: "midlertidigt" | "ingen";
 }[] = [
   {
-    area: "JournalKlar-app",
-    purpose: "Generering, adgang og visning af journaludkast",
-    clientData: "Ja, midlertidigt under generering",
+    name: "JournalKlar-app",
+    role: "Generering, adgang og visning af journaludkast",
+    region: "Danmark",
+    clientData: "midlertidigt",
   },
   {
-    area: "AI-model (Bedrock Sonnet)",
-    sub: "eu-central-1, Frankfurt",
-    purpose: "Omsætter dine noter til et journaludkast",
-    clientData: "Ja, under selve kaldet",
+    name: "Bedrock Sonnet",
+    sub: "AWS · AI-generering",
+    role: "Omsætter dine noter til et struktureret journaludkast",
+    region: "eu-central-1, Frankfurt",
+    clientData: "midlertidigt",
   },
   {
-    area: "Valideringsmodel (Bedrock Haiku)",
-    sub: "eu-central-1, Frankfurt",
-    purpose: "Markerer mulige AI-tilføjelser i udkastet",
-    clientData: "Ja, midlertidigt",
+    name: "Bedrock Haiku",
+    sub: "AWS · Validering",
+    role: "Markerer formuleringer der ikke kan spores til dine noter",
+    region: "eu-central-1, Frankfurt",
+    clientData: "midlertidigt",
   },
   {
-    area: "Database (PostgreSQL 16)",
-    sub: "Scannet VPS, Danmark",
-    purpose: "Login, abonnement og teknisk brugsmetadata",
-    clientData: null,
+    name: "PostgreSQL 16",
+    sub: "Database",
+    role: "Login, abonnement og teknisk brugsmetadata — ingen journalnoter",
+    region: "Scannet VPS, Danmark",
+    clientData: "ingen",
   },
   {
-    area: "Betalingssystem (Alunta / Quickpay)",
-    sub: "EU",
-    purpose: "Betaling og abonnementshåndtering",
-    clientData: null,
+    name: "Alunta / Quickpay",
+    sub: "Betaling",
+    role: "Abonnementshåndtering og betalingstransaktioner",
+    region: "EU · PCI DSS",
+    clientData: "ingen",
   },
   {
-    area: "Hosting / infrastruktur",
-    sub: "Scannet VPS, ISO 27001",
-    purpose: "Drift og krypteret forbindelse",
-    clientData: null,
+    name: "Scannet VPS",
+    sub: "Hosting · ISO 27001",
+    role: "Infrastruktur, drift og krypteret forbindelse",
+    region: "Danmark",
+    clientData: "ingen",
   },
-];
-
-const gemmes = [
-  "Brugerprofil (navn, email)",
-  "Login- og sessionsdata",
-  "Abonnementsstatus",
-  "Teknisk brugsmetadata (tidspunkt, svartid, tokenforbrug, flag-antal)",
-  "Fejl- og driftslogs uden klientindhold",
 ];
 
 const gemmerIkke = [
@@ -169,26 +216,39 @@ const gemmerIkke = [
   "Terapeutisk samtaleindhold",
 ];
 
-const underleverandoerer = [
+const gemmes = [
+  "Brugerprofil (navn, email)",
+  "Login- og sessionsdata",
+  "Abonnementsstatus",
+  "Brugsmetadata (tidspunkt, svartid, tokenforbrug, flag-antal)",
+  "Driftslogs uden klientindhold",
+];
+
+const leverandoerer = [
   {
-    name: "Scannet VPS",
-    meta: "Danmark · ISO 27001",
-    role: "App, database og infrastruktur. JournalKlar-applikationen og PostgreSQL-databasen er hostet her.",
-    klientdata: "Databasen indeholder ikke journalnoter",
+    navn: "Scannet VPS",
+    rolle: "App, database og infrastruktur",
+    region: "Danmark",
+    klientindhold: "Ingen",
+    status: "ISO 27001",
   },
   {
-    name: "AWS Bedrock",
-    meta: "eu-central-1, Frankfurt · GDPR-compliant",
-    role: "AI-behandling. Modellerne Sonnet (generering) og Haiku (validering) kører i EU-regionen.",
-    klientdata: "Klientnoter behandles midlertidigt under generering",
+    navn: "AWS Bedrock",
+    rolle: "AI-generering (Sonnet) og validering (Haiku)",
+    region: "EU · Frankfurt",
+    klientindhold: "Midlertidigt",
+    status: "GDPR-compliant · CRIS EU",
   },
   {
-    name: "Quickpay via Alunta",
-    meta: "EU · PCI DSS",
-    role: "Betalingshåndtering og abonnement. Ingen klientoplysninger deles med betalingssystemet.",
-    klientdata: "Ingen klientdata",
+    navn: "Alunta / Quickpay",
+    rolle: "Abonnement og betalingstransaktioner",
+    region: "EU",
+    klientindhold: "Ingen",
+    status: "PCI DSS",
   },
 ];
+
+// ─── Page ────────────────────────────────────────────────────────────────
 
 export default function SikkerhedPage() {
   return (
@@ -196,60 +256,86 @@ export default function SikkerhedPage() {
       <Nav />
       <main>
 
-        {/* 1. Hero */}
+        {/* ── 1. Hero ─────────────────────────────────────────────── */}
         <section className="py-16 px-6 md:pt-[100px] md:pb-[90px] md:px-16">
-          <div className="max-w-[1100px] mx-auto">
-            <SectionLabel>Data og fortrolighed</SectionLabel>
-            <h1 className="max-w-[720px] mb-7">
-              Sikkerhed, fortrolighed og data —{" "}
-              <span className="italic text-evergreen/80">på almindeligt dansk</span>
-            </h1>
-            <p className="font-sans text-[16px] font-light text-[#505050] max-w-[580px] leading-[1.75] mb-4">
-              JournalKlar er bygget til psykologer, der arbejder med fortrolige klientoplysninger. Derfor skal du ikke bare vide, at vi passer på data. Du skal kunne forstå, hvordan.
-            </p>
-            <p className="font-sans text-[16px] font-light text-[#505050] max-w-[580px] leading-[1.75] mb-10">
-              Vi gemmer ikke dine journalnoter efter generering. AI-modellen lærer ikke af dine klienter. Behandlingen sker inden for EU. Og du underskriver en databehandleraftale, der beskriver det hele.
-            </p>
-            <div className="flex flex-wrap gap-5 items-center">
-              <a
-                href="#noter"
-                className="inline-flex items-center gap-[10px] bg-evergreen text-white font-sans text-[15px] font-medium px-7 py-[16px] hover:bg-[#152e23] transition-colors"
-              >
-                Se hvad der sker med dine noter
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                  <line x1="1" y1="6" x2="11" y2="6" stroke="white" strokeWidth="1.3"/>
-                  <polyline points="7.5,2.5 11,6 7.5,9.5" stroke="white" strokeWidth="1.3" fill="none"/>
-                </svg>
-              </a>
-              <a
-                href="#databehandleraftale"
-                className="inline-flex items-center gap-[6px] text-evergreen font-sans text-[14px] font-normal border-b border-evergreen/20 pb-[2px] hover:border-evergreen transition-colors"
-              >
-                Hent databehandleraftale
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
-                  <line x1="1" y1="5" x2="9" y2="5" stroke="currentColor" strokeWidth="1.2"/>
-                  <polyline points="6,2 9,5 6,8" stroke="currentColor" strokeWidth="1.2" fill="none"/>
-                </svg>
-              </a>
+          <div className="max-w-[1100px] mx-auto grid grid-cols-1 gap-10 md:grid-cols-[3fr_2fr] md:gap-14 items-stretch">
+
+            {/* Left: copy */}
+            <div className="flex flex-col justify-center">
+              <SectionLabel>Data og fortrolighed</SectionLabel>
+              <h1 className="max-w-[560px] mb-6">
+                Sikkerhed, fortrolighed og data —{" "}
+                <span className="italic text-evergreen/75">på almindeligt dansk</span>
+              </h1>
+              <p className="font-sans text-[16px] font-light text-[#505050] max-w-[480px] leading-[1.8] mb-9">
+                JournalKlar er bygget til psykologer, der arbejder med fortrolige klientoplysninger. Du skal kunne forstå, hvad der sker med dine data — ikke bare have tillid til, at vi håndterer det.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 items-start">
+                <a
+                  href="#noter"
+                  className="inline-flex items-center gap-[10px] bg-evergreen text-white font-sans text-[15px] font-medium px-7 py-[16px] hover:bg-[#152e23] transition-colors"
+                >
+                  Se hvad der sker med dine noter
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                    <line x1="1" y1="6" x2="11" y2="6" stroke="white" strokeWidth="1.3"/>
+                    <polyline points="7.5,2.5 11,6 7.5,9.5" stroke="white" strokeWidth="1.3" fill="none"/>
+                  </svg>
+                </a>
+                <a
+                  href="#databehandleraftale"
+                  className="inline-flex items-center gap-[6px] text-evergreen font-sans text-[14px] font-normal border-b border-evergreen/25 pb-[2px] hover:border-evergreen transition-colors mt-1"
+                >
+                  Hent databehandleraftale
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+                    <line x1="1" y1="5" x2="9" y2="5" stroke="currentColor" strokeWidth="1.2"/>
+                    <polyline points="6,2 9,5 6,8" stroke="currentColor" strokeWidth="1.2" fill="none"/>
+                  </svg>
+                </a>
+              </div>
             </div>
+
+            {/* Right: trust panel */}
+            <div className="bg-evergreen px-8 py-10 flex flex-col justify-center">
+              <div className="font-sans text-[10px] font-medium tracking-[0.16em] uppercase text-parchment/45 mb-7">
+                Fire garantier
+              </div>
+              <div className="flex flex-col gap-5">
+                {trustItems.map((item) => (
+                  <div key={item} className="flex items-start gap-4">
+                    <div className="w-5 h-5 border border-parchment/25 flex items-center justify-center flex-shrink-0 mt-[1px]">
+                      <CheckSm light />
+                    </div>
+                    <span className="font-sans text-[14px] font-light text-parchment/90 leading-[1.55]">
+                      {item}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
           </div>
         </section>
 
         <Rule />
 
-        {/* 2. Kort sagt */}
+        {/* ── 2. Kort sagt ────────────────────────────────────────── */}
         <section className="py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Kort sagt</SectionLabel>
             <h2>Fire ting du bør vide.</h2>
+
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-12 max-w-[860px]">
-              {kortSagt.map(({ title, text }) => (
-                <div key={title} className="border border-sand bg-white px-7 py-8">
+              {kortSagt.map(({ title, text, note }) => (
+                <div
+                  key={title}
+                  className="border border-sand bg-white px-7 py-8 shadow-[0_1px_4px_rgba(29,58,47,0.05)] hover:shadow-[0_2px_10px_rgba(29,58,47,0.09)] transition-shadow"
+                >
                   <div className="w-7 h-7 border border-sand flex items-center justify-center mb-5">
-                    <CheckIcon />
+                    <CheckSm />
                   </div>
                   <div className="font-sans text-[15px] font-medium text-evergreen mb-2">{title}</div>
-                  <p className="font-sans text-[14px] font-light text-[#505050] leading-[1.7] mb-0">{text}</p>
+                  <p className="font-sans text-[14px] font-light text-[#505050] leading-[1.7] mb-3">{text}</p>
+                  <div className="font-sans text-[11px] text-muted italic leading-[1.5]">{note}</div>
                 </div>
               ))}
             </div>
@@ -258,29 +344,30 @@ export default function SikkerhedPage() {
 
         <Rule />
 
-        {/* 3. Steps */}
+        {/* ── 3. Hvad sker der ────────────────────────────────────── */}
         <section id="noter" className="py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Hvad sker der</SectionLabel>
-            <h2 className="max-w-[560px]">Hvad sker der, når du genererer et journaludkast?</h2>
+            <h2 className="max-w-[540px]">Hvad sker der, når du genererer et journaludkast?</h2>
             <p className="max-w-[520px] text-[#505050]">
-              Her er syv trin — fra du skriver dine noter til udkastet er genereret og klientindholdet er væk fra serveren.
+              Syv trin — fra du skriver dine noter til udkastet er genereret og klientindholdet er fjernet fra serveren.
             </p>
 
-            <div className="mt-12 max-w-[620px]">
-              {steps.map(({ num, title, text }, i) => (
+            <div className="mt-14 max-w-[620px]">
+              {steps.map(({ num, title, text, chip }, i) => (
                 <div key={num} className="flex gap-5">
                   <div className="flex flex-col items-center flex-shrink-0">
-                    <div className="w-9 h-9 border border-sand bg-white flex items-center justify-center">
+                    <div className="w-9 h-9 border border-sand bg-white flex items-center justify-center shadow-[0_1px_3px_rgba(29,58,47,0.06)]">
                       <span className="font-sans text-[12px] font-medium text-muted">{num}</span>
                     </div>
                     {i < steps.length - 1 && (
-                      <div className="w-px bg-sand flex-1" style={{ minHeight: "28px" }} />
+                      <div className="w-px bg-sand flex-1" style={{ minHeight: "24px" }} />
                     )}
                   </div>
                   <div className={`pt-[10px] ${i < steps.length - 1 ? "pb-9" : ""}`}>
                     <div className="font-sans text-[15px] font-medium text-evergreen mb-[6px]">{title}</div>
                     <p className="font-sans text-[14px] font-light text-[#505050] leading-[1.75] mb-0">{text}</p>
+                    <TechChip>{chip}</TechChip>
                   </div>
                 </div>
               ))}
@@ -290,46 +377,50 @@ export default function SikkerhedPage() {
 
         <Rule />
 
-        {/* 4. JournalKlar optager ikke samtalen */}
+        {/* ── 4. Sammenligning ────────────────────────────────────── */}
         <section className="py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Dataminimering</SectionLabel>
-            <h2 className="max-w-[520px]">JournalKlar optager ikke samtalen.</h2>
+            <h2 className="max-w-[500px]">JournalKlar optager ikke samtalen.</h2>
             <p className="max-w-[520px] text-[#505050]">
-              Mange AI-værktøjer til sundhedsfaglig dokumentation starter med at optage eller transskribere hele samtalen. JournalKlar er bygget anderledes: du skriver selv de faglige noter, du vurderer relevante.
+              Mange AI-værktøjer til sundhedsfaglig dokumentation starter med at optage eller transskribere hele samtalen. JournalKlar er bygget anderledes.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 mt-12 max-w-[760px]">
-              <div className="border border-sand px-8 py-9">
+            <div className="grid grid-cols-1 md:grid-cols-2 mt-12 max-w-[760px] shadow-[0_1px_8px_rgba(29,58,47,0.07)]">
+
+              {/* Transskriptions-AI */}
+              <div className="border border-sand bg-white px-8 py-9">
                 <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-muted mb-6">
                   Transskriptions-AI
                 </div>
-                <div className="flex flex-col gap-[14px]">
+                <div className="flex flex-col gap-4">
                   {transcriberItems.map((item) => (
                     <div key={item} className="flex items-start gap-3">
-                      <CrossIcon />
+                      <CrossSm />
                       <span className="font-sans text-[14px] font-light text-[#505050] leading-[1.5] mt-[-1px]">{item}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className="bg-evergreen border border-evergreen/20 md:border-l-0 px-8 py-9">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-parchment/60 mb-6">
+              {/* JournalKlar */}
+              <div className="bg-evergreen border border-evergreen/10 md:border-l-0 px-8 py-9">
+                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-parchment/55 mb-6">
                   JournalKlar
                 </div>
-                <div className="flex flex-col gap-[14px]">
+                <div className="flex flex-col gap-4">
                   {journalklarItems.map((item) => (
                     <div key={item} className="flex items-start gap-3">
-                      <CheckIcon light />
+                      <CheckSm light />
                       <span className="font-sans text-[14px] font-light text-parchment/90 leading-[1.5] mt-[-1px]">{item}</span>
                     </div>
                   ))}
                 </div>
               </div>
+
             </div>
 
-            <p className="font-sans text-[13px] font-light text-muted mt-6 max-w-[540px] leading-[1.7]">
+            <p className="font-sans text-[13px] font-light text-muted mt-5 max-w-[540px] leading-[1.7]">
               Det er ikke kun et teknisk valg. Det er et psykologfagligt valg om dataminimering, fagligt ansvar og respekt for klientens fortrolighed.
             </p>
           </div>
@@ -337,95 +428,95 @@ export default function SikkerhedPage() {
 
         <Rule />
 
-        {/* 5. Hvem rører data */}
+        {/* ── 5. Hvem rører data ──────────────────────────────────── */}
         <section className="py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Systemoverblik</SectionLabel>
             <h2>Hvem rører data?</h2>
             <p className="max-w-[520px] text-[#505050]">
-              De systemer, der behandler data, hvad de bruges til — og om klientindhold indgår.
+              De systemer der behandler data, hvad de bruges til — og om klientindhold indgår.
             </p>
 
-            <div className="mt-12 overflow-x-auto">
-              <div className="min-w-[580px] max-w-[900px]">
-                <div className="grid grid-cols-[2fr_2fr_1.3fr] border border-sand bg-white">
-                  {["Område", "Hvad bruges det til", "Klientindhold"].map((h, i) => (
-                    <div
-                      key={h}
-                      className={`px-5 py-3 font-sans text-[11px] font-medium tracking-[0.1em] uppercase text-muted ${i < 2 ? "border-r border-sand" : ""}`}
-                    >
-                      {h}
-                    </div>
-                  ))}
-                </div>
-                {tableRows.map((row, i) => (
-                  <div key={i} className="grid grid-cols-[2fr_2fr_1.3fr] border-x border-b border-sand">
-                    <div className="px-5 py-4 border-r border-sand">
-                      <div className="font-sans text-[14px] font-medium text-evergreen leading-[1.4]">{row.area}</div>
-                      {row.sub && (
-                        <div className="font-sans text-[11px] text-muted mt-[2px]">{row.sub}</div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-12 max-w-[1000px]">
+              {systemCards.map((card) => (
+                <div
+                  key={card.name}
+                  className="border border-sand bg-white px-6 py-6 shadow-[0_1px_4px_rgba(29,58,47,0.05)] hover:shadow-[0_2px_10px_rgba(29,58,47,0.09)] transition-shadow"
+                >
+                  <div className="flex items-start justify-between gap-3 mb-3">
+                    <div>
+                      <div className="font-sans text-[14px] font-medium text-evergreen leading-[1.3]">{card.name}</div>
+                      {card.sub && (
+                        <div className="font-sans text-[11px] text-muted mt-[2px]">{card.sub}</div>
                       )}
                     </div>
-                    <div className="px-5 py-4 border-r border-sand">
-                      <span className="font-sans text-[13px] font-light text-[#505050] leading-[1.6]">{row.purpose}</span>
-                    </div>
-                    <div className="px-5 py-4">
-                      {row.clientData ? (
-                        <span className="font-sans text-[13px] text-[#505050]">{row.clientData}</span>
-                      ) : (
-                        <span className="font-sans text-[13px] text-muted">Nej</span>
-                      )}
-                    </div>
+                    <Badge variant={card.clientData === "ingen" ? "positive" : "caution"}>
+                      {card.clientData === "ingen" ? "Ingen" : "Midlertidigt"}
+                    </Badge>
                   </div>
-                ))}
-              </div>
+                  <p className="font-sans text-[13px] font-light text-[#505050] leading-[1.6] mb-3">{card.role}</p>
+                  <div className="font-sans text-[11px] text-muted">{card.region}</div>
+                </div>
+              ))}
             </div>
+
+            <p className="font-sans text-[11px] text-muted mt-5 italic">
+              "Midlertidigt" indikerer at klientindhold behandles under selve genereringen og ikke gemmes bagefter.
+            </p>
           </div>
         </section>
 
         <Rule />
 
-        {/* 6. Hvad gemmes / gemmes ikke */}
+        {/* ── 6. Gemmes / Gemmes ikke ─────────────────────────────── */}
         <section className="py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Opbevaring</SectionLabel>
             <h2>Hvad gemmes — og hvad gemmes ikke?</h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 mt-12 max-w-[760px]">
-              <div className="border border-sand px-8 py-9">
+            <div className="grid grid-cols-1 md:grid-cols-2 mt-12 max-w-[760px] shadow-[0_1px_8px_rgba(29,58,47,0.07)]">
+
+              {/* Gemmes ikke — visuelt primær */}
+              <div className="bg-evergreen px-8 py-9">
+                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-parchment/55 mb-6">
+                  Gemmes ikke
+                </div>
+                <div className="flex flex-col gap-[14px]">
+                  {gemmerIkke.map((item) => (
+                    <div key={item} className="flex items-start gap-3">
+                      <CheckSm light />
+                      <span className="font-sans text-[14px] font-light text-parchment/90 leading-[1.5] mt-[-1px]">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Gemmes — visuelt sekundær */}
+              <div className="border border-sand bg-white md:border-l-0 px-8 py-9">
                 <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-muted mb-6">
                   Gemmes
                 </div>
                 <div className="flex flex-col gap-[14px]">
                   {gemmes.map((item) => (
                     <div key={item} className="flex items-start gap-3">
-                      <CheckIcon />
-                      <span className="font-sans text-[14px] font-light text-[#505050] leading-[1.6] mt-[-1px]">{item}</span>
+                      <div className="mt-[2px]">
+                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true">
+                          <circle cx="5.5" cy="5.5" r="3.5" stroke="#A09890" strokeWidth="1.2" fill="none"/>
+                        </svg>
+                      </div>
+                      <span className="font-sans text-[14px] font-light text-[#505050] leading-[1.5] mt-[-1px]">{item}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className="border border-sand md:border-l-0 px-8 py-9">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-muted mb-6">
-                  Gemmes ikke
-                </div>
-                <div className="flex flex-col gap-[14px]">
-                  {gemmerIkke.map((item) => (
-                    <div key={item} className="flex items-start gap-3">
-                      <CrossIcon />
-                      <span className="font-sans text-[14px] font-light text-[#505050] leading-[1.6] mt-[-1px]">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
             </div>
           </div>
         </section>
 
         <Rule />
 
-        {/* 7. Underleverandører */}
+        {/* ── 7. Underleverandører ────────────────────────────────── */}
         <section className="py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Leverandørgennemgang</SectionLabel>
@@ -434,60 +525,108 @@ export default function SikkerhedPage() {
               Tre leverandører behandler data som en del af JournalKlar. Ingen andre tredjeparter modtager klientoplysninger.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 mt-12 max-w-[900px]">
-              {underleverandoerer.map((v, i) => (
-                <div
-                  key={v.name}
-                  className={`border border-sand px-7 py-8 ${i > 0 ? "border-t-0 md:border-t md:border-l-0" : ""}`}
-                >
-                  <div className="font-sans text-[11px] font-medium tracking-[0.12em] uppercase text-muted mb-4 leading-[1.5]">
-                    {v.meta}
-                  </div>
-                  <div className="font-sans text-[17px] font-medium text-evergreen mb-3">{v.name}</div>
-                  <p className="font-sans text-[13px] font-light text-[#505050] leading-[1.7] mb-3">{v.role}</p>
-                  <div className="font-sans text-[11px] text-muted italic">{v.klientdata}</div>
+            <div className="mt-12 overflow-x-auto">
+              <div className="min-w-[620px] max-w-[960px]">
+
+                {/* Header */}
+                <div className="grid grid-cols-[1.8fr_2.2fr_1.2fr_1fr_1.2fr] border border-sand bg-white">
+                  {["Leverandør", "Rolle", "Region", "Klientindhold", "Dokumentation"].map((h, i) => (
+                    <div
+                      key={h}
+                      className={`px-5 py-3 font-sans text-[11px] font-medium tracking-[0.1em] uppercase text-muted ${i < 4 ? "border-r border-sand" : ""}`}
+                    >
+                      {h}
+                    </div>
+                  ))}
                 </div>
-              ))}
+
+                {leverandoerer.map((row, i) => (
+                  <div
+                    key={row.navn}
+                    className="grid grid-cols-[1.8fr_2.2fr_1.2fr_1fr_1.2fr] border-x border-b border-sand hover:bg-sand/20 transition-colors"
+                  >
+                    <div className="px-5 py-4 border-r border-sand">
+                      <div className="font-sans text-[14px] font-medium text-evergreen">{row.navn}</div>
+                    </div>
+                    <div className="px-5 py-4 border-r border-sand">
+                      <span className="font-sans text-[13px] font-light text-[#505050] leading-[1.5]">{row.rolle}</span>
+                    </div>
+                    <div className="px-5 py-4 border-r border-sand">
+                      <Badge variant="neutral">{row.region}</Badge>
+                    </div>
+                    <div className="px-5 py-4 border-r border-sand">
+                      <Badge variant={row.klientindhold === "Ingen" ? "positive" : "caution"}>
+                        {row.klientindhold}
+                      </Badge>
+                    </div>
+                    <div className="px-5 py-4">
+                      <span className="font-sans text-[12px] text-muted">{row.status}</span>
+                    </div>
+                  </div>
+                ))}
+
+              </div>
             </div>
           </div>
         </section>
 
         <Rule />
 
-        {/* 8. Databehandleraftale */}
+        {/* ── 8. Databehandleraftale ──────────────────────────────── */}
         <section id="databehandleraftale" className="py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Dokumentation</SectionLabel>
-            <h2 className="max-w-[560px]">Du underskriver databehandleraftalen inden brug.</h2>
-            <p className="max-w-[560px] text-[#505050] mt-4">
-              Inden du går i gang med JournalKlar, underskrives en databehandleraftale. Den beskriver præcist, hvad der sker med data — og hvad der ikke sker.
-            </p>
-            <p className="max-w-[560px] text-[#505050] mt-3">
-              Aftalen dækker: behandlingsformål, datatyper, behandlingsgrundlag (GDPR art. 28), underleverandørernes rolle, opbevaringsperiode, slettepolitik og dine rettigheder som dataansvarlig. Du kan vise den til din leder, din DPO eller din fagforening.
-            </p>
 
-            <div className="mt-9 flex flex-wrap items-center gap-5">
-              <a
-                href="#"
-                className="inline-flex items-center gap-[10px] border border-evergreen text-evergreen font-sans text-[15px] font-normal px-7 py-[15px] hover:bg-evergreen hover:text-white transition-colors"
-              >
-                Hent databehandleraftale (PDF)
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                  <line x1="1" y1="6" x2="11" y2="6" stroke="currentColor" strokeWidth="1.3"/>
-                  <polyline points="7.5,2.5 11,6 7.5,9.5" stroke="currentColor" strokeWidth="1.3" fill="none"/>
-                </svg>
-              </a>
-              <span className="font-sans text-[12px] text-muted italic">
-                PDF-link tilføjes ved launch
-              </span>
+            <div className="bg-evergreen px-8 py-10 md:px-12 md:py-12 max-w-[640px]">
+              <h3 className="text-parchment mb-4" style={{ color: "#F7F4EF" }}>
+                Databehandleraftalen underskrives inden brug.
+              </h3>
+              <p className="font-sans text-[14px] font-light text-parchment/70 leading-[1.8] mb-5">
+                Inden du går i gang med JournalKlar, underskrives en databehandleraftale. Den beskriver præcist, hvad der sker med data — og hvad der ikke sker.
+              </p>
+              <p className="font-sans text-[14px] font-light text-parchment/70 leading-[1.8] mb-8">
+                Aftalen dækker: behandlingsformål, datatyper, behandlingsgrundlag (GDPR art. 28), underleverandørernes rolle, opbevaringsperiode og slettepolitik. Du kan vise den til din leder, DPO eller fagforening.
+              </p>
+              <div className="flex flex-wrap items-center gap-5">
+                <a
+                  href="#"
+                  className="inline-flex items-center gap-[10px] border border-parchment/35 text-parchment font-sans text-[14px] font-normal px-6 py-[14px] hover:bg-parchment hover:text-evergreen transition-colors"
+                >
+                  Hent databehandleraftale (PDF)
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                    <line x1="1" y1="6" x2="11" y2="6" stroke="currentColor" strokeWidth="1.3"/>
+                    <polyline points="7.5,2.5 11,6 7.5,9.5" stroke="currentColor" strokeWidth="1.3" fill="none"/>
+                  </svg>
+                </a>
+                <span className="font-sans text-[12px] text-parchment/40 italic">
+                  PDF-link tilføjes ved launch
+                </span>
+              </div>
             </div>
+
           </div>
         </section>
 
         <Rule />
 
-        {/* 9. FAQ */}
+        {/* ── 9. FAQ ──────────────────────────────────────────────── */}
         <SikkerhedFAQ />
+
+        <Rule />
+
+        {/* ── 10. Vigtigt at vide ─────────────────────────────────── */}
+        <section className="py-12 px-6 md:py-16 md:px-16">
+          <div className="max-w-[1100px] mx-auto">
+            <div className="border border-sand bg-white px-7 py-6 max-w-[680px]">
+              <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-muted mb-3">
+                Vigtigt at vide
+              </div>
+              <p className="font-sans text-[13px] font-light text-[#505050] leading-[1.75] mb-0">
+                JournalKlar er ikke godkendt af Dansk Psykologforening eller Styrelsen for Patientsikkerhed. Det er et fagligt arbejdsredskab under dit ansvar som autoriseret psykolog — på linje med andre digitale hjælpemidler i praksis. Alle outputter er udkast der kræver din aktive gennemgang og godkendelse.
+              </p>
+            </div>
+          </div>
+        </section>
 
       </main>
       <Footer />
