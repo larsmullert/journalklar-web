@@ -1,11 +1,19 @@
 import SectionLabel from "@/components/ui/SectionLabel";
 
-const tags = [
-  "Ingen sessionoptagelse",
-  "Ingen tredjepart i rummet",
-  "Faglig selektion bevaret",
-  "Altid et udkast",
-  "Du godkender altid",
+const goer = [
+  "Strukturerer dine noter",
+  "Markerer mangler tydeligt",
+  "Laver struktureret udkast",
+  "Understøtter BEK 1361/2025",
+  "Bevarer dit faglige workflow",
+];
+
+const goerIkke = [
+  "Optager sessionen",
+  "Transskriberer samtalen",
+  "Vurderer klinisk relevans alene",
+  "Gemmer journalnoter efter generering",
+  "Erstatter din godkendelse",
 ];
 
 export default function Afgrænsning() {
@@ -14,48 +22,43 @@ export default function Afgrænsning() {
       <div className="max-w-[1100px] mx-auto">
         <SectionLabel>Hvad JournalKlar er — og ikke er</SectionLabel>
         <h2>Et redskab. Ikke en autopilot.</h2>
+        <p className="font-sans text-[15px] font-light text-[#505050] max-w-[560px] leading-[1.75] mt-4 mb-0">
+          JournalKlar leverer strukturen. Du leverer indholdet. Outputtet hedder altid &ldquo;udkast&rdquo;. Hvad der bliver til journal, afgør du.
+        </p>
 
-        <div className="grid grid-cols-2 gap-20 mt-12 items-start">
+        <div className="grid grid-cols-2 max-w-[760px] mt-12">
 
-          {/* Venstre: evergreen statement-boks */}
-          <div className="bg-evergreen px-10 py-11">
-            <div className="font-serif text-[20px] font-normal text-parchment/90 mb-5 tracking-[-0.01em]">
-              Ingen optagelse. Dit faglige skøn intakt.
+          {/* Gør */}
+          <div className="bg-evergreen px-10 py-10">
+            <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-parchment/60 mb-7">
+              JournalKlar gør
             </div>
-            <p className="font-sans text-[15px] font-light text-parchment/[0.72] leading-[1.75] mb-[14px]">
-              JournalKlar optager ikke dine sessioner. Transskriberer ikke. Lytter ikke. Det er et bevidst valg.
-            </p>
-            <p className="font-sans text-[15px] font-light text-parchment/[0.72] leading-[1.75] mb-[14px]">
-              Den faglige selektion — hvad der inkluderes i journalen, og hvad der udelades — er ikke administration. Det er en del af det kliniske arbejde. Det ansvaret forbliver hos dig.
-            </p>
-            <p className="font-sans text-[15px] font-light text-parchment/[0.72] leading-[1.75] mb-[14px]">
-              Med de nyeste løsninger er journalen færdig inden klienten er ude af døren. Det forstår vi godt er tiltrækkende. Men den faglige selektion er ikke noget, der bør foretages af en AI ud fra en fuld optagelse af det, der er sagt. Det er et spørgsmål om, hvem der egentlig laver det faglige arbejde.
-            </p>
-            <p className="font-sans text-[15px] font-light text-parchment/[0.72] leading-[1.75] mb-0">
-              JournalKlar leverer strukturen. Du leverer indholdet.
-            </p>
+            <div className="flex flex-col gap-[14px]">
+              {goer.map((item) => (
+                <div key={item} className="flex items-start gap-[10px]">
+                  <svg className="flex-shrink-0 mt-[3px]" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                    <polyline points="2,7 5.5,10.5 12,4" stroke="#B5CEC5" strokeWidth="1.3" fill="none" strokeLinecap="round"/>
+                  </svg>
+                  <span className="font-sans text-[14px] font-light text-parchment/90 leading-[1.5]">{item}</span>
+                </div>
+              ))}
+            </div>
           </div>
 
-          {/* Højre: detaljer og tags */}
-          <div>
-            <p className="font-sans text-[15px] font-light text-[#505050] leading-[1.8] mb-[14px]">
-              JournalKlar erstatter ikke din faglige vurdering. Det producerer ikke journaler, der er klar til at kopiere ind. Og det tager ikke beslutninger på dine vegne.
-            </p>
-            <p className="font-sans text-[15px] font-light text-[#505050] leading-[1.8] mb-[14px]">
-              Det gør én ting: hjælper dig fra dine egne noter til et struktureret udkast, der dækker det der skal med — og markerer tydeligt det der mangler.
-            </p>
-            <p className="font-sans text-[14px] font-light text-muted leading-[1.8] mb-0">
-              Outputtet hedder altid &ldquo;udkast&rdquo;. Hvad der bliver til journal, afgør du.
-            </p>
-
-            <div className="flex flex-wrap gap-2 mt-7">
-              {tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="border border-evergreen/20 py-[7px] px-[15px] font-sans text-[12px] text-evergreen font-normal tracking-[0.02em]"
-                >
-                  {tag}
-                </span>
+          {/* Gør ikke */}
+          <div className="border border-sand border-l-0 px-10 py-10">
+            <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-muted mb-7">
+              JournalKlar gør ikke
+            </div>
+            <div className="flex flex-col gap-[14px]">
+              {goerIkke.map((item) => (
+                <div key={item} className="flex items-start gap-[10px]">
+                  <svg className="flex-shrink-0 mt-[3px]" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                    <line x1="3.5" y1="3.5" x2="10.5" y2="10.5" stroke="#A09890" strokeWidth="1.3" strokeLinecap="round"/>
+                    <line x1="10.5" y1="3.5" x2="3.5" y2="10.5" stroke="#A09890" strokeWidth="1.3" strokeLinecap="round"/>
+                  </svg>
+                  <span className="font-sans text-[14px] font-light text-[#505050] leading-[1.5]">{item}</span>
+                </div>
               ))}
             </div>
           </div>
