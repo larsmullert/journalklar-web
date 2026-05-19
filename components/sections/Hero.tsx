@@ -21,7 +21,7 @@ export default function Hero() {
           <div className="flex items-center gap-9 flex-wrap mb-12">
             <a
               href="#pris"
-              className="inline-flex items-center gap-[10px] bg-evergreen text-white font-sans text-[15px] font-normal px-[30px] py-[15px] hover:bg-[#152e23] transition-colors"
+              className="inline-flex items-center gap-[10px] bg-evergreen text-white font-sans text-[16px] font-medium px-8 py-[18px] hover:bg-[#152e23] transition-colors"
             >
               Start 30 dages gratis prøveperiode
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
