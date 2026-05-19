@@ -6,7 +6,7 @@ export default function ManifestStrip() {
           Det at skrive dine egne noter efter en session er ikke administrativt arbejde. Det er der, du konsoliderer din forståelse af klienten — selekterer, prioriterer og reflekterer. Ikke AI&apos;en.{" "}
           <strong className="font-normal not-italic">Dig.</strong>
         </p>
-        <span className="font-sans text-[13px] text-muted tracking-[0.04em]">
+        <span className="font-sans text-[13px] text-[#6B6860] tracking-[0.04em]">
           Faglig selektion som forudsætning, ikke som valg
         </span>
       </div>

@@ -41,7 +41,7 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="flex items-start gap-[10px] font-sans text-[13px] font-light text-muted max-w-[420px] leading-[1.6]">
+          <div className="flex items-start gap-[10px] font-sans text-[13px] font-light text-[#505050] max-w-[420px] leading-[1.6]">
             <svg className="flex-shrink-0 mt-[1px]" width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
               <path d="M7.5 1.5L2.5 3.8V7.5C2.5 10.5 4.7 13.3 7.5 14C10.3 13.3 12.5 10.5 12.5 7.5V3.8L7.5 1.5Z" stroke="#1D3A2F" strokeWidth="1.2" fill="none"/>
               <polyline points="5,7.5 7,9.5 10,6" stroke="#1D3A2F" strokeWidth="1.2" fill="none" strokeLinecap="round"/>

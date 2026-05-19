@@ -100,7 +100,7 @@ export default function IPraksis() {
           </div>
         </div>
 
-        <p className="font-sans text-[12px] text-muted mt-[22px] italic text-center">
+        <p className="font-sans text-[12px] text-[#6B6860] mt-[22px] italic text-center">
           Eksemplet er anonymiseret og konstrueret. Udviklet med udgangspunkt i journalarbejdsgange i dansk psykologpraksis.
         </p>
       </div>
