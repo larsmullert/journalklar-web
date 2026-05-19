@@ -26,9 +26,12 @@ export default function Genkendelse() {
         </p>
 
         <div className="grid grid-cols-3 gap-8 mt-12">
-          {problemer.map(({ titel, tekst }) => (
-            <div key={titel} className="border-t-2 border-sand pt-6">
-              <p className="font-sans text-[15px] font-medium text-evergreen mb-2">
+          {problemer.map(({ titel, tekst }, i) => (
+            <div key={titel} className="border-t-2 border-sand pt-7">
+              <div className="font-serif text-[28px] font-light text-evergreen/20 leading-none mb-5">
+                {String(i + 1).padStart(2, "0")}
+              </div>
+              <p className="font-sans text-[15px] font-medium text-evergreen mb-3">
                 {titel}
               </p>
               <p className="font-sans text-[14px] font-light text-[#505050] leading-[1.75] mb-0">
