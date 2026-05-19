@@ -8,6 +8,7 @@ import Sikkerhed from "@/components/sections/Sikkerhed";
 import IPraksis from "@/components/sections/IPraksis";
 import Afgrænsning from "@/components/sections/Afgrænsning";
 import PrisOgCTA from "@/components/sections/PrisOgCTA";
+import FAQ from "@/components/sections/FAQ";
 import Footer from "@/components/sections/Footer";
 
 function Rule() {
@@ -36,6 +37,8 @@ export default function Home() {
         <Tillid />
         <Rule />
         <PrisOgCTA />
+        <Rule />
+        <FAQ />
       </main>
       <Footer />
     </>
