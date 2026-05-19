@@ -14,7 +14,7 @@ export default function Nav() {
 
         <a
           href="#"
-          className="bg-orange text-parchment font-sans font-medium text-sm px-5 py-2.5"
+          className="font-sans font-medium text-sm text-evergreen underline underline-offset-4"
         >
           [PLACEHOLDER CTA]
         </a>

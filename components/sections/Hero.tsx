@@ -2,11 +2,7 @@ export default function Hero() {
   return (
     <section className="bg-parchment py-24 px-16">
       <div className="max-w-[1100px] mx-auto">
-        <p className="font-sans font-medium text-[11px] tracking-[0.14em] uppercase text-evergreen mb-6">
-          [PLACEHOLDER section label]
-        </p>
-
-        <h1 className="text-evergreen max-w-3xl mb-6">
+        <h1 className="text-evergreen max-w-[680px] mb-6">
           [PLACEHOLDER — primær headline til psykologen]
         </h1>
 
