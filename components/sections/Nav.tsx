@@ -4,24 +4,21 @@ export default function Nav() {
       <div className="max-w-[1100px] mx-auto px-16 py-5 flex items-center justify-between">
 
         <a href="/" className="font-serif text-evergreen text-[21px] font-normal tracking-[-0.02em]">
-          [PLACEHOLDER logo]
+          JournalKlar
         </a>
 
         <div className="flex items-center gap-10">
-          <a href="#" className="font-sans text-[14px] font-light text-graphite hover:text-evergreen transition-colors">
-            [PLACEHOLDER]
+          <a href="#hvordan" className="font-sans text-[14px] font-light text-graphite hover:text-evergreen transition-colors">
+            Sådan virker det
           </a>
-          <a href="#" className="font-sans text-[14px] font-light text-graphite hover:text-evergreen transition-colors">
-            [PLACEHOLDER]
-          </a>
-          <a href="#" className="font-sans text-[14px] font-light text-graphite hover:text-evergreen transition-colors">
-            [PLACEHOLDER]
+          <a href="#sikkerhed" className="font-sans text-[14px] font-light text-graphite hover:text-evergreen transition-colors">
+            Sikkerhed
           </a>
           <a
-            href="#"
+            href="#pris"
             className="font-sans text-[14px] font-normal text-evergreen border-b-[1.5px] border-evergreen pb-[1px]"
           >
-            [PLACEHOLDER CTA]
+            Start prøveperiode
           </a>
         </div>
 

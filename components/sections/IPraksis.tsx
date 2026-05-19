@@ -4,10 +4,10 @@ export default function IPraksis() {
   return (
     <div className="bg-sand py-[120px] px-16">
       <div className="max-w-[1100px] mx-auto">
-        <SectionLabel>[PLACEHOLDER label]</SectionLabel>
-        <h2>[PLACEHOLDER headline]</h2>
+        <SectionLabel>I praksis</SectionLabel>
+        <h2>Sådan ser det ud</h2>
         <p className="max-w-[520px] text-[#505050]">
-          [PLACEHOLDER — en-to sætninger der beskriver hvad illustrationen viser.]
+          Dine rånoter til venstre. Et komplet journaludkast til højre — med tydelig markering af det, der mangler din aktive stillingtagen.
         </p>
 
         {/* App-frame */}
@@ -18,7 +18,7 @@ export default function IPraksis() {
             <div className="w-[10px] h-[10px] rounded-full bg-[#E0B9B9]" />
             <div className="w-[10px] h-[10px] rounded-full bg-[#DFDFB9]" />
             <div className="w-[10px] h-[10px] rounded-full bg-[#B9DFC0]" />
-            <span className="ml-[10px] font-sans text-[12px] text-muted">[PLACEHOLDER tab-label]</span>
+            <span className="ml-[10px] font-sans text-[12px] text-muted">JournalKlar — Eksempelsession · Opfølgningssamtale</span>
           </div>
 
           {/* Panels */}
@@ -27,39 +27,48 @@ export default function IPraksis() {
             {/* Venstre: rånoter */}
             <div className="px-11 py-12 border-r border-[#F0EDE8]">
               <div className="flex items-center gap-[10px] font-sans text-[11px] font-medium tracking-[0.12em] uppercase text-muted mb-7">
-                [PLACEHOLDER panel-titel]
+                Dine rånoter
               </div>
               <div className="font-sans text-[14px] font-light text-[#4A4A4A] leading-[1.8]">
-                <p>[PLACEHOLDER — rånoter, første afsnit. Skriv som psykolog tænker umiddelbart efter session.]</p>
-                <p>[PLACEHOLDER — andet afsnit med intervention og observationer.]</p>
-                <p>[PLACEHOLDER — tredje afsnit med aftaler og plan.]</p>
+                <p>Pt. mødte til aftalt tid. Virker mere afklaret end sidst — sov bedre denne uge. Fortæller om en situation med sin søster, som hun nu har kunnet rumme anderledes end tidligere.</p>
+                <p>Arbejdede videre med eksponeringshierarki. Gennemgik trin 3. Pt. er motiveret men udtrykker stadig en vis tøven over for de næste trin i hierarkiet.</p>
+                <p>Informeret samtykke til behandlingsplan er givet mundtligt. Aftalt ny session om 14 dage. Hjemmeopgave: én situation pr. dag uden undgåelsesadfærd, noteres i dagbog.</p>
               </div>
             </div>
 
             {/* Højre: journaludkast */}
             <div className="px-11 py-12">
               <div className="flex items-center gap-[10px] font-sans text-[11px] font-medium tracking-[0.12em] uppercase text-muted mb-7">
-                [PLACEHOLDER panel-titel]
+                Journaludkast
                 <span className="bg-evergreen/[0.08] text-evergreen font-sans text-[9px] font-medium tracking-[0.1em] px-[8px] py-[2px]">
-                  [PLACEHOLDER tag]
+                  Til godkendelse
                 </span>
               </div>
 
               <div className="mb-[22px]">
                 <div className="font-sans text-[10px] font-medium uppercase tracking-[0.1em] text-muted mb-[5px]">
-                  [PLACEHOLDER felt-label]
+                  Dato og sessionsnummer
                 </div>
                 <div className="font-sans text-[14px] font-light text-[#3A3A3A] leading-[1.65]">
-                  [PLACEHOLDER felt-værdi]
+                  11. marts 2026 · Session #14
                 </div>
               </div>
 
               <div className="mb-[22px]">
                 <div className="font-sans text-[10px] font-medium uppercase tracking-[0.1em] text-muted mb-[5px]">
-                  [PLACEHOLDER felt-label]
+                  Psykisk tilstand
                 </div>
                 <div className="font-sans text-[14px] font-light text-[#3A3A3A] leading-[1.65]">
-                  [PLACEHOLDER felt-værdi]
+                  Patienten fremstår mere afklaret end ved foregående session. Oplyser om bedret søvn. Beskriver øget evne til at rumme konflikt med søskende uden tidligere undgåelsesreaktion.
+                </div>
+              </div>
+
+              <div className="mb-[22px]">
+                <div className="font-sans text-[10px] font-medium uppercase tracking-[0.1em] text-muted mb-[5px]">
+                  Intervention
+                </div>
+                <div className="font-sans text-[14px] font-light text-[#3A3A3A] leading-[1.65]">
+                  Kognitiv adfærdsterapi. Arbejde med eksponeringshierarki, trin 3. Patienten er behandlingsmotiveret men udtrykker ambivalens over for kommende trin.
                 </div>
               </div>
 
@@ -71,19 +80,19 @@ export default function IPraksis() {
                     <line x1="5.5" y1="3" x2="5.5" y2="6.5" stroke="#E04500" strokeWidth="1.2" strokeLinecap="round"/>
                     <circle cx="5.5" cy="8.2" r="0.7" fill="#E04500"/>
                   </svg>
-                  [PLACEHOLDER mangler-label]
+                  Mangler — kræver stillingtagen
                 </div>
                 <div className="font-sans text-[13px] font-light text-[#6A6A6A]">
-                  [PLACEHOLDER — præcis beskrivelse af hvad der mangler psykologens stillingtagen.]
+                  Konsultationsform er ikke angivet. Angiv om sessionen er gennemført ved fysisk fremmøde, telefon eller video.
                 </div>
               </div>
 
               <div className="mb-[22px]">
                 <div className="font-sans text-[10px] font-medium uppercase tracking-[0.1em] text-muted mb-[5px]">
-                  [PLACEHOLDER felt-label]
+                  Plan og aftaler
                 </div>
                 <div className="font-sans text-[14px] font-light text-[#3A3A3A] leading-[1.65]">
-                  [PLACEHOLDER felt-værdi]
+                  Informeret samtykke til behandlingsplan dokumenteret mundtligt. Hjemmeopgave aftalt: dagbogsregistrering. Ny session planlagt om 14 dage.
                 </div>
               </div>
 
@@ -92,7 +101,7 @@ export default function IPraksis() {
         </div>
 
         <p className="font-sans text-[12px] text-muted mt-[22px] italic text-center">
-          [PLACEHOLDER caption — note om at eksemplet er anonymiseret]
+          Eksemplet er anonymiseret og konstrueret. Udviklet med udgangspunkt i journalarbejdsgange i dansk psykologpraksis.
         </p>
       </div>
     </div>

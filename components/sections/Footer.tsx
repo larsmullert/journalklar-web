@@ -1,3 +1,10 @@
+const links = [
+  { label: "Privatlivspolitik", href: "#" },
+  { label: "Databehandleraftale", href: "#" },
+  { label: "Sikkerhed", href: "/sikkerhed" },
+  { label: "Kontakt", href: "#" },
+];
+
 export default function Footer() {
   return (
     <footer className="border-t border-sand py-[52px] px-16 bg-parchment">
@@ -5,21 +12,21 @@ export default function Footer() {
 
         <div>
           <div className="font-serif text-[17px] font-normal text-evergreen mb-[14px] tracking-[-0.01em]">
-            [PLACEHOLDER logo]
+            JournalKlar
           </div>
           <p className="font-sans text-[12px] font-light text-muted leading-[1.75] max-w-[540px] mb-5">
-            [PLACEHOLDER — disclaimer om produktets status, ansvar og outputtype.]
+            JournalKlar er ikke godkendt af Dansk Psykologforening eller Styrelsen for Patientsikkerhed. Det er et fagligt arbejdsredskab under dit ansvar som autoriseret psykolog — på linje med andre digitale hjælpemidler i praksis. Alle outputter er udkast der kræver din aktive gennemgang og godkendelse.
           </p>
           <p className="font-sans text-[12px] text-muted-light mb-0">
-            [PLACEHOLDER — copyright og CVR]
+            © 2026 JournalKlar · CVR: xxxxxxxxxx · Aalborg, Danmark
           </p>
         </div>
 
         <div className="flex flex-col gap-[10px] text-right">
-          {["[PLACEHOLDER link 1]", "[PLACEHOLDER link 2]", "[PLACEHOLDER link 3]", "[PLACEHOLDER link 4]"].map((label) => (
+          {links.map(({ label, href }) => (
             <a
               key={label}
-              href="#"
+              href={href}
               className="font-sans text-[13px] text-muted hover:text-evergreen transition-colors"
             >
               {label}

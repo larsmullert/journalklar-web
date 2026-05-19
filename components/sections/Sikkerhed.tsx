@@ -1,27 +1,43 @@
 import SectionLabel from "@/components/ui/SectionLabel";
 
 const promises = [
-  { num: "1" },
-  { num: "2" },
-  { num: "3" },
-  { num: "4" },
+  {
+    num: "1",
+    title: "Vi gemmer ikke dine noter",
+    text: "Dine noter eksisterer kun i det sekund udkastet genereres. Bagefter er de væk — automatisk og uden undtagelse. Intet gemmes på nogen server.",
+  },
+  {
+    num: "2",
+    title: "AI'en lærer ikke af dine klienter",
+    text: "Den AI-model der genererer dine udkast, bruger ikke dit input til at blive klogere. Det er kontraktuelt fastsat — ikke bare en hensigtserklæring.",
+  },
+  {
+    num: "3",
+    title: "Dine data forlader aldrig Europa",
+    text: "Både appen og AI-behandlingen foregår inden for EU — i Danmark og Frankfurt. Ingen data sendes til USA eller andre tredjelande.",
+  },
+  {
+    num: "4",
+    title: "Du underskriver en databehandleraftale",
+    text: "Inden du går i gang. Den beskriver præcist hvad der sker med data — og hvad der ikke sker. Du kan vise den til din leder, din DPO eller din fagforening.",
+  },
 ];
 
 export default function Sikkerhed() {
   return (
     <section id="sikkerhed" className="py-[120px] px-16">
       <div className="max-w-[1100px] mx-auto">
-        <SectionLabel>[PLACEHOLDER label]</SectionLabel>
-        <h2>[PLACEHOLDER headline]</h2>
+        <SectionLabel>Data og fortrolighed</SectionLabel>
+        <h2>Dine klienters fortrolighed forbliver fortrolig.</h2>
         <p className="max-w-[520px] text-[#505050] mb-0">
-          [PLACEHOLDER — intro-sætning der rammesætter de fire løfter.]
+          Det er det eneste der reelt betyder noget. Her er fire ting du bør vide — på almindeligt dansk.
         </p>
 
         <div className="grid grid-cols-[1fr_360px] mt-12 items-stretch">
 
           {/* Venstre: 4 løfter */}
           <div className="border border-sand border-r-0 bg-white">
-            {promises.map(({ num }, i) => (
+            {promises.map(({ num, title, text }, i) => (
               <div
                 key={num}
                 className={`px-10 py-8 grid grid-cols-[36px_1fr] gap-5 items-start ${i < promises.length - 1 ? "border-b border-sand" : ""}`}
@@ -31,10 +47,10 @@ export default function Sikkerhed() {
                 </div>
                 <div>
                   <div className="font-sans text-[15px] font-medium text-evergreen mb-[6px]">
-                    [PLACEHOLDER løfte-titel]
+                    {title}
                   </div>
                   <p className="font-sans text-[14px] font-light text-[#5A5A5A] leading-[1.7] mb-0">
-                    [PLACEHOLDER — en-to sætninger der forklarer dette løfte konkret og uden forbehold.]
+                    {text}
                   </p>
                 </div>
               </div>
@@ -45,13 +61,13 @@ export default function Sikkerhed() {
           <div className="bg-evergreen px-10 py-12 flex flex-col">
             <div>
               <div className="flex items-center gap-[12px] font-sans text-[11px] font-medium tracking-[0.16em] uppercase text-parchment/40 mb-7 before:content-[''] before:block before:w-[18px] before:h-px before:bg-parchment/30 before:shrink-0">
-                [PLACEHOLDER label]
+                Radikal transparens
               </div>
               <div className="font-serif text-[clamp(20px,1.8vw,24px)] font-normal text-parchment leading-[1.35] tracking-[-0.01em] mb-5">
-                [PLACEHOLDER — titel på transparens-panelet]
+                Vi skjuler ingenting om, hvordan det virker.
               </div>
               <p className="font-sans text-[14px] font-light text-parchment/60 leading-[1.8] mb-0">
-                [PLACEHOLDER — to-tre sætninger om åbenhed og dokumentation.]
+                Serverplacering, kryptering, underleverandører, datastrømme, journaliseringskrav — alt er dokumenteret og tilgængeligt. Ikke fordi vi er nødt til det. Men fordi du har ret til at vide det.
               </p>
             </div>
             <div>
@@ -66,7 +82,7 @@ export default function Sikkerhed() {
                     <polyline points="7.5,2.5 11,6 7.5,9.5" stroke="#F7F4EF" strokeWidth="1.3" fill="none"/>
                   </svg>
                 </span>
-                [PLACEHOLDER link-tekst]
+                Læs den fulde tekniske gennemgang
               </a>
             </div>
           </div>
