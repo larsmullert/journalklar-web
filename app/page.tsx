@@ -25,15 +25,15 @@ export default function Home() {
         <Rule />
         <Genkendelse />
         <Rule />
-        <Tillid />
-        <Rule />
         <SaadanVirkerDet />
-        <Rule />
-        <Sikkerhed />
         <Rule />
         <IPraksis />
         <Rule />
+        <Sikkerhed />
+        <Rule />
         <Afgrænsning />
+        <Rule />
+        <Tillid />
         <Rule />
         <PrisOgCTA />
       </main>
