@@ -50,7 +50,7 @@ export default function FAQ() {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <section className="py-[120px] px-16">
+    <section className="py-16 px-6 md:py-[120px] md:px-16">
       <div className="max-w-[1100px] mx-auto">
         <SectionLabel>Ofte stillede spørgsmål</SectionLabel>
         <h2 className="max-w-[520px]">De spørgsmål du allerede har.</h2>

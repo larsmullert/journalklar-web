@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
-    <div className="pt-[100px] px-16 pb-[90px] relative">
-      <div className="max-w-[1100px] mx-auto grid grid-cols-2 gap-20 items-center">
+    <div className="pt-16 px-6 pb-14 md:pt-[100px] md:px-16 md:pb-[90px] relative">
+      <div className="max-w-[1100px] mx-auto grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-20 items-center">
 
         {/* Venstre: Copy */}
         <div>
@@ -51,7 +51,7 @@ export default function Hero() {
         </div>
 
         {/* Højre: Produkt-preview */}
-        <div>
+        <div className="hidden md:block">
           <div className="bg-white border border-[#D4D0CB] shadow-[0_2px_4px_rgba(29,58,47,0.04),0_12px_40px_rgba(29,58,47,0.07)]">
 
             {/* Topbar */}

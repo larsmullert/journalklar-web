@@ -2,12 +2,12 @@ import SectionLabel from "@/components/ui/SectionLabel";
 
 export default function Tillid() {
   return (
-    <section className="py-[120px] px-16">
+    <section className="py-16 px-6 md:py-[120px] md:px-16">
       <div className="max-w-[1100px] mx-auto">
         <SectionLabel>Hvem står bag</SectionLabel>
         <h2>Bygget af en psykolog — til psykologer.</h2>
 
-        <div className="mt-12 grid grid-cols-[1fr_auto] gap-20 items-end max-w-[880px]">
+        <div className="mt-12 max-w-[880px]">
           <div>
             <p className="font-sans text-[16px] font-light text-[#484848] leading-[1.85] max-w-[580px] mb-5">
               JournalKlar er grundlagt af Lars Mullert Pedersen, psykolog (cand.psych., AAU). Motivationen er ikke kompliceret: jeg oplevede selv, at AI-værktøjer gør det nemt at sige &ldquo;godt nok&rdquo; — og at det er et reelt problem, når det er den faglige efterbehandling der ofres. Ingen moralisering over dem der bruger andre løsninger. Blot en bekymring, jeg har udviklet et bud på en løsning på.

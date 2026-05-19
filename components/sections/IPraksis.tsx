@@ -2,7 +2,7 @@ import SectionLabel from "@/components/ui/SectionLabel";
 
 export default function IPraksis() {
   return (
-    <div className="bg-sand py-[120px] px-16">
+    <div className="bg-sand py-16 px-6 md:py-[120px] md:px-16">
       <div className="max-w-[1100px] mx-auto">
         <SectionLabel>I praksis</SectionLabel>
         <h2>Sådan ser det ud</h2>
@@ -22,10 +22,10 @@ export default function IPraksis() {
           </div>
 
           {/* Panels */}
-          <div className="grid grid-cols-2">
+          <div className="grid grid-cols-1 md:grid-cols-2">
 
-            {/* Venstre: rånoter */}
-            <div className="px-11 py-12 border-r border-[#F0EDE8]">
+            {/* Venstre: rånoter — skjult på mobil */}
+            <div className="hidden md:block px-11 py-12 border-r border-[#F0EDE8]">
               <div className="flex items-center gap-[10px] font-sans text-[11px] font-medium tracking-[0.12em] uppercase text-muted mb-7">
                 Dine rånoter
               </div>
@@ -37,7 +37,7 @@ export default function IPraksis() {
             </div>
 
             {/* Højre: journaludkast */}
-            <div className="px-11 py-12">
+            <div className="px-6 py-8 md:px-11 md:py-12">
               <div className="flex items-center gap-[10px] font-sans text-[11px] font-medium tracking-[0.12em] uppercase text-muted mb-7">
                 Journaludkast
                 <span className="bg-evergreen/[0.08] text-evergreen font-sans text-[9px] font-medium tracking-[0.1em] px-[8px] py-[2px]">

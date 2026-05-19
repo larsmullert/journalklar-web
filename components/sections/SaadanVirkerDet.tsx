@@ -20,7 +20,7 @@ const trin = [
 
 export default function SaadanVirkerDet() {
   return (
-    <section id="hvordan" className="py-[120px] px-16">
+    <section id="hvordan" className="py-16 px-6 md:py-[120px] md:px-16">
       <div className="max-w-[1100px] mx-auto">
         <SectionLabel>Sådan virker det</SectionLabel>
         <h2>Tre trin. Ingen oplæring.</h2>
@@ -28,11 +28,11 @@ export default function SaadanVirkerDet() {
           Arbejdsgangen er designet til at passe ind i det, du allerede gør umiddelbart efter en session — ikke til at erstatte det.
         </p>
 
-        <div className="grid grid-cols-3 mt-12 border border-sand">
+        <div className="grid grid-cols-1 md:grid-cols-3 mt-12 border border-sand">
           {trin.map(({ num, title, text }, i) => (
             <div
               key={num}
-              className={`relative px-10 py-12 bg-white ${i < trin.length - 1 ? "border-r border-sand after:content-['→'] after:absolute after:top-[50px] after:-right-[14px] after:text-[16px] after:text-muted-light after:z-[1]" : ""}`}
+              className={`relative px-7 py-9 md:px-10 md:py-12 bg-white ${i < trin.length - 1 ? "border-b border-sand md:border-b-0 md:border-r md:after:content-['→'] md:after:absolute md:after:top-[50px] md:after:-right-[14px] md:after:text-[16px] md:after:text-muted-light md:after:z-[1]" : ""}`}
             >
               <div className="font-serif text-[52px] font-light text-evergreen opacity-[0.18] leading-none mb-[22px]">
                 {num}

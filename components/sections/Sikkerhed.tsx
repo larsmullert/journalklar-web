@@ -25,7 +25,7 @@ const promises = [
 
 export default function Sikkerhed() {
   return (
-    <section id="sikkerhed" className="py-[120px] px-16">
+    <section id="sikkerhed" className="py-16 px-6 md:py-[120px] md:px-16">
       <div className="max-w-[1100px] mx-auto">
         <SectionLabel>Data og fortrolighed</SectionLabel>
         <h2>Dine klienters fortrolighed forbliver fortrolig.</h2>
@@ -33,14 +33,14 @@ export default function Sikkerhed() {
           Det er det eneste der reelt betyder noget. Her er fire ting du bør vide — på almindeligt dansk.
         </p>
 
-        <div className="grid grid-cols-[1fr_360px] mt-12 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_360px] mt-12 items-stretch">
 
           {/* Venstre: 4 løfter */}
-          <div className="border border-sand border-r-0 bg-white">
+          <div className="border border-sand md:border-r-0 bg-white">
             {promises.map(({ num, title, text }, i) => (
               <div
                 key={num}
-                className={`px-10 py-8 grid grid-cols-[36px_1fr] gap-5 items-start ${i < promises.length - 1 ? "border-b border-sand" : ""}`}
+                className={`px-6 py-6 md:px-10 md:py-8 grid grid-cols-[36px_1fr] gap-5 items-start ${i < promises.length - 1 ? "border-b border-sand" : ""}`}
               >
                 <div className="font-serif text-[30px] font-light text-evergreen opacity-[0.22] leading-[1.1]">
                   {num}

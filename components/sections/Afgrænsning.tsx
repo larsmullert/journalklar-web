@@ -18,7 +18,7 @@ const goerIkke = [
 
 export default function Afgrænsning() {
   return (
-    <section className="py-[120px] px-16">
+    <section className="py-16 px-6 md:py-[120px] md:px-16">
       <div className="max-w-[1100px] mx-auto">
         <SectionLabel>Hvad JournalKlar er — og ikke er</SectionLabel>
         <h2>Et redskab. Ikke en autopilot.</h2>
@@ -26,10 +26,10 @@ export default function Afgrænsning() {
           JournalKlar leverer strukturen. Du leverer indholdet. Outputtet hedder altid &ldquo;udkast&rdquo;. Hvad der bliver til journal, afgør du.
         </p>
 
-        <div className="grid grid-cols-2 max-w-[760px] mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 max-w-[760px] mt-12">
 
           {/* Gør */}
-          <div className="bg-evergreen px-10 py-10">
+          <div className="bg-evergreen px-8 py-9 md:px-10 md:py-10">
             <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-parchment/60 mb-7">
               JournalKlar gør
             </div>
@@ -46,7 +46,7 @@ export default function Afgrænsning() {
           </div>
 
           {/* Gør ikke */}
-          <div className="border border-sand border-l-0 px-10 py-10">
+          <div className="border border-sand md:border-l-0 px-8 py-9 md:px-10 md:py-10">
             <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-muted mb-7">
               JournalKlar gør ikke
             </div>
