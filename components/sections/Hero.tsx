@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="bg-parchment py-24 px-16">
+    <section className="bg-parchment py-16 px-6 md:py-24 md:px-16">
       <div className="max-w-[1100px] mx-auto">
         <h1 className="text-evergreen max-w-[680px] mb-6">
           [PLACEHOLDER — primær headline til psykologen]
@@ -14,10 +14,10 @@ export default function Hero() {
           [PLACEHOLDER trust marker — fx lovgrundlag eller datasikkerhed]
         </p>
 
-        <div className="flex items-center gap-4">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
           <a
             href="#"
-            className="bg-orange text-parchment font-sans font-medium text-sm px-6 py-3"
+            className="bg-orange text-parchment font-sans font-medium text-sm px-6 py-3 w-full sm:w-auto text-center"
           >
             [PLACEHOLDER primær CTA]
           </a>

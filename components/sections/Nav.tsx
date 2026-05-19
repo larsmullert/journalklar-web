@@ -1,7 +1,7 @@
 export default function Nav() {
   return (
     <nav className="sticky top-0 z-50 bg-parchment border-b border-sand">
-      <div className="max-w-[1100px] mx-auto px-16 h-16 flex items-center justify-between">
+      <div className="max-w-[1100px] mx-auto px-6 md:px-16 h-14 md:h-16 flex items-center justify-between">
         <a href="/" className="font-serif text-evergreen text-xl tracking-tight">
           [PLACEHOLDER logo]
         </a>
