@@ -3,8 +3,8 @@ import SectionLabel from "@/components/ui/SectionLabel";
 const promises = [
   {
     num: "1",
-    title: "Vi gemmer ikke dine noter",
-    text: "Dine noter eksisterer kun i det sekund udkastet genereres. Bagefter er de væk — automatisk og uden undtagelse. Intet gemmes på nogen server.",
+    title: "Vi gemmer ikke dine journalnoter efter generering",
+    text: "Dine noter behandles kun for at generere journaludkastet. Når behandlingen er afsluttet, gemmes indholdet ikke i JournalKlar.",
   },
   {
     num: "2",
@@ -13,8 +13,8 @@ const promises = [
   },
   {
     num: "3",
-    title: "Dine data forlader aldrig Europa",
-    text: "Både appen og AI-behandlingen foregår inden for EU — i Danmark og Frankfurt. Ingen data sendes til USA eller andre tredjelande.",
+    title: "Behandling inden for EU",
+    text: "JournalKlar er bygget til europæisk databehandling. App og AI-behandling kører inden for EU, og databehandleraftalen beskriver underleverandører, datastrømme og behandlingsgrundlag.",
   },
   {
     num: "4",

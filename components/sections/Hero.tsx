@@ -46,7 +46,7 @@ export default function Hero() {
               <path d="M7.5 1.5L2.5 3.8V7.5C2.5 10.5 4.7 13.3 7.5 14C10.3 13.3 12.5 10.5 12.5 7.5V3.8L7.5 1.5Z" stroke="#1D3A2F" strokeWidth="1.2" fill="none"/>
               <polyline points="5,7.5 7,9.5 10,6" stroke="#1D3A2F" strokeWidth="1.2" fill="none" strokeLinecap="round"/>
             </svg>
-            <span>Ingen lydoptagelser. AI-modellen trænes ikke på dit input — og dine noter gemmes ikke efter behandlingen.</span>
+            <span>Ingen lydoptagelser. Ingen AI-træning på dit input. Journalnoter gemmes ikke i JournalKlar efter generering.</span>
           </div>
         </div>
 

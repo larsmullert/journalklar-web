@@ -3,18 +3,18 @@ import SectionLabel from "@/components/ui/SectionLabel";
 const trin = [
   {
     num: "01",
-    title: "Du skriver dine noter",
-    text: "Observationer, temaer, interventioner, aftaler. Indtal eller skriv som du normalt ville tænke — umiddelbart efter sessionen. Din selektion er fundamentet.",
+    title: "Du skriver eller indtaler dine noter",
+    text: "Observationer, temaer, interventioner, aftaler. Indtal eller skriv som psykolog og ikke som en sekretær — umiddelbart efter sessionen. Din faglighed er fundamentet.",
   },
   {
     num: "02",
     title: "JournalKlar strukturerer",
-    text: "Dine noter omsættes til et struktureret journaludkast baseret på BEK 1361/2025. Manglende oplysninger markeres tydeligt, så du aktivt tager stilling.",
+    text: "Dine noter omsættes til et struktureret journaludkast baseret på den nye BEK 1361/2025. Manglende oplysninger markeres tydeligt, så du aktivt tager stilling.",
   },
   {
     num: "03",
     title: "Du godkender",
-    text: "Du læser igennem, justerer og overfører til dit eget journalsystem. Udkastet er altid et udkast. Du afgør hvad der bliver til journal.",
+    text: "Du læser igennem og overfører til dit eget journalsystem. Udkastet er altid et udkast. Du afgør hvad der bliver til journal.",
   },
 ];
 
