@@ -1,23 +1,38 @@
 import SectionLabel from "@/components/ui/SectionLabel";
 
+const problemer = [
+  {
+    titel: "Nye krav. Samme travle praksis.",
+    tekst: "Journalen skal være mere præcis, dækkende og systematisk. Men tiden efter sessionen er stadig kort, hovedet er stadig fyldt, og næste klient venter ofte lige om lidt.",
+  },
+  {
+    titel: "AI kan hjælpe — men ikke overtage.",
+    tekst: "Mange psykologer kan godt se værdien i et journalværktøj. Problemet opstår, når værktøjet begynder med en fuld optagelse og lader en black-box afgøre, hvad der var vigtigt i samtalen.",
+  },
+  {
+    titel: "Det vigtigste kan ikke altid transskriberes.",
+    tekst: "En psykologs vurdering bygger ikke kun på ordene i rummet. Den bygger også på pauser, timing, kontakt, affekt, undgåelser, forskydninger og det kliniske blik for, hvad der faktisk betyder noget.",
+  },
+];
+
 export default function Genkendelse() {
   return (
     <section className="py-[120px] px-16">
       <div className="max-w-[1100px] mx-auto">
-        <SectionLabel>[PLACEHOLDER label]</SectionLabel>
-        <h2 className="max-w-[660px]">[PLACEHOLDER headline]</h2>
+        <SectionLabel>Problemet</SectionLabel>
+        <h2 className="max-w-[660px]">Journalføringen er blevet mere krævende. Ikke mindre faglig.</h2>
         <p className="max-w-[520px] text-[#505050] mb-0">
-          [PLACEHOLDER — intro-sætning der sætter konteksten for problemet.]
+          Den nye journalføringsbekendtgørelse stiller skarpere krav til, hvad der skal fremgå af journalen. Samtidig mangler mange psykologer stadig en tydelig psykologfaglig praksis for, hvordan kravene omsættes i hverdagen. JournalKlar er bygget til netop det mellemrum: mere struktur — uden at flytte det faglige skøn væk fra psykologen.
         </p>
 
         <div className="grid grid-cols-3 gap-8 mt-12">
-          {[1, 2, 3].map((i) => (
-            <div key={i} className="border-t-2 border-sand pt-6">
+          {problemer.map(({ titel, tekst }) => (
+            <div key={titel} className="border-t-2 border-sand pt-6">
               <p className="font-sans text-[15px] font-medium text-evergreen mb-2">
-                [PLACEHOLDER — problemtitel {i}]
+                {titel}
               </p>
               <p className="font-sans text-[14px] font-light text-[#505050] leading-[1.75] mb-0">
-                [PLACEHOLDER — beskrivelse af det konkrete problem psykologen genkender.]
+                {tekst}
               </p>
             </div>
           ))}
