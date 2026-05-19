@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import SectionLabel from "@/components/ui/SectionLabel";
 
 const svar = [
@@ -44,6 +47,8 @@ const svar = [
 ];
 
 export default function FAQ() {
+  const [open, setOpen] = useState<number | null>(null);
+
   return (
     <section className="py-[120px] px-16">
       <div className="max-w-[1100px] mx-auto">
@@ -51,19 +56,42 @@ export default function FAQ() {
         <h2 className="max-w-[520px]">De spørgsmål du allerede har.</h2>
 
         <div className="mt-12 max-w-[720px]">
-          {svar.map(({ q, a }, i) => (
-            <div
-              key={q}
-              className={`py-8 ${i < svar.length - 1 ? "border-b border-sand" : ""}`}
-            >
-              <p className="font-sans text-[15px] font-medium text-evergreen mb-3 leading-[1.5]">
-                {q}
-              </p>
-              <p className="font-sans text-[14px] font-light text-[#505050] leading-[1.75] mb-0">
-                {a}
-              </p>
-            </div>
-          ))}
+          {svar.map(({ q, a }, i) => {
+            const isOpen = open === i;
+            return (
+              <div
+                key={q}
+                className={i < svar.length - 1 ? "border-b border-sand" : ""}
+              >
+                <button
+                  type="button"
+                  onClick={() => setOpen(isOpen ? null : i)}
+                  className="w-full flex items-center justify-between gap-6 py-7 text-left cursor-pointer"
+                  aria-expanded={isOpen}
+                >
+                  <span className="font-sans text-[15px] font-medium text-evergreen leading-[1.5]">
+                    {q}
+                  </span>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    aria-hidden="true"
+                    className={`flex-shrink-0 transition-transform duration-200 ${isOpen ? "rotate-45" : ""}`}
+                  >
+                    <line x1="7" y1="1" x2="7" y2="13" stroke="#1D3A2F" strokeWidth="1.3" strokeLinecap="round"/>
+                    <line x1="1" y1="7" x2="13" y2="7" stroke="#1D3A2F" strokeWidth="1.3" strokeLinecap="round"/>
+                  </svg>
+                </button>
+                {isOpen && (
+                  <p className="font-sans text-[14px] font-light text-[#505050] leading-[1.75] pb-7 mt-0 mb-0">
+                    {a}
+                  </p>
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
