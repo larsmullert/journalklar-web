@@ -26,14 +26,14 @@ export default function Afgrænsning() {
           JournalKlar leverer strukturen. Du leverer indholdet. Outputtet hedder altid &ldquo;udkast&rdquo;. Hvad der bliver til journal, afgør du.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 max-w-[920px] mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
 
           {/* Gør */}
-          <div className="bg-evergreen px-8 py-9 md:px-10 md:py-10 [border-top:1px_solid_rgba(29,58,47,0.2)]">
+          <div className="bg-evergreen p-6 md:p-8">
             <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-parchment/60 mb-7">
               JournalKlar gør
             </div>
-            <div className="flex flex-col gap-[14px]">
+            <div className="flex flex-col gap-4">
               {goer.map((item) => (
                 <div key={item} className="flex items-start gap-[10px]">
                   <svg className="flex-shrink-0 mt-[3px]" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
@@ -46,11 +46,11 @@ export default function Afgrænsning() {
           </div>
 
           {/* Gør ikke */}
-          <div className="border border-sand [border-top-color:rgba(29,58,47,0.2)] md:border-l-0 px-8 py-9 md:px-10 md:py-10">
+          <div className="border border-sand bg-sand [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
             <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-muted mb-7">
               JournalKlar gør ikke
             </div>
-            <div className="flex flex-col gap-[14px]">
+            <div className="flex flex-col gap-4">
               {goerIkke.map((item) => (
                 <div key={item} className="flex items-start gap-[10px]">
                   <svg className="flex-shrink-0 mt-[3px]" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">

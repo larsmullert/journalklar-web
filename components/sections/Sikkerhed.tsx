@@ -33,14 +33,14 @@ export default function Sikkerhed() {
           Det er det eneste der reelt betyder noget. Her er fire ting du bør vide — på almindeligt dansk.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_360px] mt-12 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_360px] gap-6 mt-12 items-stretch">
 
           {/* Venstre: 4 løfter */}
-          <div className="border border-sand md:border-r-0 bg-white">
+          <div className="border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)]">
             {promises.map(({ num, title, text }, i) => (
               <div
                 key={num}
-                className={`px-6 py-6 md:px-10 md:py-8 grid grid-cols-[36px_1fr] gap-5 items-start ${i < promises.length - 1 ? "border-b border-sand" : ""}`}
+                className={`p-6 md:p-8 grid grid-cols-[36px_1fr] gap-5 items-start ${i < promises.length - 1 ? "border-b border-sand" : ""}`}
               >
                 <div className="font-serif text-[30px] font-light text-evergreen opacity-[0.22] leading-[1.1]">
                   {num}
@@ -58,7 +58,7 @@ export default function Sikkerhed() {
           </div>
 
           {/* Højre: Radikal transparens */}
-          <div className="bg-evergreen px-10 py-12 flex flex-col">
+          <div className="bg-evergreen p-6 md:p-8 flex flex-col">
             <div>
               <div className="flex items-center gap-[12px] font-sans text-[11px] font-medium tracking-[0.16em] uppercase text-parchment/40 mb-7 before:content-[''] before:block before:w-[18px] before:h-px before:bg-parchment/30 before:shrink-0">
                 Radikal transparens

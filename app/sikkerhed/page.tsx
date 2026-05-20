@@ -324,11 +324,11 @@ export default function SikkerhedPage() {
             <SectionLabel>Kort sagt</SectionLabel>
             <h2>Fire ting du bør vide.</h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-12 max-w-[860px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
               {kortSagt.map(({ title, text, note }) => (
                 <div
                   key={title}
-                  className="border border-sand bg-white px-7 py-8 shadow-[0_1px_4px_rgba(29,58,47,0.05)] hover:shadow-[0_2px_10px_rgba(29,58,47,0.09)] transition-shadow"
+                  className="border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8 hover:shadow-[0_2px_10px_rgba(29,58,47,0.09)] transition-shadow"
                 >
                   <div className="w-7 h-7 border border-sand flex items-center justify-center mb-5">
                     <CheckSm />
@@ -386,10 +386,10 @@ export default function SikkerhedPage() {
               Mange AI-værktøjer til sundhedsfaglig dokumentation starter med at optage eller transskribere hele samtalen. JournalKlar er bygget anderledes.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 mt-12 max-w-[760px] shadow-[0_1px_8px_rgba(29,58,47,0.07)]">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
 
               {/* Transskriptions-AI */}
-              <div className="border border-sand bg-white px-8 py-9">
+              <div className="border border-sand bg-sand [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
                 <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-muted mb-6">
                   Transskriptions-AI
                 </div>
@@ -404,7 +404,7 @@ export default function SikkerhedPage() {
               </div>
 
               {/* JournalKlar */}
-              <div className="bg-evergreen border border-evergreen/10 md:border-l-0 px-8 py-9">
+              <div className="bg-evergreen p-6 md:p-8">
                 <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-parchment/55 mb-6">
                   JournalKlar
                 </div>
@@ -437,11 +437,11 @@ export default function SikkerhedPage() {
               De systemer der behandler data, hvad de bruges til — og om klientindhold indgår.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-12 max-w-[1000px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
               {systemCards.map((card) => (
                 <div
                   key={card.name}
-                  className="border border-sand bg-white px-6 py-6 shadow-[0_1px_4px_rgba(29,58,47,0.05)] hover:shadow-[0_2px_10px_rgba(29,58,47,0.09)] transition-shadow"
+                  className="border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8 hover:shadow-[0_2px_10px_rgba(29,58,47,0.09)] transition-shadow"
                 >
                   <div className="flex items-start justify-between gap-3 mb-3">
                     <div>
@@ -474,14 +474,14 @@ export default function SikkerhedPage() {
             <SectionLabel>Opbevaring</SectionLabel>
             <h2>Hvad gemmes — og hvad gemmes ikke?</h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 mt-12 max-w-[760px] shadow-[0_1px_8px_rgba(29,58,47,0.07)]">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
 
               {/* Gemmes ikke — visuelt primær */}
-              <div className="bg-evergreen px-8 py-9">
+              <div className="bg-evergreen p-6 md:p-8">
                 <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-parchment/55 mb-6">
                   Gemmes ikke
                 </div>
-                <div className="flex flex-col gap-[14px]">
+                <div className="flex flex-col gap-4">
                   {gemmerIkke.map((item) => (
                     <div key={item} className="flex items-start gap-3">
                       <CheckSm light />
@@ -492,11 +492,11 @@ export default function SikkerhedPage() {
               </div>
 
               {/* Gemmes — visuelt sekundær */}
-              <div className="border border-sand bg-white md:border-l-0 px-8 py-9">
+              <div className="border border-sand bg-sand [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
                 <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-muted mb-6">
                   Gemmes
                 </div>
-                <div className="flex flex-col gap-[14px]">
+                <div className="flex flex-col gap-4">
                   {gemmes.map((item) => (
                     <div key={item} className="flex items-start gap-3">
                       <div className="mt-[2px]">
@@ -577,7 +577,7 @@ export default function SikkerhedPage() {
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Dokumentation</SectionLabel>
 
-            <div className="bg-evergreen px-8 py-10 md:px-12 md:py-12 max-w-[760px]">
+            <div className="bg-evergreen p-6 md:p-8 max-w-[760px]">
               <h3 className="text-parchment mb-4" style={{ color: "#F7F4EF" }}>
                 Databehandleraftalen underskrives inden brug.
               </h3>

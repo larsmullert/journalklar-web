@@ -33,10 +33,10 @@ export default function PrisOgCTA() {
         </p>
 
         {/* Prisplaner */}
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 max-w-[860px] mt-12">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 mt-12">
 
           {/* Månedlig */}
-          <div className="relative px-7 py-9 md:px-11 md:py-12 bg-white border border-sand">
+          <div className="relative p-6 md:p-8 bg-white border border-sand [border-top:2px_solid_rgba(29,58,47,0.2)]">
             <div className="font-sans text-[11px] font-medium tracking-[0.12em] uppercase text-muted mb-6">
               Månedlig
             </div>
@@ -46,9 +46,9 @@ export default function PrisOgCTA() {
             <div className="font-sans text-[13px] text-muted mt-1 mb-7 font-light">
               pr. måned ekskl. moms · ingen binding
             </div>
-            <div className="font-sans text-[14px] font-light text-graphite leading-[2]">
+            <div className="font-sans text-[14px] font-light text-graphite flex flex-col gap-4">
               {maanedligFeatures.map((feature) => (
-                <div key={feature} className="flex items-start gap-[10px] mb-1">
+                <div key={feature} className="flex items-start gap-3">
                   <CheckIcon />
                   <span>{feature}</span>
                 </div>
@@ -57,7 +57,7 @@ export default function PrisOgCTA() {
           </div>
 
           {/* Årsabonnement */}
-          <div className="relative px-7 py-9 md:px-11 md:py-12 bg-white border border-evergreen/20">
+          <div className="relative p-6 md:p-8 bg-white border border-evergreen/20 [border-top:2px_solid_rgba(29,58,47,0.2)]">
             <span className="absolute -top-px -right-px bg-evergreen text-white font-sans text-[10px] font-medium tracking-[0.1em] uppercase px-[14px] py-[5px]">
               Anbefalet
             </span>
@@ -73,9 +73,9 @@ export default function PrisOgCTA() {
             <div className="font-sans text-[13px] text-orange font-normal mb-7">
               Spar 389 kr. — svarende til 166 kr./md.
             </div>
-            <div className="font-sans text-[14px] font-light text-graphite leading-[2]">
+            <div className="font-sans text-[14px] font-light text-graphite flex flex-col gap-4">
               {aarsFeatures.map((feature) => (
-                <div key={feature} className="flex items-start gap-[10px] mb-1">
+                <div key={feature} className="flex items-start gap-3">
                   <CheckIcon />
                   <span>{feature}</span>
                 </div>
@@ -85,7 +85,7 @@ export default function PrisOgCTA() {
         </div>
 
         {/* CTA-blok */}
-        <div className="mt-9 max-w-[860px] px-6 py-7 md:px-11 md:py-9 bg-parchment border border-sand grid grid-cols-1 gap-6 md:grid-cols-[1fr_auto] md:gap-8 md:items-center">
+        <div className="mt-9 p-6 md:p-8 bg-parchment border border-sand [border-top:2px_solid_rgba(29,58,47,0.2)] grid grid-cols-1 gap-6 md:grid-cols-[1fr_auto] md:items-center">
           <div className="font-sans text-[14px] font-light text-[#505050] leading-[1.75]">
             <strong className="font-medium text-evergreen">30 dages gratis prøveperiode</strong>
             {" "}— ingen kreditkort kræves ved opstart. Du opretter en konto, underskriver databehandleraftalen og er i gang. Ingen installation. Ingen oplæring.

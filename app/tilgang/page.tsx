@@ -318,8 +318,8 @@ export default function TilgangPage() {
             </div>
 
             {/* Comparison */}
-            <div className="grid grid-cols-1 md:grid-cols-2 max-w-[760px] shadow-[0_1px_8px_rgba(29,58,47,0.07)]">
-              <div className="border border-sand bg-white px-8 py-9">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="border border-sand bg-sand [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
                 <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-muted mb-6">
                   Transskriptionsbaseret AI
                 </div>
@@ -338,7 +338,7 @@ export default function TilgangPage() {
                 </div>
               </div>
 
-              <div className="bg-evergreen border border-evergreen/10 md:border-l-0 px-8 py-9">
+              <div className="bg-evergreen p-6 md:p-8">
                 <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-parchment/55 mb-6">
                   JournalKlar
                 </div>
@@ -388,8 +388,8 @@ export default function TilgangPage() {
             </div>
 
             {/* Two lists */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-[760px] mt-4">
-              <div className="border border-sand bg-white px-7 py-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+              <div className="border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
                 <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-muted mb-5">
                   AI må gerne hjælpe med
                 </div>
@@ -403,7 +403,7 @@ export default function TilgangPage() {
                 </div>
               </div>
 
-              <div className="border border-sand bg-white px-7 py-8 md:border-l-0">
+              <div className="border border-sand bg-sand [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
                 <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-muted mb-5">
                   AI bør ikke overtage
                 </div>
@@ -439,9 +439,9 @@ export default function TilgangPage() {
               JournalKlar er ikke bygget til at virke menneskeligt. Det er bygget til at være nyttigt, afgrænset og gennemskueligt.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 mt-12 max-w-[920px] shadow-[0_1px_8px_rgba(29,58,47,0.07)]">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
               {/* Gør */}
-              <div className="bg-evergreen px-8 py-9 [border-top:1px_solid_rgba(29,58,47,0.2)]">
+              <div className="bg-evergreen p-6 md:p-8">
                 <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-parchment/55 mb-6">
                   JournalKlar gør
                 </div>
@@ -456,7 +456,7 @@ export default function TilgangPage() {
               </div>
 
               {/* Gør ikke */}
-              <div className="border border-sand bg-white [border-top-color:rgba(29,58,47,0.2)] md:border-l-0 px-8 py-9">
+              <div className="border border-sand bg-sand [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
                 <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-muted mb-6">
                   JournalKlar gør ikke
                 </div>
@@ -493,11 +493,11 @@ export default function TilgangPage() {
             <SectionLabel>Produktprincipper</SectionLabel>
             <h2 className="max-w-[480px]">De faglige valg er bygget ind i produktet.</h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
               {principper.map(({ num, title, text }) => (
                 <div
                   key={num}
-                  className="border border-sand bg-white px-7 py-8 shadow-[0_1px_4px_rgba(29,58,47,0.04)] hover:shadow-[0_2px_10px_rgba(29,58,47,0.08)] transition-shadow"
+                  className="border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8 hover:shadow-[0_2px_10px_rgba(29,58,47,0.08)] transition-shadow"
                 >
                   <div className="font-serif text-[28px] font-normal text-evergreen/25 leading-none mb-5 tracking-[-0.02em]">
                     {num}
@@ -570,12 +570,12 @@ export default function TilgangPage() {
             <SectionLabel>Videre læsning</SectionLabel>
             <h2 className="max-w-[440px]">Undersøg selv, hvordan JournalKlar er bygget.</h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-12 max-w-[860px]">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
               {videreLinks.map(({ title, text, linkText, href }) => (
                 <a
                   key={title}
                   href={href}
-                  className="group border border-sand bg-white px-7 py-8 flex flex-col justify-between gap-6 shadow-[0_1px_4px_rgba(29,58,47,0.05)] hover:shadow-[0_2px_10px_rgba(29,58,47,0.09)] transition-shadow"
+                  className="group border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8 flex flex-col justify-between gap-6 hover:shadow-[0_2px_10px_rgba(29,58,47,0.09)] transition-shadow"
                 >
                   <div>
                     <div className="font-sans text-[15px] font-medium text-evergreen mb-3">{title}</div>

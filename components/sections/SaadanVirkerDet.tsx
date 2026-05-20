@@ -28,11 +28,11 @@ export default function SaadanVirkerDet() {
           Arbejdsgangen er designet til at passe ind i det, du allerede gør umiddelbart efter en session — ikke til at erstatte det.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 mt-12 border border-sand">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
           {trin.map(({ num, title, text }, i) => (
             <div
               key={num}
-              className={`relative px-7 py-9 md:px-10 md:py-12 bg-white ${i < trin.length - 1 ? "border-b border-sand md:border-b-0 md:border-r md:after:content-['→'] md:after:absolute md:after:top-[50px] md:after:-right-[14px] md:after:text-[16px] md:after:text-muted-light md:after:z-[1]" : ""}`}
+              className={`border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8${i < trin.length - 1 ? " relative md:after:content-['→'] md:after:absolute md:after:top-[50px] md:after:-right-[12px] md:after:text-[16px] md:after:text-muted-light md:after:z-[1]" : ""}`}
             >
               <div className="font-serif text-[52px] font-light text-evergreen opacity-[0.18] leading-none mb-[22px]">
                 {num}

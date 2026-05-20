@@ -175,14 +175,14 @@ export default function OmPage() {
               </div>
 
               {/* Højre: produktfokus */}
-              <div className="border border-sand bg-white px-7 py-8">
+              <div className="border border-sand bg-sand [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
                 <div className="font-sans text-[10px] font-medium tracking-[0.16em] uppercase text-muted mb-5">
                   Hvad JournalKlar gør
                 </div>
                 <p className="font-sans text-[13px] font-light text-[#505050] leading-[1.7] mb-6">
                   Et specialiseret redskab til ét trin: fra psykologens egne noter til et struktureret journaludkast.
                 </p>
-                <div className="flex flex-col gap-3">
+                <div className="flex flex-col gap-4">
                   {[
                     "Egne noter som udgangspunkt",
                     "Ingen sessionoptagelse",
@@ -257,10 +257,10 @@ export default function OmPage() {
             </p>
 
             {/* Gør / Gør ikke */}
-            <div className="grid grid-cols-1 md:grid-cols-2 mt-12 max-w-[920px] shadow-[0_1px_8px_rgba(29,58,47,0.07)]">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
 
               {/* Gør */}
-              <div className="bg-evergreen px-8 py-9">
+              <div className="bg-evergreen p-6 md:p-8">
                 <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-parchment/55 mb-6">
                   JournalKlar gør
                 </div>
@@ -277,7 +277,7 @@ export default function OmPage() {
               </div>
 
               {/* Gør ikke */}
-              <div className="border border-sand bg-white md:border-l-0 px-8 py-9">
+              <div className="border border-sand bg-sand [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
                 <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-muted mb-6">
                   JournalKlar gør ikke
                 </div>
@@ -306,12 +306,12 @@ export default function OmPage() {
               Hvis du overvejer at bruge et AI-værktøj i din praksis, skal du ikke bare mødes med påstande. Du skal kunne se, hvordan værktøjet er tænkt, bygget og afgrænset.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-12 max-w-[860px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
               {laesMore.map(({ title, text, linkText, href }) => (
                 <a
                   key={title}
                   href={href}
-                  className="group border border-sand bg-white px-7 py-8 flex flex-col justify-between gap-6 shadow-[0_1px_4px_rgba(29,58,47,0.05)] hover:shadow-[0_2px_10px_rgba(29,58,47,0.09)] transition-shadow"
+                  className="group border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8 flex flex-col justify-between gap-6 hover:shadow-[0_2px_10px_rgba(29,58,47,0.09)] transition-shadow"
                 >
                   <div>
                     <div className="font-sans text-[15px] font-medium text-evergreen mb-3">{title}</div>
