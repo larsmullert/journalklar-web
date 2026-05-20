@@ -388,31 +388,36 @@ export default function SikkerhedPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
 
-              {/* Transskriptions-AI */}
-              <div className="border border-sand bg-sand [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-muted mb-6">
-                  Transskriptions-AI
-                </div>
-                <div className="flex flex-col gap-4">
-                  {transcriberItems.map((item) => (
-                    <div key={item} className="flex items-start gap-3">
-                      <CrossSm />
-                      <span className="font-sans text-[14px] font-light text-[#505050] leading-[1.5] mt-[-1px]">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* JournalKlar */}
-              <div className="bg-evergreen p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-parchment/55 mb-6">
+              {/* JournalKlar — venstre */}
+              <div className="bg-white border border-sand [border-top:4px_solid_#1D3A2F] p-6 md:p-8">
+                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-evergreen mb-6">
                   JournalKlar
                 </div>
                 <div className="flex flex-col gap-4">
                   {journalklarItems.map((item) => (
                     <div key={item} className="flex items-start gap-3">
-                      <CheckSm light />
-                      <span className="font-sans text-[14px] font-light text-parchment/90 leading-[1.5] mt-[-1px]">{item}</span>
+                      <svg className="flex-shrink-0 mt-[4px]" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                        <polyline points="2,7 5.5,10.5 12,4" stroke="#1D3A2F" strokeWidth="1.3" fill="none" strokeLinecap="round"/>
+                      </svg>
+                      <span className="font-sans text-[16px] font-light text-graphite leading-[1.6]">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Transskriptions-AI — højre */}
+              <div className="bg-white border border-sand [border-top:4px_solid_#E8E4DF] p-6 md:p-8">
+                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-evergreen mb-6">
+                  Transskriptions-AI
+                </div>
+                <div className="flex flex-col gap-4">
+                  {transcriberItems.map((item) => (
+                    <div key={item} className="flex items-start gap-3">
+                      <svg className="flex-shrink-0 mt-[4px]" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                        <line x1="3.5" y1="3.5" x2="10.5" y2="10.5" stroke="#2C2C2C" strokeWidth="1.3" strokeOpacity="0.4" strokeLinecap="round"/>
+                        <line x1="10.5" y1="3.5" x2="3.5" y2="10.5" stroke="#2C2C2C" strokeWidth="1.3" strokeOpacity="0.4" strokeLinecap="round"/>
+                      </svg>
+                      <span className="font-sans text-[16px] font-light text-graphite leading-[1.6]">{item}</span>
                     </div>
                   ))}
                 </div>
@@ -420,7 +425,7 @@ export default function SikkerhedPage() {
 
             </div>
 
-            <p className="font-sans text-[13px] font-light text-muted mt-5 max-w-[540px] leading-[1.7]">
+            <p className="font-sans text-[14px] font-light text-graphite/60 border-t border-sand pt-6 mt-6 max-w-[680px]">
               Det er ikke kun et teknisk valg. Det er et psykologfagligt valg om dataminimering, fagligt ansvar og respekt for klientens fortrolighed.
             </p>
           </div>
@@ -476,35 +481,36 @@ export default function SikkerhedPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
 
-              {/* Gemmes ikke — visuelt primær */}
-              <div className="bg-evergreen p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-parchment/55 mb-6">
+              {/* Gemmes ikke — venstre */}
+              <div className="bg-white border border-sand [border-top:4px_solid_#1D3A2F] p-6 md:p-8">
+                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-evergreen mb-6">
                   Gemmes ikke
                 </div>
                 <div className="flex flex-col gap-4">
                   {gemmerIkke.map((item) => (
                     <div key={item} className="flex items-start gap-3">
-                      <CheckSm light />
-                      <span className="font-sans text-[14px] font-light text-parchment/90 leading-[1.5] mt-[-1px]">{item}</span>
+                      <svg className="flex-shrink-0 mt-[4px]" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                        <polyline points="2,7 5.5,10.5 12,4" stroke="#1D3A2F" strokeWidth="1.3" fill="none" strokeLinecap="round"/>
+                      </svg>
+                      <span className="font-sans text-[16px] font-light text-graphite leading-[1.6]">{item}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              {/* Gemmes — visuelt sekundær */}
-              <div className="border border-sand bg-sand [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-muted mb-6">
+              {/* Gemmes — højre */}
+              <div className="bg-white border border-sand [border-top:4px_solid_#E8E4DF] p-6 md:p-8">
+                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-evergreen mb-6">
                   Gemmes
                 </div>
                 <div className="flex flex-col gap-4">
                   {gemmes.map((item) => (
                     <div key={item} className="flex items-start gap-3">
-                      <div className="mt-[2px]">
-                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true">
-                          <circle cx="5.5" cy="5.5" r="3.5" stroke="#A09890" strokeWidth="1.2" fill="none"/>
-                        </svg>
-                      </div>
-                      <span className="font-sans text-[14px] font-light text-[#505050] leading-[1.5] mt-[-1px]">{item}</span>
+                      <svg className="flex-shrink-0 mt-[4px]" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                        <line x1="3.5" y1="3.5" x2="10.5" y2="10.5" stroke="#2C2C2C" strokeWidth="1.3" strokeOpacity="0.4" strokeLinecap="round"/>
+                        <line x1="10.5" y1="3.5" x2="3.5" y2="10.5" stroke="#2C2C2C" strokeWidth="1.3" strokeOpacity="0.4" strokeLinecap="round"/>
+                      </svg>
+                      <span className="font-sans text-[16px] font-light text-graphite leading-[1.6]">{item}</span>
                     </div>
                   ))}
                 </div>
