@@ -30,8 +30,8 @@ export default function Tillid() {
           </div>
 
           {/* Højre: produkt-fakta */}
-          <div className="border border-sand bg-white px-7 py-8">
-            <div className="font-sans text-[10px] font-medium tracking-[0.16em] uppercase text-muted mb-5">
+          <div className="bg-evergreen px-7 py-8">
+            <div className="font-sans text-[10px] font-medium tracking-[0.16em] uppercase text-parchment/40 mb-5">
               Om produktet
             </div>
             <div className="flex flex-col gap-4">
@@ -43,16 +43,16 @@ export default function Tillid() {
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true" className="flex-shrink-0 mt-[3px]">
-                    <polyline points="1.5,5.5 4,8 9.5,2.5" stroke="#1D3A2F" strokeOpacity="0.65" strokeWidth="1.4" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+                    <polyline points="1.5,5.5 4,8 9.5,2.5" stroke="#B5CEC5" strokeWidth="1.4" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  <span className="font-sans text-[13px] font-light text-[#505050] leading-[1.55]">{item}</span>
+                  <span className="font-sans text-[13px] font-light text-parchment/85 leading-[1.55]">{item}</span>
                 </div>
               ))}
             </div>
-            <div className="mt-7 pt-6 border-t border-sand">
+            <div className="mt-7 pt-6 border-t border-parchment/15">
               <a
                 href="/sikkerhed"
-                className="inline-flex items-center gap-[6px] text-evergreen font-sans text-[13px] font-normal border-b border-evergreen/20 pb-[2px] hover:border-evergreen transition-colors"
+                className="inline-flex items-center gap-[6px] text-orange font-sans text-[13px] font-normal border-b border-orange/40 pb-[2px] hover:border-orange transition-colors"
               >
                 Se teknisk dokumentation
                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">

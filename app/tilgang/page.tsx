@@ -431,7 +431,7 @@ export default function TilgangPage() {
         <Rule />
 
         {/* ── 6. Afgrænsning ──────────────────────────────────────── */}
-        <section className="py-16 px-6 md:py-[120px] md:px-16">
+        <section className="py-16 px-6 md:py-16 md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Afgrænsning</SectionLabel>
             <h2 className="max-w-[380px]">Et redskab. Ikke en kollega.</h2>
@@ -441,7 +441,7 @@ export default function TilgangPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 mt-12 max-w-[920px] shadow-[0_1px_8px_rgba(29,58,47,0.07)]">
               {/* Gør */}
-              <div className="bg-evergreen px-8 py-9">
+              <div className="bg-evergreen px-8 py-9 [border-top:1px_solid_rgba(29,58,47,0.2)]">
                 <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-parchment/55 mb-6">
                   JournalKlar gør
                 </div>
@@ -456,7 +456,7 @@ export default function TilgangPage() {
               </div>
 
               {/* Gør ikke */}
-              <div className="border border-sand bg-white md:border-l-0 px-8 py-9">
+              <div className="border border-sand bg-white [border-top-color:rgba(29,58,47,0.2)] md:border-l-0 px-8 py-9">
                 <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-muted mb-6">
                   JournalKlar gør ikke
                 </div>
