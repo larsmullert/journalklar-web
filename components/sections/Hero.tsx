@@ -9,7 +9,7 @@ export default function Hero() {
             Til privatpraktiserende psykologer
           </div>
 
-          <h1 className="mb-7 text-[clamp(28px,3.2vw,42px)]">
+          <h1 className="mb-7 text-[clamp(24px,2.4vw,36px)]">
             Du vurderer. Du selekterer. Du skriver dine noter.<br />
             <span className="italic text-evergreen/80">JournalKlar strukturerer dem efter journalføringskravene.</span>
           </h1>
@@ -41,7 +41,7 @@ export default function Hero() {
           <div className="bg-white px-6 py-8 md:px-11 md:py-12">
             <div className="flex items-center gap-[10px] font-sans text-[11px] font-medium tracking-[0.12em] uppercase text-muted mb-7">
               Journaludkast
-              <span className="bg-evergreen/[0.08] text-evergreen font-sans text-[9px] font-medium tracking-[0.1em] px-[8px] py-[2px]">
+              <span className="text-evergreen font-sans text-[9px] font-medium tracking-[0.1em] px-[8px] py-[2px]">
                 Til godkendelse
               </span>
             </div>
@@ -81,7 +81,7 @@ export default function Hero() {
           </div>
 
           {/* Gradient-afskæring */}
-          <div className="absolute bottom-0 left-0 right-0 h-[80px] bg-gradient-to-t from-parchment to-transparent pointer-events-none" />
+          <div className="absolute bottom-0 left-0 right-0 h-[100px] pointer-events-none" style={{ background: 'linear-gradient(to bottom, transparent 60%, #F7F4EF 100%)' }} />
         </div>
 
         {/* Sektion 3 — Trust strip */}
