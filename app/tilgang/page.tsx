@@ -451,28 +451,28 @@ export default function TilgangPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
 
               {/* Gør */}
-              <div className="bg-white border border-sand [border-top:4px_solid_#1D3A2F] p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-evergreen mb-6">
-                  JournalKlar gør
+              <div className="bg-evergreen p-10">
+                <div className="font-serif text-[18px] font-normal text-orange text-center mb-8">
+                  Hvad JournalKlar gør
                 </div>
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-5">
                   {tilgangGoer.map((item) => (
                     <div key={item} className="flex items-start gap-3">
                       <svg className="flex-shrink-0 mt-[4px]" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                        <polyline points="2,7 5.5,10.5 12,4" stroke="#1D3A2F" strokeWidth="1.3" fill="none" strokeLinecap="round"/>
+                        <polyline points="2,7 5.5,10.5 12,4" stroke="#F7F4EF" strokeWidth="1.3" fill="none" strokeLinecap="round"/>
                       </svg>
-                      <span className="font-sans text-[16px] font-light text-graphite leading-[1.6]">{item}</span>
+                      <span className="font-sans text-[16px] font-light text-parchment/90 leading-[1.6]">{item}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
               {/* Gør ikke */}
-              <div className="bg-white border border-sand [border-top:4px_solid_#E8E4DF] p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-evergreen mb-6">
-                  JournalKlar gør ikke
+              <div className="bg-white border border-sand p-10">
+                <div className="font-serif text-[18px] font-normal text-orange text-center mb-8">
+                  Hvad JournalKlar ikke gør
                 </div>
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-5">
                   {tilgangGoerIkke.map((item) => (
                     <div key={item} className="flex items-start gap-3">
                       <svg className="flex-shrink-0 mt-[4px]" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
