@@ -9,7 +9,7 @@ export default function Hero() {
             Til privatpraktiserende psykologer
           </div>
 
-          <h1 className="mb-7">
+          <h1 className="mb-7 text-[clamp(28px,3.2vw,42px)]">
             Du vurderer. Du selekterer. Du skriver dine noter.<br />
             <span className="italic text-evergreen/80">JournalKlar strukturerer dem efter journalføringskravene.</span>
           </h1>
@@ -27,7 +27,7 @@ export default function Hero() {
         </div>
 
         {/* Sektion 2 — Afskåret app-preview */}
-        <div className="relative max-h-[240px] md:max-h-[320px] overflow-hidden border border-sand rounded-t-lg mb-10">
+        <div className="relative max-w-[720px] mx-auto max-h-[280px] overflow-hidden border border-sand rounded-t-lg mb-10">
 
           {/* Topbar */}
           <div className="bg-[#EFECE7] border-b border-[#E0DDD8] px-4 py-[10px] flex items-center gap-[7px]">
