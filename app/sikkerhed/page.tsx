@@ -353,7 +353,7 @@ export default function SikkerhedPage() {
               Syv trin — fra du skriver dine noter til udkastet er genereret og klientindholdet er fjernet fra serveren.
             </p>
 
-            <div className="mt-14 max-w-[620px]">
+            <div className="mt-14 max-w-[720px]">
               {steps.map(({ num, title, text, chip }, i) => (
                 <div key={num} className="flex gap-5">
                   <div className="flex flex-col items-center flex-shrink-0">
@@ -577,7 +577,7 @@ export default function SikkerhedPage() {
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Dokumentation</SectionLabel>
 
-            <div className="bg-evergreen px-8 py-10 md:px-12 md:py-12 max-w-[640px]">
+            <div className="bg-evergreen px-8 py-10 md:px-12 md:py-12 max-w-[760px]">
               <h3 className="text-parchment mb-4" style={{ color: "#F7F4EF" }}>
                 Databehandleraftalen underskrives inden brug.
               </h3>

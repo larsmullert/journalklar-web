@@ -207,7 +207,7 @@ export default function TilgangPage() {
             <SectionLabel>To AI-veje</SectionLabel>
             <h2 className="max-w-[520px]">Der findes mere end én måde at bruge AI i journalføring.</h2>
 
-            <div className="mt-9 max-w-[640px]">
+            <div className="mt-9 max-w-[760px]">
               <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
                 Mange AI-værktøjer til sundhedsfaglig dokumentation starter med at optage eller transskribere samtalen. Psykologen får derefter et færdigt forslag, som kan redigeres bagefter.
               </p>
@@ -248,7 +248,7 @@ export default function TilgangPage() {
               <span className="italic text-evergreen/65">Det sker i udvælgelsen.</span>
             </h2>
 
-            <div className="mt-9 max-w-[640px]">
+            <div className="mt-9 max-w-[760px]">
               <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
                 Efter en session ved psykologen mere, end der kan stå i journalen.
               </p>
@@ -296,7 +296,7 @@ export default function TilgangPage() {
             <SectionLabel>Ingen optagelse</SectionLabel>
             <h2 className="max-w-[480px]">Vi har ikke bygget JournalKlar til at lytte med.</h2>
 
-            <div className="mt-9 max-w-[640px]">
+            <div className="mt-9 max-w-[720px]">
               <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
                 JournalKlar optager ikke sessionen. Det er ikke en teknisk begrænsning. Det er et bevidst valg.
               </p>
@@ -375,7 +375,7 @@ export default function TilgangPage() {
               <span className="italic text-evergreen/65">Ikke fjerne fagligt arbejde.</span>
             </h2>
 
-            <div className="mt-9 max-w-[640px]">
+            <div className="mt-9 max-w-[760px]">
               <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
                 Journalføring kan være tungt. Ikke fordi psykologer ikke kan skrive journaler, men fordi arbejdet ofte ligger på et tidspunkt, hvor hovedet allerede er brugt.
               </p>
@@ -439,7 +439,7 @@ export default function TilgangPage() {
               JournalKlar er ikke bygget til at virke menneskeligt. Det er bygget til at være nyttigt, afgrænset og gennemskueligt.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 mt-12 max-w-[760px] shadow-[0_1px_8px_rgba(29,58,47,0.07)]">
+            <div className="grid grid-cols-1 md:grid-cols-2 mt-12 max-w-[920px] shadow-[0_1px_8px_rgba(29,58,47,0.07)]">
               {/* Gør */}
               <div className="bg-evergreen px-8 py-9">
                 <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-parchment/55 mb-6">
@@ -525,7 +525,7 @@ export default function TilgangPage() {
               <span className="italic text-evergreen/65">Bare ikke ukritisk.</span>
             </h2>
 
-            <div className="mt-9 max-w-[620px]">
+            <div className="mt-9 max-w-[760px]">
               <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
                 JournalKlar er bygget, fordi AI kan gøre noget reelt nyttigt for psykologer.
               </p>

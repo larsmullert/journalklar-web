@@ -26,7 +26,7 @@ export default function Afgrænsning() {
           JournalKlar leverer strukturen. Du leverer indholdet. Outputtet hedder altid &ldquo;udkast&rdquo;. Hvad der bliver til journal, afgør du.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 max-w-[760px] mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 max-w-[920px] mt-12">
 
           {/* Gør */}
           <div className="bg-evergreen px-8 py-9 md:px-10 md:py-10">

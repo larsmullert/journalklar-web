@@ -55,7 +55,7 @@ export default function SikkerhedFAQ() {
         <SectionLabel>Ofte stillede spørgsmål</SectionLabel>
         <h2 className="max-w-[520px]">De spørgsmål du allerede har.</h2>
 
-        <div className="mt-12 max-w-[720px]">
+        <div className="mt-12 max-w-[780px]">
           {faqData.map(({ q, a }, i) => {
             const isOpen = open === i;
             return (
