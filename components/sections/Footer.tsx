@@ -1,5 +1,6 @@
 const links = [
   { label: "Om JournalKlar", href: "/om" },
+  { label: "Tilgang", href: "/tilgang" },
   { label: "Privatlivspolitik", href: "#" },
   { label: "Databehandleraftale", href: "#" },
   { label: "Sikkerhed", href: "/sikkerhed" },
