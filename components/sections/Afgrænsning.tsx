@@ -21,41 +21,47 @@ export default function Afgrænsning() {
     <section className="py-16 px-6 md:py-[120px] md:px-16">
       <div className="max-w-[1100px] mx-auto">
         <SectionLabel>Hvad JournalKlar er — og ikke er</SectionLabel>
-        <h2>Et redskab. Ikke en autopilot.</h2>
+        <h2>Et værktøj, ikke en autopilot.</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-[80px] mt-12 items-start">
+        <div className="mt-6 max-w-[620px]">
+          <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+            Du leverer indholdet. JournalKlar leverer strukturen.
+            Det er altid et udkast.
+          </p>
+          <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+            Der er mange ting, der ikke fanges af en AI-tale-til-tekst-transkription.
+          </p>
+          <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85]">
+            Det er kun dig, der kan og skal vurdere sessionen.
+          </p>
+        </div>
 
-          {/* Venstre: evergreen statement */}
-          <div className="bg-evergreen px-10 py-11">
-            <p className="font-sans text-[15px] font-light text-parchment/72 leading-[1.75] mb-[14px]">
-              JournalKlar leverer strukturen. Du leverer indholdet. Outputtet hedder altid &ldquo;udkast&rdquo;. Hvad der bliver til journal, afgør du.
-            </p>
-            <p className="font-sans text-[15px] font-light text-parchment/72 leading-[1.75] mb-0">
-              En psykologs vurdering bygger ikke kun på ordene i rummet. Den bygger også på pauser, timing, kontakt, affekt, undgåelser, forskydninger og det kliniske blik for, hvad der faktisk betyder noget.
-            </p>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 items-stretch">
 
-          {/* Højre: dash-lister */}
-          <div>
-            <div className="font-sans text-[11px] font-medium tracking-[0.12em] uppercase text-orange mb-5">
+          {/* Venstre: evergreen */}
+          <div className="bg-evergreen p-10">
+            <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-6">
               Hvad JournalKlar gør
             </div>
-            <div className="flex flex-col gap-[10px] mb-10">
+            <div className="flex flex-col gap-[12px]">
               {goer.map((item) => (
-                <div key={item} className="flex items-start gap-3 font-sans text-[14px] font-light text-[#505050] leading-[1.7]">
-                  <span className="text-muted-light flex-shrink-0">—</span>
+                <div key={item} className="flex items-start gap-3 font-sans text-[14px] font-normal text-parchment/90 leading-[1.7]">
+                  <span className="text-parchment/50 flex-shrink-0">—</span>
                   <span>{item}</span>
                 </div>
               ))}
             </div>
+          </div>
 
-            <div className="font-sans text-[11px] font-medium tracking-[0.12em] uppercase text-orange mb-5">
+          {/* Højre: parchment */}
+          <div className="bg-parchment border border-sand p-10">
+            <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-6">
               Hvad JournalKlar ikke gør
             </div>
-            <div className="flex flex-col gap-[10px]">
+            <div className="flex flex-col gap-[12px]">
               {goerIkke.map((item) => (
-                <div key={item} className="flex items-start gap-3 font-sans text-[14px] font-light text-[#505050] leading-[1.7]">
-                  <span className="text-muted-light flex-shrink-0">—</span>
+                <div key={item} className="flex items-start gap-3 font-sans text-[14px] font-normal text-graphite leading-[1.7]">
+                  <span className="text-[#A09890] flex-shrink-0">—</span>
                   <span>{item}</span>
                 </div>
               ))}
