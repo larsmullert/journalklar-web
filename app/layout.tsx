@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
-import { Fraunces, DM_Sans } from "next/font/google";
+import { Source_Serif_4, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 
-const fraunces = Fraunces({
+const sourceSerif4 = Source_Serif_4({
   subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-fraunces",
+  weight: ["300", "400"],
+  style: ["normal", "italic"],
+  variable: "--font-source-serif",
   display: "swap",
 });
 
-const dmSans = DM_Sans({
+const sourceSans3 = Source_Sans_3({
   subsets: ["latin"],
-  weight: ["300", "500"],
-  variable: "--font-dm-sans",
+  weight: ["300", "400", "500"],
+  variable: "--font-source-sans",
   display: "swap",
 });
 
@@ -29,7 +30,7 @@ export default function RootLayout({
   return (
     <html
       lang="da"
-      className={`${fraunces.variable} ${dmSans.variable} h-full antialiased`}
+      className={`${sourceSerif4.variable} ${sourceSans3.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
