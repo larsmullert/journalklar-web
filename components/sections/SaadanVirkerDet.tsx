@@ -28,13 +28,16 @@ export default function SaadanVirkerDet() {
           Arbejdsgangen er designet til at passe ind i det, du allerede gør umiddelbart efter en session — ikke til at erstatte det.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 border border-sand mt-12">
           {trin.map(({ num, title, text }, i) => (
             <div
               key={num}
-              className={`border border-sand bg-transparent [border-top:2px_solid_rgba(29,58,47,0.2)] border-l-2 border-l-evergreen p-6 md:p-8${i < trin.length - 1 ? " relative md:after:content-['→'] md:after:absolute md:after:top-[50px] md:after:-right-[12px] md:after:text-[16px] md:after:text-muted-light md:after:z-[1]" : ""}`}
+              className={`relative bg-white px-10 py-12 ${i < trin.length - 1 ? "border-b border-sand md:border-b-0 md:border-r md:border-r-sand" : ""}`}
             >
-              <div className="font-serif text-[52px] font-light text-evergreen opacity-[0.40] leading-none mb-[22px]">
+              {i < trin.length - 1 && (
+                <span className="hidden md:block absolute top-[50px] -right-[14px] font-sans text-[16px] text-muted-light z-[1] select-none">→</span>
+              )}
+              <div className="font-serif text-[52px] font-light text-evergreen opacity-[0.18] leading-none mb-[22px]">
                 {num}
               </div>
               <div className="font-sans text-[15px] font-medium text-evergreen mb-[10px]">

@@ -1,12 +1,11 @@
 import Nav from "@/components/sections/Nav";
 import Hero from "@/components/sections/Hero";
 import ManifestStrip from "@/components/sections/ManifestStrip";
-import Genkendelse from "@/components/sections/Genkendelse";
-import Tillid from "@/components/sections/Tillid";
 import SaadanVirkerDet from "@/components/sections/SaadanVirkerDet";
-import Sikkerhed from "@/components/sections/Sikkerhed";
 import IPraksis from "@/components/sections/IPraksis";
 import Afgrænsning from "@/components/sections/Afgrænsning";
+import Sikkerhed from "@/components/sections/Sikkerhed";
+import Tillid from "@/components/sections/Tillid";
 import PrisOgCTA from "@/components/sections/PrisOgCTA";
 import FAQ from "@/components/sections/FAQ";
 import Footer from "@/components/sections/Footer";
@@ -24,15 +23,13 @@ export default function Home() {
         <Rule />
         <ManifestStrip />
         <Rule />
-        <Genkendelse />
-        <Rule />
         <SaadanVirkerDet />
         <Rule />
         <IPraksis />
         <Rule />
-        <Sikkerhed />
-        <Rule />
         <Afgrænsning />
+        <Rule />
+        <Sikkerhed />
         <Rule />
         <Tillid />
         <Rule />

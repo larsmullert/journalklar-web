@@ -58,7 +58,7 @@ export default function Sikkerhed() {
         <div className="grid grid-cols-1 md:grid-cols-[1fr_360px] gap-6 mt-12 items-stretch">
 
           {/* Venstre: 4 løfter */}
-          <div className="border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)]">
+          <div className="border border-sand bg-white">
             {promises.map(({ num, title, text }, i) => (
               <div
                 key={num}
