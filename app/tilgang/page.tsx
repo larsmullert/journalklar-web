@@ -49,10 +49,9 @@ function ArrowRight({ color = "currentColor" }: { color?: string }) {
 // ─── Data ───────────────────────────────────────────────────────────────
 
 const trustMarkers = [
-  "Ingen sessionoptagelse",
-  "Egne noter først",
-  "Altid journaludkast",
-  "Psykologen godkender",
+  "Ingen optagelse af sessionen",
+  "Server i Skanderborg",
+  "Altid et udkast",
 ];
 
 const aiKanHjaelpe = [

@@ -34,7 +34,7 @@ const svar = [
   },
   {
     q: "Skal jeg bruge kreditkort for at prøve det?",
-    a: "Nej. Prøveperioden på 30 dage kræver ingen betalingsoplysninger. Du opretter en konto og er i gang.",
+    a: "Nej. Ingen betalingskort kræves for prøveperioden. Du opretter en konto og er i gang.",
   },
   {
     q: "Kan jeg få en databehandleraftale?",

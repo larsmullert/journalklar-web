@@ -9,10 +9,10 @@ export default function Tillid() {
 
         <div className="mt-12 max-w-[880px]">
           <p className="font-sans text-[16px] font-light text-[#484848] leading-[1.85] mb-5">
-            JournalKlar er grundlagt af Lars Mullert Pedersen, psykolog (cand.psych., AAU). Motivationen er ikke kompliceret: jeg oplevede selv, at AI-værktøjer gør det nemt at sige &ldquo;godt nok&rdquo; — og at det er et reelt problem, når det er den faglige efterbehandling der ofres. Ingen moralisering over dem der bruger andre løsninger. Blot en bekymring, jeg har udviklet et bud på en løsning på.
+            JournalKlar er grundlagt af Lars Mullert Pedersen, psykolog og grundlægger af JournalKlar, uddannet fra Aalborg Universitet. Motivationen er ikke kompliceret: jeg oplevede selv, at AI-værktøjer gør det nemt at sige &ldquo;godt nok&rdquo; — og at det er et reelt problem, når det er den faglige efterbehandling der ofres. Ingen moralisering over dem der bruger andre løsninger. Blot en bekymring, jeg har udviklet et bud på en løsning på.
           </p>
           <span className="font-serif italic text-[15px] text-evergreen block mb-6">
-            — Lars Mullert Pedersen, Psykolog &amp; Grundlægger
+            — Lars Mullert Pedersen, psykolog &amp; grundlægger
           </span>
           <a
             href="/om"

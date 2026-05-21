@@ -14,7 +14,7 @@ const promises = [
   {
     num: "3",
     title: "Dansk server i Skanderborg",
-    text: "JournalKlar er bygget til europæisk databehandling. App og AI-behandling kører inden for EU, og databehandleraftalen beskriver underleverandører, datastrømme og behandlingsgrundlag.",
+    text: "Appen og databasen kører på dansk server i Skanderborg. AI-behandlingen sker hos AWS i Frankfurt — inden for EU. Databehandleraftalen beskriver underleverandører, datastrømme og behandlingsgrundlag.",
   },
   {
     num: "4",

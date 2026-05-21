@@ -56,7 +56,7 @@ export default function PrisOgCTA() {
         <div className="mt-9 p-6 md:p-8 bg-parchment border border-sand [border-top:2px_solid_rgba(29,58,47,0.2)] grid grid-cols-1 gap-6 md:grid-cols-[1fr_auto] md:items-center">
           <div className="font-sans text-[14px] font-light text-[#505050] leading-[1.75]">
             <span className="font-normal text-evergreen">30 dages gratis prøveperiode</span>
-            {" "}— ingen kreditkort kræves ved opstart. Du opretter en konto, underskriver databehandleraftalen og er i gang. Ingen installation. Ingen oplæring.
+            {" "}— ingen betalingskort kræves for prøveperioden. Du opretter en konto, underskriver databehandleraftalen og er i gang. Ingen installation. Ingen oplæring.
           </div>
           <div className="flex flex-col items-start gap-[10px] md:items-end md:flex-shrink-0">
             <a

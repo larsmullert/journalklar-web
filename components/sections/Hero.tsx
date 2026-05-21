@@ -42,7 +42,7 @@ export default function Hero() {
             </div>
 
             <p className="font-sans text-[13px] font-light text-muted leading-[1.6]">
-              Ingen optagelse · Dansk server i Skanderborg · Altid et udkast
+              Ingen optagelse af sessionen · Server i Skanderborg · Altid et udkast
             </p>
           </div>
 

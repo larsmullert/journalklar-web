@@ -19,7 +19,7 @@ const sourceSans3 = Source_Sans_3({
 
 export const metadata: Metadata = {
   title: "JournalKlar",
-  description: "AI-assisteret journalnotatværktøj til psykologer i privatpraksis",
+  description: "Et journalværktøj til privatpraktiserende psykologer — bygget af en psykolog",
 };
 
 export default function RootLayout({

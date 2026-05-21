@@ -5,7 +5,7 @@ import SectionLabel from "@/components/ui/SectionLabel";
 export const metadata = {
   title: "Om JournalKlar",
   description:
-    "JournalKlar er udviklet af Lars Mullert Pedersen, psykolog, som et specialiseret værktøj til privatpraktiserende psykologers journalføringsarbejde.",
+    "JournalKlar er udviklet af Lars Mullert Pedersen, psykolog og grundlægger af JournalKlar, som et specialiseret værktøj til privatpraktiserende psykologers journalføringsarbejde.",
 };
 
 function Rule() {
@@ -89,7 +89,7 @@ export default function OmPage() {
               <SectionLabel>Om JournalKlar</SectionLabel>
               <h1 className="mb-6">Et dansk fagværktøj med en psykolog bag.</h1>
               <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.8] max-w-[480px] mb-10">
-                JournalKlar er udviklet af Lars Mullert Pedersen, psykolog, som et specialiseret værktøj til privatpraktiserende psykologers journalføringsarbejde.
+                JournalKlar er udviklet af Lars Mullert Pedersen, psykolog og grundlægger af JournalKlar, som et specialiseret værktøj til privatpraktiserende psykologers journalføringsarbejde.
               </p>
               <div className="flex flex-col gap-[10px]">
                 {trustMarkers.map((item) => (
@@ -112,7 +112,7 @@ export default function OmPage() {
                   Lars Mullert Pedersen
                 </div>
                 <div className="font-sans text-[13px] font-light text-parchment/70 leading-[1.8]">
-                  Psykolog, cand.psych.
+                  Psykolog
                 </div>
                 <div className="font-sans text-[13px] font-light text-parchment/70 leading-[1.8]">
                   Grundlægger af JournalKlar

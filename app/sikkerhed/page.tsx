@@ -6,7 +6,7 @@ import SikkerhedFAQ from "@/components/sections/SikkerhedFAQ";
 export const metadata = {
   title: "Sikkerhed & Fortrolighed — JournalKlar",
   description:
-    "Forstå præcist, hvad der sker med dine journalnoter. Ingen optagelse, ingen AI-træning, EU-behandling og databehandleraftale inkluderet.",
+    "Forstå præcist, hvad der sker med dine journalnoter. Ingen optagelse · server i Skanderborg · ingen AI-træning · databehandleraftale inkluderet.",
 };
 
 function Rule() {
@@ -68,7 +68,7 @@ function TechChip({ children }: { children: React.ReactNode }) {
 // ─── Data ───────────────────────────────────────────────────────────────
 
 const trustItems = [
-  "Ingen sessionoptagelse",
+  "Ingen optagelse af sessionen",
   "Ingen AI-træning på dine input",
   "Dansk server i Skanderborg",
   "Journalnoter gemmes ikke efter generering",
@@ -86,8 +86,8 @@ const kortSagt = [
     note: "Kontraktuelt fastsat med AWS — ikke bare hensigtserklæring",
   },
   {
-    title: "Behandling sker inden for EU",
-    text: "Både app og AI-behandling er placeret inden for EU. Ingen klientoplysninger behandles uden for EU's databeskyttelsesramme.",
+    title: "Server i Skanderborg — AI i Frankfurt",
+    text: "Appen og databasen kører på dansk server i Skanderborg. AI-behandlingen sker hos AWS i Frankfurt — inden for EU.",
     note: "AWS Bedrock eu-central-1, Frankfurt · Scannet VPS, Danmark",
   },
   {

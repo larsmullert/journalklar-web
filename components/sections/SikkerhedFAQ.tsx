@@ -34,7 +34,7 @@ const faqData = [
   },
   {
     q: "Hvem ejer og hoster JournalKlar?",
-    a: "JournalKlar er grundlagt og drevet af Lars Mullert Pedersen (cand.psych., AAU). Applikation og database er hostet på Scannet VPS i Danmark (ISO 27001). AI-behandling sker via AWS Bedrock eu-central-1 i Frankfurt.",
+    a: "JournalKlar er grundlagt og drevet af Lars Mullert Pedersen, uddannet fra Aalborg Universitet. Applikation og database er hostet på Scannet VPS i Danmark (ISO 27001). AI-behandling sker via AWS Bedrock eu-central-1 i Frankfurt.",
   },
   {
     q: "Hvad er det juridiske grundlag for behandling af personoplysninger?",
