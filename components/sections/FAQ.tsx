@@ -21,10 +21,6 @@ const svar = [
     a: "Ja. JournalKlar genererer et tekstudkast, som du kopierer ind i dit eget system. Det kræver ingen integration og fungerer med alle journalsystemer.",
   },
   {
-    q: "Er JournalKlar godkendt af Dansk Psykologforening?",
-    a: "JournalKlar er ikke godkendt af Dansk Psykologforening eller Styrelsen for Patientsikkerhed. Det er et fagligt arbejdsredskab under dit ansvar som autoriseret psykolog — på linje med andre digitale hjælpemidler i praksis.",
-  },
-  {
     q: "Hvad sker der, hvis udkastet mangler noget?",
     a: "JournalKlar markerer tydeligt de felter, der mangler din stillingtagen. Du får aldrig et udkast der foregiver at være komplet — mangler er synlige, ikke skjulte.",
   },

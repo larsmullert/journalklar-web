@@ -618,21 +618,6 @@ export default function SikkerhedPage() {
         {/* ── 9. FAQ ──────────────────────────────────────────────── */}
         <SikkerhedFAQ />
 
-        <Rule />
-
-        {/* ── 10. Vigtigt at vide ─────────────────────────────────── */}
-        <section className="py-12 px-6 md:py-16 md:px-16">
-          <div className="max-w-[1100px] mx-auto">
-            <div className="border border-sand bg-white px-7 py-6 max-w-[680px]">
-              <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-muted mb-3">
-                Vigtigt at vide
-              </div>
-              <p className="font-sans text-[13px] font-light text-[#505050] leading-[1.75] mb-0">
-                JournalKlar er ikke godkendt af Dansk Psykologforening eller Styrelsen for Patientsikkerhed. Det er et fagligt arbejdsredskab under dit ansvar som autoriseret psykolog — på linje med andre digitale hjælpemidler i praksis. Alle outputter er udkast der kræver din aktive gennemgang og godkendelse.
-              </p>
-            </div>
-          </div>
-        </section>
 
       </main>
       <Footer />

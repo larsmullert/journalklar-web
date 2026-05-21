@@ -32,9 +32,9 @@ export default function SaadanVirkerDet() {
           {trin.map(({ num, title, text }, i) => (
             <div
               key={num}
-              className={`border border-sand bg-transparent [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8${i < trin.length - 1 ? " relative md:after:content-['→'] md:after:absolute md:after:top-[50px] md:after:-right-[12px] md:after:text-[16px] md:after:text-muted-light md:after:z-[1]" : ""}`}
+              className={`border border-sand bg-transparent [border-top:2px_solid_rgba(29,58,47,0.2)] border-l-2 border-l-evergreen p-6 md:p-8${i < trin.length - 1 ? " relative md:after:content-['→'] md:after:absolute md:after:top-[50px] md:after:-right-[12px] md:after:text-[16px] md:after:text-muted-light md:after:z-[1]" : ""}`}
             >
-              <div className="font-serif text-[52px] font-light text-evergreen opacity-[0.18] leading-none mb-[22px]">
+              <div className="font-serif text-[52px] font-light text-evergreen opacity-[0.40] leading-none mb-[22px]">
                 {num}
               </div>
               <div className="font-sans text-[15px] font-medium text-evergreen mb-[10px]">

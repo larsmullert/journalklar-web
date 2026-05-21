@@ -10,12 +10,11 @@ export default function Hero() {
           </div>
 
           <h1 className="mb-7 text-[clamp(36px,3.8vw,52px)]">
-            Du vurderer. Du selekterer. Du skriver dine noter.<br />
-            <span className="italic text-evergreen/80">JournalKlar strukturerer dem efter journalføringskravene.</span>
+            Journaludkast fra dine egne faglige noter. Uden optagelse af sessionen.
           </h1>
 
           <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.75] mb-10">
-            Ingen optagelse af sessionen. Ingen tredjepart i det fortrolige rum.
+            JournalKlar hjælper privatpraktiserende psykologer med at strukturere egne noter efter journalføringskravene — så du stadig vurderer, selekterer og godkender.
           </p>
 
           <a

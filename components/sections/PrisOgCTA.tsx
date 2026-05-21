@@ -69,9 +69,6 @@ export default function PrisOgCTA() {
                 <polyline points="7.5,2.5 11,6 7.5,9.5" stroke="white" strokeWidth="1.3" fill="none"/>
               </svg>
             </a>
-            <p className="font-sans text-[12px] text-muted italic mt-2 mb-0">
-              Diktering som tilkøb (+50 kr./md. ekskl. moms) — lanceres i næste version.
-            </p>
           </div>
         </div>
 
