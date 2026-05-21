@@ -126,7 +126,7 @@ export default function OmPage() {
                   LMP
                 </div>
                 <div className="w-8 h-px bg-sand mb-6" />
-                <div className="font-sans text-[15px] font-medium text-evergreen mb-1">
+                <div className="font-sans text-[15px] font-normal text-evergreen mb-1">
                   Lars Mullert Pedersen
                 </div>
                 <div className="font-sans text-[13px] font-light text-muted leading-[1.75]">
@@ -166,7 +166,7 @@ export default function OmPage() {
                   JournalKlar er mit bud på et værktøj, der hjælper med strukturen — uden at overtage vurderingen.
                 </p>
                 <div className="border-l-2 border-sand pl-6">
-                  <div className="font-sans text-[15px] font-medium text-evergreen">Lars Mullert Pedersen</div>
+                  <div className="font-sans text-[15px] font-normal text-evergreen">Lars Mullert Pedersen</div>
                   <div className="font-sans text-[13px] font-light text-muted mt-[2px]">Psykolog, cand.psych.</div>
                   <div className="font-sans text-[13px] font-light text-muted">Grundlægger af JournalKlar</div>
                 </div>
@@ -174,7 +174,7 @@ export default function OmPage() {
 
               {/* Højre: produktfokus */}
               <div className="border border-sand bg-sand [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
-                <div className="font-sans text-[10px] font-medium tracking-[0.16em] uppercase text-muted mb-5">
+                <div className="font-sans text-[10px] font-medium tracking-[0.16em] uppercase text-orange mb-5">
                   Hvad JournalKlar gør
                 </div>
                 <p className="font-sans text-[13px] font-light text-[#505050] leading-[1.7] mb-6">
@@ -258,8 +258,8 @@ export default function OmPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
 
               {/* Gør */}
-              <div className="bg-white border border-sand [border-top:4px_solid_#1D3A2F] p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-evergreen mb-6">
+              <div className="bg-white border border-sand [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
+                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-orange mb-6">
                   JournalKlar gør
                 </div>
                 <div className="flex flex-col gap-4">
@@ -275,8 +275,8 @@ export default function OmPage() {
               </div>
 
               {/* Gør ikke */}
-              <div className="bg-white border border-sand [border-top:4px_solid_#E8E4DF] p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-evergreen mb-6">
+              <div className="bg-white border border-sand p-6 md:p-8">
+                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-orange mb-6">
                   JournalKlar gør ikke
                 </div>
                 <div className="flex flex-col gap-4">
@@ -315,7 +315,7 @@ export default function OmPage() {
                   className="group border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8 flex flex-col justify-between gap-6"
                 >
                   <div>
-                    <div className="font-sans text-[15px] font-medium text-evergreen mb-3">{title}</div>
+                    <div className="font-sans text-[15px] font-normal text-evergreen mb-3">{title}</div>
                     <p className="font-sans text-[14px] font-light text-[#505050] leading-[1.7] m-0">{text}</p>
                   </div>
                   <div className="flex items-center gap-[8px] font-sans text-[13px] font-normal text-evergreen border-b border-evergreen/20 pb-[2px] self-start group-hover:border-evergreen transition-colors">
@@ -348,7 +348,7 @@ export default function OmPage() {
               </p>
 
               {/* Signature */}
-              <p className="font-sans text-[14px] font-light text-muted italic mb-10">
+              <p className="font-serif text-[15px] font-normal italic text-evergreen mb-10">
                 — Lars Mullert Pedersen, psykolog og grundlægger
               </p>
 
@@ -356,7 +356,7 @@ export default function OmPage() {
               <div className="flex flex-col sm:flex-row gap-4 items-start">
                 <a
                   href="/#saadan-virker-det"
-                  className="inline-flex items-center gap-[10px] bg-evergreen text-white font-sans text-[15px] font-medium px-7 py-[16px] hover:bg-[#152e23] transition-colors"
+                  className="inline-flex items-center gap-[10px] bg-evergreen text-white font-sans text-[15px] font-normal px-[30px] py-[15px] hover:bg-[#152e23] transition-colors"
                 >
                   Se hvordan JournalKlar virker
                   <ArrowRight color="white" />
