@@ -273,7 +273,7 @@ export default function SikkerhedPage() {
               <div className="flex flex-col sm:flex-row gap-4 items-start">
                 <a
                   href="#noter"
-                  className="inline-flex items-center gap-[10px] bg-evergreen text-white font-sans text-[15px] font-medium px-7 py-[16px] hover:bg-[#152e23] transition-colors"
+                  className="inline-flex items-center gap-[10px] bg-evergreen text-white font-sans text-[15px] font-normal px-[30px] py-[15px] hover:bg-[#152e23] transition-colors"
                 >
                   Se hvad der sker med dine noter
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
@@ -283,7 +283,7 @@ export default function SikkerhedPage() {
                 </a>
                 <a
                   href="#databehandleraftale"
-                  className="inline-flex items-center gap-[6px] text-evergreen font-sans text-[14px] font-normal border-b border-evergreen/25 pb-[2px] hover:border-evergreen transition-colors mt-1"
+                  className="inline-flex items-center gap-[6px] text-evergreen font-sans text-[14px] font-normal border-b border-evergreen/20 pb-[2px] hover:border-evergreen transition-colors mt-1"
                 >
                   Hent databehandleraftale
                   <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
@@ -333,9 +333,9 @@ export default function SikkerhedPage() {
                   <div className="w-7 h-7 border border-sand flex items-center justify-center mb-5">
                     <CheckSm />
                   </div>
-                  <div className="font-sans text-[15px] font-medium text-evergreen mb-2">{title}</div>
+                  <div className="font-sans text-[15px] font-normal text-evergreen mb-2">{title}</div>
                   <p className="font-sans text-[14px] font-light text-[#505050] leading-[1.7] mb-3">{text}</p>
-                  <div className="font-sans text-[11px] text-muted italic leading-[1.5]">{note}</div>
+                  <div className="font-sans text-[11px] text-muted leading-[1.5]">{note}</div>
                 </div>
               ))}
             </div>
@@ -365,7 +365,7 @@ export default function SikkerhedPage() {
                     )}
                   </div>
                   <div className={`pt-[10px] ${i < steps.length - 1 ? "pb-9" : ""}`}>
-                    <div className="font-sans text-[15px] font-medium text-evergreen mb-[6px]">{title}</div>
+                    <div className="font-sans text-[15px] font-normal text-evergreen mb-[6px]">{title}</div>
                     <p className="font-sans text-[14px] font-light text-[#505050] leading-[1.75] mb-0">{text}</p>
                     <TechChip>{chip}</TechChip>
                   </div>
@@ -389,8 +389,8 @@ export default function SikkerhedPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
 
               {/* JournalKlar — venstre */}
-              <div className="bg-white border border-sand [border-top:4px_solid_#1D3A2F] p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-evergreen mb-6">
+              <div className="bg-white border border-sand [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
+                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-orange mb-6">
                   JournalKlar
                 </div>
                 <div className="flex flex-col gap-4">
@@ -406,8 +406,8 @@ export default function SikkerhedPage() {
               </div>
 
               {/* Transskriptions-AI — højre */}
-              <div className="bg-white border border-sand [border-top:4px_solid_#E8E4DF] p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-evergreen mb-6">
+              <div className="bg-white border border-sand p-6 md:p-8">
+                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-orange mb-6">
                   Transskriptions-AI
                 </div>
                 <div className="flex flex-col gap-4">
@@ -450,7 +450,7 @@ export default function SikkerhedPage() {
                 >
                   <div className="flex items-start justify-between gap-3 mb-3">
                     <div>
-                      <div className="font-sans text-[14px] font-medium text-evergreen leading-[1.3]">{card.name}</div>
+                      <div className="font-sans text-[14px] font-normal text-evergreen leading-[1.3]">{card.name}</div>
                       {card.sub && (
                         <div className="font-sans text-[11px] text-muted mt-[2px]">{card.sub}</div>
                       )}
@@ -465,7 +465,7 @@ export default function SikkerhedPage() {
               ))}
             </div>
 
-            <p className="font-sans text-[11px] text-muted mt-5 italic">
+            <p className="font-sans text-[11px] text-muted mt-5">
               "Midlertidigt" indikerer at klientindhold behandles under selve genereringen og ikke gemmes bagefter.
             </p>
           </div>
@@ -482,8 +482,8 @@ export default function SikkerhedPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
 
               {/* Gemmes ikke — venstre */}
-              <div className="bg-white border border-sand [border-top:4px_solid_#1D3A2F] p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-evergreen mb-6">
+              <div className="bg-white border border-sand [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
+                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-orange mb-6">
                   Gemmes ikke
                 </div>
                 <div className="flex flex-col gap-4">
@@ -499,8 +499,8 @@ export default function SikkerhedPage() {
               </div>
 
               {/* Gemmes — højre */}
-              <div className="bg-white border border-sand [border-top:4px_solid_#E8E4DF] p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-evergreen mb-6">
+              <div className="bg-white border border-sand p-6 md:p-8">
+                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-orange mb-6">
                   Gemmes
                 </div>
                 <div className="flex flex-col gap-4">
@@ -552,7 +552,7 @@ export default function SikkerhedPage() {
                     className="grid grid-cols-[1.8fr_2.2fr_1.2fr_1fr_1.2fr] border-x border-b border-sand hover:bg-sand/20 transition-colors"
                   >
                     <div className="px-5 py-4 border-r border-sand">
-                      <div className="font-sans text-[14px] font-medium text-evergreen">{row.navn}</div>
+                      <div className="font-sans text-[14px] font-normal text-evergreen">{row.navn}</div>
                     </div>
                     <div className="px-5 py-4 border-r border-sand">
                       <span className="font-sans text-[13px] font-light text-[#505050] leading-[1.5]">{row.rolle}</span>
@@ -604,7 +604,7 @@ export default function SikkerhedPage() {
                     <polyline points="7.5,2.5 11,6 7.5,9.5" stroke="currentColor" strokeWidth="1.3" fill="none"/>
                   </svg>
                 </a>
-                <span className="font-sans text-[12px] text-parchment/40 italic">
+                <span className="font-sans text-[12px] text-parchment/70">
                   PDF-link tilføjes ved launch
                 </span>
               </div>
