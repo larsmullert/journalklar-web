@@ -23,12 +23,12 @@ export default function Afgrænsning() {
         <SectionLabel>Hvad JournalKlar er — og ikke er</SectionLabel>
         <h2>Et værktøj, ikke en autopilot.</h2>
 
-        <div className="mt-6 max-w-[620px]">
-          <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+        <div className="mt-6 max-w-[780px]">
+          <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-2">
             Du leverer indholdet. JournalKlar leverer strukturen.
             Det er altid et udkast.
           </p>
-          <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+          <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-2">
             Der er mange ting, der ikke fanges af en AI-tale-til-tekst-transkription.
           </p>
           <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85]">
@@ -36,7 +36,8 @@ export default function Afgrænsning() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 items-stretch">
+        <div className="mt-12 max-w-[860px]">
+        <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-6 items-stretch">
 
           {/* Venstre: evergreen */}
           <div className="bg-evergreen p-10">
@@ -68,6 +69,7 @@ export default function Afgrænsning() {
             </div>
           </div>
 
+        </div>
         </div>
       </div>
     </section>
