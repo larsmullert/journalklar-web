@@ -3,91 +3,76 @@ import Footer from "@/components/sections/Footer";
 import SectionLabel from "@/components/ui/SectionLabel";
 
 export const metadata = {
-  title: "Om JournalKlar — Bygget af en psykolog",
+  title: "Om JournalKlar",
   description:
-    "JournalKlar er udviklet af Lars Mullert Pedersen, psykolog, til danske privatpraktiserende psykologer. Læs om personen bag og tankerne bag produktet.",
+    "JournalKlar er udviklet af Lars Mullert Pedersen, psykolog, som et specialiseret værktøj til privatpraktiserende psykologers journalføringsarbejde.",
 };
 
 function Rule() {
   return <hr className="border-none border-t border-sand m-0" />;
 }
 
-function CheckSm() {
+function ArrowRight({ size = 12 }: { size?: number }) {
   return (
-    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true" className="flex-shrink-0">
-      <polyline
-        points="1.5,5.5 4,8 9.5,2.5"
-        stroke="#1D3A2F"
-        strokeOpacity={0.7}
-        strokeWidth="1.4"
-        fill="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+    <svg width={size} height={size} viewBox="0 0 12 12" fill="none" aria-hidden="true" className="flex-shrink-0">
+      <line x1="1" y1="6" x2="11" y2="6" stroke="currentColor" strokeWidth="1.3" />
+      <polyline points="7.5,2.5 11,6 7.5,9.5" stroke="currentColor" strokeWidth="1.3" fill="none" />
     </svg>
   );
 }
 
-function CrossSm() {
-  return (
-    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true" className="flex-shrink-0">
-      <line x1="3" y1="3" x2="8" y2="8" stroke="#A09890" strokeWidth="1.4" strokeLinecap="round"/>
-      <line x1="8" y1="3" x2="3" y2="8" stroke="#A09890" strokeWidth="1.4" strokeLinecap="round"/>
-    </svg>
-  );
-}
+// ─── Data ───────────────────────────────────────────────────────────────
 
-function ArrowRight({ color = "currentColor" }: { color?: string }) {
-  return (
-    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true" className="flex-shrink-0">
-      <line x1="1" y1="6" x2="11" y2="6" stroke={color} strokeWidth="1.3"/>
-      <polyline points="7.5,2.5 11,6 7.5,9.5" stroke={color} strokeWidth="1.3" fill="none"/>
-    </svg>
-  );
-}
-
-const gørItems = [
-  "Strukturerer dine egne noter",
-  "Markerer manglende oplysninger",
-  "Hjælper med journaludkast",
-  "Bevarer din godkendelse",
-  "Passer ind i dit eksisterende journalsystem",
+const trustMarkers = [
+  "Psykolog bag produktet",
+  "Udviklet til dansk privat praksis",
+  "Specialiseret til journaludkast",
+  "Bygget og drevet fra Danmark",
 ];
 
-const gørIkkeItems = [
-  "Optager sessionen",
-  "Transskriberer samtalen",
-  "Vurderer klienten for dig",
-  "Erstatter dit faglige skøn",
-  "Fungerer som journalsystem",
-];
-
-const laesMore = [
+const principper = [
   {
-    title: "Fagligt manifest",
-    text: "Hvorfor JournalKlar starter med psykologens egne noter — ikke en fuld optagelse af sessionen.",
-    linkText: "Læs manifestet",
+    title: "Smalt før bredt",
+    text: "JournalKlar skal løse én opgave ordentligt, før det udvides.",
+  },
+  {
+    title: "Forståeligt før imponerende",
+    text: "Psykologer skal kunne forstå, hvad værktøjet gør, og hvad det ikke gør.",
+  },
+  {
+    title: "Dokumenteret før påstået",
+    text: "Sikkerhed, dataflow og afgrænsninger skal kunne læses og undersøges.",
+  },
+  {
+    title: "Fagligt sprog før tech-sprog",
+    text: "Produktet skal tale ind i psykologers praksis, ikke ind i AI-branchens buzzwords.",
+  },
+];
+
+const gennemsigtighed = [
+  {
+    title: "Tilgang",
+    text: "Læs JournalKlars faglige tilgang til AI og journalføring.",
     href: "/tilgang",
   },
   {
-    title: "Sikkerhed og data",
-    text: "Hvordan JournalKlar behandler noter, hvor data behandles, og hvad der ikke gemmes.",
-    linkText: "Læs om sikkerhed",
+    title: "Sikkerhed",
+    text: "Se hvordan klientindhold, drift og underleverandører håndteres.",
     href: "/sikkerhed",
   },
   {
-    title: "Teknisk gennemgang",
-    text: "For dig, din leder, DPO eller fagforening, der vil se den konkrete arkitektur og datastrøm.",
-    linkText: "Se teknisk gennemgang",
-    href: "/sikkerhed#teknisk-gennemgang",
+    title: "FAQ",
+    text: "Få svar på de mest praktiske og kritiske spørgsmål.",
+    href: "/faq",
   },
   {
-    title: "Sådan virker det",
-    text: "Se hvordan dine egne rånoter bliver til et struktureret journaludkast.",
-    linkText: "Se arbejdsgangen",
-    href: "/#saadan-virker-det",
+    title: "Kontakt",
+    text: "Skriv direkte, hvis noget er uklart.",
+    href: "/kontakt",
   },
 ];
+
+// ─── Page ────────────────────────────────────────────────────────────────
 
 export default function OmPage() {
   return (
@@ -97,23 +82,20 @@ export default function OmPage() {
 
         {/* ── 1. Hero ─────────────────────────────────────────────── */}
         <section className="py-16 px-6 md:pt-[100px] md:pb-[90px] md:px-16">
-          <div className="max-w-[1100px] mx-auto grid grid-cols-1 gap-10 md:grid-cols-[3fr_2fr] md:gap-14 items-stretch">
+          <div className="max-w-[1100px] mx-auto grid grid-cols-1 gap-12 md:grid-cols-[3fr_2fr] md:gap-16 items-stretch">
 
             {/* Left: copy */}
             <div className="flex flex-col justify-center">
               <SectionLabel>Om JournalKlar</SectionLabel>
-              <h1 className="max-w-[520px] mb-6">
-                Bygget af en psykolog.<br />
-                Til psykologers journalarbejde.
-              </h1>
-              <p className="font-sans text-[16px] font-light text-[#505050] max-w-[480px] leading-[1.8] mb-9">
-                JournalKlar er udviklet af Lars Mullert Pedersen, psykolog, til danske privatpraktiserende psykologer, der vil bruge AI til at lette journalføringen — uden at flytte det faglige ansvar væk fra psykologen.
+              <h1 className="mb-6">Et dansk fagværktøj med en psykolog bag.</h1>
+              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.8] max-w-[480px] mb-10">
+                JournalKlar er udviklet af Lars Mullert Pedersen, psykolog, som et specialiseret værktøj til privatpraktiserende psykologers journalføringsarbejde.
               </p>
-              <div className="flex flex-col gap-3">
-                {["Psykolog bag produktet", "Bygget til dansk privat praksis", "Egne noter først"].map((item) => (
-                  <div key={item} className="flex items-center gap-3">
-                    <span className="font-sans text-[13px] text-evergreen/40 flex-shrink-0">—</span>
-                    <span className="font-sans text-[14px] font-light text-[#505050]">{item}</span>
+              <div className="flex flex-col gap-[10px]">
+                {trustMarkers.map((item) => (
+                  <div key={item} className="flex items-start gap-3 font-sans text-[14px] font-light text-[#505050] leading-[1.7]">
+                    <span className="text-muted flex-shrink-0">—</span>
+                    <span>{item}</span>
                   </div>
                 ))}
               </div>
@@ -121,21 +103,21 @@ export default function OmPage() {
 
             {/* Right: founder card */}
             <div className="flex items-center justify-start md:justify-center">
-              <div className="border border-sand bg-white px-9 py-10 w-full max-w-[300px]">
-                <div className="font-serif text-[44px] font-normal text-evergreen leading-none tracking-[-0.02em] mb-7">
+              <div className="bg-evergreen px-9 py-10 w-full max-w-[300px]">
+                <div className="font-serif text-[48px] font-normal text-parchment leading-none tracking-[-0.02em] mb-7">
                   LMP
                 </div>
-                <div className="w-8 h-px bg-sand mb-6" />
-                <div className="font-sans text-[15px] font-normal text-evergreen mb-1">
+                <div className="w-8 h-px bg-parchment/20 mb-6" />
+                <div className="font-sans text-[14px] font-normal text-parchment leading-[1.9]">
                   Lars Mullert Pedersen
                 </div>
-                <div className="font-sans text-[13px] font-light text-muted leading-[1.75]">
+                <div className="font-sans text-[13px] font-light text-parchment/70 leading-[1.8]">
                   Psykolog, cand.psych.
                 </div>
-                <div className="font-sans text-[13px] font-light text-muted leading-[1.75]">
+                <div className="font-sans text-[13px] font-light text-parchment/70 leading-[1.8]">
                   Grundlægger af JournalKlar
                 </div>
-                <div className="font-sans text-[13px] font-light text-muted leading-[1.75]">
+                <div className="font-sans text-[13px] font-light text-parchment/70 leading-[1.8]">
                   Aalborg, Danmark
                 </div>
               </div>
@@ -150,91 +132,48 @@ export default function OmPage() {
         <section className="py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Personen bag</SectionLabel>
-            <h2 className="max-w-[520px]">Jeg hedder Lars Mullert Pedersen og er psykolog.</h2>
+            <h2 className="max-w-[540px]">Jeg hedder Lars Mullert Pedersen og er psykolog.</h2>
 
-            <div className="mt-9 grid grid-cols-1 gap-10 md:grid-cols-[1fr_260px] md:gap-14 items-start">
+            <div className="mt-9 max-w-[660px]">
+              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+                Jeg har bygget JournalKlar, fordi jeg savnede et journalværktøj, der tog psykologers konkrete arbejdssituation alvorligt: kort tid mellem sessioner, høje dokumentationskrav og et fagligt ansvar, der ikke kan outsources.
+              </p>
+              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+                Min baggrund er psykologfaglig, ikke teknologisk. Det betyder ikke, at teknologien er mindre vigtig. Det betyder, at produktet er udviklet med udgangspunkt i psykologens arbejdsgang, ansvar og sprog — ikke i AI som mål i sig selv.
+              </p>
+              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-9">
+                JournalKlar er derfor bygget som et smalt værktøj til én konkret opgave: at hjælpe psykologen fra egne noter til et struktureret journaludkast.
+              </p>
 
-              {/* Venstre: personlig tekst */}
-              <div>
-                <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-6">
-                  Jeg har udviklet JournalKlar med udgangspunkt i et konkret problem i psykologisk praksis: Journalføring skal være fagligt præcis, juridisk forsvarlig og mulig at nå i en travl hverdag.
-                </p>
-                <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-6">
-                  AI kan hjælpe med noget af det arbejde. Men kun hvis værktøjet er bygget med respekt for psykologens faglige skøn, klientens fortrolighed og det ansvar, der følger med journalen.
-                </p>
-                <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-10">
-                  JournalKlar er mit bud på et værktøj, der hjælper med strukturen — uden at overtage vurderingen.
-                </p>
-                <div className="border-l-2 border-sand pl-6">
-                  <div className="font-sans text-[15px] font-normal text-evergreen">Lars Mullert Pedersen</div>
-                  <div className="font-sans text-[13px] font-light text-muted mt-[2px]">Psykolog, cand.psych.</div>
-                  <div className="font-sans text-[13px] font-light text-muted">Grundlægger af JournalKlar</div>
-                </div>
+              <div className="font-serif italic text-[15px] text-evergreen leading-[1.9]">
+                Lars Mullert Pedersen<br />
+                Psykolog, cand.psych.<br />
+                Grundlægger af JournalKlar
               </div>
-
-              {/* Højre: produktfokus */}
-              <div className="border border-sand bg-sand [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
-                <div className="font-sans text-[10px] font-medium tracking-[0.16em] uppercase text-orange mb-5">
-                  Hvad JournalKlar gør
-                </div>
-                <p className="font-sans text-[13px] font-light text-[#505050] leading-[1.7] mb-6">
-                  Et specialiseret redskab til ét trin: fra psykologens egne noter til et struktureret journaludkast.
-                </p>
-                <div className="flex flex-col gap-4">
-                  {[
-                    "Egne noter som udgangspunkt",
-                    "Ingen sessionoptagelse",
-                    "Altid journaludkast — aldrig færdig journal",
-                    "Psykologen godkender",
-                  ].map((item) => (
-                    <div key={item} className="flex items-start gap-3">
-                      <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true" className="flex-shrink-0 mt-[3px]">
-                        <polyline points="1.5,5.5 4,8 9.5,2.5" stroke="#1D3A2F" strokeOpacity="0.65" strokeWidth="1.4" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
-                      </svg>
-                      <span className="font-sans text-[13px] font-light text-[#505050] leading-[1.55]">{item}</span>
-                    </div>
-                  ))}
-                </div>
-                <div className="mt-6 pt-5 border-t border-sand">
-                  <a href="/tilgang" className="inline-flex items-center gap-[6px] text-evergreen font-sans text-[13px] font-normal border-b border-evergreen/20 pb-[2px] hover:border-evergreen transition-colors">
-                    Læs om tilgangen
-                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
-                      <line x1="1" y1="5" x2="9" y2="5" stroke="currentColor" strokeWidth="1.2"/>
-                      <polyline points="6,2 9,5 6,8" stroke="currentColor" strokeWidth="1.2" fill="none"/>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-
             </div>
           </div>
         </section>
 
         <Rule />
 
-        {/* ── 3. Hvorfor JournalKlar findes ───────────────────────── */}
+        {/* ── 3. Produktets fokus ─────────────────────────────────── */}
         <section className="py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
-            <SectionLabel>Hvorfor JournalKlar findes</SectionLabel>
-            <h2 className="max-w-[480px]">Det begyndte med en faglig bekymring.</h2>
+            <SectionLabel>Produktets fokus</SectionLabel>
+            <h2 className="max-w-[520px]">JournalKlar forsøger ikke at være en platform.</h2>
 
-            <div className="mt-9 max-w-[760px]">
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-6">
-                Da AI-værktøjer for alvor blev brugbare, blev det tydeligt, hvor hurtigt de kan gøre en opgave færdig. Det er en stor styrke. Men i journalføring rejser det også et vigtigt spørgsmål:
+            <div className="mt-9 max-w-[660px]">
+              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+                Mange digitale systemer vokser hurtigt i bredden: booking, betaling, klientportal, video, beskeder, journal, skemaer og administration.
               </p>
-
-              {/* Pull quote */}
-              <blockquote className="my-10 py-8 px-8 border-l-2 border-evergreen/30 bg-white border border-sand border-l-2">
-                <p className="font-serif text-[22px] font-normal text-evergreen leading-[1.5] tracking-[-0.01em] m-0">
-                  Hvilken del af arbejdet må AI egentlig overtage?
-                </p>
-              </blockquote>
-
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-6">
-                JournalKlar er bygget ud fra den tanke, at psykologen selv skal vælge, hvad der er fagligt væsentligt at journalføre. Derfor starter JournalKlar ikke med en fuld optagelse af samtalen. Det starter med psykologens egne noter.
+              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+                JournalKlar er valgt smallere.
+              </p>
+              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+                Det er ikke et journalsystem. Det er ikke en behandlingsplatform. Det er ikke et praksisstyringssystem. Det er et arbejdsredskab til det konkrete øjeblik efter sessionen, hvor dine noter skal blive til et journaludkast, du kan gennemgå og overføre til dit eget system.
               </p>
               <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85]">
-                Det er ikke en afvisning af AI. Det er et forsøg på at bruge AI med de rigtige grænser.
+                Det fokus er en del af produktets troværdighed.
               </p>
             </div>
           </div>
@@ -242,84 +181,61 @@ export default function OmPage() {
 
         <Rule />
 
-        {/* ── 4. Hvad JournalKlar er ──────────────────────────────── */}
+        {/* ── 4. Arbejdsprincipper ────────────────────────────────── */}
         <section className="py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
-            <SectionLabel>Produktet</SectionLabel>
-            <h2 className="max-w-[540px]">Et specialiseret arbejdsredskab — ikke et nyt journalsystem.</h2>
-            <p className="max-w-[540px] text-[#505050] mt-4">
-              JournalKlar gør én ting: hjælper psykologen fra rå noter efter sessionen til et struktureret journaludkast.
-            </p>
-            <p className="max-w-[540px] text-[#505050] mt-3">
-              Det er ikke et bookingsystem, ikke et økonomisystem, ikke en behandlingsplatform og ikke et generelt AI-chatværktøj. Det er et fagligt hjælpeværktøj til det konkrete øjeblik, hvor dine noter skal blive til et journaludkast, du kan gennemgå og overføre til dit eget journalsystem.
-            </p>
+            <SectionLabel>Hvordan vi bygger</SectionLabel>
+            <h2 className="max-w-[480px]">Langsomt, åbent og med tydelige grænser.</h2>
 
-            {/* Gør / Gør ikke */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
-
-              {/* Gør */}
-              <div className="bg-white border border-sand [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-orange mb-6">
-                  JournalKlar gør
+              {principper.map(({ title, text }) => (
+                <div key={title} className="border border-sand p-8">
+                  <div className="font-serif text-[18px] font-normal text-evergreen mb-3 leading-[1.35]">
+                    {title}
+                  </div>
+                  <p className="font-sans text-[14px] font-normal text-muted leading-[1.7] m-0">
+                    {text}
+                  </p>
                 </div>
-                <div className="flex flex-col gap-4">
-                  {gørItems.map((item) => (
-                    <div key={item} className="flex items-start gap-3">
-                      <svg className="flex-shrink-0 mt-[4px]" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                        <polyline points="2,7 5.5,10.5 12,4" stroke="#1D3A2F" strokeWidth="1.3" fill="none" strokeLinecap="round"/>
-                      </svg>
-                      <span className="font-sans text-[16px] font-light text-graphite leading-[1.6]">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Gør ikke */}
-              <div className="bg-white border border-sand p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-orange mb-6">
-                  JournalKlar gør ikke
-                </div>
-                <div className="flex flex-col gap-4">
-                  {gørIkkeItems.map((item) => (
-                    <div key={item} className="flex items-start gap-3">
-                      <svg className="flex-shrink-0 mt-[4px]" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                        <line x1="3.5" y1="3.5" x2="10.5" y2="10.5" stroke="#2C2C2C" strokeWidth="1.3" strokeOpacity="0.4" strokeLinecap="round"/>
-                        <line x1="10.5" y1="3.5" x2="3.5" y2="10.5" stroke="#2C2C2C" strokeWidth="1.3" strokeOpacity="0.4" strokeLinecap="round"/>
-                      </svg>
-                      <span className="font-sans text-[16px] font-light text-graphite leading-[1.6]">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
+              ))}
             </div>
           </div>
         </section>
 
         <Rule />
 
-        {/* ── 5. Læs mere ─────────────────────────────────────────── */}
+        {/* ── 5. Gennemsigtighed ──────────────────────────────────── */}
         <section className="py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
-            <SectionLabel>Læs mere</SectionLabel>
-            <h2 className="max-w-[460px]">JournalKlar skal kunne undersøges.</h2>
-            <p className="max-w-[520px] text-[#505050]">
-              Hvis du overvejer at bruge et AI-værktøj i din praksis, skal du ikke bare mødes med påstande. Du skal kunne se, hvordan værktøjet er tænkt, bygget og afgrænset.
-            </p>
+            <SectionLabel>Gennemsigtighed</SectionLabel>
+            <h2 className="max-w-[520px]">Det skal være nemt at finde ud af, hvem du køber noget af.</h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
-              {laesMore.map(({ title, text, linkText, href }) => (
+            <div className="mt-9 max-w-[660px]">
+              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+                Når man bruger et AI-værktøj i psykologisk praksis, bør afsenderen ikke være uklar. Du skal kunne se, hvem der står bag, hvad produktet er bygget til, hvordan det er afgrænset, og hvor du kan finde dokumentationen.
+              </p>
+              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-12">
+                Derfor samler JournalKlar ikke det hele i én stor salgstekst. Du kan læse om tilgangen, sikkerheden, databehandlingen og de praktiske spørgsmål hver for sig.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {gennemsigtighed.map(({ title, text, href }) => (
                 <a
                   key={title}
                   href={href}
-                  className="group border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8 flex flex-col justify-between gap-6"
+                  className="group border border-sand bg-white p-8 flex flex-col justify-between gap-6 hover:border-evergreen/40 transition-colors"
                 >
                   <div>
-                    <div className="font-sans text-[15px] font-normal text-evergreen mb-3">{title}</div>
-                    <p className="font-sans text-[14px] font-light text-[#505050] leading-[1.7] m-0">{text}</p>
+                    <div className="font-serif text-[17px] font-normal text-evergreen mb-3 leading-[1.35]">
+                      {title}
+                    </div>
+                    <p className="font-sans text-[13px] font-light text-[#505050] leading-[1.7] m-0">
+                      {text}
+                    </p>
                   </div>
-                  <div className="flex items-center gap-[8px] font-sans text-[13px] font-normal text-evergreen border-b border-evergreen/20 pb-[2px] self-start group-hover:border-evergreen transition-colors">
-                    {linkText}
+                  <div className="flex items-center gap-2 font-sans text-[13px] font-normal text-evergreen border-b border-evergreen/20 pb-[2px] self-start group-hover:border-evergreen transition-colors">
+                    Læs mere
                     <ArrowRight />
                   </div>
                 </a>
@@ -330,43 +246,37 @@ export default function OmPage() {
 
         <Rule />
 
-        {/* ── 6. Personlig afslutning ─────────────────────────────── */}
+        {/* ── 6. Afslutning ───────────────────────────────────────── */}
         <section className="py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
-            <SectionLabel>En personlig note</SectionLabel>
-            <h2 className="max-w-[560px]">Jeg har ikke bygget JournalKlar for at gøre journalføring automatisk.</h2>
+            <SectionLabel>Afslutning</SectionLabel>
+            <h2 className="max-w-[480px]">Bygget tæt på den praksis, det skal bruges i.</h2>
 
-            <div className="mt-9 max-w-[760px]">
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-6">
-                Jeg har bygget det, fordi jeg tror, vi får brug for værktøjer, der både tager dokumentationsbyrden og fagligheden alvorligt.
-              </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-6">
-                AI kommer til at blive en del af psykologers arbejdsliv. Spørgsmålet er ikke kun, om det kan spare tid. Spørgsmålet er, hvilke dele af arbejdet vi lader det overtage.
+            <div className="mt-9 max-w-[660px]">
+              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+                JournalKlar er ikke et stort system med mange løfter. Det er et specialiseret værktøj til en konkret del af psykologers hverdag.
               </p>
               <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-10">
-                JournalKlar er mit svar på det spørgsmål.
+                Hvis du vil forstå den faglige tanke bag produktet, kan du læse JournalKlars tilgang til AI og journalføring.
               </p>
 
-              {/* Signature */}
-              <p className="font-serif text-[15px] font-normal italic text-evergreen mb-10">
-                — Lars Mullert Pedersen, psykolog og grundlægger
-              </p>
-
-              {/* CTAs */}
-              <div className="flex flex-col sm:flex-row gap-4 items-start">
-                <a
-                  href="/#saadan-virker-det"
-                  className="inline-flex items-center gap-[10px] bg-evergreen text-white font-sans text-[15px] font-normal px-[30px] py-[15px] hover:bg-[#152e23] transition-colors"
-                >
-                  Se hvordan JournalKlar virker
-                  <ArrowRight color="white" />
-                </a>
+              <div className="flex flex-wrap items-center gap-6">
                 <a
                   href="/tilgang"
-                  className="inline-flex items-center gap-[6px] text-evergreen font-sans text-[14px] font-normal border-b border-evergreen/25 pb-[2px] hover:border-evergreen transition-colors self-center sm:self-auto mt-1"
+                  className="inline-flex items-center gap-[10px] bg-evergreen text-white font-sans text-[15px] font-normal px-[30px] py-[15px] hover:bg-[#152e23] transition-colors"
                 >
-                  Læs manifestet
-                  <ArrowRight />
+                  Læs tilgangen
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                    <line x1="1" y1="6" x2="11" y2="6" stroke="white" strokeWidth="1.3" />
+                    <polyline points="7.5,2.5 11,6 7.5,9.5" stroke="white" strokeWidth="1.3" fill="none" />
+                  </svg>
+                </a>
+                <a
+                  href="/sikkerhed"
+                  className="inline-flex items-center gap-[6px] text-evergreen font-sans text-[14px] font-normal border-b border-evergreen/20 pb-[2px] hover:border-evergreen transition-colors"
+                >
+                  Se sikkerhed og data
+                  <ArrowRight size={10} />
                 </a>
               </div>
             </div>
