@@ -37,7 +37,7 @@ export default function Afgrænsning() {
 
           {/* Højre: dash-lister */}
           <div>
-            <div className="font-sans text-[11px] font-medium tracking-[0.12em] uppercase text-muted mb-5">
+            <div className="font-sans text-[11px] font-medium tracking-[0.12em] uppercase text-orange mb-5">
               Hvad JournalKlar gør
             </div>
             <div className="flex flex-col gap-[10px] mb-10">
@@ -49,7 +49,7 @@ export default function Afgrænsning() {
               ))}
             </div>
 
-            <div className="font-sans text-[11px] font-medium tracking-[0.12em] uppercase text-muted mb-5">
+            <div className="font-sans text-[11px] font-medium tracking-[0.12em] uppercase text-orange mb-5">
               Hvad JournalKlar ikke gør
             </div>
             <div className="flex flex-col gap-[10px]">

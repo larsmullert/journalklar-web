@@ -68,7 +68,7 @@ export default function Sikkerhed() {
                   {num}
                 </div>
                 <div>
-                  <div className="font-sans text-[15px] font-medium text-evergreen mb-[6px]">
+                  <div className="font-sans text-[15px] font-normal text-evergreen mb-[6px]">
                     {title}
                   </div>
                   <p className="font-sans text-[14px] font-light text-[#5A5A5A] leading-[1.7] mb-0">
@@ -82,7 +82,7 @@ export default function Sikkerhed() {
           {/* Højre: Radikal transparens */}
           <div className="bg-evergreen p-6 md:p-8 flex flex-col">
             <div>
-              <div className="flex items-center gap-[12px] font-sans text-[11px] font-medium tracking-[0.16em] uppercase text-parchment/40 mb-7 before:content-[''] before:block before:w-[18px] before:h-px before:bg-parchment/30 before:shrink-0">
+              <div className="flex items-center gap-[12px] font-sans text-[11px] font-medium tracking-[0.16em] uppercase text-parchment/70 mb-7 before:content-[''] before:block before:w-[18px] before:h-px before:bg-parchment/50 before:shrink-0">
                 Radikal transparens
               </div>
               <div className="font-serif text-[clamp(20px,1.8vw,24px)] font-normal text-parchment leading-[1.35] tracking-[-0.01em] mb-5">

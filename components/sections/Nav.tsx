@@ -8,10 +8,10 @@ export default function Nav() {
         </a>
 
         <div className="flex items-center gap-6 md:gap-10">
-          <a href="#hvordan" className="hidden md:block font-sans text-[14px] font-light text-graphite hover:text-evergreen transition-colors">
+          <a href="#hvordan" className="hidden md:block font-sans text-[14px] font-normal text-graphite hover:text-evergreen transition-colors">
             Sådan virker det
           </a>
-          <a href="#sikkerhed" className="hidden md:block font-sans text-[14px] font-light text-graphite hover:text-evergreen transition-colors">
+          <a href="#sikkerhed" className="hidden md:block font-sans text-[14px] font-normal text-graphite hover:text-evergreen transition-colors">
             Sikkerhed
           </a>
           <a

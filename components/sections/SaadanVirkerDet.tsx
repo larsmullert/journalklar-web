@@ -40,7 +40,7 @@ export default function SaadanVirkerDet() {
               <div className="font-serif text-[52px] font-light text-evergreen opacity-[0.18] leading-none mb-[22px]">
                 {num}
               </div>
-              <div className="font-sans text-[15px] font-medium text-evergreen mb-[10px]">
+              <div className="font-sans text-[15px] font-normal text-evergreen mb-[10px]">
                 {title}
               </div>
               <p className="font-sans text-[14px] font-light text-[#565656] leading-[1.75] mb-0">

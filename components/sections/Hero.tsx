@@ -6,7 +6,7 @@ export default function Hero() {
 
           {/* Venstre: copy */}
           <div>
-            <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-muted mb-[22px]">
+            <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-orange mb-[22px]">
               Til privatpraktiserende psykologer
             </div>
 
@@ -21,7 +21,7 @@ export default function Hero() {
             <div className="flex flex-wrap items-center gap-8 mb-12">
               <a
                 href="#pris"
-                className="inline-flex items-center gap-[10px] bg-evergreen text-white font-sans text-[15px] font-normal px-8 py-[15px] hover:bg-[#152e23] transition-colors"
+                className="inline-flex items-center gap-[10px] bg-evergreen text-white font-sans text-[15px] font-normal px-[30px] py-[15px] hover:bg-[#152e23] transition-colors"
               >
                 Prøv gratis i 30 dage
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">

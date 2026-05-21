@@ -55,13 +55,13 @@ export default function PrisOgCTA() {
         {/* CTA-blok */}
         <div className="mt-9 p-6 md:p-8 bg-parchment border border-sand [border-top:2px_solid_rgba(29,58,47,0.2)] grid grid-cols-1 gap-6 md:grid-cols-[1fr_auto] md:items-center">
           <div className="font-sans text-[14px] font-light text-[#505050] leading-[1.75]">
-            <strong className="font-medium text-evergreen">30 dages gratis prøveperiode</strong>
+            <span className="font-normal text-evergreen">30 dages gratis prøveperiode</span>
             {" "}— ingen kreditkort kræves ved opstart. Du opretter en konto, underskriver databehandleraftalen og er i gang. Ingen installation. Ingen oplæring.
           </div>
           <div className="flex flex-col items-start gap-[10px] md:items-end md:flex-shrink-0">
             <a
               href="#"
-              className="inline-flex items-center gap-[10px] bg-evergreen text-white font-sans text-[16px] font-medium px-8 py-[18px] hover:bg-[#152e23] transition-colors"
+              className="inline-flex items-center gap-[10px] bg-evergreen text-white font-sans text-[15px] font-normal px-[30px] py-[15px] hover:bg-[#152e23] transition-colors"
             >
               Prøv gratis i 30 dage
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
