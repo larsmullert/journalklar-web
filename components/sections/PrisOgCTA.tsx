@@ -1,27 +1,5 @@
 import SectionLabel from "@/components/ui/SectionLabel";
 
-function CheckIcon() {
-  return (
-    <svg className="flex-shrink-0 mt-[2px] text-evergreen" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-      <polyline points="2,7 5.5,10.5 12,4" stroke="#1D3A2F" strokeWidth="1.3" fill="none" strokeLinecap="round"/>
-    </svg>
-  );
-}
-
-const maanedligFeatures = [
-  "Ubegrænsede journaludkast",
-  "Første-, opfølgnings- og afslutningssamtaler",
-  "Tilpas-instruktion pr. notat",
-  "Databehandleraftale inkluderet",
-  "Opsig når som helst",
-];
-
-const aarsFeatures = [
-  "Alt fra månedlig",
-  "Prioriteret support",
-  "Adgang til nye funktioner ved launch",
-];
-
 export default function PrisOgCTA() {
   return (
     <section id="pris" className="py-16 px-6 md:py-[120px] md:px-16">
@@ -36,31 +14,25 @@ export default function PrisOgCTA() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 mt-12">
 
           {/* Månedlig */}
-          <div className="relative p-6 md:p-8 bg-white border border-sand [border-top:2px_solid_rgba(29,58,47,0.2)]">
+          <div className="p-6 md:p-8 bg-white border border-sand [border-top:2px_solid_rgba(29,58,47,0.2)]">
             <div className="font-sans text-[11px] font-medium tracking-[0.12em] uppercase text-muted mb-6">
               Månedlig
             </div>
             <div className="font-serif text-[56px] font-light text-evergreen leading-none tracking-[-0.03em]">
               199<span className="text-[28px]">kr.</span>
             </div>
-            <div className="font-sans text-[13px] text-muted mt-1 mb-7 font-light">
+            <div className="font-sans text-[13px] text-muted mt-1 mb-8 font-light">
               pr. måned ekskl. moms · ingen binding
             </div>
-            <div className="font-sans text-[14px] font-light text-graphite flex flex-col gap-4">
-              {maanedligFeatures.map((feature) => (
-                <div key={feature} className="flex items-start gap-3">
-                  <CheckIcon />
-                  <span>{feature}</span>
-                </div>
-              ))}
+            <div className="font-sans text-[14px] font-light text-[#505050] flex flex-col gap-[10px]">
+              <span>Ubegrænsede journaludkast</span>
+              <span>BEK 1361/2025</span>
+              <span>Databehandleraftale inkluderet</span>
             </div>
           </div>
 
           {/* Årsabonnement */}
-          <div className="relative p-6 md:p-8 bg-white border border-evergreen/20 [border-top:2px_solid_rgba(29,58,47,0.2)]">
-            <span className="absolute -top-px -right-px bg-evergreen text-white font-sans text-[10px] font-medium tracking-[0.1em] uppercase px-[14px] py-[5px]">
-              Anbefalet
-            </span>
+          <div className="p-6 md:p-8 bg-white border border-sand [border-top:2px_solid_rgba(29,58,47,0.2)]">
             <div className="font-sans text-[11px] font-medium tracking-[0.12em] uppercase text-muted mb-6">
               Årsabonnement
             </div>
@@ -70,16 +42,12 @@ export default function PrisOgCTA() {
             <div className="font-sans text-[13px] text-muted mt-1 mb-[6px] font-light">
               pr. år ekskl. moms · faktureres én gang
             </div>
-            <div className="font-sans text-[13px] text-orange font-normal mb-7">
-              Spar 389 kr. — svarende til 166 kr./md.
+            <div className="font-sans text-[13px] text-muted font-light mb-8">
+              Svarende til 166 kr./md.
             </div>
-            <div className="font-sans text-[14px] font-light text-graphite flex flex-col gap-4">
-              {aarsFeatures.map((feature) => (
-                <div key={feature} className="flex items-start gap-3">
-                  <CheckIcon />
-                  <span>{feature}</span>
-                </div>
-              ))}
+            <div className="font-sans text-[14px] font-light text-[#505050] flex flex-col gap-[10px]">
+              <span>Alt fra månedlig</span>
+              <span>Prioriteret support</span>
             </div>
           </div>
         </div>
@@ -95,7 +63,7 @@ export default function PrisOgCTA() {
               href="#"
               className="inline-flex items-center gap-[10px] bg-evergreen text-white font-sans text-[16px] font-medium px-8 py-[18px] hover:bg-[#152e23] transition-colors"
             >
-              Start din gratis prøveperiode
+              Prøv gratis i 30 dage
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
                 <line x1="1" y1="6" x2="11" y2="6" stroke="white" strokeWidth="1.3"/>
                 <polyline points="7.5,2.5 11,6 7.5,9.5" stroke="white" strokeWidth="1.3" fill="none"/>

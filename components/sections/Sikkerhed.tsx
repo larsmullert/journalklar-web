@@ -33,6 +33,28 @@ export default function Sikkerhed() {
           Det er det eneste der reelt betyder noget. Her er fire ting du bør vide — på almindeligt dansk.
         </p>
 
+        {/* Dataflow */}
+        <div className="mt-10 mb-2 overflow-x-auto">
+          <div className="flex items-center min-w-max">
+            {[
+              "Dine noter",
+              "JournalKlar-app",
+              "EU-baseret AI-behandling",
+              "Journaludkast",
+              "Ingen varig opbevaring",
+            ].map((step, i, arr) => (
+              <div key={step} className="flex items-center">
+                <div className="border border-sand bg-white px-4 py-[9px] font-sans text-[12px] font-light text-evergreen whitespace-nowrap">
+                  {step}
+                </div>
+                {i < arr.length - 1 && (
+                  <div className="px-3 font-sans text-[14px] text-muted select-none">→</div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-[1fr_360px] gap-6 mt-12 items-stretch">
 
           {/* Venstre: 4 løfter */}
@@ -66,7 +88,7 @@ export default function Sikkerhed() {
               <div className="font-serif text-[clamp(20px,1.8vw,24px)] font-normal text-parchment leading-[1.35] tracking-[-0.01em] mb-5">
                 Vi skjuler ingenting om, hvordan det virker.
               </div>
-              <p className="font-sans text-[14px] font-light text-parchment/60 leading-[1.8] mb-0">
+              <p className="font-sans text-[14px] font-light text-parchment/80 leading-[1.8] mb-0">
                 Serverplacering, kryptering, underleverandører, datastrømme, journaliseringskrav — alt er dokumenteret og tilgængeligt. Ikke fordi vi er nødt til det. Men fordi du har ret til at vide det.
               </p>
             </div>

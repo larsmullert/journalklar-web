@@ -48,7 +48,7 @@ function Badge({
   const styles = {
     neutral:  "bg-sand text-muted",
     positive: "bg-evergreen/[0.08] text-evergreen",
-    caution:  "bg-orange/[0.08] text-orange",
+    caution:  "bg-sand text-evergreen/60",
   };
   return (
     <span className={`inline-block font-sans text-[10px] font-medium tracking-[0.08em] uppercase px-[8px] py-[3px] ${styles[variant]}`}>
@@ -296,7 +296,7 @@ export default function SikkerhedPage() {
 
             {/* Right: trust panel */}
             <div className="bg-evergreen px-8 py-10 flex flex-col justify-center">
-              <div className="font-sans text-[10px] font-medium tracking-[0.16em] uppercase text-parchment/45 mb-7">
+              <div className="font-sans text-[10px] font-medium tracking-[0.16em] uppercase text-parchment/70 mb-7">
                 Fire garantier
               </div>
               <div className="flex flex-col gap-5">
@@ -328,7 +328,7 @@ export default function SikkerhedPage() {
               {kortSagt.map(({ title, text, note }) => (
                 <div
                   key={title}
-                  className="border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8 hover:shadow-[0_2px_10px_rgba(29,58,47,0.09)] transition-shadow"
+                  className="border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8 "
                 >
                   <div className="w-7 h-7 border border-sand flex items-center justify-center mb-5">
                     <CheckSm />
@@ -357,7 +357,7 @@ export default function SikkerhedPage() {
               {steps.map(({ num, title, text, chip }, i) => (
                 <div key={num} className="flex gap-5">
                   <div className="flex flex-col items-center flex-shrink-0">
-                    <div className="w-9 h-9 border border-sand bg-white flex items-center justify-center shadow-[0_1px_3px_rgba(29,58,47,0.06)]">
+                    <div className="w-9 h-9 border border-sand bg-white flex items-center justify-center">
                       <span className="font-sans text-[12px] font-medium text-muted">{num}</span>
                     </div>
                     {i < steps.length - 1 && (
@@ -446,7 +446,7 @@ export default function SikkerhedPage() {
               {systemCards.map((card) => (
                 <div
                   key={card.name}
-                  className="border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8 hover:shadow-[0_2px_10px_rgba(29,58,47,0.09)] transition-shadow"
+                  className="border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8 "
                 >
                   <div className="flex items-start justify-between gap-3 mb-3">
                     <div>
@@ -587,7 +587,7 @@ export default function SikkerhedPage() {
               <h3 className="text-parchment mb-4" style={{ color: "#F7F4EF" }}>
                 Databehandleraftalen underskrives inden brug.
               </h3>
-              <p className="font-sans text-[14px] font-light text-parchment/70 leading-[1.8] mb-5">
+              <p className="font-sans text-[14px] font-light text-parchment/85 leading-[1.8] mb-5">
                 Inden du går i gang med JournalKlar, underskrives en databehandleraftale. Den beskriver præcist, hvad der sker med data — og hvad der ikke sker.
               </p>
               <p className="font-sans text-[14px] font-light text-parchment/70 leading-[1.8] mb-8">

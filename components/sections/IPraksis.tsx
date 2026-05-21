@@ -11,7 +11,7 @@ export default function IPraksis() {
         </p>
 
         {/* App-frame */}
-        <div className="bg-white border border-[#D4D0CB] shadow-[0_4px_32px_rgba(29,58,47,0.06)] mt-10">
+        <div className="bg-white border border-[#D4D0CB] mt-10">
 
           {/* Topbar */}
           <div className="bg-[#EFECE7] border-b border-[#E0DDD8] px-4 py-[10px] flex items-center gap-[7px]">

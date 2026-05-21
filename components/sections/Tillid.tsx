@@ -52,7 +52,7 @@ export default function Tillid() {
             <div className="mt-7 pt-6 border-t border-parchment/15">
               <a
                 href="/sikkerhed"
-                className="inline-flex items-center gap-[6px] text-orange font-sans text-[13px] font-normal border-b border-orange/40 pb-[2px] hover:border-orange transition-colors"
+                className="inline-flex items-center gap-[6px] text-parchment font-sans text-[13px] font-normal border-b border-parchment/30 pb-[2px] hover:border-parchment transition-colors"
               >
                 Se teknisk dokumentation
                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">

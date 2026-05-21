@@ -190,7 +190,7 @@ export default function TilgangPage() {
                   Vores struktur.
                 </div>
                 <div className="w-8 h-px bg-parchment/20 mb-6" />
-                <p className="font-sans text-[13px] font-light text-parchment/60 leading-[1.7] m-0">
+                <p className="font-sans text-[13px] font-light text-parchment/80 leading-[1.7] m-0">
                   Psykologens faglige skøn er første led. Ikke et efterbehandlingstrin.
                 </p>
               </div>
@@ -440,7 +440,7 @@ export default function TilgangPage() {
         <Rule />
 
         {/* ── 6. Afgrænsning ──────────────────────────────────────── */}
-        <section className="py-16 px-6 md:py-16 md:px-16">
+        <section className="py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Afgrænsning</SectionLabel>
             <h2 className="max-w-[380px]">Et redskab. Ikke en kollega.</h2>
@@ -452,7 +452,7 @@ export default function TilgangPage() {
 
               {/* Gør */}
               <div className="bg-evergreen p-10">
-                <div className="font-serif text-[18px] font-normal text-orange text-center mb-8">
+                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-parchment/60 mb-6">
                   Hvad JournalKlar gør
                 </div>
                 <div className="flex flex-col gap-5">
@@ -469,7 +469,7 @@ export default function TilgangPage() {
 
               {/* Gør ikke */}
               <div className="bg-white border border-sand p-10">
-                <div className="font-serif text-[18px] font-normal text-orange text-center mb-8">
+                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-muted mb-6">
                   Hvad JournalKlar ikke gør
                 </div>
                 <div className="flex flex-col gap-5">
@@ -513,7 +513,7 @@ export default function TilgangPage() {
               {principper.map(({ num, title, text }) => (
                 <div
                   key={num}
-                  className="border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8 hover:shadow-[0_2px_10px_rgba(29,58,47,0.08)] transition-shadow"
+                  className="border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8"
                 >
                   <div className="font-serif text-[28px] font-normal text-evergreen/25 leading-none mb-5 tracking-[-0.02em]">
                     {num}
@@ -591,7 +591,7 @@ export default function TilgangPage() {
                 <a
                   key={title}
                   href={href}
-                  className="group border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8 flex flex-col justify-between gap-6 hover:shadow-[0_2px_10px_rgba(29,58,47,0.09)] transition-shadow"
+                  className="group border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8 flex flex-col justify-between gap-6"
                 >
                   <div>
                     <div className="font-sans text-[15px] font-medium text-evergreen mb-3">{title}</div>

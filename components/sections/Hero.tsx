@@ -5,11 +5,11 @@ export default function Hero() {
 
         {/* Sektion 1 — Tekst */}
         <div className="mb-12">
-          <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-orange mb-[22px]">
+          <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-muted mb-[22px]">
             Til privatpraktiserende psykologer
           </div>
 
-          <h1 className="mb-7 text-[clamp(24px,2.4vw,36px)]">
+          <h1 className="mb-7 text-[clamp(36px,3.8vw,52px)]">
             Du vurderer. Du selekterer. Du skriver dine noter.<br />
             <span className="italic text-evergreen/80">JournalKlar strukturerer dem efter journalføringskravene.</span>
           </h1>

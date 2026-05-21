@@ -67,7 +67,7 @@ const laesMore = [
     title: "Fagligt manifest",
     text: "Hvorfor JournalKlar starter med psykologens egne noter — ikke en fuld optagelse af sessionen.",
     linkText: "Læs manifestet",
-    href: "/manifest",
+    href: "/tilgang",
   },
   {
     title: "Sikkerhed og data",
@@ -109,12 +109,10 @@ export default function OmPage() {
               <p className="font-sans text-[16px] font-light text-[#505050] max-w-[480px] leading-[1.8] mb-9">
                 JournalKlar er udviklet af Lars Mullert Pedersen, psykolog, til danske privatpraktiserende psykologer, der vil bruge AI til at lette journalføringen — uden at flytte det faglige ansvar væk fra psykologen.
               </p>
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-3">
                 {["Psykolog bag produktet", "Bygget til dansk privat praksis", "Egne noter først"].map((item) => (
                   <div key={item} className="flex items-center gap-3">
-                    <div className="w-5 h-5 border border-sand flex items-center justify-center flex-shrink-0">
-                      <CheckSm />
-                    </div>
+                    <span className="font-sans text-[13px] text-evergreen/40 flex-shrink-0">—</span>
                     <span className="font-sans text-[14px] font-light text-[#505050]">{item}</span>
                   </div>
                 ))}
@@ -123,7 +121,7 @@ export default function OmPage() {
 
             {/* Right: founder card */}
             <div className="flex items-center justify-start md:justify-center">
-              <div className="border border-sand bg-white px-9 py-10 w-full max-w-[300px] shadow-[0_1px_8px_rgba(29,58,47,0.06)]">
+              <div className="border border-sand bg-white px-9 py-10 w-full max-w-[300px]">
                 <div className="font-serif text-[44px] font-normal text-evergreen leading-none tracking-[-0.02em] mb-7">
                   LMP
                 </div>
@@ -314,7 +312,7 @@ export default function OmPage() {
                 <a
                   key={title}
                   href={href}
-                  className="group border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8 flex flex-col justify-between gap-6 hover:shadow-[0_2px_10px_rgba(29,58,47,0.09)] transition-shadow"
+                  className="group border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8 flex flex-col justify-between gap-6"
                 >
                   <div>
                     <div className="font-sans text-[15px] font-medium text-evergreen mb-3">{title}</div>
@@ -364,7 +362,7 @@ export default function OmPage() {
                   <ArrowRight color="white" />
                 </a>
                 <a
-                  href="/manifest"
+                  href="/tilgang"
                   className="inline-flex items-center gap-[6px] text-evergreen font-sans text-[14px] font-normal border-b border-evergreen/25 pb-[2px] hover:border-evergreen transition-colors self-center sm:self-auto mt-1"
                 >
                   Læs manifestet
