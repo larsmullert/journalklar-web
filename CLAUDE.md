@@ -57,6 +57,35 @@ Sektioner: py-24 px-16. Max-width: max-w-[1100px] mx-auto.
 Dividers: border-t border-sand.
 
 ---
+## Responsivt design
+
+Siden skal fungere på både desktop og mobil. Brug Tailwind breakpoints — md: for tablet og lg: for desktop. Aldrig hardkodede pixel-bredder på layout-elementer. Tommelfingerregler:
+
+Grids: grid-cols-1 md:grid-cols-2 lg:grid-cols-3
+Padding: px-6 md:px-12 lg:px-16
+Typografi: brug de eksisterende clamp()-størrelser på h1/h2 — de skalerer automatisk
+Nav: mobil burger-menu eller collapsed links under md:
+Screenshot-preview og app-illustration: fuld bredde på mobil, centreret på desktop
+
+---
+
+## Referencefiler
+
+Filer i /reference er inspirations- og analysefiler. De er ikke bindende krav.
+
+Brug dem kun, når den aktuelle opgave eksplicit handler om deres emne:
+- design-review.md bruges ved design- og UI-opgaver
+- sikkerhed-analyse.md bruges ved /sikkerhed, data, GDPR og trust-copy
+- journalklar-flows.html bruges kun ved teknisk gennemgang, dataflow og arkitektur
+- mockup-v2.html bruges som visuel reference, ikke som sandhed for copy eller sikkerhedsclaims
+
+Ved konflikt gælder:
+1. Den aktuelle prompt
+2. CLAUDE.md
+3. Relevante filer i /reference
+4. Ældre mockups og tidligere copy
+
+---
 
 ## Sidestruktur
 
@@ -103,14 +132,17 @@ Subpages (bygges efter landing page er godkendt): /om · /manifest · /sikkerhed
 
 ```
 Produkt:       AI-assisteret journalnotatværktøj til psykologer i privatpraksis
-Målgruppe:     Autoriserede privatpraktiserende psykologer i Danmark (~3.900)
+Målgruppe:     Privatpraktiserende psykologer i Danmark
 Lovgrundlag:   BEK nr. 1361 af 24/11/2025
 Kerneforskel:  Post-session only — ingen optagelse eller transcription under session
-AI-lag:        AWS Bedrock eu-central-1 — ingen logning, ingen træning, ingen tredjeparter
-Hosting:       DanDomain VPS, Skanderborg, ISO 27001
+AI-lag:        AWS Bedrock eu-central-1.
+               Dine input bruges ikke til modeltræning.
+               Klientindhold gemmes ikke som journalindhold efter generering.
+               Underleverandører beskrives på /sikkerhed.
+
+Hosting:       Scannet VPS, Skanderborg, ISO 27001
 Pris:          199 kr./md. eller 1.999 kr./år (ekskl. moms)
 Prøveperiode:  30 dage gratis
-Diktering:     Tilkøb +50 kr./md. — næste version
 ```
 
 ---
@@ -132,4 +164,28 @@ Aldrig: "kraftfuld", "revolutionerende", "seamless", unødvendige adjektiver.
 - Ingen animationer med mindre det specifikt bedes om
 - Ingen eksterne UI-biblioteker
 - Ingen billeder — illustrationer er HTML/SVG
-- Copy er placeholders — brug [PLACEHOLDER] og spørg ikke om indhold
+- Hvis der ikke er leveret konkret copy, brug [PLACEHOLDER]. Hvis promptet indeholder færdig copy, skal den bruges
+
+---
+
+## Forbudte sikkerhedsformuleringer
+
+Brug ikke:
+- 100 % sikker
+- ingen tredjeparter
+- intet gemmes nogensinde
+- ingen data gemmes
+- dine data forlader aldrig Europa
+- automatisk og uden undtagelse
+
+Brug hellere:
+- klientindhold gemmes ikke som journalindhold efter generering
+- dine input bruges ikke til modeltræning
+- klientindhold behandles inden for EU
+- teknisk brugsmetadata kan gemmes uden klientindhold
+
+---
+
+## Deploy
+
+Deploy sker via git push — ikke via Vercel CLI. Kør aldrig vercel link eller vercel deploy. Når du vil deploye, kør: git add . && git commit -m '[beskrivelse]' && git push. Vercel auto-deployer fra GitHub.

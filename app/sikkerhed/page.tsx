@@ -263,14 +263,14 @@ export default function SikkerhedPage() {
             {/* Left: copy */}
             <div className="flex flex-col justify-center">
               <SectionLabel>Data og fortrolighed</SectionLabel>
-              <h1 className="max-w-[560px] mb-6">
+              <h1 className="max-w-[560px] mb-5">
                 Sikkerhed, fortrolighed og data —{" "}
                 <span className="italic text-evergreen/75">på almindeligt dansk</span>
               </h1>
-              <p className="font-sans text-[16px] font-light text-[#505050] max-w-[480px] leading-[1.8] mb-9">
+              <p className="font-sans text-[16px] font-light text-[#505050] max-w-[480px] leading-[1.8] mb-8">
                 JournalKlar er bygget til psykologer, der arbejder med fortrolige klientoplysninger. Du skal kunne forstå, hvad der sker med dine data — ikke bare have tillid til, at vi håndterer det.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 items-start">
+              <div className="flex flex-col sm:flex-row gap-4 items-start mb-8">
                 <a
                   href="#noter"
                   className="inline-flex items-center gap-[10px] bg-evergreen text-white font-sans text-[15px] font-normal px-[30px] py-[15px] hover:bg-[#152e23] transition-colors"
@@ -292,6 +292,13 @@ export default function SikkerhedPage() {
                   </svg>
                 </a>
               </div>
+              <p className="font-sans text-[13px] font-normal text-evergreen tracking-[0.04em] text-center mt-7 mb-0">
+                Ingen optagelse af sessionen{" "}
+                <span className="text-evergreen/40">·</span>
+                {" "}Server i Skanderborg{" "}
+                <span className="text-evergreen/40">·</span>
+                {" "}Altid et udkast
+              </p>
             </div>
 
             {/* Right: trust panel */}
@@ -301,10 +308,8 @@ export default function SikkerhedPage() {
               </div>
               <div className="flex flex-col gap-5">
                 {trustItems.map((item) => (
-                  <div key={item} className="flex items-start gap-4">
-                    <div className="w-5 h-5 border border-parchment/25 flex items-center justify-center flex-shrink-0 mt-[1px]">
-                      <CheckSm light />
-                    </div>
+                  <div key={item} className="flex items-start gap-3">
+                    <span className="font-sans text-[14px] font-light text-parchment/60 leading-[1.55] flex-shrink-0">—</span>
                     <span className="font-sans text-[14px] font-light text-parchment/90 leading-[1.55]">
                       {item}
                     </span>

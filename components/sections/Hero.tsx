@@ -10,15 +10,15 @@ export default function Hero() {
               Til privatpraktiserende psykologer
             </div>
 
-            <h1 className="mb-7 text-[clamp(36px,3.8vw,52px)]">
+            <h1 className="mb-5 text-[clamp(36px,3.8vw,52px)]">
               Journaludkast fra dine egne faglige noter. Uden optagelse af sessionen.
             </h1>
 
-            <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.75] mb-10">
+            <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.75] mb-8">
               JournalKlar hjælper privatpraktiserende psykologer med at strukturere egne noter efter journalføringskravene — så du stadig vurderer, selekterer og godkender.
             </p>
 
-            <div className="flex flex-wrap items-center gap-8 mb-12">
+            <div className="flex flex-wrap items-center gap-8 mb-8">
               <a
                 href="#pris"
                 className="inline-flex items-center gap-[10px] bg-evergreen text-white font-sans text-[15px] font-normal px-[30px] py-[15px] hover:bg-[#152e23] transition-colors"
@@ -41,8 +41,12 @@ export default function Hero() {
               </a>
             </div>
 
-            <p className="font-sans text-[13px] font-light text-muted leading-[1.6]">
-              Ingen optagelse af sessionen · Server i Skanderborg · Altid et udkast
+            <p className="font-sans text-[13px] font-normal text-evergreen tracking-[0.04em] text-center mt-7 mb-0">
+              Ingen optagelse af sessionen{" "}
+              <span className="text-evergreen/40">·</span>
+              {" "}Server i Skanderborg{" "}
+              <span className="text-evergreen/40">·</span>
+              {" "}Altid et udkast
             </p>
           </div>
 

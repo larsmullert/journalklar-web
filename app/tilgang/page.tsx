@@ -48,11 +48,6 @@ function ArrowRight({ color = "currentColor" }: { color?: string }) {
 
 // ─── Data ───────────────────────────────────────────────────────────────
 
-const trustMarkers = [
-  "Ingen optagelse af sessionen",
-  "Server i Skanderborg",
-  "Altid et udkast",
-];
 
 const aiKanHjaelpe = [
   "AI kan hjælpe med struktur.",
@@ -154,26 +149,23 @@ export default function TilgangPage() {
             {/* Left: copy */}
             <div className="flex flex-col justify-center">
               <SectionLabel>JournalKlars tilgang</SectionLabel>
-              <h1 className="max-w-[560px] mb-6">
+              <h1 className="max-w-[560px] mb-5">
                 AI må gerne hjælpe med journalføring.{" "}
                 <span className="italic text-evergreen/65">Men ikke alt bør automatiseres.</span>
               </h1>
               <p className="font-sans text-[16px] font-light text-[#505050] max-w-[480px] leading-[1.8] mb-4">
                 JournalKlar er bygget ud fra et enkelt fagligt standpunkt: AI kan godt hjælpe psykologer med struktur, overblik og formulering — men den første faglige selektion skal blive hos psykologen.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] max-w-[480px] leading-[1.8] mb-9">
+              <p className="font-sans text-[16px] font-light text-[#505050] max-w-[480px] leading-[1.8] mb-8">
                 Derfor optager JournalKlar ikke sessionen. Det transskriberer ikke samtalen. Det starter med dine egne noter efter sessionen.
               </p>
-              <div className="flex flex-col gap-4">
-                {trustMarkers.map((item) => (
-                  <div key={item} className="flex items-center gap-3">
-                    <div className="w-5 h-5 border border-sand flex items-center justify-center flex-shrink-0">
-                      <CheckSm />
-                    </div>
-                    <span className="font-sans text-[14px] font-light text-[#505050]">{item}</span>
-                  </div>
-                ))}
-              </div>
+              <p className="font-sans text-[13px] font-normal text-evergreen tracking-[0.04em] text-center mt-7 mb-0">
+                Ingen optagelse af sessionen{" "}
+                <span className="text-evergreen/40">·</span>
+                {" "}Server i Skanderborg{" "}
+                <span className="text-evergreen/40">·</span>
+                {" "}Altid et udkast
+              </p>
             </div>
 
             {/* Right: statement card */}

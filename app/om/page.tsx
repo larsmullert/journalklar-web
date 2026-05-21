@@ -23,12 +23,6 @@ function ArrowRight({ size = 12 }: { size?: number }) {
 
 // ─── Data ───────────────────────────────────────────────────────────────
 
-const trustMarkers = [
-  "Psykolog bag produktet",
-  "Udviklet til dansk privat praksis",
-  "Specialiseret til journaludkast",
-  "Bygget og drevet fra Danmark",
-];
 
 const principper = [
   {
@@ -87,18 +81,17 @@ export default function OmPage() {
             {/* Left: copy */}
             <div className="flex flex-col justify-center">
               <SectionLabel>Om JournalKlar</SectionLabel>
-              <h1 className="mb-6">Et dansk fagværktøj med en psykolog bag.</h1>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.8] max-w-[480px] mb-10">
+              <h1 className="mb-5">Et dansk fagværktøj med en psykolog bag.</h1>
+              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.8] max-w-[480px] mb-8">
                 JournalKlar er udviklet af Lars Mullert Pedersen, psykolog og grundlægger af JournalKlar, som et specialiseret værktøj til privatpraktiserende psykologers journalføringsarbejde.
               </p>
-              <div className="flex flex-col gap-[10px]">
-                {trustMarkers.map((item) => (
-                  <div key={item} className="flex items-start gap-3 font-sans text-[14px] font-light text-[#505050] leading-[1.7]">
-                    <span className="text-muted flex-shrink-0">—</span>
-                    <span>{item}</span>
-                  </div>
-                ))}
-              </div>
+              <p className="font-sans text-[13px] font-normal text-evergreen tracking-[0.04em] text-center mt-7 mb-0">
+                Ingen optagelse af sessionen{" "}
+                <span className="text-evergreen/40">·</span>
+                {" "}Server i Skanderborg{" "}
+                <span className="text-evergreen/40">·</span>
+                {" "}Altid et udkast
+              </p>
             </div>
 
             {/* Right: founder card */}
