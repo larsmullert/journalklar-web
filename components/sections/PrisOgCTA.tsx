@@ -6,7 +6,7 @@ export default function PrisOgCTA() {
       <div className="max-w-[1100px] mx-auto">
         <SectionLabel>Kom i gang</SectionLabel>
         <h2>Prøv det i 30 dage. Mærk efter selv.</h2>
-        <p className="max-w-[520px] text-[#505050]">
+        <p className="max-w-[520px] text-body">
           Det tager to minutter at komme i gang. Fuld adgang til alle funktioner. Ingen binding. Ingen installation.
         </p>
 
@@ -15,7 +15,7 @@ export default function PrisOgCTA() {
 
           {/* Månedlig */}
           <div className="p-6 md:p-8 bg-white border border-sand [border-top:2px_solid_rgba(29,58,47,0.2)]">
-            <div className="font-sans text-[11px] font-medium tracking-[0.12em] uppercase text-muted mb-6">
+            <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-muted mb-6">
               Månedlig
             </div>
             <div className="font-serif text-[56px] font-light text-evergreen leading-none tracking-[-0.03em]">
@@ -24,7 +24,7 @@ export default function PrisOgCTA() {
             <div className="font-sans text-[13px] text-muted mt-1 mb-8 font-light">
               pr. måned ekskl. moms · ingen binding
             </div>
-            <div className="font-sans text-[14px] font-light text-[#505050] flex flex-col gap-[10px]">
+            <div className="font-sans text-[14px] font-light text-body flex flex-col gap-[10px]">
               <span>Ubegrænsede journaludkast</span>
               <span>BEK 1361/2025</span>
               <span>Databehandleraftale inkluderet</span>
@@ -33,7 +33,7 @@ export default function PrisOgCTA() {
 
           {/* Årsabonnement */}
           <div className="p-6 md:p-8 bg-white border border-sand [border-top:2px_solid_rgba(29,58,47,0.2)]">
-            <div className="font-sans text-[11px] font-medium tracking-[0.12em] uppercase text-muted mb-6">
+            <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-muted mb-6">
               Årsabonnement
             </div>
             <div className="font-serif text-[56px] font-light text-evergreen leading-none tracking-[-0.03em]">
@@ -45,7 +45,7 @@ export default function PrisOgCTA() {
             <div className="font-sans text-[13px] text-muted font-light mb-8">
               Svarende til 166 kr./md.
             </div>
-            <div className="font-sans text-[14px] font-light text-[#505050] flex flex-col gap-[10px]">
+            <div className="font-sans text-[14px] font-light text-body flex flex-col gap-[10px]">
               <span>Alt fra månedlig</span>
               <span>Prioriteret support</span>
             </div>
@@ -54,7 +54,7 @@ export default function PrisOgCTA() {
 
         {/* CTA-blok */}
         <div className="mt-9 p-6 md:p-8 bg-parchment border border-sand [border-top:2px_solid_rgba(29,58,47,0.2)] grid grid-cols-1 gap-6 md:grid-cols-[1fr_auto] md:items-center">
-          <div className="font-sans text-[14px] font-light text-[#505050] leading-[1.75]">
+          <div className="font-sans text-[14px] font-light text-body leading-[1.75]">
             <span className="font-normal text-evergreen">30 dages gratis prøveperiode</span>
             {" "}— ingen betalingskort kræves for prøveperioden. Du opretter en konto, underskriver databehandleraftalen og er i gang. Ingen installation. Ingen oplæring.
           </div>

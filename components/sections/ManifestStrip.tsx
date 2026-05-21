@@ -5,7 +5,7 @@ export default function ManifestStrip() {
         <p className="font-serif font-light italic text-evergreen text-[clamp(20px,2.4vw,30px)] leading-[1.55] mb-7">
           Det at efterbehandle en terapisession gennem vurdering, refleksion og faglig selektion mener vi ikke skal outsources til en automatisk AI.
         </p>
-        <span className="font-sans text-[13px] text-[#6B6860] tracking-[0.04em]">
+        <span className="font-sans text-[13px] text-muted tracking-[0.04em]">
           Men at strukturere noterne til journalføringsbekendtgørelsens krav, tager ikke noget fra din faglighed.
         </span>
       </div>

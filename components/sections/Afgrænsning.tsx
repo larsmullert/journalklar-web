@@ -24,14 +24,14 @@ export default function Afgrænsning() {
         <h2>Et værktøj, ikke en autopilot.</h2>
 
         <div className="mt-6 max-w-[780px]">
-          <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-2">
+          <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-2">
             Du leverer indholdet. JournalKlar leverer strukturen.
             Det er altid et udkast.
           </p>
-          <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-2">
+          <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-2">
             Der er mange ting, der ikke fanges af en AI-tale-til-tekst-transkription.
           </p>
-          <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85]">
+          <p className="font-sans text-[16px] font-light text-body leading-[1.85]">
             Det er kun dig, der kan og skal vurdere sessionen.
           </p>
         </div>
@@ -62,7 +62,7 @@ export default function Afgrænsning() {
             <div className="flex flex-col gap-[12px]">
               {goerIkke.map((item) => (
                 <div key={item} className="flex items-start gap-3 font-sans text-[14px] font-normal text-graphite leading-[1.7]">
-                  <span className="text-[#A09890] flex-shrink-0">—</span>
+                  <span className="text-muted-light flex-shrink-0">—</span>
                   <span>{item}</span>
                 </div>
               ))}

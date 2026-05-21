@@ -153,10 +153,10 @@ export default function TilgangPage() {
                 AI må gerne hjælpe med journalføring.{" "}
                 <span className="italic text-evergreen/65">Men ikke alt bør automatiseres.</span>
               </h1>
-              <p className="font-sans text-[16px] font-light text-[#505050] max-w-[480px] leading-[1.8] mb-4">
+              <p className="font-sans text-[16px] font-light text-body max-w-[480px] leading-[1.85] mb-4">
                 JournalKlar er bygget ud fra et enkelt fagligt standpunkt: AI kan godt hjælpe psykologer med struktur, overblik og formulering — men den første faglige selektion skal blive hos psykologen.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] max-w-[480px] leading-[1.8] mb-8">
+              <p className="font-sans text-[16px] font-light text-body max-w-[480px] leading-[1.85] mb-8">
                 Derfor optager JournalKlar ikke sessionen. Det transskriberer ikke samtalen. Det starter med dine egne noter efter sessionen.
               </p>
               <p className="font-sans text-[13px] font-normal text-evergreen tracking-[0.04em] text-center mt-7 mb-0">
@@ -171,7 +171,7 @@ export default function TilgangPage() {
             {/* Right: statement card */}
             <div className="flex items-center justify-start md:justify-center">
               <div className="bg-evergreen px-9 py-10 w-full max-w-[300px]">
-                <div className="font-sans text-[10px] font-medium tracking-[0.16em] uppercase text-parchment/70 mb-7">
+                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-parchment/70 mb-7">
                   Arbejdsdelingen
                 </div>
                 <div className="font-serif text-[28px] font-normal text-parchment leading-[1.35] tracking-[-0.01em]">
@@ -199,22 +199,22 @@ export default function TilgangPage() {
             <h2 className="max-w-[520px]">Der findes mere end én måde at bruge AI i journalføring.</h2>
 
             <div className="mt-9 max-w-[760px]">
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 Mange AI-værktøjer til sundhedsfaglig dokumentation starter med at optage eller transskribere samtalen. Psykologen får derefter et færdigt forslag, som kan redigeres bagefter.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 Det er en effektiv arbejdsgang. Og vi forstår godt, hvorfor den er tiltrækkende.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 Når næste klient venter, og journalen kan være klar på få minutter, er det svært ikke at se værdien.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-8">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-8">
                 JournalKlar bygger bare på en anden præmis.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 I psykologisk praksis handler journalføring ikke kun om at fastholde, hvad der blev sagt. Det handler også om at vurdere, hvad der var fagligt væsentligt. Hvad der skal med. Hvad der skal udelades. Hvad der skal formuleres nøgternt, præcist og forsvarligt.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-10">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-10">
                 Den vurdering bør ikke starte i en transskription. Den bør starte hos psykologen.
               </p>
 
@@ -240,16 +240,16 @@ export default function TilgangPage() {
             </h2>
 
             <div className="mt-9 max-w-[760px]">
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 Efter en session ved psykologen mere, end der kan stå i journalen.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 Der har været ord, pauser, skift i kontakt, affekt, undgåelser, timing, kropslig uro, tilbageholdenhed, fremskridt, gentagelser og små forskydninger, som først får betydning, når de holdes op imod forløbet som helhed.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-8">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-8">
                 Ikke alt skal journalføres.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-10">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-10">
                 Noget er klinisk centralt. Noget er kontekst. Noget er vigtigt i relationen, men ikke nødvendigvis relevant i journalen. Noget skal formuleres varsomt. Noget skal udelades.
               </p>
 
@@ -266,13 +266,13 @@ export default function TilgangPage() {
                 </p>
               </blockquote>
 
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5 mt-10">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5 mt-10">
                 JournalKlar hjælper først bagefter. Når du har skrevet eller indtalt dine egne noter, kan systemet hjælpe med at strukturere dem til et journaludkast.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 Det er ikke fordi AI ikke kan formulere. Det kan den godt.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85]">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85]">
                 Spørgsmålet er, hvem der skal vælge, hvad der er værd at formulere.
               </p>
             </div>
@@ -288,22 +288,22 @@ export default function TilgangPage() {
             <h2 className="max-w-[480px]">Vi har ikke bygget JournalKlar til at lytte med.</h2>
 
             <div className="mt-9 max-w-[720px]">
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 JournalKlar optager ikke sessionen. Det er ikke en teknisk begrænsning. Det er et bevidst valg.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 Den psykologiske samtale er et fortroligt rum. Ikke bare fordi der bliver sagt følsomme ting, men fordi rummet i sig selv er en del af arbejdet.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 Når et system optager hele samtalen, bliver alt potentielt til data: det relevante, det irrelevante, det foreløbige, det sårbare, det misforståelige og det, som aldrig skulle have været journalført.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 JournalKlar arbejder med mindre.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 Det arbejder kun med det, psykologen selv vælger at skrive eller indtale efter sessionen.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-12">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-12">
                 Det betyder, at den første afgrænsning sker før AI-behandlingen — ikke bagefter.
               </p>
             </div>
@@ -313,7 +313,7 @@ export default function TilgangPage() {
 
               {/* JournalKlar — venstre */}
               <div className="bg-white border border-sand [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-orange mb-6">
+                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-6">
                   JournalKlar
                 </div>
                 <div className="flex flex-col gap-4">
@@ -335,7 +335,7 @@ export default function TilgangPage() {
 
               {/* Transskriptionsbaseret AI — højre */}
               <div className="bg-white border border-sand p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-orange mb-6">
+                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-6">
                   Transskriptionsbaseret AI
                 </div>
                 <div className="flex flex-col gap-4">
@@ -376,10 +376,10 @@ export default function TilgangPage() {
             </h2>
 
             <div className="mt-9 max-w-[760px]">
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 Journalføring kan være tungt. Ikke fordi psykologer ikke kan skrive journaler, men fordi arbejdet ofte ligger på et tidspunkt, hvor hovedet allerede er brugt.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-10">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-10">
                 Efter sessionen skal du samle trådene, dokumentere korrekt, huske aftaler, formulere dig præcist og sikre, at journalen dækker det, den skal.
               </p>
               <p className="font-sans text-[15px] font-normal text-evergreen mb-5">
@@ -390,28 +390,28 @@ export default function TilgangPage() {
             {/* Two lists */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
               <div className="border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-orange mb-5">
+                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-5">
                   AI må gerne hjælpe med
                 </div>
                 <div className="flex flex-col gap-4">
                   {aiKanHjaelpe.map((item) => (
                     <div key={item} className="flex items-start gap-3">
                       <CheckSm />
-                      <span className="font-sans text-[14px] font-light text-[#505050] leading-[1.5]">{item}</span>
+                      <span className="font-sans text-[14px] font-light text-body leading-[1.5]">{item}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
               <div className="border border-sand bg-sand [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-orange mb-5">
+                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-5">
                   AI bør ikke overtage
                 </div>
                 <div className="flex flex-col gap-4">
                   {aiBorIkke.map((item) => (
                     <div key={item} className="flex items-start gap-3">
                       <CrossSm />
-                      <span className="font-sans text-[14px] font-light text-[#505050] leading-[1.5]">{item}</span>
+                      <span className="font-sans text-[14px] font-light text-body leading-[1.5]">{item}</span>
                     </div>
                   ))}
                 </div>
@@ -435,7 +435,7 @@ export default function TilgangPage() {
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Afgrænsning</SectionLabel>
             <h2 className="max-w-[380px]">Et redskab. Ikke en kollega.</h2>
-            <p className="max-w-[520px] text-[#505050]">
+            <p className="max-w-[520px] text-body">
               JournalKlar er ikke bygget til at virke menneskeligt. Det er bygget til at være nyttigt, afgrænset og gennemskueligt.
             </p>
 
@@ -443,7 +443,7 @@ export default function TilgangPage() {
 
               {/* Gør */}
               <div className="bg-evergreen p-10">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-parchment/70 mb-6">
+                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-parchment/70 mb-6">
                   Hvad JournalKlar gør
                 </div>
                 <div className="flex flex-col gap-5">
@@ -460,7 +460,7 @@ export default function TilgangPage() {
 
               {/* Gør ikke */}
               <div className="bg-white border border-sand p-10">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-orange mb-6">
+                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-6">
                   Hvad JournalKlar ikke gør
                 </div>
                 <div className="flex flex-col gap-5">
@@ -479,13 +479,13 @@ export default function TilgangPage() {
             </div>
 
             <div className="mt-10 max-w-[600px]">
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-4">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-4">
                 Outputtet fra JournalKlar er altid et journaludkast. Ikke en journal. Ikke en vurdering. Ikke en beslutning.
               </p>
               <p className="font-sans text-[16px] font-normal text-evergreen leading-[1.85] mb-4">
                 Det er et arbejdsskridt.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85]">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85]">
                 Du læser, vurderer, justerer og godkender, før noget overføres til dit eget journalsystem.
               </p>
             </div>
@@ -512,7 +512,7 @@ export default function TilgangPage() {
                   <div className="font-sans text-[15px] font-normal text-evergreen mb-3 leading-[1.35]">
                     {title}
                   </div>
-                  <p className="font-sans text-[14px] font-light text-[#505050] leading-[1.7] m-0">
+                  <p className="font-sans text-[14px] font-light text-body leading-[1.7] m-0">
                     {text}
                   </p>
                 </div>
@@ -533,25 +533,25 @@ export default function TilgangPage() {
             </h2>
 
             <div className="mt-9 max-w-[760px]">
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 JournalKlar er bygget, fordi AI kan gøre noget reelt nyttigt for psykologer.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 Det kan spare tid. Det kan skabe struktur. Det kan mindske friktion i en dokumentationsopgave, som mange oplever som tung, gentagende og svær at få gjort ordentligt i en travl hverdag.
               </p>
               <p className="font-sans text-[15px] font-normal text-evergreen leading-[1.85] mb-5">
                 Men effektivitet er ikke et neutralt mål.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 Når et værktøj gør det meget let at sige "godt nok", skal vi være særligt opmærksomme på, hvilke dele af arbejdet der bliver lettere at springe over.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 I journalføring er den faglige efterbehandling ikke en luksus. Den er en del af arbejdet.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 Derfor har vi bygget JournalKlar sådan, at AI først kommer ind efter psykologens egen selektion.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-12">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-12">
                 Ikke for at gøre journalføring automatisk.{" "}
                 <span className="font-normal text-evergreen">Men for at gøre det lettere at gøre ordentligt.</span>
               </p>
@@ -586,7 +586,7 @@ export default function TilgangPage() {
                 >
                   <div>
                     <div className="font-sans text-[15px] font-normal text-evergreen mb-3">{title}</div>
-                    <p className="font-sans text-[14px] font-light text-[#505050] leading-[1.7] m-0">{text}</p>
+                    <p className="font-sans text-[14px] font-light text-body leading-[1.7] m-0">{text}</p>
                   </div>
                   <div className="flex items-center gap-[8px] font-sans text-[13px] font-normal text-evergreen border-b border-evergreen/20 pb-[2px] self-start group-hover:border-evergreen transition-colors">
                     {linkText}

@@ -82,7 +82,7 @@ export default function SikkerhedFAQ() {
                   </svg>
                 </button>
                 {isOpen && (
-                  <p className="font-sans text-[14px] font-light text-[#505050] leading-[1.75] pb-7 mt-0 mb-0">
+                  <p className="font-sans text-[14px] font-light text-body leading-[1.7] pb-7 mt-0 mb-0">
                     {a}
                   </p>
                 )}

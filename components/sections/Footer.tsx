@@ -17,7 +17,7 @@ const juridisk = [
 
 function ColLabel({ children }: { children: React.ReactNode }) {
   return (
-    <div className="font-sans text-[11px] font-medium tracking-[0.12em] uppercase text-evergreen/60 mb-[14px]">
+    <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-evergreen/60 mb-[14px]">
       {children}
     </div>
   );

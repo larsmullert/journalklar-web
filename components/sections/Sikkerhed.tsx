@@ -29,7 +29,7 @@ export default function Sikkerhed() {
       <div className="max-w-[1100px] mx-auto">
         <SectionLabel>Data og fortrolighed</SectionLabel>
         <h2>Dine klienters fortrolighed forbliver fortrolig.</h2>
-        <p className="max-w-[520px] text-[#505050] mb-0">
+        <p className="max-w-[520px] text-body mb-0">
           Det er det eneste der reelt betyder noget. Her er fire ting du bør vide — på almindeligt dansk.
         </p>
 
@@ -71,7 +71,7 @@ export default function Sikkerhed() {
                   <div className="font-sans text-[15px] font-normal text-evergreen mb-[6px]">
                     {title}
                   </div>
-                  <p className="font-sans text-[14px] font-light text-[#5A5A5A] leading-[1.7] mb-0">
+                  <p className="font-sans text-[14px] font-light text-body leading-[1.7] mb-0">
                     {text}
                   </p>
                 </div>
@@ -82,7 +82,7 @@ export default function Sikkerhed() {
           {/* Højre: Radikal transparens */}
           <div className="bg-evergreen p-6 md:p-8 flex flex-col">
             <div>
-              <div className="flex items-center gap-[12px] font-sans text-[11px] font-medium tracking-[0.16em] uppercase text-parchment/70 mb-7 before:content-[''] before:block before:w-[18px] before:h-px before:bg-parchment/50 before:shrink-0">
+              <div className="flex items-center gap-[12px] font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-parchment/70 mb-7 before:content-[''] before:block before:w-[18px] before:h-px before:bg-parchment/50 before:shrink-0">
                 Radikal transparens
               </div>
               <div className="font-serif text-[clamp(20px,1.8vw,24px)] font-normal text-parchment leading-[1.35] tracking-[-0.01em] mb-5">

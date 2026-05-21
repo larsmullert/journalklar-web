@@ -82,7 +82,7 @@ export default function OmPage() {
             <div className="flex flex-col justify-center">
               <SectionLabel>Om JournalKlar</SectionLabel>
               <h1 className="mb-5">Et dansk fagværktøj med en psykolog bag.</h1>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.8] max-w-[480px] mb-8">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] max-w-[480px] mb-8">
                 JournalKlar er udviklet af Lars Mullert Pedersen, psykolog og grundlægger af JournalKlar, som et specialiseret værktøj til privatpraktiserende psykologers journalføringsarbejde.
               </p>
               <p className="font-sans text-[13px] font-normal text-evergreen tracking-[0.04em] text-center mt-7 mb-0">
@@ -128,13 +128,13 @@ export default function OmPage() {
             <h2 className="max-w-[540px]">Jeg hedder Lars Mullert Pedersen og er psykolog.</h2>
 
             <div className="mt-9 max-w-[660px]">
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 Jeg har bygget JournalKlar, fordi jeg savnede et journalværktøj, der tog psykologers konkrete arbejdssituation alvorligt: kort tid mellem sessioner, høje dokumentationskrav og et fagligt ansvar, der ikke kan outsources.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 Min baggrund er psykologfaglig, ikke teknologisk. Det betyder ikke, at teknologien er mindre vigtig. Det betyder, at produktet er udviklet med udgangspunkt i psykologens arbejdsgang, ansvar og sprog — ikke i AI som mål i sig selv.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-9">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-9">
                 JournalKlar er derfor bygget som et smalt værktøj til én konkret opgave: at hjælpe psykologen fra egne noter til et struktureret journaludkast.
               </p>
 
@@ -156,16 +156,16 @@ export default function OmPage() {
             <h2 className="max-w-[520px]">JournalKlar forsøger ikke at være en platform.</h2>
 
             <div className="mt-9 max-w-[660px]">
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 Mange digitale systemer vokser hurtigt i bredden: booking, betaling, klientportal, video, beskeder, journal, skemaer og administration.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 JournalKlar er valgt smallere.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 Det er ikke et journalsystem. Det er ikke en behandlingsplatform. Det er ikke et praksisstyringssystem. Det er et arbejdsredskab til det konkrete øjeblik efter sessionen, hvor dine noter skal blive til et journaludkast, du kan gennemgå og overføre til dit eget system.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85]">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85]">
                 Det fokus er en del af produktets troværdighed.
               </p>
             </div>
@@ -204,10 +204,10 @@ export default function OmPage() {
             <h2 className="max-w-[520px]">Det skal være nemt at finde ud af, hvem du køber noget af.</h2>
 
             <div className="mt-9 max-w-[660px]">
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 Når man bruger et AI-værktøj i psykologisk praksis, bør afsenderen ikke være uklar. Du skal kunne se, hvem der står bag, hvad produktet er bygget til, hvordan det er afgrænset, og hvor du kan finde dokumentationen.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-12">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-12">
                 Derfor samler JournalKlar ikke det hele i én stor salgstekst. Du kan læse om tilgangen, sikkerheden, databehandlingen og de praktiske spørgsmål hver for sig.
               </p>
             </div>
@@ -223,7 +223,7 @@ export default function OmPage() {
                     <div className="font-serif text-[17px] font-normal text-evergreen mb-3 leading-[1.35]">
                       {title}
                     </div>
-                    <p className="font-sans text-[13px] font-light text-[#505050] leading-[1.7] m-0">
+                    <p className="font-sans text-[13px] font-light text-body leading-[1.7] m-0">
                       {text}
                     </p>
                   </div>
@@ -246,10 +246,10 @@ export default function OmPage() {
             <h2 className="max-w-[480px]">Bygget tæt på den praksis, det skal bruges i.</h2>
 
             <div className="mt-9 max-w-[660px]">
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 JournalKlar er ikke et stort system med mange løfter. Det er et specialiseret værktøj til en konkret del af psykologers hverdag.
               </p>
-              <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-10">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-10">
                 Hvis du vil forstå den faglige tanke bag produktet, kan du læse JournalKlars tilgang til AI og journalføring.
               </p>
 

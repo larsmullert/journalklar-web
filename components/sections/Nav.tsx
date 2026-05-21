@@ -19,7 +19,7 @@ export default function Nav() {
           </a>
           <a
             href="/#pris"
-            className="inline-flex items-center bg-evergreen text-white font-sans text-[14px] font-normal px-[18px] py-[10px] hover:bg-[#152e23] transition-colors"
+            className="inline-flex items-center bg-evergreen text-white font-sans text-[15px] font-normal px-[18px] py-[10px] hover:bg-[#152e23] transition-colors"
           >
             Start prøveperiode
           </a>

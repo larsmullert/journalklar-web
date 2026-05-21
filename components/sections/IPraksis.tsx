@@ -6,7 +6,7 @@ export default function IPraksis() {
       <div className="max-w-[1100px] mx-auto">
         <SectionLabel>I praksis</SectionLabel>
         <h2>Sådan ser det ud i praksis</h2>
-        <p className="max-w-[560px] text-[#505050]">
+        <p className="max-w-[560px] text-body">
           Dine rånoter til venstre. Et journaludkast til højre — skrevet i løbende prosa, med klientens egne ord bevaret og tydelig markering af det, der kræver din aktive stillingtagen.
         </p>
 
@@ -26,10 +26,10 @@ export default function IPraksis() {
 
             {/* Venstre: rånoter — skjult på mobil */}
             <div className="hidden md:block px-11 py-12 border-r border-[#F0EDE8]">
-              <div className="font-sans text-[11px] font-medium tracking-[0.12em] uppercase text-muted mb-7">
+              <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-muted mb-7">
                 Rånoter efter sessionen
               </div>
-              <div className="font-sans text-[13px] font-light text-[#4A4A4A] leading-[1.8] space-y-[12px]">
+              <div className="font-sans text-[13px] font-light text-body leading-[1.8] space-y-[12px]">
                 <p>Videosession. 6. session.</p>
                 <p>Arbejder fortsat med angst og undgåelse. Klienten siger: &ldquo;jeg bliver helt låst, når jeg skal tage toget&rdquo;.</p>
                 <div>
@@ -47,14 +47,14 @@ export default function IPraksis() {
 
             {/* Højre: journaludkast */}
             <div className="px-6 py-8 md:px-11 md:py-12">
-              <div className="flex items-center gap-[10px] font-sans text-[11px] font-medium tracking-[0.12em] uppercase text-muted mb-7">
+              <div className="flex items-center gap-[10px] font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-muted mb-7">
                 Journaludkast
-                <span className="bg-evergreen/[0.08] text-evergreen font-sans text-[9px] font-medium tracking-[0.1em] px-[8px] py-[2px]">
+                <span className="bg-evergreen/[0.08] text-evergreen font-sans text-[9px] font-medium tracking-[0.15em] px-[8px] py-[2px]">
                   Til godkendelse
                 </span>
               </div>
 
-              <div className="font-sans text-[14px] font-light text-[#3A3A3A] leading-[1.65] space-y-[14px]">
+              <div className="font-sans text-[14px] font-light text-body leading-[1.65] space-y-[14px]">
                 <p>[DATO]. Sjette session. Videosession.</p>
                 <p>Fortsat behandling med fokus på angst og undgåelse. Klienten beskriver siden sidst at have taget bussen alene to gange, men sprang en planlagt togtur over tirsdag.</p>
                 <p>Klienten beskriver: &ldquo;jeg bliver helt låst, når jeg skal tage toget&rdquo;. Hun forbinder situationen med frygt for at få panik og ikke kunne komme væk. Hun beskriver desuden dårlig søvn aftenen før den planlagte eksponering.</p>
@@ -65,7 +65,7 @@ export default function IPraksis() {
 
               {/* Mangler-blok */}
               <div className="border border-orange/25 bg-orange/[0.03] px-[18px] py-[14px] my-[18px]">
-                <div className="flex items-center gap-[7px] font-sans text-[10px] font-medium uppercase tracking-[0.08em] text-orange mb-[5px]">
+                <div className="flex items-center gap-[7px] font-sans text-[10px] font-medium uppercase tracking-[0.15em] text-orange mb-[5px]">
                   <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true">
                     <circle cx="5.5" cy="5.5" r="5" stroke="#E04500" strokeWidth="1"/>
                     <line x1="5.5" y1="3" x2="5.5" y2="6.5" stroke="#E04500" strokeWidth="1.2" strokeLinecap="round"/>
@@ -73,12 +73,12 @@ export default function IPraksis() {
                   </svg>
                   Mangler — kræver stillingtagen
                 </div>
-                <div className="font-sans text-[13px] font-light text-[#6A6A6A]">
+                <div className="font-sans text-[13px] font-light text-body">
                   Samlet faglig vurdering af tilstand og progression mangler. Tilføj din vurdering inden journalen godkendes.
                 </div>
               </div>
 
-              <div className="font-sans text-[14px] font-light text-[#3A3A3A] leading-[1.65]">
+              <div className="font-sans text-[14px] font-light text-body leading-[1.65]">
                 <p>Det blev aftalt, at klienten inden næste session tager toget én station sammen med en veninde og registrerer angst 0-10 før, under og efter. Næste session aftalt om 14 dage.</p>
               </div>
 

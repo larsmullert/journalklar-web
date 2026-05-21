@@ -6,7 +6,7 @@ export default function Hero() {
 
           {/* Venstre: copy */}
           <div>
-            <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-orange mb-[22px]">
+            <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-[22px]">
               Til privatpraktiserende psykologer
             </div>
 
@@ -14,7 +14,7 @@ export default function Hero() {
               Journaludkast fra dine egne faglige noter. Uden optagelse af sessionen.
             </h1>
 
-            <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.75] mb-8">
+            <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-8">
               JournalKlar hjælper privatpraktiserende psykologer med at strukturere egne noter efter journalføringskravene — så du stadig vurderer, selekterer og godkender.
             </p>
 
@@ -73,10 +73,10 @@ export default function Hero() {
 
               {/* Rånoter */}
               <div className="px-[20px] py-[18px] border-r border-[#F0EDE8]">
-                <div className="font-sans text-[9px] font-medium tracking-[0.12em] uppercase text-muted mb-[12px]">
+                <div className="font-sans text-[9px] font-medium tracking-[0.15em] uppercase text-muted mb-[12px]">
                   Rånoter efter sessionen
                 </div>
-                <div className="font-sans text-[10.5px] font-light text-[#5A5A5A] leading-[1.75] space-y-[8px]">
+                <div className="font-sans text-[10.5px] font-light text-body leading-[1.75] space-y-[8px]">
                   <p>Videosession. 6. session.</p>
                   <p>Arbejder fortsat med angst og undgåelse. Klienten siger: &ldquo;jeg bliver helt låst, når jeg skal tage toget&rdquo;.</p>
                   <div>
@@ -94,13 +94,13 @@ export default function Hero() {
 
               {/* Struktureret journaludkast */}
               <div className="px-[20px] py-[18px]">
-                <div className="flex items-center gap-[8px] font-sans text-[9px] font-medium tracking-[0.12em] uppercase text-muted mb-[12px]">
+                <div className="flex items-center gap-[8px] font-sans text-[9px] font-medium tracking-[0.15em] uppercase text-muted mb-[12px]">
                   Struktureret journaludkast
-                  <span className="bg-evergreen/[0.08] text-evergreen text-[8px] tracking-[0.08em] px-[6px] py-[1px]">
+                  <span className="bg-evergreen/[0.08] text-evergreen text-[11px] tracking-[0.15em] px-[6px] py-[1px]">
                     Til godkendelse
                   </span>
                 </div>
-                <div className="font-sans text-[10.5px] font-light text-[#3A3A3A] leading-[1.7] space-y-[8px]">
+                <div className="font-sans text-[10.5px] font-light text-body leading-[1.7] space-y-[8px]">
                   <p>[DATO]. Sjette session. Videosession.</p>
                   <p>Fortsat behandling med fokus på angst og undgåelse. Klienten beskriver siden sidst at have taget bussen alene to gange, men sprang en planlagt togtur over tirsdag.</p>
                   <p>Klienten beskriver: &ldquo;jeg bliver helt låst, når jeg skal tage toget&rdquo;. Hun forbinder situationen med frygt for at få panik og ikke kunne komme væk. Hun beskriver desuden dårlig søvn aftenen før den planlagte eksponering.</p>
@@ -109,7 +109,7 @@ export default function Hero() {
                   <p>
                     Psykologen vurderer ingen aktuelle selvmordstanker, spurgt direkte.{" "}
                     <span
-                      className="font-sans text-[9.5px] font-light"
+                      className="font-sans text-[11px] font-light"
                       style={{ background: "rgba(245,218,120,0.30)", color: "#7A6020", padding: "1px 5px" }}
                     >
                       MANGLER: samlet faglig vurdering af tilstand og progression

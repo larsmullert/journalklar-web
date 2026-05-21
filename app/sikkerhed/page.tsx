@@ -51,7 +51,7 @@ function Badge({
     caution:  "bg-sand text-evergreen/60",
   };
   return (
-    <span className={`inline-block font-sans text-[10px] font-medium tracking-[0.08em] uppercase px-[8px] py-[3px] ${styles[variant]}`}>
+    <span className={`inline-block font-sans text-[10px] font-medium tracking-[0.15em] uppercase px-[8px] py-[3px] ${styles[variant]}`}>
       {children}
     </span>
   );
@@ -267,7 +267,7 @@ export default function SikkerhedPage() {
                 Sikkerhed, fortrolighed og data —{" "}
                 <span className="italic text-evergreen/75">på almindeligt dansk</span>
               </h1>
-              <p className="font-sans text-[16px] font-light text-[#505050] max-w-[480px] leading-[1.8] mb-8">
+              <p className="font-sans text-[16px] font-light text-body max-w-[480px] leading-[1.85] mb-8">
                 JournalKlar er bygget til psykologer, der arbejder med fortrolige klientoplysninger. Du skal kunne forstå, hvad der sker med dine data — ikke bare have tillid til, at vi håndterer det.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 items-start mb-8">
@@ -303,7 +303,7 @@ export default function SikkerhedPage() {
 
             {/* Right: trust panel */}
             <div className="bg-evergreen px-8 py-10 flex flex-col justify-center">
-              <div className="font-sans text-[10px] font-medium tracking-[0.16em] uppercase text-parchment/70 mb-7">
+              <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-parchment/70 mb-7">
                 Fire garantier
               </div>
               <div className="flex flex-col gap-5">
@@ -339,7 +339,7 @@ export default function SikkerhedPage() {
                     <CheckSm />
                   </div>
                   <div className="font-sans text-[15px] font-normal text-evergreen mb-2">{title}</div>
-                  <p className="font-sans text-[14px] font-light text-[#505050] leading-[1.7] mb-3">{text}</p>
+                  <p className="font-sans text-[14px] font-light text-body leading-[1.7] mb-3">{text}</p>
                   <div className="font-sans text-[11px] text-muted leading-[1.5]">{note}</div>
                 </div>
               ))}
@@ -354,7 +354,7 @@ export default function SikkerhedPage() {
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Hvad sker der</SectionLabel>
             <h2 className="max-w-[540px]">Hvad sker der, når du genererer et journaludkast?</h2>
-            <p className="max-w-[520px] text-[#505050]">
+            <p className="max-w-[520px] text-body">
               Syv trin — fra du skriver dine noter til udkastet er genereret og klientindholdet er fjernet fra serveren.
             </p>
 
@@ -371,7 +371,7 @@ export default function SikkerhedPage() {
                   </div>
                   <div className={`pt-[10px] ${i < steps.length - 1 ? "pb-9" : ""}`}>
                     <div className="font-sans text-[15px] font-normal text-evergreen mb-[6px]">{title}</div>
-                    <p className="font-sans text-[14px] font-light text-[#505050] leading-[1.75] mb-0">{text}</p>
+                    <p className="font-sans text-[14px] font-light text-body leading-[1.7] mb-0">{text}</p>
                     <TechChip>{chip}</TechChip>
                   </div>
                 </div>
@@ -387,7 +387,7 @@ export default function SikkerhedPage() {
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Dataminimering</SectionLabel>
             <h2 className="max-w-[500px]">JournalKlar optager ikke samtalen.</h2>
-            <p className="max-w-[520px] text-[#505050]">
+            <p className="max-w-[520px] text-body">
               Mange AI-værktøjer til sundhedsfaglig dokumentation starter med at optage eller transskribere hele samtalen. JournalKlar er bygget anderledes.
             </p>
 
@@ -395,7 +395,7 @@ export default function SikkerhedPage() {
 
               {/* JournalKlar — venstre */}
               <div className="bg-white border border-sand [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-orange mb-6">
+                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-6">
                   JournalKlar
                 </div>
                 <div className="flex flex-col gap-4">
@@ -412,7 +412,7 @@ export default function SikkerhedPage() {
 
               {/* Transskriptions-AI — højre */}
               <div className="bg-white border border-sand p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-orange mb-6">
+                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-6">
                   Transskriptions-AI
                 </div>
                 <div className="flex flex-col gap-4">
@@ -443,7 +443,7 @@ export default function SikkerhedPage() {
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Systemoverblik</SectionLabel>
             <h2>Hvem rører data?</h2>
-            <p className="max-w-[520px] text-[#505050]">
+            <p className="max-w-[520px] text-body">
               De systemer der behandler data, hvad de bruges til — og om klientindhold indgår.
             </p>
 
@@ -464,7 +464,7 @@ export default function SikkerhedPage() {
                       {card.clientData === "ingen" ? "Ingen" : "Midlertidigt"}
                     </Badge>
                   </div>
-                  <p className="font-sans text-[13px] font-light text-[#505050] leading-[1.6] mb-3">{card.role}</p>
+                  <p className="font-sans text-[13px] font-light text-body leading-[1.6] mb-3">{card.role}</p>
                   <div className="font-sans text-[11px] text-muted">{card.region}</div>
                 </div>
               ))}
@@ -488,7 +488,7 @@ export default function SikkerhedPage() {
 
               {/* Gemmes ikke — venstre */}
               <div className="bg-white border border-sand [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-orange mb-6">
+                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-6">
                   Gemmes ikke
                 </div>
                 <div className="flex flex-col gap-4">
@@ -505,7 +505,7 @@ export default function SikkerhedPage() {
 
               {/* Gemmes — højre */}
               <div className="bg-white border border-sand p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-orange mb-6">
+                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-6">
                   Gemmes
                 </div>
                 <div className="flex flex-col gap-4">
@@ -532,7 +532,7 @@ export default function SikkerhedPage() {
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Leverandørgennemgang</SectionLabel>
             <h2>Underleverandører</h2>
-            <p className="max-w-[520px] text-[#505050]">
+            <p className="max-w-[520px] text-body">
               Tre leverandører behandler data som en del af JournalKlar. Ingen andre tredjeparter modtager klientoplysninger.
             </p>
 
@@ -544,7 +544,7 @@ export default function SikkerhedPage() {
                   {["Leverandør", "Rolle", "Region", "Klientindhold", "Dokumentation"].map((h, i) => (
                     <div
                       key={h}
-                      className={`px-5 py-3 font-sans text-[11px] font-medium tracking-[0.1em] uppercase text-muted ${i < 4 ? "border-r border-sand" : ""}`}
+                      className={`px-5 py-3 font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-muted ${i < 4 ? "border-r border-sand" : ""}`}
                     >
                       {h}
                     </div>
@@ -560,7 +560,7 @@ export default function SikkerhedPage() {
                       <div className="font-sans text-[14px] font-normal text-evergreen">{row.navn}</div>
                     </div>
                     <div className="px-5 py-4 border-r border-sand">
-                      <span className="font-sans text-[13px] font-light text-[#505050] leading-[1.5]">{row.rolle}</span>
+                      <span className="font-sans text-[13px] font-light text-body leading-[1.5]">{row.rolle}</span>
                     </div>
                     <div className="px-5 py-4 border-r border-sand">
                       <Badge variant="neutral">{row.region}</Badge>
