@@ -1,19 +1,19 @@
 import SectionLabel from "@/components/ui/SectionLabel";
 
 const goer = [
+  "Tager kun udgangspunkt i dit input",
   "Strukturerer dine noter",
-  "Markerer mangler tydeligt",
-  "Laver struktureret udkast",
   "Understøtter BEK 1361/2025",
-  "Bevarer dit faglige workflow",
+  "Bevarer din faglige vurdering",
+  "Respekterer din faglighed",
 ];
 
 const goerIkke = [
-  "Optager sessionen",
-  "Transskriberer samtalen",
-  "Vurderer klinisk relevans alene",
-  "Gemmer journalnoter efter generering",
-  "Erstatter din godkendelse",
+  "Kræver samtykke fra klienten",
+  "Optager hele sessionen",
+  "Transskriberer det hele",
+  "AI'en udvælger det fagligt vigtige",
+  "Er en black-box",
 ];
 
 export default function Afgrænsning() {
@@ -41,7 +41,7 @@ export default function Afgrænsning() {
           {/* Venstre: evergreen */}
           <div className="bg-evergreen p-10">
             <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-6">
-              Hvad JournalKlar gør
+              JournalKlar
             </div>
             <div className="flex flex-col gap-[12px]">
               {goer.map((item) => (
@@ -56,7 +56,7 @@ export default function Afgrænsning() {
           {/* Højre: parchment */}
           <div className="bg-parchment border border-sand p-10">
             <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-6">
-              Hvad JournalKlar ikke gør
+              Andre AI-journalværktøjer
             </div>
             <div className="flex flex-col gap-[12px]">
               {goerIkke.map((item) => (
