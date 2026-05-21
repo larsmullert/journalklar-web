@@ -10,7 +10,7 @@ export default function Hero() {
               Til privatpraktiserende psykologer
             </div>
 
-            <h1 className="mb-5 text-[clamp(36px,3.8vw,52px)]">
+            <h1 className="mb-5">
               Journaludkast fra dine egne faglige noter. Uden optagelse af sessionen.
             </h1>
 

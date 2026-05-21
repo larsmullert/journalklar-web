@@ -8,13 +8,13 @@ export default function Nav() {
         </a>
 
         <div className="flex items-center gap-6 md:gap-9">
-          <a href="/tilgang" className="hidden md:block font-sans text-[14px] font-normal text-graphite hover:text-evergreen transition-colors">
+          <a href="/tilgang" className="hidden md:block font-sans text-[14px] font-normal text-evergreen hover:text-evergreen transition-colors">
             Tilgang
           </a>
-          <a href="/sikkerhed" className="hidden md:block font-sans text-[14px] font-normal text-graphite hover:text-evergreen transition-colors">
+          <a href="/sikkerhed" className="hidden md:block font-sans text-[14px] font-normal text-evergreen hover:text-evergreen transition-colors">
             Sikkerhed
           </a>
-          <a href="/om" className="hidden md:block font-sans text-[14px] font-normal text-graphite hover:text-evergreen transition-colors">
+          <a href="/om" className="hidden md:block font-sans text-[14px] font-normal text-evergreen hover:text-evergreen transition-colors">
             Bag om
           </a>
           <a

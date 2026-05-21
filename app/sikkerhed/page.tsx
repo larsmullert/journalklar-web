@@ -265,7 +265,7 @@ export default function SikkerhedPage() {
               <SectionLabel>Data og fortrolighed</SectionLabel>
               <h1 className="max-w-[560px] mb-5">
                 Sikkerhed, fortrolighed og data —{" "}
-                <span className="italic text-evergreen/75">på almindeligt dansk</span>
+                <span className="italic text-evergreen/60">på almindeligt dansk</span>
               </h1>
               <p className="font-sans text-[16px] font-light text-body max-w-[480px] leading-[1.85] mb-8">
                 JournalKlar er bygget til psykologer, der arbejder med fortrolige klientoplysninger. Du skal kunne forstå, hvad der sker med dine data — ikke bare have tillid til, at vi håndterer det.
@@ -592,7 +592,7 @@ export default function SikkerhedPage() {
               <h3 className="text-parchment mb-4" style={{ color: "#F7F4EF" }}>
                 Databehandleraftalen underskrives inden brug.
               </h3>
-              <p className="font-sans text-[14px] font-light text-parchment/85 leading-[1.8] mb-5">
+              <p className="font-sans text-[14px] font-light text-parchment/90 leading-[1.8] mb-5">
                 Inden du går i gang med JournalKlar, underskrives en databehandleraftale. Den beskriver præcist, hvad der sker med data — og hvad der ikke sker.
               </p>
               <p className="font-sans text-[14px] font-light text-parchment/70 leading-[1.8] mb-8">

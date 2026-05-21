@@ -86,7 +86,7 @@ export default function IPraksis() {
           </div>
         </div>
 
-        <p className="font-sans text-[13px] text-muted mt-[22px] italic">
+        <p className="font-sans text-[13px] text-muted mt-[22px]">
           Eksemplet er anonymiseret og konstrueret. JournalKlar skriver ikke journalen for dig — det laver et udkast, som du vurderer, redigerer og godkender.
         </p>
       </div>

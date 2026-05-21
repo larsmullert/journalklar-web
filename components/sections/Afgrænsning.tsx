@@ -47,7 +47,7 @@ export default function Afgrænsning() {
             <div className="flex flex-col gap-[12px]">
               {goer.map((item) => (
                 <div key={item} className="flex items-start gap-3 font-sans text-[14px] font-normal text-parchment/90 leading-[1.7]">
-                  <span className="text-parchment/50 flex-shrink-0">—</span>
+                  <span className="text-parchment/70 flex-shrink-0">—</span>
                   <span>{item}</span>
                 </div>
               ))}

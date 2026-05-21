@@ -37,7 +37,7 @@ export default function PrisOgCTA() {
               Årsabonnement
             </div>
             <div className="font-serif text-[56px] font-light text-evergreen leading-none tracking-[-0.03em]">
-              1.999<span className="text-[24px]">kr.</span>
+              1.999<span className="text-[28px]">kr.</span>
             </div>
             <div className="font-sans text-[13px] text-muted mt-1 mb-[6px] font-light">
               pr. år ekskl. moms · faktureres én gang

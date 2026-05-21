@@ -151,7 +151,7 @@ export default function TilgangPage() {
               <SectionLabel>JournalKlars tilgang</SectionLabel>
               <h1 className="max-w-[560px] mb-5">
                 AI må gerne hjælpe med journalføring.{" "}
-                <span className="italic text-evergreen/65">Men ikke alt bør automatiseres.</span>
+                <span className="italic text-evergreen/60">Men ikke alt bør automatiseres.</span>
               </h1>
               <p className="font-sans text-[16px] font-light text-body max-w-[480px] leading-[1.85] mb-4">
                 JournalKlar er bygget ud fra et enkelt fagligt standpunkt: AI kan godt hjælpe psykologer med struktur, overblik og formulering — men den første faglige selektion skal blive hos psykologen.
@@ -181,7 +181,7 @@ export default function TilgangPage() {
                   Vores struktur.
                 </div>
                 <div className="w-8 h-px bg-parchment/20 mb-6" />
-                <p className="font-sans text-[13px] font-light text-parchment/80 leading-[1.7] m-0">
+                <p className="font-sans text-[13px] font-light text-parchment/90 leading-[1.7] m-0">
                   Psykologens faglige skøn er første led. Ikke et efterbehandlingstrin.
                 </p>
               </div>
@@ -236,7 +236,7 @@ export default function TilgangPage() {
             <SectionLabel>Faglig efterbehandling</SectionLabel>
             <h2 className="max-w-[600px]">
               Det vigtigste arbejde sker ikke nødvendigvis i selve formuleringen.{" "}
-              <span className="italic text-evergreen/65">Det sker i udvælgelsen.</span>
+              <span className="italic text-evergreen/60">Det sker i udvælgelsen.</span>
             </h2>
 
             <div className="mt-9 max-w-[760px]">
@@ -372,7 +372,7 @@ export default function TilgangPage() {
             <SectionLabel>AI med grænser</SectionLabel>
             <h2 className="max-w-[480px]">
               AI skal reducere friktion.{" "}
-              <span className="italic text-evergreen/65">Ikke fjerne fagligt arbejde.</span>
+              <span className="italic text-evergreen/60">Ikke fjerne fagligt arbejde.</span>
             </h2>
 
             <div className="mt-9 max-w-[760px]">
@@ -506,7 +506,7 @@ export default function TilgangPage() {
                   key={num}
                   className="border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8"
                 >
-                  <div className="font-serif text-[28px] font-normal text-evergreen/25 leading-none mb-5 tracking-[-0.02em]">
+                  <div className="font-serif text-[28px] font-normal text-evergreen/40 leading-none mb-5 tracking-[-0.02em]">
                     {num}
                   </div>
                   <div className="font-sans text-[15px] font-normal text-evergreen mb-3 leading-[1.35]">
@@ -529,7 +529,7 @@ export default function TilgangPage() {
             <SectionLabel>Standpunktet</SectionLabel>
             <h2 className="max-w-[480px]">
               Vi vil gerne bruge AI.{" "}
-              <span className="italic text-evergreen/65">Bare ikke ukritisk.</span>
+              <span className="italic text-evergreen/60">Bare ikke ukritisk.</span>
             </h2>
 
             <div className="mt-9 max-w-[760px]">
