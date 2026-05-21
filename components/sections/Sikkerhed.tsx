@@ -96,7 +96,7 @@ export default function Sikkerhed() {
               <hr className="border-none border-t border-parchment/[0.12] my-8" />
               <a
                 href="/sikkerhed"
-                className="inline-flex items-center gap-[10px] text-parchment font-sans text-[13px] font-normal opacity-80 hover:opacity-100 transition-opacity tracking-[0.01em]"
+                className="inline-flex items-center gap-[10px] text-parchment font-sans text-[13px] font-normal opacity-80 hover:opacity-100 transition-opacity"
               >
                 <span className="w-[28px] h-[28px] border border-parchment/25 flex items-center justify-center flex-shrink-0 hover:border-parchment/60 transition-colors">
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">

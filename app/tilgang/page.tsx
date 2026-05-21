@@ -177,7 +177,7 @@ export default function TilgangPage() {
                 <div className="font-serif text-[28px] font-normal text-parchment leading-[1.35] tracking-[-0.01em]">
                   Din vurdering.
                 </div>
-                <div className="font-serif text-[28px] font-normal text-parchment/60 leading-[1.35] tracking-[-0.01em] mb-7">
+                <div className="font-serif text-[28px] font-normal text-parchment/70 leading-[1.35] tracking-[-0.01em] mb-7">
                   Vores struktur.
                 </div>
                 <div className="w-8 h-px bg-parchment/20 mb-6" />
@@ -358,7 +358,7 @@ export default function TilgangPage() {
 
             </div>
 
-            <p className="font-sans text-[14px] font-light text-graphite/60 border-t border-sand pt-6 mt-6 max-w-[680px]">
+            <p className="font-sans text-[14px] font-light text-muted border-t border-sand pt-6 mt-6 max-w-[680px]">
               Det er ikke kun et datasikkerhedsvalg. Det er et fagligt valg.
             </p>
           </div>

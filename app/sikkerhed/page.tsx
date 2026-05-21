@@ -309,7 +309,7 @@ export default function SikkerhedPage() {
               <div className="flex flex-col gap-5">
                 {trustItems.map((item) => (
                   <div key={item} className="flex items-start gap-3">
-                    <span className="font-sans text-[14px] font-light text-parchment/60 leading-[1.55] flex-shrink-0">—</span>
+                    <span className="font-sans text-[14px] font-light text-parchment/70 leading-[1.55] flex-shrink-0">—</span>
                     <span className="font-sans text-[14px] font-light text-parchment/90 leading-[1.55]">
                       {item}
                     </span>
@@ -430,7 +430,7 @@ export default function SikkerhedPage() {
 
             </div>
 
-            <p className="font-sans text-[14px] font-light text-graphite/60 border-t border-sand pt-6 mt-6 max-w-[680px]">
+            <p className="font-sans text-[14px] font-light text-muted border-t border-sand pt-6 mt-6 max-w-[680px]">
               Det er ikke kun et teknisk valg. Det er et psykologfagligt valg om dataminimering, fagligt ansvar og respekt for klientens fortrolighed.
             </p>
           </div>

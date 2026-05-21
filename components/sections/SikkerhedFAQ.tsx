@@ -66,7 +66,7 @@ export default function SikkerhedFAQ() {
                   className="w-full flex items-center justify-between gap-6 py-7 text-left cursor-pointer hover:bg-sand/30 transition-colors px-2 -mx-2"
                   aria-expanded={isOpen}
                 >
-                  <span className="font-sans text-[15px] font-medium text-evergreen leading-[1.5]">
+                  <span className="font-sans text-[15px] font-normal text-evergreen leading-[1.5]">
                     {q}
                   </span>
                   <svg
