@@ -180,7 +180,7 @@ export default function TilgangPage() {
             {/* Right: statement card */}
             <div className="flex items-center justify-start md:justify-center">
               <div className="bg-evergreen px-9 py-10 w-full max-w-[300px]">
-                <div className="font-sans text-[10px] font-medium tracking-[0.16em] uppercase text-parchment/40 mb-7">
+                <div className="font-sans text-[10px] font-medium tracking-[0.16em] uppercase text-parchment/70 mb-7">
                   Arbejdsdelingen
                 </div>
                 <div className="font-serif text-[28px] font-normal text-parchment leading-[1.35] tracking-[-0.01em]">
@@ -321,8 +321,8 @@ export default function TilgangPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
               {/* JournalKlar — venstre */}
-              <div className="bg-white border border-sand [border-top:4px_solid_#1D3A2F] p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-evergreen mb-6">
+              <div className="bg-white border border-sand [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
+                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-orange mb-6">
                   JournalKlar
                 </div>
                 <div className="flex flex-col gap-4">
@@ -343,8 +343,8 @@ export default function TilgangPage() {
               </div>
 
               {/* Transskriptionsbaseret AI — højre */}
-              <div className="bg-white border border-sand [border-top:4px_solid_#E8E4DF] p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-evergreen mb-6">
+              <div className="bg-white border border-sand p-6 md:p-8">
+                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-orange mb-6">
                   Transskriptionsbaseret AI
                 </div>
                 <div className="flex flex-col gap-4">
@@ -391,7 +391,7 @@ export default function TilgangPage() {
               <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-10">
                 Efter sessionen skal du samle trådene, dokumentere korrekt, huske aftaler, formulere dig præcist og sikre, at journalen dækker det, den skal.
               </p>
-              <p className="font-sans text-[15px] font-medium text-evergreen mb-5">
+              <p className="font-sans text-[15px] font-normal text-evergreen mb-5">
                 Her kan AI være hjælpsomt.
               </p>
             </div>
@@ -399,7 +399,7 @@ export default function TilgangPage() {
             {/* Two lists */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
               <div className="border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-muted mb-5">
+                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-orange mb-5">
                   AI må gerne hjælpe med
                 </div>
                 <div className="flex flex-col gap-4">
@@ -413,7 +413,7 @@ export default function TilgangPage() {
               </div>
 
               <div className="border border-sand bg-sand [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-muted mb-5">
+                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-orange mb-5">
                   AI bør ikke overtage
                 </div>
                 <div className="flex flex-col gap-4">
@@ -452,7 +452,7 @@ export default function TilgangPage() {
 
               {/* Gør */}
               <div className="bg-evergreen p-10">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-parchment/60 mb-6">
+                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-parchment/70 mb-6">
                   Hvad JournalKlar gør
                 </div>
                 <div className="flex flex-col gap-5">
@@ -469,7 +469,7 @@ export default function TilgangPage() {
 
               {/* Gør ikke */}
               <div className="bg-white border border-sand p-10">
-                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-muted mb-6">
+                <div className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-orange mb-6">
                   Hvad JournalKlar ikke gør
                 </div>
                 <div className="flex flex-col gap-5">
@@ -491,7 +491,7 @@ export default function TilgangPage() {
               <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-4">
                 Outputtet fra JournalKlar er altid et journaludkast. Ikke en journal. Ikke en vurdering. Ikke en beslutning.
               </p>
-              <p className="font-sans text-[16px] font-medium text-evergreen leading-[1.85] mb-4">
+              <p className="font-sans text-[16px] font-normal text-evergreen leading-[1.85] mb-4">
                 Det er et arbejdsskridt.
               </p>
               <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85]">
@@ -518,7 +518,7 @@ export default function TilgangPage() {
                   <div className="font-serif text-[28px] font-normal text-evergreen/25 leading-none mb-5 tracking-[-0.02em]">
                     {num}
                   </div>
-                  <div className="font-sans text-[15px] font-medium text-evergreen mb-3 leading-[1.35]">
+                  <div className="font-sans text-[15px] font-normal text-evergreen mb-3 leading-[1.35]">
                     {title}
                   </div>
                   <p className="font-sans text-[14px] font-light text-[#505050] leading-[1.7] m-0">
@@ -548,7 +548,7 @@ export default function TilgangPage() {
               <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
                 Det kan spare tid. Det kan skabe struktur. Det kan mindske friktion i en dokumentationsopgave, som mange oplever som tung, gentagende og svær at få gjort ordentligt i en travl hverdag.
               </p>
-              <p className="font-sans text-[15px] font-medium text-evergreen leading-[1.85] mb-5">
+              <p className="font-sans text-[15px] font-normal text-evergreen leading-[1.85] mb-5">
                 Men effektivitet er ikke et neutralt mål.
               </p>
               <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-5">
@@ -562,7 +562,7 @@ export default function TilgangPage() {
               </p>
               <p className="font-sans text-[16px] font-light text-[#505050] leading-[1.85] mb-12">
                 Ikke for at gøre journalføring automatisk.{" "}
-                <span className="font-medium text-evergreen">Men for at gøre det lettere at gøre ordentligt.</span>
+                <span className="font-normal text-evergreen">Men for at gøre det lettere at gøre ordentligt.</span>
               </p>
 
               {/* Signature card */}
@@ -570,7 +570,7 @@ export default function TilgangPage() {
                 <div className="font-serif text-[17px] font-normal text-evergreen tracking-[-0.01em] mb-2">
                   JournalKlar
                 </div>
-                <div className="font-sans text-[14px] font-light text-muted italic">
+                <div className="font-sans text-[14px] font-light text-muted">
                   Din vurdering. Vores struktur.
                 </div>
               </div>
@@ -594,7 +594,7 @@ export default function TilgangPage() {
                   className="group border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8 flex flex-col justify-between gap-6"
                 >
                   <div>
-                    <div className="font-sans text-[15px] font-medium text-evergreen mb-3">{title}</div>
+                    <div className="font-sans text-[15px] font-normal text-evergreen mb-3">{title}</div>
                     <p className="font-sans text-[14px] font-light text-[#505050] leading-[1.7] m-0">{text}</p>
                   </div>
                   <div className="flex items-center gap-[8px] font-sans text-[13px] font-normal text-evergreen border-b border-evergreen/20 pb-[2px] self-start group-hover:border-evergreen transition-colors">
