@@ -70,7 +70,7 @@ function TechChip({ children }: { children: React.ReactNode }) {
 const trustItems = [
   "Ingen sessionoptagelse",
   "Ingen AI-træning på dine input",
-  "EU-behandling",
+  "Dansk server i Skanderborg",
   "Journalnoter gemmes ikke efter generering",
 ];
 

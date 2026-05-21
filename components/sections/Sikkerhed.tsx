@@ -13,7 +13,7 @@ const promises = [
   },
   {
     num: "3",
-    title: "Behandling inden for EU",
+    title: "Dansk server i Skanderborg",
     text: "JournalKlar er bygget til europæisk databehandling. App og AI-behandling kører inden for EU, og databehandleraftalen beskriver underleverandører, datastrømme og behandlingsgrundlag.",
   },
   {
