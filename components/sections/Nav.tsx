@@ -15,7 +15,7 @@ export default function Nav() {
             Sikkerhed
           </a>
           <a href="/om" className="hidden md:block font-sans text-[14px] font-normal text-graphite hover:text-evergreen transition-colors">
-            Om
+            Bag om
           </a>
           <a
             href="/#pris"

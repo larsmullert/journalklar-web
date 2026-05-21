@@ -6,7 +6,7 @@ const produkt = [
 
 const journalklar = [
   { label: "Tilgang", href: "/tilgang" },
-  { label: "Om", href: "/om" },
+  { label: "Bag om", href: "/om" },
   { label: "Sikkerhed", href: "/sikkerhed" },
 ];
 
