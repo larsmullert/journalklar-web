@@ -223,15 +223,17 @@ export default function CookieBanner() {
       aria-label="Cookieindstillinger"
       style={{
         position: "fixed",
-        bottom: 0,
-        left: 0,
-        right: 0,
+        bottom: "16px",
+        left: "50%",
+        width: "auto",
+        maxWidth: "860px",
+        minWidth: 0,
         zIndex: 9999,
         backgroundColor: "#FFFFFF",
         borderTop: "1px solid #E8E4DF",
         transform: visible
-          ? "translateY(0)"
-          : "translateY(calc(100% + 32px))",
+          ? "translateX(-50%) translateY(0)"
+          : "translateX(-50%) translateY(calc(100% + 48px))",
         transition: "transform 0.3s ease",
       }}
     >
