@@ -139,8 +139,8 @@ export default function OmPage() {
                 >
                   Hvem skal lave den faglige vurdering og udvælgelse af, hvad der var vigtigt i samtalen?
                 </p>
-                <p className="font-sans text-[16px] font-normal text-body mt-3 mb-0">
-                  Det skal du selvfølgelig.
+                <p className="font-sans text-[16px] font-normal text-evergreen mt-3 mb-0">
+                  Det skal du, selvfølgelig. Det er derfor JournalKlar starter med dine noter.
                 </p>
               </div>
             </div>
