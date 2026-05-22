@@ -278,8 +278,8 @@ export default function CookieBanner() {
                   marginBottom: "6px",
                 }}
               >
-                JournalKlar bruger cookies — eller{" "}
-                <em>informasjonskapsler</em>, som de hedder i Norge.
+                De nødvendige får systemet til at køre rundt. Med din tilladelse bruger vi
+                statistik til at forstå adfærden på siden, og marketing til at måle vores annoncer.
               </div>
               <div
                 style={{
@@ -291,21 +291,8 @@ export default function CookieBanner() {
                   marginBottom: "6px",
                 }}
               >
-                De nødvendige cookies får siden til at fungere.<br />
-                Med dit samtykke kan vi bruge statistik til at få indblik i, hvordan siden bliver brugt.<br />
-                Marketingcookies bruger vi til at måle effekten af vores annoncer.
-              </div>
-              <div
-                style={{
-                  fontFamily: "inherit",
-                  fontSize: "13px",
-                  fontWeight: 300,
-                  color: "#2C2C2C",
-                  lineHeight: 1.7,
-                  marginBottom: "6px",
-                }}
-              >
-                Du kan acceptere alle, afvise eller vælge formål. Og læse mere om det{" "}
+                Du kan acceptere alle, afvise eller tilpasse dine valg. Læs vores fulde
+                cookiepolitik{" "}
                 <a
                   href="/cookiepolitik"
                   target="_blank"
