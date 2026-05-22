@@ -36,7 +36,7 @@ export default function Afgrænsning() {
           </p>
         </div>
 
-        <div className="mt-12 max-w-[860px]">
+        <div className="mt-12 max-w-[860px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-6 items-stretch">
 
           {/* Venstre: evergreen */}
