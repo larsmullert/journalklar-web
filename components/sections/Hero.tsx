@@ -18,7 +18,7 @@ export default function Hero() {
               JournalKlar hjælper privatpraktiserende psykologer med at strukturere egne noter efter journalføringskravene — så du stadig vurderer, selekterer og godkender.
             </p>
 
-            <div className="flex flex-wrap items-center gap-8 mb-8">
+            <div className="flex flex-wrap items-center gap-8">
               <a
                 href="#pris"
                 className="inline-flex items-center gap-[10px] bg-evergreen text-white font-sans text-[15px] font-normal px-[30px] py-[15px] hover:bg-[#152e23] transition-colors"
@@ -40,14 +40,6 @@ export default function Hero() {
                 </svg>
               </a>
             </div>
-
-            <p className="font-sans text-[13px] font-normal text-evergreen tracking-[0.04em] text-center mt-7 mb-0">
-              Ingen optagelse af sessionen{" "}
-              <span className="text-evergreen/40">·</span>
-              {" "}Server i Skanderborg{" "}
-              <span className="text-evergreen/40">·</span>
-              {" "}Altid et udkast
-            </p>
           </div>
 
           {/* Højre: split-pane preview med fade */}
@@ -123,6 +115,14 @@ export default function Hero() {
           </div>
 
         </div>
+
+        <p className="font-sans text-[13px] font-normal text-evergreen tracking-[0.04em] text-center mt-8 mb-0">
+          Ingen optagelse af sessionen{" "}
+          <span className="text-evergreen/40">·</span>
+          {" "}Server i Skanderborg{" "}
+          <span className="text-evergreen/40">·</span>
+          {" "}Altid et udkast
+        </p>
       </div>
     </div>
   );
