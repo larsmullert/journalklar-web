@@ -237,7 +237,7 @@ export default function CookieBanner() {
     >
       <div
         style={{
-          maxWidth: "860px",
+          width: "fit-content",
           margin: "0 auto",
           padding: "16px 24px",
         }}
@@ -263,7 +263,7 @@ export default function CookieBanner() {
                   lineHeight: 1.4,
                 }}
               >
-                Cookies uden mystik
+                De ubevidste cookies gjort bevidst
               </div>
 
               <div
@@ -304,10 +304,7 @@ export default function CookieBanner() {
                   marginBottom: "6px",
                 }}
               >
-                Du kan acceptere alle, afvise eller vælge formål.
-              </div>
-
-              <div style={{ marginTop: "10px" }}>
+                Du kan acceptere alle, afvise eller vælge formål.{" "}
                 <a
                   href="/cookiepolitik"
                   target="_blank"
@@ -322,7 +319,7 @@ export default function CookieBanner() {
                     paddingBottom: "1px",
                   }}
                 >
-                  Læs mere i vores cookiepolitik →
+                  Læs cookiepolitik →
                 </a>
               </div>
             </div>
@@ -332,19 +329,19 @@ export default function CookieBanner() {
               style={{
                 flexShrink: 0,
                 display: "flex",
-                gap: "8px",
-                alignItems: "center",
-                whiteSpace: "nowrap",
+                flexDirection: "column",
+                gap: "6px",
+                alignItems: "stretch",
               }}
             >
-              <button style={btnPrimary} onClick={acceptAll}>
+              <button style={{ ...btnPrimary, width: "100%" }} onClick={acceptAll}>
                 Accepter alle
               </button>
-              <button style={btnSecondary} onClick={rejectAll}>
+              <button style={{ ...btnSecondary, width: "100%" }} onClick={rejectAll}>
                 Afvis alle
               </button>
               <button
-                style={btnGhost}
+                style={{ ...btnGhost, width: "100%" }}
                 onClick={() => setView("customize")}
               >
                 Tilpas valg
