@@ -10,6 +10,8 @@ const journalklar = [
   { label: "Sikkerhed", href: "/sikkerhed" },
 ];
 
+import CookieSettingsButton from "@/components/ui/CookieSettingsButton";
+
 const juridisk = [
   { label: "Privatlivspolitik", href: "/privatlivspolitik" },
   { label: "Databehandleraftale", href: "/databehandleraftale" },
@@ -80,6 +82,7 @@ export default function Footer() {
               {juridisk.map(({ label, href }) => (
                 <FooterLink key={label} href={href}>{label}</FooterLink>
               ))}
+              <CookieSettingsButton />
             </div>
           </div>
 
