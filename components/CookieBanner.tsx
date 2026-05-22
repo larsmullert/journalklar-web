@@ -64,7 +64,7 @@ const btnBase: React.CSSProperties = {
   fontWeight: 500,
   border: "none",
   cursor: "pointer",
-  padding: "10px 20px",
+  padding: "8px 18px",
   lineHeight: 1.4,
 };
 
@@ -84,7 +84,7 @@ const btnGhost: React.CSSProperties = {
   ...btnBase,
   backgroundColor: "transparent",
   color: "#2C2C2C",
-  padding: "10px 4px",
+  padding: "8px 4px",
 };
 
 // ─── Kategori-række ──────────────────────────────────────────────────────────
@@ -244,7 +244,7 @@ export default function CookieBanner() {
           borderTop: "1px solid #E8E4DF",
           borderLeft: "1px solid #E8E4DF",
           borderRight: "1px solid #E8E4DF",
-          padding: "28px 28px 24px",
+          padding: "16px 24px",
         }}
       >
         {view === "banner" && (
@@ -253,8 +253,8 @@ export default function CookieBanner() {
             <div
               style={{
                 fontFamily: "inherit",
-                fontSize: "14px",
-                fontWeight: 700,
+                fontSize: "15px",
+                fontWeight: 600,
                 color: "#1D3A2F",
                 marginBottom: "10px",
                 lineHeight: 1.4,
@@ -267,11 +267,11 @@ export default function CookieBanner() {
             <div
               style={{
                 fontFamily: "inherit",
-                fontSize: "14px",
+                fontSize: "13px",
                 fontWeight: 300,
                 color: "#2C2C2C",
                 lineHeight: 1.7,
-                marginBottom: "8px",
+                marginBottom: "6px",
               }}
             >
               JournalKlar bruger cookies — eller{" "}
@@ -280,11 +280,11 @@ export default function CookieBanner() {
             <div
               style={{
                 fontFamily: "inherit",
-                fontSize: "14px",
+                fontSize: "13px",
                 fontWeight: 300,
                 color: "#2C2C2C",
                 lineHeight: 1.7,
-                marginBottom: "8px",
+                marginBottom: "6px",
               }}
             >
               De nødvendige cookies får siden til at fungere. Med dit samtykke
@@ -295,18 +295,18 @@ export default function CookieBanner() {
             <div
               style={{
                 fontFamily: "inherit",
-                fontSize: "14px",
+                fontSize: "13px",
                 fontWeight: 300,
                 color: "#2C2C2C",
                 lineHeight: 1.7,
-                marginBottom: "4px",
+                marginBottom: "6px",
               }}
             >
               Du kan acceptere alle, afvise eller vælge formål.
             </div>
 
             {/* Link */}
-            <div style={{ marginBottom: "20px" }}>
+            <div style={{ marginBottom: "12px" }}>
               <a
                 href="/cookiepolitik"
                 target="_blank"
@@ -411,7 +411,7 @@ export default function CookieBanner() {
                 flexWrap: "wrap",
                 gap: "8px",
                 alignItems: "center",
-                marginTop: "20px",
+                marginTop: "12px",
               }}
             >
               <button style={btnPrimary} onClick={saveCustom}>
