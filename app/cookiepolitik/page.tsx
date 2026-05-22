@@ -35,6 +35,19 @@ function Body({ children }: { children: React.ReactNode }) {
   );
 }
 
+function ContextHeading({ children }: { children: React.ReactNode }) {
+  return (
+    <div style={{ marginTop: "48px", marginBottom: "24px", paddingBottom: "8px", borderBottom: "1px solid #E04500" }}>
+      <p style={{ fontSize: "11px", fontWeight: 500, letterSpacing: "0.14em", textTransform: "uppercase", color: "#E04500", marginBottom: "8px" }}>
+        Gælder for
+      </p>
+      <h2 style={{ fontSize: "28px", fontWeight: 600, color: "#1D3A2F", fontFamily: "var(--font-source-sans, DM Sans, sans-serif)", margin: 0 }}>
+        {children}
+      </h2>
+    </div>
+  );
+}
+
 function CookieRow({ name, description }: { name: string; description: string }) {
   return (
     <div className="grid grid-cols-[160px_1fr] gap-4 py-3 border-b border-sand">
@@ -71,7 +84,7 @@ export default function CookiepolitikPage() {
                 effekten af markedsføring.
               </Body>
 
-              <SectionHeading>De cookies vi bruger</SectionHeading>
+              <ContextHeading>journalklar.dk — marketingsitet</ContextHeading>
 
               <SubHeading badge="Altid aktiv">Nødvendige cookies</SubHeading>
               <div className="border-t border-sand mb-4">
@@ -109,6 +122,7 @@ export default function CookiepolitikPage() {
               </Body>
               <Body>Disse cookies sættes ikke før du har givet samtykke.</Body>
 
+              <ContextHeading>app.journalklar.dk — appen</ContextHeading>
               <SectionHeading>Hvad vi ikke gør</SectionHeading>
               <ul className="font-sans text-[15px] font-light text-body leading-[1.85] space-y-1 list-none p-0 mb-4">
                 <li>— Vi bruger ikke cookies i JournalKlar-appen (app.journalklar.dk)</li>

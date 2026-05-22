@@ -14,6 +14,19 @@ function SectionHeading({ children }: { children: React.ReactNode }) {
   );
 }
 
+function ContextHeading({ children }: { children: React.ReactNode }) {
+  return (
+    <div style={{ marginTop: "48px", marginBottom: "24px", paddingBottom: "8px", borderBottom: "1px solid #E04500" }}>
+      <p style={{ fontSize: "11px", fontWeight: 500, letterSpacing: "0.14em", textTransform: "uppercase", color: "#E04500", marginBottom: "8px" }}>
+        Gælder for
+      </p>
+      <h2 style={{ fontSize: "28px", fontWeight: 600, color: "#1D3A2F", fontFamily: "var(--font-source-sans, DM Sans, sans-serif)", margin: 0 }}>
+        {children}
+      </h2>
+    </div>
+  );
+}
+
 function SubHeading({ children }: { children: React.ReactNode }) {
   return (
     <h3 className="font-sans text-[14px] font-medium text-evergreen uppercase tracking-[0.06em] mt-8 mb-3">
@@ -116,7 +129,7 @@ export default function PrivatlivspolitikPage() {
               </Body>
 
               {/* ── journalklar.dk ── */}
-              <SectionHeading>journalklar.dk — marketingsitet</SectionHeading>
+              <ContextHeading>journalklar.dk — marketingsitet</ContextHeading>
 
               <SubHeading>Besøgsstatistik</SubHeading>
               <DataTable>
@@ -161,7 +174,7 @@ export default function PrivatlivspolitikPage() {
               </Body>
 
               {/* ── app.journalklar.dk ── */}
-              <SectionHeading>app.journalklar.dk — appen</SectionHeading>
+              <ContextHeading>app.journalklar.dk — appen</ContextHeading>
 
               <SubHeading>Journalnoter og udkast</SubHeading>
               <DataTable>
