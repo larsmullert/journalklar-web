@@ -239,7 +239,7 @@ export default function CookieBanner() {
       <div
         style={{
           width: "100%",
-          maxWidth: "680px",
+          maxWidth: "1100px",
           backgroundColor: "#FFFFFF",
           borderTop: "1px solid #E8E4DF",
           borderLeft: "1px solid #E8E4DF",
@@ -252,12 +252,12 @@ export default function CookieBanner() {
             {/* Titel */}
             <div
               style={{
-                fontFamily: "var(--font-source-serif, serif)",
-                fontSize: "20px",
-                fontWeight: 400,
+                fontFamily: "inherit",
+                fontSize: "14px",
+                fontWeight: 700,
                 color: "#1D3A2F",
-                marginBottom: "12px",
-                lineHeight: 1.3,
+                marginBottom: "10px",
+                lineHeight: 1.4,
               }}
             >
               Cookies uden mystik
@@ -274,8 +274,8 @@ export default function CookieBanner() {
                 marginBottom: "8px",
               }}
             >
-              JournalKlar bruger cookies — eller informationskapsler, hvis vi
-              låner det norske ord.
+              JournalKlar bruger cookies — eller{" "}
+              <em>informasjonskapsler</em>, som de hedder i Norge.
             </div>
             <div
               style={{
@@ -288,8 +288,9 @@ export default function CookieBanner() {
               }}
             >
               De nødvendige cookies får siden til at fungere. Med dit samtykke
-              bruger vi også statistik til at forstå, hvordan siden bliver
-              brugt, og marketingcookies til at måle effekten af annoncer.
+              kan vi bruge statistik til at få indblik i, hvordan siden bliver
+              brugt. Marketingcookies bruger vi til at måle effekten af vores
+              annoncer.
             </div>
             <div
               style={{
@@ -301,14 +302,15 @@ export default function CookieBanner() {
                 marginBottom: "4px",
               }}
             >
-              Du kan acceptere alle, afvise alle eller vælge formål. Du kan
-              altid ændre dit valg igen.
+              Du kan acceptere alle, afvise eller vælge formål.
             </div>
 
             {/* Link */}
             <div style={{ marginBottom: "20px" }}>
               <a
                 href="/cookiepolitik"
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   fontFamily: "inherit",
                   fontSize: "13px",
@@ -366,6 +368,8 @@ export default function CookieBanner() {
             <div style={{ marginBottom: "4px" }}>
               <a
                 href="/cookiepolitik"
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   fontFamily: "inherit",
                   fontSize: "13px",
