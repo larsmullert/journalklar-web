@@ -21,6 +21,11 @@ const sourceSans3 = Source_Sans_3({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://journalklar.dk"),
+  alternates: {
+    types: {
+      "text/plain": "https://journalklar.dk/llms.txt",
+    },
+  },
   title: {
     default: "JournalKlar",
     template: "%s — JournalKlar",
