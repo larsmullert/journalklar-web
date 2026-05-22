@@ -19,7 +19,7 @@ function AppTopBar() {
       <div className="w-[10px] h-[10px] rounded-full bg-[#DFDFB9]" />
       <div className="w-[10px] h-[10px] rounded-full bg-[#B9DFC0]" />
       <span className="ml-[10px] font-sans text-[12px] text-muted">
-        JournalKlar — Eksempelsession · Opfølgende samtale
+        JournalKlar — Eksempelsession · Første samtale
       </span>
     </div>
   );
@@ -37,7 +37,7 @@ function MangleBadge() {
         Mangler — kræver stillingtagen
       </div>
       <div className="font-sans text-[13px] font-light text-body">
-        Samlet faglig vurdering af tilstand og progression mangler. Tilføj din vurdering inden journalen godkendes.
+        Bekræft om informeret samtykke til tavshedspligt og oplysningspligt indgik i informationen.
       </div>
     </div>
   );
@@ -46,35 +46,12 @@ function MangleBadge() {
 function RaaNoter() {
   return (
     <div className="font-sans text-[13px] font-light text-body leading-[1.8] space-y-[12px]">
-      <p>Videosession. 6. session.</p>
-      <p>
-        Arbejder fortsat med angst og undgåelse. Klienten siger: &ldquo;jeg
-        bliver helt låst, når jeg skal tage toget&rdquo;.
-      </p>
-      <div>
-        <p className="mb-[5px]">Siden sidst:</p>
-        <p>
-          — Tog bussen to gange alene.
-          <br />— Sprang togtur over tirsdag.
-          <br />— Sov dårligt aftenen før.
-          <br />— Bange for at få panik og ikke kunne komme væk.
-        </p>
-      </div>
-      <p>
-        Gennemgik eksponeringsplan. Talte om hvad der sker, når hun undgår. Hun
-        kunne godt se, at det hjælper kortvarigt, men gør næste gang sværere.
-      </p>
-      <p>
-        Virkede træt, men samarbejdende. Blev berørt da hun talte om at føle sig
-        &ldquo;barnlig&rdquo;. Ingen selvmordstanker, spurgt direkte.
-      </p>
-      <div>
-        <p className="mb-[5px]">Aftale:</p>
-        <p>
-          Tage toget én station sammen med veninde. Registrere angst 0-10 før,
-          under og efter. Næste tid om 14 dage.
-        </p>
-      </div>
+      <p>Første samtale. Mand, 34. Henvist af læge pga. depression. Sygemeldt 3 mdr fra job som projektleder.</p>
+      <p>Beskriver nedsat energi, søvnproblemer, tab af lyst. Haft det sådan ca 6 mdr. Udløst af samlivskonflikt og høj arbejdsbelastning.</p>
+      <p>Ingen selvmordsrisiko, spurgt direkte.</p>
+      <p>Tidligere set psykolog for 5 år siden, god oplevelse. Motiveret for forløb.</p>
+      <p>Aftalte KAT-baseret tilgang, 10 sessioner som udgangspunkt. Næste tid om 1 uge.</p>
+      <p>Informeret om journalføring og rammer.</p>
     </div>
   );
 }
@@ -83,35 +60,31 @@ function JournalUdkast() {
   return (
     <>
       <div className="font-sans text-[14px] font-light text-body leading-[1.65] space-y-[14px]">
-        <p>[DATO]. Sjette session. Videosession.</p>
+        <p className="text-muted">[STAMDATA: Udfyldes i journalsystem — navn, CPR, psykologens navn/titel/arbejdssted, dato]</p>
+        <p>[DATO]. Første samtale.</p>
         <p>
-          Fortsat behandling med fokus på angst og undgåelse. Klienten beskriver
-          siden sidst at have taget bussen alene to gange, men sprang en planlagt
-          togtur over tirsdag.
+          Klienten er en 34-årig mand henvist af egen læge med henblik på
+          behandling af depression. Han er aktuelt sygemeldt fra sit job som
+          projektleder, sygemeldingen har varet tre måneder.
         </p>
         <p>
-          Klienten beskriver: &ldquo;jeg bliver helt låst, når jeg skal tage
-          toget&rdquo;. Hun forbinder situationen med frygt for at få panik og
-          ikke kunne komme væk. Hun beskriver desuden dårlig søvn aftenen før den
-          planlagte eksponering.
+          Klienten beskriver nedsat energi, søvnproblemer og tab af lyst.
+          Symptomerne har været til stede i ca. seks måneder og beskrives som
+          udløst af en samlivskonflikt og høj arbejdsbelastning.
         </p>
+        <p>Ingen selvmordsrisiko, spurgt direkte.</p>
         <p>
-          Der blev gennemgået eksponeringsplan. Der blev arbejdet med, hvad der
-          sker ved undgåelse, herunder klientens forståelse af, at undgåelse
-          hjælper kortvarigt, men gør næste gang sværere.
+          Klienten har tidligere haft et psykologforløb for ca. fem år siden og
+          beskriver det som en god oplevelse. Han fremstår motiveret for det
+          aktuelle forløb.
         </p>
-        <p>
-          Klienten fremstod træt, men samarbejdende. Hun blev berørt, da hun
-          talte om at føle sig &ldquo;barnlig&rdquo;.
-        </p>
-        <p>Psykologen vurderer ingen aktuelle selvmordstanker, spurgt direkte.</p>
+        <p>Klienten er informeret om journalføring og rammerne for forløbet.</p>
       </div>
       <MangleBadge />
       <div className="font-sans text-[14px] font-light text-body leading-[1.65]">
         <p>
-          Det blev aftalt, at klienten inden næste session tager toget én station
-          sammen med en veninde og registrerer angst 0-10 før, under og efter.
-          Næste session aftalt om 14 dage.
+          Der er aftalt en kognitiv adfærdsterapeutisk tilgang over ti sessioner
+          som udgangspunkt. Næste session er aftalt om en uge.
         </p>
       </div>
     </>

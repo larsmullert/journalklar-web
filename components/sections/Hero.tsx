@@ -69,18 +69,11 @@ export default function Hero() {
                   Rånoter efter sessionen
                 </div>
                 <div className="font-sans text-[10.5px] font-light text-body leading-[1.75] space-y-[8px]">
-                  <p>Videosession. 6. session.</p>
-                  <p>Arbejder fortsat med angst og undgåelse. Klienten siger: &ldquo;jeg bliver helt låst, når jeg skal tage toget&rdquo;.</p>
-                  <div>
-                    <p className="mb-[3px]">Siden sidst:</p>
-                    <p>— Tog bussen to gange alene.<br />— Sprang togtur over tirsdag.<br />— Sov dårligt aftenen før.<br />— Bange for at få panik og ikke kunne komme væk.</p>
-                  </div>
-                  <p>Gennemgik eksponeringsplan. Talte om hvad der sker, når hun undgår. Hun kunne godt se, at det hjælper kortvarigt, men gør næste gang sværere.</p>
-                  <p>Virkede træt, men samarbejdende. Blev berørt da hun talte om at føle sig &ldquo;barnlig&rdquo;. Ingen selvmordstanker, spurgt direkte.</p>
-                  <div>
-                    <p className="mb-[3px]">Aftale:</p>
-                    <p>Tage toget én station sammen med veninde. Registrere angst 0-10 før, under og efter. Næste tid om 14 dage.</p>
-                  </div>
+                  <p>Første samtale. Mand, 34. Henvist af læge pga. depression. Sygemeldt 3 mdr fra job som projektleder.</p>
+                  <p>Beskriver nedsat energi, søvnproblemer, tab af lyst. Haft det sådan ca 6 mdr. Udløst af samlivskonflikt og høj arbejdsbelastning.</p>
+                  <p>Ingen selvmordsrisiko, spurgt direkte.</p>
+                  <p>Tidligere set psykolog for 5 år siden, god oplevelse. Motiveret for forløb.</p>
+                  <p>Aftalte KAT-baseret tilgang, 10 sessioner. Næste tid om 1 uge. Informeret om journalføring og rammer.</p>
                 </div>
               </div>
 
@@ -93,21 +86,21 @@ export default function Hero() {
                   </span>
                 </div>
                 <div className="font-sans text-[10.5px] font-light text-body leading-[1.7] space-y-[8px]">
-                  <p>[DATO]. Sjette session. Videosession.</p>
-                  <p>Fortsat behandling med fokus på angst og undgåelse. Klienten beskriver siden sidst at have taget bussen alene to gange, men sprang en planlagt togtur over tirsdag.</p>
-                  <p>Klienten beskriver: &ldquo;jeg bliver helt låst, når jeg skal tage toget&rdquo;. Hun forbinder situationen med frygt for at få panik og ikke kunne komme væk. Hun beskriver desuden dårlig søvn aftenen før den planlagte eksponering.</p>
-                  <p>Der blev gennemgået eksponeringsplan. Der blev arbejdet med, hvad der sker ved undgåelse, herunder klientens forståelse af, at undgåelse hjælper kortvarigt, men gør næste gang sværere.</p>
-                  <p>Klienten fremstod træt, men samarbejdende. Hun blev berørt, da hun talte om at føle sig &ldquo;barnlig&rdquo;.</p>
+                  <p className="text-muted">[STAMDATA: Udfyldes i journalsystem]</p>
+                  <p>[DATO]. Første samtale.</p>
+                  <p>Klienten er en 34-årig mand henvist af egen læge med henblik på behandling af depression. Han er aktuelt sygemeldt fra sit job som projektleder, sygemeldingen har varet tre måneder.</p>
+                  <p>Klienten beskriver nedsat energi, søvnproblemer og tab af lyst. Symptomerne har været til stede i ca. seks måneder og beskrives som udløst af en samlivskonflikt og høj arbejdsbelastning.</p>
+                  <p>Ingen selvmordsrisiko, spurgt direkte.</p>
                   <p>
-                    Psykologen vurderer ingen aktuelle selvmordstanker, spurgt direkte.{" "}
+                    Klienten er informeret om journalføring og rammerne for forløbet.{" "}
                     <span
                       className="font-sans text-[11px] font-light"
                       style={{ background: "rgba(245,218,120,0.30)", color: "#7A6020", padding: "1px 5px" }}
                     >
-                      MANGLER: samlet faglig vurdering af tilstand og progression
+                      MANGLER: bekræft informeret samtykke til tavshedspligt
                     </span>
                   </p>
-                  <p>Det blev aftalt, at klienten inden næste session tager toget én station sammen med en veninde og registrerer angst 0-10 før, under og efter. Næste session aftalt om 14 dage.</p>
+                  <p>Der er aftalt en kognitiv adfærdsterapeutisk tilgang over ti sessioner. Næste session aftalt om en uge.</p>
                 </div>
               </div>
 
