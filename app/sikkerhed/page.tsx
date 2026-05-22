@@ -267,43 +267,14 @@ export default function SikkerhedPage() {
                 Sikkerhed, fortrolighed og data —{" "}
                 <span className="italic text-evergreen/60">på almindeligt dansk</span>
               </h1>
-              <p className="font-sans text-[16px] font-light text-body max-w-[480px] leading-[1.85] mb-8">
+              <p className="font-sans text-[16px] font-light text-body max-w-[480px] leading-[1.85] mb-0">
                 JournalKlar er bygget til psykologer, der arbejder med fortrolige klientoplysninger. Du skal kunne forstå, hvad der sker med dine data — ikke bare have tillid til, at vi håndterer det.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 items-start mb-8">
-                <a
-                  href="#noter"
-                  className="inline-flex items-center gap-[10px] bg-evergreen text-white font-sans text-[15px] font-normal px-[30px] py-[15px] hover:bg-[#152e23] transition-colors"
-                >
-                  Se hvad der sker med dine noter
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                    <line x1="1" y1="6" x2="11" y2="6" stroke="white" strokeWidth="1.3"/>
-                    <polyline points="7.5,2.5 11,6 7.5,9.5" stroke="white" strokeWidth="1.3" fill="none"/>
-                  </svg>
-                </a>
-                <a
-                  href="#databehandleraftale"
-                  className="inline-flex items-center gap-[6px] text-evergreen font-sans text-[14px] font-normal border-b border-evergreen/20 pb-[2px] hover:border-evergreen transition-colors mt-1"
-                >
-                  Hent databehandleraftale
-                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
-                    <line x1="1" y1="5" x2="9" y2="5" stroke="currentColor" strokeWidth="1.2"/>
-                    <polyline points="6,2 9,5 6,8" stroke="currentColor" strokeWidth="1.2" fill="none"/>
-                  </svg>
-                </a>
-              </div>
-              <p className="font-sans text-[13px] font-normal text-evergreen tracking-[0.04em] text-center mt-7 mb-0">
-                Ingen optagelse af sessionen{" "}
-                <span className="text-evergreen/40">·</span>
-                {" "}Server i Skanderborg{" "}
-                <span className="text-evergreen/40">·</span>
-                {" "}Altid et udkast
               </p>
             </div>
 
             {/* Right: trust panel */}
             <div className="bg-evergreen px-8 py-10 flex flex-col justify-center">
-              <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-parchment/70 mb-7">
+              <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-7">
                 Fire garantier
               </div>
               <div className="flex flex-col gap-5">
