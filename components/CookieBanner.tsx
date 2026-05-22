@@ -243,90 +243,98 @@ export default function CookieBanner() {
         }}
       >
         {view === "banner" && (
-          <>
-            {/* Titel */}
-            <div
-              style={{
-                fontFamily: "inherit",
-                fontSize: "15px",
-                fontWeight: 600,
-                color: "#1D3A2F",
-                marginBottom: "10px",
-                lineHeight: 1.4,
-              }}
-            >
-              Cookies uden mystik
-            </div>
+          <div
+            className="flex flex-col sm:flex-row"
+            style={{
+              justifyContent: "space-between",
+              alignItems: "center",
+              gap: "32px",
+            }}
+          >
+            {/* Venstre: titel + brødtekst + link */}
+            <div style={{ flex: 1 }}>
+              <div
+                style={{
+                  fontFamily: "inherit",
+                  fontSize: "15px",
+                  fontWeight: 600,
+                  color: "#1D3A2F",
+                  marginBottom: "10px",
+                  lineHeight: 1.4,
+                }}
+              >
+                Cookies uden mystik
+              </div>
 
-            {/* Brødtekst */}
-            <div
-              style={{
-                fontFamily: "inherit",
-                fontSize: "13px",
-                fontWeight: 300,
-                color: "#2C2C2C",
-                lineHeight: 1.7,
-                marginBottom: "6px",
-              }}
-            >
-              JournalKlar bruger cookies — eller{" "}
-              <em>informasjonskapsler</em>, som de hedder i Norge.
-            </div>
-            <div
-              style={{
-                fontFamily: "inherit",
-                fontSize: "13px",
-                fontWeight: 300,
-                color: "#2C2C2C",
-                lineHeight: 1.7,
-                marginBottom: "6px",
-              }}
-            >
-              De nødvendige cookies får siden til at fungere. Med dit samtykke
-              kan vi bruge statistik til at få indblik i, hvordan siden bliver
-              brugt. Marketingcookies bruger vi til at måle effekten af vores
-              annoncer.
-            </div>
-            <div
-              style={{
-                fontFamily: "inherit",
-                fontSize: "13px",
-                fontWeight: 300,
-                color: "#2C2C2C",
-                lineHeight: 1.7,
-                marginBottom: "6px",
-              }}
-            >
-              Du kan acceptere alle, afvise eller vælge formål.
-            </div>
-
-            {/* Link */}
-            <div style={{ marginBottom: "12px" }}>
-              <a
-                href="/cookiepolitik"
-                target="_blank"
-                rel="noopener noreferrer"
+              <div
                 style={{
                   fontFamily: "inherit",
                   fontSize: "13px",
-                  fontWeight: 400,
-                  color: "#1D3A2F",
-                  textDecoration: "none",
-                  borderBottom: "1px solid rgba(29,58,47,0.3)",
-                  paddingBottom: "1px",
+                  fontWeight: 300,
+                  color: "#2C2C2C",
+                  lineHeight: 1.7,
+                  marginBottom: "6px",
                 }}
               >
-                Læs mere i vores cookiepolitik →
-              </a>
+                JournalKlar bruger cookies — eller{" "}
+                <em>informasjonskapsler</em>, som de hedder i Norge.
+              </div>
+              <div
+                style={{
+                  fontFamily: "inherit",
+                  fontSize: "13px",
+                  fontWeight: 300,
+                  color: "#2C2C2C",
+                  lineHeight: 1.7,
+                  marginBottom: "6px",
+                }}
+              >
+                De nødvendige cookies får siden til at fungere. Med dit samtykke
+                kan vi bruge statistik til at få indblik i, hvordan siden bliver
+                brugt. Marketingcookies bruger vi til at måle effekten af vores
+                annoncer.
+              </div>
+              <div
+                style={{
+                  fontFamily: "inherit",
+                  fontSize: "13px",
+                  fontWeight: 300,
+                  color: "#2C2C2C",
+                  lineHeight: 1.7,
+                  marginBottom: "6px",
+                }}
+              >
+                Du kan acceptere alle, afvise eller vælge formål.
+              </div>
+
+              <div style={{ marginTop: "10px" }}>
+                <a
+                  href="/cookiepolitik"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    fontFamily: "inherit",
+                    fontSize: "13px",
+                    fontWeight: 400,
+                    color: "#1D3A2F",
+                    textDecoration: "none",
+                    borderBottom: "1px solid rgba(29,58,47,0.3)",
+                    paddingBottom: "1px",
+                  }}
+                >
+                  Læs mere i vores cookiepolitik →
+                </a>
+              </div>
             </div>
 
-            {/* Knapper */}
+            {/* Højre: knapper */}
             <div
               style={{
+                flexShrink: 0,
                 display: "flex",
-                flexWrap: "wrap",
                 gap: "8px",
                 alignItems: "center",
+                whiteSpace: "nowrap",
               }}
             >
               <button style={btnPrimary} onClick={acceptAll}>
@@ -342,7 +350,7 @@ export default function CookieBanner() {
                 Tilpas valg
               </button>
             </div>
-          </>
+          </div>
         )}
 
         {view === "customize" && (
