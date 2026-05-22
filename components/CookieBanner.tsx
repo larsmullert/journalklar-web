@@ -289,10 +289,9 @@ export default function CookieBanner() {
                   marginBottom: "6px",
                 }}
               >
-                De nødvendige cookies får siden til at fungere. Med dit samtykke
-                kan vi bruge statistik til at få indblik i, hvordan siden bliver
-                brugt. Marketingcookies bruger vi til at måle effekten af vores
-                annoncer.
+                De nødvendige cookies får siden til at fungere.<br />
+                Med dit samtykke kan vi bruge statistik til at få indblik i, hvordan siden bliver brugt.<br />
+                Marketingcookies bruger vi til at måle effekten af vores annoncer.
               </div>
               <div
                 style={{
