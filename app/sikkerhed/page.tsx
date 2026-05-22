@@ -116,18 +116,19 @@ const steps: { num: string; title: string; text: string; chip: string }[] = [
 ];
 
 const transcriberItems = [
-  "Optager hele samtalen",
-  "Fanger også irrelevante og følsomme detaljer",
-  "Sorterer og vurderer bagefter",
+  "Optager hele sessionen",
+  "Transskriberer samtalen",
+  "AI'en vælger hvad der er fagligt vigtigt",
   "Mere data i omløb",
+  "Fagligt ansvar uklart",
 ];
 
 const journalklarItems = [
-  "Du udvælger selv input",
+  "Du skriver dine egne noter",
   "Ingen lydoptagelse",
-  "Ingen fuld transskription",
+  "Du vælger hvad der er fagligt vigtigt",
   "Mindre data i omløb",
-  "Fagligt skøn før AI-behandling",
+  "Fagligt ansvar hos dig",
 ];
 
 const systemCards: {
@@ -374,9 +375,14 @@ export default function SikkerhedPage() {
 
             </div>
 
-            <p className="font-sans text-[14px] font-light text-muted border-t border-sand pt-6 mt-6 max-w-[680px]">
-              Det er ikke kun et teknisk valg. Det er et psykologfagligt valg om dataminimering, fagligt ansvar og respekt for klientens fortrolighed.
-            </p>
+            <div className="border-l-[3px] border-orange pl-6 mt-12 max-w-[680px]">
+              <p
+                className="font-serif italic text-evergreen leading-[1.6] mb-0"
+                style={{ fontSize: "clamp(18px, 1.8vw, 22px)" }}
+              >
+                Det er ikke kun et teknisk valg. Det er et psykologfagligt valg om dataminimering, fagligt ansvar og respekt for klientens fortrolighed.
+              </p>
+            </div>
           </div>
         </section>
 
