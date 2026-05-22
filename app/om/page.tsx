@@ -122,7 +122,7 @@ export default function OmPage() {
         <Rule />
 
         {/* ── 2. Personen bag ─────────────────────────────────────── */}
-        <section className="py-16 px-6 md:py-[120px] md:px-16">
+        <section className="bg-sand py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Personen bag</SectionLabel>
             <h2 className="max-w-[540px]">Jeg hedder Lars Mullert Pedersen og er psykolog.</h2>
@@ -175,14 +175,14 @@ export default function OmPage() {
         <Rule />
 
         {/* ── 4. Arbejdsprincipper ────────────────────────────────── */}
-        <section className="py-16 px-6 md:py-[120px] md:px-16">
+        <section className="bg-sand py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Hvordan vi bygger</SectionLabel>
             <h2 className="max-w-[480px]">Langsomt, åbent og med tydelige grænser.</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
               {principper.map(({ title, text }) => (
-                <div key={title} className="border border-sand p-8">
+                <div key={title} className="border border-sand bg-white p-8">
                   <div className="font-serif text-[18px] font-normal text-evergreen mb-3 leading-[1.35]">
                     {title}
                   </div>
@@ -240,33 +240,33 @@ export default function OmPage() {
         <Rule />
 
         {/* ── 6. Afslutning ───────────────────────────────────────── */}
-        <section className="py-16 px-6 md:py-[120px] md:px-16">
+        <section className="bg-evergreen py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Afslutning</SectionLabel>
-            <h2 className="max-w-[480px]">Bygget tæt på den praksis, det skal bruges i.</h2>
+            <h2 className="max-w-[480px] text-parchment">Bygget tæt på den praksis, det skal bruges i.</h2>
 
             <div className="mt-9 max-w-[660px]">
-              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-parchment/90 leading-[1.85] mb-5">
                 JournalKlar er ikke et stort system med mange løfter. Det er et specialiseret værktøj til en konkret del af psykologers hverdag.
               </p>
-              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-10">
+              <p className="font-sans text-[16px] font-light text-parchment/90 leading-[1.85] mb-10">
                 Hvis du vil forstå den faglige tanke bag produktet, kan du læse JournalKlars tilgang til AI og journalføring.
               </p>
 
               <div className="flex flex-wrap items-center gap-6">
                 <a
                   href="/tilgang"
-                  className="inline-flex items-center gap-[10px] bg-evergreen text-white font-sans text-[15px] font-normal px-[30px] py-[15px] hover:bg-[#152e23] transition-colors"
+                  className="inline-flex items-center gap-[10px] bg-parchment text-evergreen font-sans text-[15px] font-normal px-[30px] py-[15px] hover:bg-white transition-colors"
                 >
                   Læs tilgangen
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                    <line x1="1" y1="6" x2="11" y2="6" stroke="white" strokeWidth="1.3" />
-                    <polyline points="7.5,2.5 11,6 7.5,9.5" stroke="white" strokeWidth="1.3" fill="none" />
+                    <line x1="1" y1="6" x2="11" y2="6" stroke="currentColor" strokeWidth="1.3" />
+                    <polyline points="7.5,2.5 11,6 7.5,9.5" stroke="currentColor" strokeWidth="1.3" fill="none" />
                   </svg>
                 </a>
                 <a
                   href="/sikkerhed"
-                  className="inline-flex items-center gap-[6px] text-evergreen font-sans text-[14px] font-normal border-b border-evergreen/20 pb-[2px] hover:border-evergreen transition-colors"
+                  className="inline-flex items-center gap-[6px] text-parchment font-sans text-[14px] font-normal border-b border-parchment/30 pb-[2px] hover:border-parchment transition-colors"
                 >
                   Se sikkerhed og data
                   <ArrowRight size={10} />

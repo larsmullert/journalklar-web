@@ -25,11 +25,11 @@ const promises = [
 
 export default function Sikkerhed() {
   return (
-    <section id="sikkerhed" className="py-16 px-6 md:py-[120px] md:px-16">
+    <section id="sikkerhed" className="bg-evergreen py-16 px-6 md:py-[120px] md:px-16">
       <div className="max-w-[1100px] mx-auto">
         <SectionLabel>Data og fortrolighed</SectionLabel>
-        <h2>Dine klienters fortrolighed forbliver fortrolig.</h2>
-        <p className="max-w-[520px] text-body mb-0">
+        <h2 className="text-parchment">Dine klienters fortrolighed forbliver fortrolig.</h2>
+        <p className="max-w-[520px] text-parchment/90 mb-0">
           Det er det eneste der reelt betyder noget. Her er fire ting du bør vide — på almindeligt dansk.
         </p>
 
@@ -48,7 +48,7 @@ export default function Sikkerhed() {
                   {step}
                 </div>
                 {i < arr.length - 1 && (
-                  <div className="px-3 font-sans text-[14px] text-muted select-none">→</div>
+                  <div className="px-3 font-sans text-[14px] text-parchment/70 select-none">→</div>
                 )}
               </div>
             ))}

@@ -2,7 +2,7 @@ import SectionLabel from "@/components/ui/SectionLabel";
 
 export default function PrisOgCTA() {
   return (
-    <section id="pris" className="py-16 px-6 md:py-[120px] md:px-16">
+    <section id="pris" className="bg-sand py-16 px-6 md:py-[120px] md:px-16">
       <div className="max-w-[1100px] mx-auto">
         <SectionLabel>Kom i gang</SectionLabel>
         <h2>Prøv det i 30 dage. Mærk efter selv.</h2>

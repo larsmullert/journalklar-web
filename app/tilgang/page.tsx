@@ -193,7 +193,7 @@ export default function TilgangPage() {
         <Rule />
 
         {/* ── 2. To legitime AI-veje ──────────────────────────────── */}
-        <section className="py-16 px-6 md:py-[120px] md:px-16">
+        <section className="bg-sand py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>To AI-veje</SectionLabel>
             <h2 className="max-w-[520px]">Der findes mere end én måde at bruge AI i journalføring.</h2>
@@ -282,7 +282,7 @@ export default function TilgangPage() {
         <Rule />
 
         {/* ── 4. Ingen optagelse ──────────────────────────────────── */}
-        <section className="py-16 px-6 md:py-[120px] md:px-16">
+        <section className="bg-sand py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Ingen optagelse</SectionLabel>
             <h2 className="max-w-[480px]">Vi har ikke bygget JournalKlar til at lytte med.</h2>
@@ -431,7 +431,7 @@ export default function TilgangPage() {
         <Rule />
 
         {/* ── 6. Afgrænsning ──────────────────────────────────────── */}
-        <section className="py-16 px-6 md:py-[120px] md:px-16">
+        <section className="bg-sand py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Afgrænsning</SectionLabel>
             <h2 className="max-w-[380px]">Et redskab. Ikke en kollega.</h2>
@@ -524,40 +524,40 @@ export default function TilgangPage() {
         <Rule />
 
         {/* ── 8. Standpunktet ─────────────────────────────────────── */}
-        <section className="py-16 px-6 md:py-[120px] md:px-16">
+        <section className="bg-evergreen py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Standpunktet</SectionLabel>
-            <h2 className="max-w-[480px]">
+            <h2 className="max-w-[480px] text-parchment">
               Vi vil gerne bruge AI.{" "}
-              <span className="italic text-evergreen/60">Bare ikke ukritisk.</span>
+              <span className="italic text-parchment/60">Bare ikke ukritisk.</span>
             </h2>
 
             <div className="mt-9 max-w-[760px]">
-              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-parchment/90 leading-[1.85] mb-5">
                 JournalKlar er bygget, fordi AI kan gøre noget reelt nyttigt for psykologer.
               </p>
-              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-parchment/90 leading-[1.85] mb-5">
                 Det kan spare tid. Det kan skabe struktur. Det kan mindske friktion i en dokumentationsopgave, som mange oplever som tung, gentagende og svær at få gjort ordentligt i en travl hverdag.
               </p>
-              <p className="font-sans text-[15px] font-normal text-evergreen leading-[1.85] mb-5">
+              <p className="font-sans text-[15px] font-normal text-parchment leading-[1.85] mb-5">
                 Men effektivitet er ikke et neutralt mål.
               </p>
-              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-parchment/90 leading-[1.85] mb-5">
                 Når et værktøj gør det meget let at sige "godt nok", skal vi være særligt opmærksomme på, hvilke dele af arbejdet der bliver lettere at springe over.
               </p>
-              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-parchment/90 leading-[1.85] mb-5">
                 I journalføring er den faglige efterbehandling ikke en luksus. Den er en del af arbejdet.
               </p>
-              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-parchment/90 leading-[1.85] mb-5">
                 Derfor har vi bygget JournalKlar sådan, at AI først kommer ind efter psykologens egen selektion.
               </p>
-              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-12">
+              <p className="font-sans text-[16px] font-light text-parchment/90 leading-[1.85] mb-12">
                 Ikke for at gøre journalføring automatisk.{" "}
-                <span className="font-normal text-evergreen">Men for at gøre det lettere at gøre ordentligt.</span>
+                <span className="font-normal text-parchment">Men for at gøre det lettere at gøre ordentligt.</span>
               </p>
 
               {/* Signature card */}
-              <div className="border border-evergreen/20 bg-white px-7 py-7 max-w-[400px]">
+              <div className="border border-parchment/20 bg-white px-7 py-7 max-w-[400px]">
                 <div className="font-serif text-[17px] font-normal text-evergreen tracking-[-0.01em] mb-2">
                   JournalKlar
                 </div>

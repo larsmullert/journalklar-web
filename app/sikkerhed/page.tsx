@@ -324,7 +324,7 @@ export default function SikkerhedPage() {
         <Rule />
 
         {/* ── 2. Kort sagt ────────────────────────────────────────── */}
-        <section className="py-16 px-6 md:py-[120px] md:px-16">
+        <section className="bg-sand py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Kort sagt</SectionLabel>
             <h2>Fire ting du bør vide.</h2>
@@ -350,11 +350,11 @@ export default function SikkerhedPage() {
         <Rule />
 
         {/* ── 3. Hvad sker der ────────────────────────────────────── */}
-        <section id="noter" className="py-16 px-6 md:py-[120px] md:px-16">
+        <section id="noter" className="bg-evergreen py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Hvad sker der</SectionLabel>
-            <h2 className="max-w-[540px]">Hvad sker der, når du genererer et journaludkast?</h2>
-            <p className="max-w-[520px] text-body">
+            <h2 className="max-w-[540px] text-parchment">Hvad sker der, når du genererer et journaludkast?</h2>
+            <p className="max-w-[520px] text-parchment/90">
               Syv trin — fra du skriver dine noter til udkastet er genereret og klientindholdet er fjernet fra serveren.
             </p>
 
@@ -366,12 +366,12 @@ export default function SikkerhedPage() {
                       <span className="font-sans text-[12px] font-medium text-muted">{num}</span>
                     </div>
                     {i < steps.length - 1 && (
-                      <div className="w-px bg-sand flex-1" style={{ minHeight: "24px" }} />
+                      <div className="w-px bg-parchment/20 flex-1" style={{ minHeight: "24px" }} />
                     )}
                   </div>
                   <div className={`pt-[10px] ${i < steps.length - 1 ? "pb-9" : ""}`}>
-                    <div className="font-sans text-[15px] font-normal text-evergreen mb-[6px]">{title}</div>
-                    <p className="font-sans text-[14px] font-light text-body leading-[1.7] mb-0">{text}</p>
+                    <div className="font-sans text-[15px] font-normal text-parchment mb-[6px]">{title}</div>
+                    <p className="font-sans text-[14px] font-light text-parchment/90 leading-[1.7] mb-0">{text}</p>
                     <TechChip>{chip}</TechChip>
                   </div>
                 </div>
@@ -439,7 +439,7 @@ export default function SikkerhedPage() {
         <Rule />
 
         {/* ── 5. Hvem rører data ──────────────────────────────────── */}
-        <section className="py-16 px-6 md:py-[120px] md:px-16">
+        <section className="bg-sand py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Systemoverblik</SectionLabel>
             <h2>Hvem rører data?</h2>
@@ -528,7 +528,7 @@ export default function SikkerhedPage() {
         <Rule />
 
         {/* ── 7. Underleverandører ────────────────────────────────── */}
-        <section className="py-16 px-6 md:py-[120px] md:px-16">
+        <section className="bg-sand py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Leverandørgennemgang</SectionLabel>
             <h2>Underleverandører</h2>
