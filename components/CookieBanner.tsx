@@ -305,7 +305,7 @@ export default function CookieBanner() {
                   marginBottom: "6px",
                 }}
               >
-                Du kan acceptere alle, afvise eller vælge formål.{" "}
+                Du kan acceptere alle, afvise eller vælge formål. Og læse mere om det{" "}
                 <a
                   href="/cookiepolitik"
                   target="_blank"
@@ -320,7 +320,7 @@ export default function CookieBanner() {
                     paddingBottom: "1px",
                   }}
                 >
-                  Læs cookiepolitik →
+                  her →
                 </a>
               </div>
             </div>
