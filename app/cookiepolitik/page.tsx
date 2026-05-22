@@ -41,7 +41,7 @@ function ContextHeading({ children }: { children: React.ReactNode }) {
       <p style={{ fontSize: "11px", fontWeight: 500, letterSpacing: "0.14em", textTransform: "uppercase", color: "#E04500", marginBottom: "8px" }}>
         Gælder for
       </p>
-      <h2 style={{ fontSize: "28px", fontWeight: 600, color: "#1D3A2F", fontFamily: "var(--font-source-sans, DM Sans, sans-serif)", margin: 0 }}>
+      <h2 style={{ fontSize: "28px", fontWeight: 400, color: "#1D3A2F", fontFamily: "var(--font-source-sans, DM Sans, sans-serif)", margin: 0 }}>
         {children}
       </h2>
     </div>
