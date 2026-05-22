@@ -49,26 +49,6 @@ const trustItems = [
   "Journalnoter gemmes ikke efter generering",
 ];
 
-const kortSagt: { title: string; text: string; note?: string }[] = [
-  {
-    title: "Vi gemmer ikke dine journalnoter",
-    text: "Dine noter bruges til at generere et journaludkast. Når svaret er leveret, gemmes klientindholdet ikke i JournalKlar.",
-    note: "Klientindhold fjernes fra serveren umiddelbart efter generering",
-  },
-  {
-    title: "AI'en trænes ikke på dine klienter",
-    text: "Dine input bruges ikke til at forbedre modellen. Det er kontraktuelt fastsat med vores AI-udbyder — ikke bare en hensigtserklæring.",
-    note: "Kontraktuelt fastsat med AWS — ikke bare hensigtserklæring",
-  },
-  {
-    title: "Dansk server i Skanderborg",
-    text: "Appen og databasen kører på dansk server i Skanderborg. AI-behandlingen sker gennem AWS i Frankfurt, inden for EU.",
-  },
-  {
-    title: "Du får fuld dokumentation",
-    text: "Du kan læse databehandleraftale, underleverandørgennemgang, datatyper og behandlingsgrundlag — og vise det til din DPO.",
-  },
-];
 
 const steps: { num: string; title: string; text: string; chip: string }[] = [
   {
@@ -276,63 +256,7 @@ export default function SikkerhedPage() {
 
         <Rule />
 
-        {/* ── 2. Kort sagt ────────────────────────────────────────── */}
-        <section className="bg-sand py-16 px-6 md:py-[120px] md:px-16">
-          <div className="max-w-[1100px] mx-auto">
-            <SectionLabel>Kort sagt</SectionLabel>
-            <h2>Fire ting du bør vide.</h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
-              {kortSagt.map(({ title, text, note }) => (
-                <div
-                  key={title}
-                  className="border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8"
-                >
-                  <div className="font-sans text-[15px] font-normal text-evergreen mb-2">— {title}</div>
-                  <p className="font-sans text-[14px] font-light text-body leading-[1.7] mb-0">{text}</p>
-                  {note && <div className="font-sans text-[11px] text-muted leading-[1.5] mt-3">{note}</div>}
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <Rule />
-
-        {/* ── 3. Hvad sker der ────────────────────────────────────── */}
-        <section id="noter" className="bg-evergreen py-16 px-6 md:py-[120px] md:px-16">
-          <div className="max-w-[1100px] mx-auto">
-            <SectionLabel>Hvad sker der</SectionLabel>
-            <h2 className="max-w-[540px] text-parchment">Hvad sker der, når du genererer et journaludkast?</h2>
-            <p className="max-w-[520px] text-parchment/90">
-              Syv trin — fra du skriver dine noter til udkastet er genereret og klientindholdet er fjernet fra serveren.
-            </p>
-
-            <div className="mt-12 max-w-[680px]">
-              {steps.map(({ num, title, text, chip }, i) => (
-                <div key={num} className="flex gap-6">
-                  <div className="flex flex-col items-center flex-shrink-0 w-8">
-                    <div className="w-6 h-6 border border-sand bg-parchment flex items-center justify-center flex-shrink-0">
-                      <span className="font-serif text-[13px] leading-none" style={{ color: "#E04500" }}>{num}</span>
-                    </div>
-                    {i < steps.length - 1 && (
-                      <div className="w-[2px] bg-parchment/25 flex-1" style={{ minHeight: "16px" }} />
-                    )}
-                  </div>
-                  <div className={i < steps.length - 1 ? "flex-1 pb-7" : "flex-1"}>
-                    <div className="font-sans text-[15px] font-normal text-parchment mb-[4px]">{title}</div>
-                    <p className="font-sans text-[14px] font-light text-parchment/90 leading-[1.7] mb-0">{text}</p>
-                    <span className="font-sans text-[12px] text-parchment/40 mt-[5px] block">{chip}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <Rule />
-
-        {/* ── 4. Sammenligning ────────────────────────────────────── */}
+        {/* ── 2. Dataminimering ───────────────────────────────────── */}
         <section className="py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Dataminimering</SectionLabel>
@@ -388,47 +312,40 @@ export default function SikkerhedPage() {
 
         <Rule />
 
-        {/* ── 5. Hvem rører data ──────────────────────────────────── */}
-        <section className="bg-sand py-16 px-6 md:py-[120px] md:px-16">
+        {/* ── 3. Hvad sker der ────────────────────────────────────── */}
+        <section id="noter" className="bg-evergreen py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
-            <SectionLabel>Systemoverblik</SectionLabel>
-            <h2>Hvem rører data?</h2>
-            <p className="max-w-[520px] text-body">
-              De systemer der behandler data, hvad de bruges til — og om klientindhold indgår.
+            <SectionLabel>Hvad sker der</SectionLabel>
+            <h2 className="max-w-[540px] text-parchment">Hvad sker der, når du genererer et journaludkast?</h2>
+            <p className="max-w-[520px] text-parchment/90">
+              Syv trin — fra du skriver dine noter til udkastet er genereret og klientindholdet er fjernet fra serveren.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-              {systemCards.map((card) => (
-                <div
-                  key={card.name}
-                  className="border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8 "
-                >
-                  <div className="flex items-start justify-between gap-3 mb-3">
-                    <div>
-                      <div className="font-sans text-[14px] font-normal text-evergreen leading-[1.3]">{card.name}</div>
-                      {card.sub && (
-                        <div className="font-sans text-[11px] text-muted mt-[2px]">{card.sub}</div>
-                      )}
+            <div className="mt-12 max-w-[680px]">
+              {steps.map(({ num, title, text, chip }, i) => (
+                <div key={num} className="flex gap-6">
+                  <div className="flex flex-col items-center flex-shrink-0 w-8">
+                    <div className="w-6 h-6 border border-sand bg-parchment flex items-center justify-center flex-shrink-0">
+                      <span className="font-serif text-[13px] leading-none" style={{ color: "#E04500" }}>{num}</span>
                     </div>
-                    <Badge variant={card.clientData === "ingen" ? "positive" : "caution"}>
-                      {card.clientData === "ingen" ? "Ingen" : "Midlertidigt"}
-                    </Badge>
+                    {i < steps.length - 1 && (
+                      <div className="w-[2px] bg-parchment/25 flex-1" style={{ minHeight: "16px" }} />
+                    )}
                   </div>
-                  <p className="font-sans text-[13px] font-light text-body leading-[1.6] mb-3">{card.role}</p>
-                  <div className="font-sans text-[11px] text-muted">{card.region}</div>
+                  <div className={i < steps.length - 1 ? "flex-1 pb-7" : "flex-1"}>
+                    <div className="font-sans text-[15px] font-normal text-parchment mb-[4px]">{title}</div>
+                    <p className="font-sans text-[14px] font-light text-parchment/90 leading-[1.7] mb-0">{text}</p>
+                    <span className="font-sans text-[12px] text-parchment/40 mt-[5px] block">{chip}</span>
+                  </div>
                 </div>
               ))}
             </div>
-
-            <p className="font-sans text-[11px] text-muted mt-5">
-              "Midlertidigt" indikerer at klientindhold behandles under selve genereringen og ikke gemmes bagefter.
-            </p>
           </div>
         </section>
 
         <Rule />
 
-        {/* ── 6. Gemmes / Gemmes ikke ─────────────────────────────── */}
+        {/* ── 4. Opbevaring ───────────────────────────────────────── */}
         <section className="py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Opbevaring</SectionLabel>
@@ -477,7 +394,47 @@ export default function SikkerhedPage() {
 
         <Rule />
 
-        {/* ── 7. Underleverandører ────────────────────────────────── */}
+        {/* ── 5. Systemoverblik ───────────────────────────────────── */}
+        <section className="bg-sand py-16 px-6 md:py-[120px] md:px-16">
+          <div className="max-w-[1100px] mx-auto">
+            <SectionLabel>Systemoverblik</SectionLabel>
+            <h2>Hvem rører data?</h2>
+            <p className="max-w-[520px] text-body">
+              De systemer der behandler data, hvad de bruges til — og om klientindhold indgår.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+              {systemCards.map((card) => (
+                <div
+                  key={card.name}
+                  className="border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8 "
+                >
+                  <div className="flex items-start justify-between gap-3 mb-3">
+                    <div>
+                      <div className="font-sans text-[14px] font-normal text-evergreen leading-[1.3]">{card.name}</div>
+                      {card.sub && (
+                        <div className="font-sans text-[11px] text-muted mt-[2px]">{card.sub}</div>
+                      )}
+                    </div>
+                    <Badge variant={card.clientData === "ingen" ? "positive" : "caution"}>
+                      {card.clientData === "ingen" ? "Ingen" : "Midlertidigt"}
+                    </Badge>
+                  </div>
+                  <p className="font-sans text-[13px] font-light text-body leading-[1.6] mb-3">{card.role}</p>
+                  <div className="font-sans text-[11px] text-muted">{card.region}</div>
+                </div>
+              ))}
+            </div>
+
+            <p className="font-sans text-[11px] text-muted mt-5">
+              "Midlertidigt" indikerer at klientindhold behandles under selve genereringen og ikke gemmes bagefter.
+            </p>
+          </div>
+        </section>
+
+        <Rule />
+
+        {/* ── 6. Underleverandører ────────────────────────────────── */}
         <section className="bg-sand py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Leverandørgennemgang</SectionLabel>
@@ -533,7 +490,7 @@ export default function SikkerhedPage() {
 
         <Rule />
 
-        {/* ── 8. Databehandleraftale ──────────────────────────────── */}
+        {/* ── 7. Dokumentation ────────────────────────────────────── */}
         <section id="databehandleraftale" className="py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Dokumentation</SectionLabel>
@@ -570,7 +527,7 @@ export default function SikkerhedPage() {
 
         <Rule />
 
-        {/* ── 9. FAQ-link ─────────────────────────────────────────── */}
+        {/* ── 8. FAQ-link ─────────────────────────────────────────── */}
         <section className="py-16 px-6 md:py-[80px] md:px-16">
           <div className="max-w-[1100px] mx-auto text-center">
             <a
