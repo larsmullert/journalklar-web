@@ -1,85 +1,74 @@
-import { ImageResponse } from "next/og";
+import { ImageResponse } from 'next/og'
 
-export const runtime = "edge";
-export const alt = "JournalKlar — Journaludkast fra dine egne faglige noter.";
-export const size = { width: 1200, height: 630 };
-export const contentType = "image/png";
+export const runtime = 'edge'
+export const alt = 'JournalKlar'
+export const size = { width: 1200, height: 630 }
+export const contentType = 'image/png'
 
-export default function OgImage() {
+export default function Image() {
   return new ImageResponse(
     (
       <div
         style={{
-          width: "1200px",
-          height: "630px",
-          backgroundColor: "#F7F4EF",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
-          padding: "72px 80px",
+          background: '#F7F4EF',
+          width: '100%',
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'flex-start',
+          padding: '80px 100px',
         }}
       >
-        {/* Top: logo */}
         <div
           style={{
-            fontFamily: "serif",
-            fontSize: "28px",
-            fontWeight: 400,
-            color: "#1D3A2F",
-            letterSpacing: "-0.02em",
+            fontSize: 28,
+            color: '#E04500',
+            letterSpacing: '0.12em',
+            textTransform: 'uppercase',
+            marginBottom: 32,
+            fontFamily: 'serif',
           }}
         >
-          JournalKla<span style={{ color: "#E04500" }}>r</span>
+          TIL PRIVATPRAKTISERENDE PSYKOLOGER
         </div>
-
-        {/* Center: headline + tagline */}
-        <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-          <div
-            style={{
-              fontFamily: "serif",
-              fontSize: "64px",
-              fontWeight: 400,
-              color: "#1D3A2F",
-              lineHeight: 1.1,
-              letterSpacing: "-0.02em",
-              maxWidth: "900px",
-            }}
-          >
-            Journaludkast fra dine egne faglige noter.
-          </div>
-          <div
-            style={{
-              fontFamily: "sans-serif",
-              fontSize: "24px",
-              fontWeight: 300,
-              color: "#505050",
-              lineHeight: 1.5,
-            }}
-          >
-            Til privatpraktiserende psykologer. Uden optagelse af sessionen.
-          </div>
-        </div>
-
-        {/* Bottom: url */}
         <div
           style={{
-            display: "flex",
-            justifyContent: "flex-end",
+            fontSize: 80,
+            fontWeight: 700,
+            color: '#1D3A2F',
+            lineHeight: 1.1,
+            fontFamily: 'serif',
+            marginBottom: 32,
           }}
         >
-          <div
-            style={{
-              fontFamily: "sans-serif",
-              fontSize: "18px",
-              fontWeight: 400,
-              color: "#8A8580",
-            }}
-          >
-            journalklar.dk
-          </div>
+          JournalKlar
+        </div>
+        <div
+          style={{
+            fontSize: 32,
+            color: '#2C2C2C',
+            fontFamily: 'sans-serif',
+            fontWeight: 300,
+          }}
+        >
+          Journaludkast fra dine egne faglige noter.
+        </div>
+        <div
+          style={{
+            position: 'absolute',
+            bottom: 60,
+            right: 100,
+            fontSize: 22,
+            color: '#1D3A2F',
+            fontFamily: 'sans-serif',
+            opacity: 0.5,
+          }}
+        >
+          journalklar.dk
         </div>
       </div>
     ),
     { ...size }
-  );
+  )
 }
