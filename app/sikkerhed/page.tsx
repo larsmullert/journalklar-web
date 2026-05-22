@@ -313,7 +313,7 @@ export default function SikkerhedPage() {
                 <div key={num} className="flex gap-6">
                   <div className="flex flex-col items-center flex-shrink-0 w-8">
                     <div className="w-6 h-6 border border-sand bg-parchment flex items-center justify-center flex-shrink-0">
-                      <span className="font-serif text-[13px] text-evergreen/40 leading-none">{num}</span>
+                      <span className="font-serif text-[13px] leading-none" style={{ color: "#E04500" }}>{num}</span>
                     </div>
                     {i < steps.length - 1 && (
                       <div className="w-[2px] bg-parchment/25 flex-1" style={{ minHeight: "16px" }} />
