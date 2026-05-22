@@ -11,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
-      url: `${base}/saadan-virker-JournalKlar`,
+      url: `${base}/saadan-virker-journalklar`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
