@@ -1,5 +1,5 @@
 const produkt = [
-  { label: "Sådan virker det", href: "/" },
+  { label: "Sådan virker det", href: "/saadan-virker-JournalKlar" },
   { label: "Priser", href: "/#pris" },
   { label: "FAQ", href: "/faq" },
 ];

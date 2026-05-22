@@ -1,0 +1,466 @@
+import Nav from "@/components/sections/Nav";
+import Footer from "@/components/sections/Footer";
+import SectionLabel from "@/components/ui/SectionLabel";
+
+export const metadata = {
+  title: "Sådan virker det — JournalKlar",
+  description:
+    "Se hvordan JournalKlar hjælper privatpraktiserende psykologer fra egne noter til et struktureret journaludkast. Tre trin. Ingen oplæring. Ingen optagelse.",
+};
+
+function Rule() {
+  return <hr className="border-none border-t border-sand m-0" />;
+}
+
+function AppTopBar() {
+  return (
+    <div className="bg-[#EFECE7] border-b border-[#E0DDD8] px-4 py-[10px] flex items-center gap-[7px]">
+      <div className="w-[10px] h-[10px] rounded-full bg-[#E0B9B9]" />
+      <div className="w-[10px] h-[10px] rounded-full bg-[#DFDFB9]" />
+      <div className="w-[10px] h-[10px] rounded-full bg-[#B9DFC0]" />
+      <span className="ml-[10px] font-sans text-[12px] text-muted">
+        JournalKlar — Eksempelsession · Opfølgende samtale
+      </span>
+    </div>
+  );
+}
+
+function MangleBadge() {
+  return (
+    <div className="border border-orange/25 bg-orange/[0.03] px-[18px] py-[14px] my-[18px]">
+      <div className="flex items-center gap-[7px] font-sans text-[10px] font-medium uppercase tracking-[0.15em] text-orange mb-[5px]">
+        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true">
+          <circle cx="5.5" cy="5.5" r="5" stroke="#E04500" strokeWidth="1" />
+          <line x1="5.5" y1="3" x2="5.5" y2="6.5" stroke="#E04500" strokeWidth="1.2" strokeLinecap="round" />
+          <circle cx="5.5" cy="8.2" r="0.7" fill="#E04500" />
+        </svg>
+        Mangler — kræver stillingtagen
+      </div>
+      <div className="font-sans text-[13px] font-light text-body">
+        Samlet faglig vurdering af tilstand og progression mangler. Tilføj din vurdering inden journalen godkendes.
+      </div>
+    </div>
+  );
+}
+
+function RaaNoter() {
+  return (
+    <div className="font-sans text-[13px] font-light text-body leading-[1.8] space-y-[12px]">
+      <p>Videosession. 6. session.</p>
+      <p>
+        Arbejder fortsat med angst og undgåelse. Klienten siger: &ldquo;jeg
+        bliver helt låst, når jeg skal tage toget&rdquo;.
+      </p>
+      <div>
+        <p className="mb-[5px]">Siden sidst:</p>
+        <p>
+          — Tog bussen to gange alene.
+          <br />— Sprang togtur over tirsdag.
+          <br />— Sov dårligt aftenen før.
+          <br />— Bange for at få panik og ikke kunne komme væk.
+        </p>
+      </div>
+      <p>
+        Gennemgik eksponeringsplan. Talte om hvad der sker, når hun undgår. Hun
+        kunne godt se, at det hjælper kortvarigt, men gør næste gang sværere.
+      </p>
+      <p>
+        Virkede træt, men samarbejdende. Blev berørt da hun talte om at føle sig
+        &ldquo;barnlig&rdquo;. Ingen selvmordstanker, spurgt direkte.
+      </p>
+      <div>
+        <p className="mb-[5px]">Aftale:</p>
+        <p>
+          Tage toget én station sammen med veninde. Registrere angst 0-10 før,
+          under og efter. Næste tid om 14 dage.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function JournalUdkast() {
+  return (
+    <>
+      <div className="font-sans text-[14px] font-light text-body leading-[1.65] space-y-[14px]">
+        <p>[DATO]. Sjette session. Videosession.</p>
+        <p>
+          Fortsat behandling med fokus på angst og undgåelse. Klienten beskriver
+          siden sidst at have taget bussen alene to gange, men sprang en planlagt
+          togtur over tirsdag.
+        </p>
+        <p>
+          Klienten beskriver: &ldquo;jeg bliver helt låst, når jeg skal tage
+          toget&rdquo;. Hun forbinder situationen med frygt for at få panik og
+          ikke kunne komme væk. Hun beskriver desuden dårlig søvn aftenen før den
+          planlagte eksponering.
+        </p>
+        <p>
+          Der blev gennemgået eksponeringsplan. Der blev arbejdet med, hvad der
+          sker ved undgåelse, herunder klientens forståelse af, at undgåelse
+          hjælper kortvarigt, men gør næste gang sværere.
+        </p>
+        <p>
+          Klienten fremstod træt, men samarbejdende. Hun blev berørt, da hun
+          talte om at føle sig &ldquo;barnlig&rdquo;.
+        </p>
+        <p>Psykologen vurderer ingen aktuelle selvmordstanker, spurgt direkte.</p>
+      </div>
+      <MangleBadge />
+      <div className="font-sans text-[14px] font-light text-body leading-[1.65]">
+        <p>
+          Det blev aftalt, at klienten inden næste session tager toget én station
+          sammen med en veninde og registrerer angst 0-10 før, under og efter.
+          Næste session aftalt om 14 dage.
+        </p>
+      </div>
+    </>
+  );
+}
+
+// ─── Page ────────────────────────────────────────────────────────────────
+
+export default function SaadanVirkerDetPage() {
+  return (
+    <>
+      <Nav />
+      <main>
+
+        {/* ── Hero ────────────────────────────────────────────────── */}
+        <section className="py-16 px-6 md:pt-[100px] md:pb-[90px] md:px-16">
+          <div className="max-w-[1100px] mx-auto">
+            <div className="max-w-[620px]">
+              <SectionLabel>Sådan virker det</SectionLabel>
+              <h1 className="mb-6">
+                Fra dine noter til et journaludkast. På få minutter.
+              </h1>
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
+                JournalKlar er bygget til at passe ind i det du allerede gør
+                efter en session. Du skriver dine noter. JournalKlar strukturerer
+                dem. Du godkender udkastet og overfører til dit journalsystem.
+              </p>
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-0">
+                Ingen optagelse. Ingen transskription. Ingen AI der har lyttet
+                med.
+              </p>
+            </div>
+
+            <p className="font-sans text-[13px] font-normal text-evergreen tracking-[0.04em] text-center mt-10 mb-0">
+              Ingen optagelse af sessionen{" "}
+              <span className="text-evergreen/40">·</span>
+              {" "}Server i Skanderborg{" "}
+              <span className="text-evergreen/40">·</span>
+              {" "}Altid et udkast
+            </p>
+          </div>
+        </section>
+
+        <Rule />
+
+        {/* ── De tre trin ─────────────────────────────────────────── */}
+        <section className="bg-sand py-16 px-6 md:py-[120px] md:px-16">
+          <div className="max-w-[1100px] mx-auto">
+            <SectionLabel>Arbejdsgangen</SectionLabel>
+            <h2 className="max-w-[480px]">Tre trin. Ingen oplæring.</h2>
+            <p className="font-sans text-[16px] font-light text-body leading-[1.85] max-w-[520px] mt-4 mb-0">
+              Det tager to minutter at lære. Derefter er det bare en del af din
+              arbejdsdag.
+            </p>
+
+            {/* Trin 1 */}
+            <div className="border-t border-[#D8D4CF] mt-14 pt-12 grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-10 md:gap-14 items-start">
+              <div>
+                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-4">
+                  Du skriver
+                </div>
+                <h3 className="mb-4">Du skriver dine noter som du plejer.</h3>
+                <p className="font-sans text-[15px] font-light text-body leading-[1.85] mb-0">
+                  Umiddelbart efter sessionen skriver eller indtaler du det du
+                  som psykolog vurderer er vigtigt: observationer, temaer,
+                  intervention, aftaler, plan. Skriv som psykolog, ikke som
+                  sekretær. Det er dine faglige noter, ikke en færdig journal.
+                </p>
+              </div>
+              <div className="bg-white border border-[#D4D0CB]">
+                <AppTopBar />
+                <div className="px-8 py-9">
+                  <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-muted mb-6">
+                    Rånoter efter sessionen
+                  </div>
+                  <RaaNoter />
+                </div>
+              </div>
+            </div>
+
+            {/* Trin 2 */}
+            <div className="border-t border-[#D8D4CF] mt-14 pt-12 grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-10 md:gap-14 items-start">
+              <div>
+                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-4">
+                  JournalKlar strukturerer
+                </div>
+                <h3 className="mb-4">
+                  JournalKlar omsætter dine noter til et struktureret
+                  journaludkast.
+                </h3>
+                <p className="font-sans text-[15px] font-light text-body leading-[1.85] mb-5">
+                  Dine noter omsættes til et journaludkast baseret på
+                  journalføringsbekendtgørelsens krav. Manglende oplysninger
+                  markeres tydeligt, så du aktivt tager stillingtagen.
+                </p>
+                <p className="font-sans text-[15px] font-light text-body leading-[1.85] mb-0">
+                  Inden du ser udkastet, kører JournalKlar et ekstra
+                  sikkerhedstrin. Noget vi har døbt et &lsquo;hallucinationstjek&rsquo;. Det
+                  markerer formuleringer der ikke tydeligt kan spores til dine
+                  rånoter. Det sker lynhurtigt, så det er ikke noget du lægger
+                  mærke til.
+                </p>
+              </div>
+              <div className="bg-white border border-[#D4D0CB]">
+                <AppTopBar />
+                <div className="px-8 py-9">
+                  <div className="flex items-center gap-[10px] font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-muted mb-6">
+                    Journaludkast
+                    <span className="bg-evergreen/[0.08] text-evergreen font-sans text-[9px] font-medium tracking-[0.15em] px-[8px] py-[2px]">
+                      Til godkendelse
+                    </span>
+                  </div>
+                  <JournalUdkast />
+                </div>
+              </div>
+            </div>
+
+            {/* Trin 3 */}
+            <div className="border-t border-[#D8D4CF] mt-14 pt-12">
+              <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-10 md:gap-14 items-start mb-10">
+                <div>
+                  <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-4">
+                    Du godkender
+                  </div>
+                  <h3 className="mb-4">
+                    Du læser igennem, retter og overfører til dit journalsystem.
+                  </h3>
+                  <p className="font-sans text-[15px] font-light text-body leading-[1.85] mb-5">
+                    Udkastet er altid et udgangspunkt, aldrig en færdig journal.
+                    Du afgør hvad der bliver til journal. Når du er tilfreds,
+                    kopierer du udkastet over i dit eget journalsystem.
+                  </p>
+                  <p className="font-sans text-[15px] font-light text-body leading-[1.85] mb-0">
+                    JournalKlar gemmer ikke udkastet efter du har lukket siden.
+                  </p>
+                </div>
+                <div className="hidden md:block" />
+              </div>
+              {/* Full split mockup */}
+              <div className="bg-white border border-[#D4D0CB]">
+                <AppTopBar />
+                <div className="grid grid-cols-1 md:grid-cols-2">
+                  <div className="hidden md:block px-8 py-9 border-r border-[#F0EDE8]">
+                    <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-muted mb-6">
+                      Rånoter efter sessionen
+                    </div>
+                    <RaaNoter />
+                  </div>
+                  <div className="px-6 py-8 md:px-8 md:py-9">
+                    <div className="flex items-center gap-[10px] font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-muted mb-6">
+                      Journaludkast
+                      <span className="bg-evergreen/[0.08] text-evergreen font-sans text-[9px] font-medium tracking-[0.15em] px-[8px] py-[2px]">
+                        Til godkendelse
+                      </span>
+                    </div>
+                    <JournalUdkast />
+                  </div>
+                </div>
+              </div>
+              <p className="font-sans text-[13px] text-muted mt-5">
+                Eksemplet er anonymiseret og konstrueret. JournalKlar skriver
+                ikke journalen for dig — det laver et udkast, som du vurderer,
+                redigerer og godkender.
+              </p>
+            </div>
+
+          </div>
+        </section>
+
+        <Rule />
+
+        {/* ── Et muligt workflow ──────────────────────────────────── */}
+        <section className="py-16 px-6 md:py-[120px] md:px-16">
+          <div className="max-w-[1100px] mx-auto">
+            <SectionLabel>Et muligt workflow</SectionLabel>
+            <h2 className="max-w-[520px]">En dag med fire til seks sessioner.</h2>
+            <p className="font-sans text-[16px] font-light text-body leading-[1.85] max-w-[580px] mt-4 mb-0">
+              Psykologers journalføringsflow er meget forskelligt. Her er ét
+              forslag til hvordan JournalKlar kan passe ind i en travl dag, ikke
+              som en anbefaling, men som et konkret eksempel på hvad der kan
+              fungere.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-14">
+
+              <div className="border-t-[2px] border-evergreen/20 pt-8">
+                <div className="font-serif text-[32px] font-normal text-evergreen/20 leading-none mb-6">1</div>
+                <div className="font-sans text-[15px] font-normal text-evergreen mb-3">
+                  Umiddelbart efter hver session (2–3 min)
+                </div>
+                <p className="font-sans text-[14px] font-light text-body leading-[1.75] mb-0">
+                  Du har måske 10–15 minutter inden næste klient. Du åbner
+                  JournalKlar, skriver eller indtaler dine noter fra sessionen
+                  mens de stadig er friske, og genererer et udkast. Det gemmes
+                  ikke i JournalKlar, men du kan kopiere det direkte over i dit
+                  journalsystem som en kladde.
+                </p>
+              </div>
+
+              <div className="border-t-[2px] border-evergreen/20 pt-8">
+                <div className="font-serif text-[32px] font-normal text-evergreen/20 leading-none mb-6">2</div>
+                <div className="font-sans text-[15px] font-normal text-evergreen mb-3">
+                  Sidst på dagen (15–20 min)
+                </div>
+                <p className="font-sans text-[14px] font-light text-body leading-[1.75] mb-0">
+                  Når alle sessioner er færdige, har du allerede et udkast til
+                  hver journal liggende i dit journalsystem. I stedet for at
+                  skulle huske og rekonstruere seks sessioner fra bunden,
+                  gennemgår du, justerer og godkender dem én ad gangen. Det der
+                  mangler er allerede markeret.
+                </p>
+              </div>
+
+              <div className="border-t-[2px] border-evergreen/20 pt-8">
+                <div className="font-serif text-[32px] font-normal text-evergreen/20 leading-none mb-6">3</div>
+                <div className="font-sans text-[15px] font-normal text-evergreen mb-3">
+                  Resultatet
+                </div>
+                <p className="font-sans text-[14px] font-light text-body leading-[1.75] mb-0">
+                  To minutter pr. session umiddelbart efter. Én samlet
+                  gennemgang sidst på dagen. Journalerne skrives på den dag
+                  sessionen fandt sted, hvilket er i overensstemmelse med Dansk
+                  Psykologforenings anbefalinger om løbende journalføring.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <Rule />
+
+        {/* ── Vigtigt at vide ─────────────────────────────────────── */}
+        <section className="bg-evergreen py-16 px-6 md:py-[120px] md:px-16">
+          <div className="max-w-[1100px] mx-auto">
+            <SectionLabel>Vigtigt at vide</SectionLabel>
+            <h2 className="max-w-[520px] text-parchment">
+              JournalKlar skriver ikke journalen for dig.
+            </h2>
+            <div className="mt-8 max-w-[580px]">
+              <p className="font-sans text-[16px] font-light text-parchment/90 leading-[1.85] mb-5">
+                Outputtet hedder altid &lsquo;udkast&rsquo;. JournalKlar strukturerer det du
+                selv har skrevet, det erstatter ikke din faglige vurdering, dit
+                kliniske blik eller dit ansvar for den endelige journal.
+              </p>
+              <p className="font-sans text-[16px] font-light text-parchment/90 leading-[1.85] mb-0">
+                Det er en bevidst afgrænsning. Ikke en begrænsning.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <Rule />
+
+        {/* ── Under motorhjelmen ──────────────────────────────────── */}
+        <section className="bg-sand py-16 px-6 md:py-[120px] md:px-16">
+          <div className="max-w-[1100px] mx-auto">
+            <SectionLabel>Under motorhjelmen</SectionLabel>
+            <h2 className="max-w-[400px]">Hvad sker der præcist?</h2>
+
+            <div className="mt-12 max-w-[680px] flex flex-col gap-0">
+              {[
+                {
+                  num: "1",
+                  title: "Du skriver",
+                  text: "Dine noter sendes krypteret til JournalKlars server i Skanderborg.",
+                },
+                {
+                  num: "2",
+                  title: "AI strukturerer",
+                  text: "En AI-model omsætter dine noter til et journaludkast. Inputtet bruges kun til at generere, ikke til modeltræning.",
+                },
+                {
+                  num: "3",
+                  title: "Hallucinationstjek",
+                  text: "Et ekstra trin markerer formuleringer der ikke kan spores til dine noter.",
+                },
+                {
+                  num: "4",
+                  title: "Intet gemmes",
+                  text: "Klientindholdet fjernes fra serveren umiddelbart efter du modtager udkastet.",
+                },
+              ].map(({ num, title, text }, i, arr) => (
+                <div
+                  key={num}
+                  className={`flex gap-6 py-7 ${i < arr.length - 1 ? "border-b border-sand" : ""}`}
+                >
+                  <span
+                    className="font-serif text-[15px] flex-shrink-0 w-5 mt-[2px]"
+                    style={{ color: "#E04500" }}
+                  >
+                    {num}
+                  </span>
+                  <div>
+                    <div className="font-sans text-[15px] font-normal text-evergreen mb-1">
+                      {title}
+                    </div>
+                    <p className="font-sans text-[14px] font-light text-body leading-[1.7] mb-0">
+                      {text}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-8">
+              <a
+                href="/sikkerhed"
+                className="font-sans text-[15px] font-normal text-evergreen hover:opacity-70 transition-opacity"
+              >
+                Læs den fulde tekniske gennemgang →
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <Rule />
+
+        {/* ── Afslutning ──────────────────────────────────────────── */}
+        <section className="py-16 px-6 md:py-[120px] md:px-16">
+          <div className="max-w-[1100px] mx-auto">
+            <h2 className="max-w-[380px]">Prøv det i 30 dage.</h2>
+            <p className="font-sans text-[16px] font-light text-body leading-[1.85] max-w-[480px] mt-5 mb-10">
+              Det tager to minutter at komme i gang. Ingen binding. Ingen
+              betalingskort ved opstart.
+            </p>
+            <div className="flex flex-wrap items-center gap-6">
+              <a
+                href="/#pris"
+                className="inline-flex items-center gap-[10px] bg-evergreen text-white font-sans text-[15px] font-normal px-[30px] py-[15px] hover:bg-[#152e23] transition-colors"
+              >
+                Prøv gratis i 30 dage
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <line x1="1" y1="6" x2="11" y2="6" stroke="white" strokeWidth="1.3" />
+                  <polyline points="7.5,2.5 11,6 7.5,9.5" stroke="white" strokeWidth="1.3" fill="none" />
+                </svg>
+              </a>
+              <a
+                href="/sikkerhed"
+                className="font-sans text-[14px] font-normal text-evergreen border-b border-evergreen/20 pb-[2px] hover:border-evergreen transition-colors"
+              >
+                Spørgsmål om sikkerhed og data →
+              </a>
+            </div>
+          </div>
+        </section>
+
+      </main>
+      <Footer />
+    </>
+  );
+}
