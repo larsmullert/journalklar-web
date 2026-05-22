@@ -3,6 +3,7 @@ import Script from "next/script";
 import { Source_Serif_4, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import CookieBanner from "@/components/CookieBanner";
+import SchemaOrg from "@/components/SchemaOrg";
 
 const sourceSerif4 = Source_Serif_4({
   subsets: ["latin"],
@@ -52,6 +53,7 @@ export default function RootLayout({
       className={`${sourceSerif4.variable} ${sourceSans3.variable} h-full antialiased`}
     >
       <head>
+        <SchemaOrg />
         {/* Consent Mode v2 — default denied, skal køre FØR GTM */}
         <script
           dangerouslySetInnerHTML={{
