@@ -48,7 +48,7 @@ const gennemsigtighed = [
   {
     title: "Kontakt",
     text: "Skriv direkte, hvis noget er uklart.",
-    href: "/kontakt",
+    href: "mailto:lars@journalklar.dk",
   },
 ];
 

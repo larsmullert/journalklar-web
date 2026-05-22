@@ -91,7 +91,7 @@ export default function Footer() {
         {/* Bundlinje */}
         <div className="border-t border-sand mt-12 pt-6 flex flex-col gap-2 md:flex-row md:justify-between md:items-center">
           <p className="font-sans text-[12px] font-normal text-muted m-0">
-            © 2026 JournalKlar · CVR: xxxxxxxxxx · Aalborg, Danmark
+            © 2026 JournalKlar · CVR: 35949542 · Aalborg, Danmark
           </p>
           <p className="font-sans text-[12px] font-normal text-muted m-0">
             Bygget af en psykolog — i Danmark 🇩🇰
