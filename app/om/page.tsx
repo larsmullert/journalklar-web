@@ -5,7 +5,7 @@ import SectionLabel from "@/components/ui/SectionLabel";
 export const metadata = {
   title: "Om JournalKlar",
   description:
-    "JournalKlar er udviklet af Lars Mullert Pedersen, psykolog og grundlægger af JournalKlar, som et specialiseret værktøj til privatpraktiserende psykologers journalføringsarbejde.",
+    "JournalKlar er udviklet af Lars Mullert Pedersen, psykolog og grundlægger, som et specialiseret værktøj til privatpraktiserende psykologers journalføringsarbejde.",
 };
 
 function Rule() {
@@ -22,26 +22,6 @@ function ArrowRight({ size = 12 }: { size?: number }) {
 }
 
 // ─── Data ───────────────────────────────────────────────────────────────
-
-
-const principper = [
-  {
-    title: "Smalt før bredt",
-    text: "JournalKlar skal løse én opgave ordentligt, før det udvides.",
-  },
-  {
-    title: "Forståeligt før imponerende",
-    text: "Psykologer skal kunne forstå, hvad værktøjet gør, og hvad det ikke gør.",
-  },
-  {
-    title: "Dokumenteret før påstået",
-    text: "Sikkerhed, dataflow og afgrænsninger skal kunne læses og undersøges.",
-  },
-  {
-    title: "Fagligt sprog før tech-sprog",
-    text: "Produktet skal tale ind i psykologers praksis, ikke ind i AI-branchens buzzwords.",
-  },
-];
 
 const gennemsigtighed = [
   {
@@ -80,10 +60,10 @@ export default function OmPage() {
 
             {/* Left: copy */}
             <div className="flex flex-col justify-center">
-              <SectionLabel>Om JournalKlar</SectionLabel>
+              <SectionLabel>Psykologen bag værktøjet</SectionLabel>
               <h1 className="mb-5">Et dansk fagværktøj med en psykolog bag.</h1>
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] max-w-[480px] mb-8">
-                JournalKlar er udviklet af Lars Mullert Pedersen, psykolog og grundlægger af JournalKlar, som et specialiseret værktøj til privatpraktiserende psykologers journalføringsarbejde.
+                JournalKlar er udviklet af Lars Mullert Pedersen, psykolog, som et specialiseret værktøj til privatpraktiserende psykologers journalføringsarbejde.
               </p>
               <p className="font-sans text-[13px] font-normal text-evergreen tracking-[0.04em] text-center mt-7 mb-0">
                 Ingen optagelse af sessionen{" "}
@@ -105,7 +85,7 @@ export default function OmPage() {
                   Lars Mullert Pedersen
                 </div>
                 <div className="font-sans text-[13px] font-light text-parchment/70 leading-[1.8]">
-                  Psykolog
+                  Psykolog, uddannet fra Aalborg Universitet
                 </div>
                 <div className="font-sans text-[13px] font-light text-parchment/70 leading-[1.8]">
                   Grundlægger af JournalKlar
@@ -129,19 +109,15 @@ export default function OmPage() {
 
             <div className="mt-9 max-w-[660px]">
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
-                Jeg har bygget JournalKlar, fordi jeg savnede et journalværktøj, der tog psykologers konkrete arbejdssituation alvorligt: kort tid mellem sessioner, høje dokumentationskrav og et fagligt ansvar, der ikke kan outsources.
-              </p>
-              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
-                Min baggrund er psykologfaglig, ikke teknologisk. Det betyder ikke, at teknologien er mindre vigtig. Det betyder, at produktet er udviklet med udgangspunkt i psykologens arbejdsgang, ansvar og sprog — ikke i AI som mål i sig selv.
+                Jeg har en baggrund i salg og ledelse, inden jeg uddannede mig som psykolog. Det betyder, at jeg forstår både det tekniske i at bygge et produkt og det faglige og etiske i at bruge det i psykologisk praksis.
               </p>
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-9">
-                JournalKlar er derfor bygget som et smalt værktøj til én konkret opgave: at hjælpe psykologen fra egne noter til et struktureret journaludkast.
+                Jeg byggede JournalKlar, fordi jeg oplevede, hvor smart AI kan være til afgrænsede opgaver — og blev kritisk, da jeg begyndte at se AI-journalværktøjer der optager hele sessionen og lader en algoritme udvælge det vigtige i en fortrolig terapeutisk samtale.
               </p>
 
               <div className="font-serif italic text-[15px] text-evergreen leading-[1.9]">
                 Lars Mullert Pedersen<br />
-                Psykolog, cand.psych.<br />
-                Grundlægger af JournalKlar
+                Psykolog og grundlægger af JournalKlar
               </div>
             </div>
           </div>
@@ -149,24 +125,21 @@ export default function OmPage() {
 
         <Rule />
 
-        {/* ── 3. Produktets fokus ─────────────────────────────────── */}
+        {/* ── 3. Hvorfor JournalKlar findes ───────────────────────── */}
         <section className="py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
-            <SectionLabel>Produktets fokus</SectionLabel>
-            <h2 className="max-w-[520px]">JournalKlar forsøger ikke at være en platform.</h2>
+            <SectionLabel>Hvorfor JournalKlar findes</SectionLabel>
+            <h2 className="max-w-[660px]">Vi er blevet dårligere til at finde vej, fordi vi bruger GPS. Vi er blevet dårligere til hovedregning, fordi vi bruger lommeregner.</h2>
 
             <div className="mt-9 max-w-[660px]">
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
-                Mange digitale systemer vokser hurtigt i bredden: booking, betaling, klientportal, video, beskeder, journal, skemaer og administration.
+                Det er ikke et argument mod teknologi. Men det er et spørgsmål vi bør stille til AI i psykologers journalarbejde.
               </p>
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
-                JournalKlar er valgt smallere.
-              </p>
-              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
-                Det er ikke et journalsystem. Det er ikke en behandlingsplatform. Det er ikke et praksisstyringssystem. Det er et arbejdsredskab til det konkrete øjeblik efter sessionen, hvor dine noter skal blive til et journaludkast, du kan gennemgå og overføre til dit eget system.
+                En klassisk tech-founder ser journalføring som et effektiviseringsproblem der gælder alle sundhedsfagpersoner. Jeg kan ikke sige, hvad der er rigtigt for andre fag. Men for psykologer er efterbehandlingen af en session — der hvor du samler op, udvælger og formulerer din forståelse af klienten — ikke sekretærarbejde. Det er faglig efterbehandling. Det er en faglig muskel vi ikke bevidst bør lade sygne hen.
               </p>
               <p className="font-sans text-[16px] font-light text-body leading-[1.85]">
-                Det fokus er en del af produktets troværdighed.
+                Derfor starter JournalKlar med dine egne noter. Ikke med en optagelse.
               </p>
             </div>
           </div>
@@ -174,41 +147,15 @@ export default function OmPage() {
 
         <Rule />
 
-        {/* ── 4. Arbejdsprincipper ────────────────────────────────── */}
+        {/* ── 4. Gennemsigtighed ──────────────────────────────────── */}
         <section className="bg-sand py-16 px-6 md:py-[120px] md:px-16">
-          <div className="max-w-[1100px] mx-auto">
-            <SectionLabel>Hvordan vi bygger</SectionLabel>
-            <h2 className="max-w-[480px]">Langsomt, åbent og med tydelige grænser.</h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
-              {principper.map(({ title, text }) => (
-                <div key={title} className="border border-sand bg-white p-8">
-                  <div className="font-serif text-[18px] font-normal text-evergreen mb-3 leading-[1.35]">
-                    {title}
-                  </div>
-                  <p className="font-sans text-[14px] font-normal text-muted leading-[1.7] m-0">
-                    {text}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <Rule />
-
-        {/* ── 5. Gennemsigtighed ──────────────────────────────────── */}
-        <section className="py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Gennemsigtighed</SectionLabel>
             <h2 className="max-w-[520px]">Det skal være nemt at finde ud af, hvem du køber noget af.</h2>
 
             <div className="mt-9 max-w-[660px]">
-              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
-                Når man bruger et AI-værktøj i psykologisk praksis, bør afsenderen ikke være uklar. Du skal kunne se, hvem der står bag, hvad produktet er bygget til, hvordan det er afgrænset, og hvor du kan finde dokumentationen.
-              </p>
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-12">
-                Derfor samler JournalKlar ikke det hele i én stor salgstekst. Du kan læse om tilgangen, sikkerheden, databehandlingen og de praktiske spørgsmål hver for sig.
+                Når man bruger et AI-værktøj i psykologisk praksis bør afsenderen ikke være uklar. Du kan læse om den faglige tilgang, sikkerheden og databehandlingen — og du er altid velkommen til at skrive direkte hvis noget er uklart.
               </p>
             </div>
 
@@ -239,21 +186,21 @@ export default function OmPage() {
 
         <Rule />
 
-        {/* ── 6. Afslutning ───────────────────────────────────────── */}
+        {/* ── 5. Afslutning ───────────────────────────────────────── */}
         <section className="bg-evergreen py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Afslutning</SectionLabel>
-            <h2 className="max-w-[480px] text-parchment">Bygget tæt på den praksis, det skal bruges i.</h2>
+            <h2 className="max-w-[480px] text-parchment">Bygget tæt på den praksis det skal bruges i.</h2>
 
             <div className="mt-9 max-w-[660px]">
               <p className="font-sans text-[16px] font-light text-parchment/90 leading-[1.85] mb-5">
-                JournalKlar er ikke et stort system med mange løfter. Det er et specialiseret værktøj til en konkret del af psykologers hverdag.
+                Jeg har ikke bygget JournalKlar for at gøre journalføring automatisk. Jeg har bygget det fordi jeg mener vi har brug for værktøjer der tager både dokumentationsbyrden og psykologfagligheden alvorligt — på samme tid.
               </p>
-              <p className="font-sans text-[16px] font-light text-parchment/90 leading-[1.85] mb-10">
-                Hvis du vil forstå den faglige tanke bag produktet, kan du læse JournalKlars tilgang til AI og journalføring.
+              <p className="font-serif italic text-[17px] text-parchment/90 leading-[1.8] mb-2 mt-10">
+                &ldquo;— Lars Mullert Pedersen, psykolog og grundlægger af JournalKlar&rdquo;
               </p>
 
-              <div className="flex flex-wrap items-center gap-6">
+              <div className="flex flex-wrap items-center gap-6 mt-10">
                 <a
                   href="/tilgang"
                   className="inline-flex items-center gap-[10px] bg-parchment text-evergreen font-sans text-[15px] font-normal px-[30px] py-[15px] hover:bg-white transition-colors"
