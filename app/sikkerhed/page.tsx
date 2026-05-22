@@ -1,42 +1,17 @@
 import Nav from "@/components/sections/Nav";
 import Footer from "@/components/sections/Footer";
 import SectionLabel from "@/components/ui/SectionLabel";
-import SikkerhedFAQ from "@/components/sections/SikkerhedFAQ";
 
 export const metadata = {
-  title: "Sikkerhed & Fortrolighed — JournalKlar",
+  title: "Sikkerhed og data — JournalKlar",
   description:
-    "Forstå præcist, hvad der sker med dine journalnoter. Ingen optagelse · server i Skanderborg · ingen AI-træning · databehandleraftale inkluderet.",
+    "Forstå præcist hvad der sker med dine noter. Ingen optagelse, ingen AI-træning, dansk server i Skanderborg og databehandleraftale inkluderet.",
 };
 
 function Rule() {
   return <hr className="border-none border-t border-sand m-0" />;
 }
 
-function CheckSm({ light = false }: { light?: boolean }) {
-  return (
-    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true" className="flex-shrink-0">
-      <polyline
-        points="1.5,5.5 4,8 9.5,2.5"
-        stroke={light ? "#B5CEC5" : "#1D3A2F"}
-        strokeOpacity={light ? 1 : 0.7}
-        strokeWidth="1.4"
-        fill="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
-
-function CrossSm() {
-  return (
-    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true" className="flex-shrink-0">
-      <line x1="3" y1="3" x2="8" y2="8" stroke="#A09890" strokeWidth="1.4" strokeLinecap="round"/>
-      <line x1="8" y1="3" x2="3" y2="8" stroke="#A09890" strokeWidth="1.4" strokeLinecap="round"/>
-    </svg>
-  );
-}
 
 function Badge({
   children,
@@ -74,7 +49,7 @@ const trustItems = [
   "Journalnoter gemmes ikke efter generering",
 ];
 
-const kortSagt = [
+const kortSagt: { title: string; text: string; note?: string }[] = [
   {
     title: "Vi gemmer ikke dine journalnoter",
     text: "Dine noter bruges til at generere et journaludkast. Når svaret er leveret, gemmes klientindholdet ikke i JournalKlar.",
@@ -86,14 +61,12 @@ const kortSagt = [
     note: "Kontraktuelt fastsat med AWS — ikke bare hensigtserklæring",
   },
   {
-    title: "Server i Skanderborg — AI i Frankfurt",
-    text: "Appen og databasen kører på dansk server i Skanderborg. AI-behandlingen sker hos AWS i Frankfurt — inden for EU.",
-    note: "AWS Bedrock eu-central-1, Frankfurt · Scannet VPS, Danmark",
+    title: "Dansk server i Skanderborg",
+    text: "Appen og databasen kører på dansk server i Skanderborg. AI-behandlingen sker gennem AWS i Frankfurt, inden for EU.",
   },
   {
     title: "Du får fuld dokumentation",
     text: "Du kan læse databehandleraftale, underleverandørgennemgang, datatyper og behandlingsgrundlag — og vise det til din DPO.",
-    note: "Databehandleraftale, underleverandøroversigt og teknisk flow tilgængeligt",
   },
 ];
 
@@ -312,14 +285,11 @@ export default function SikkerhedPage() {
               {kortSagt.map(({ title, text, note }) => (
                 <div
                   key={title}
-                  className="border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8 "
+                  className="border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8"
                 >
-                  <div className="w-7 h-7 border border-sand flex items-center justify-center mb-5">
-                    <CheckSm />
-                  </div>
-                  <div className="font-sans text-[15px] font-normal text-evergreen mb-2">{title}</div>
-                  <p className="font-sans text-[14px] font-light text-body leading-[1.7] mb-3">{text}</p>
-                  <div className="font-sans text-[11px] text-muted leading-[1.5]">{note}</div>
+                  <div className="font-sans text-[15px] font-normal text-evergreen mb-2">— {title}</div>
+                  <p className="font-sans text-[14px] font-light text-body leading-[1.7] mb-0">{text}</p>
+                  {note && <div className="font-sans text-[11px] text-muted leading-[1.5] mt-3">{note}</div>}
                 </div>
               ))}
             </div>
@@ -373,35 +343,30 @@ export default function SikkerhedPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
 
               {/* JournalKlar — venstre */}
-              <div className="bg-white border border-sand [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
+              <div className="bg-evergreen p-6 md:p-8">
                 <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-6">
                   JournalKlar
                 </div>
                 <div className="flex flex-col gap-4">
                   {journalklarItems.map((item) => (
                     <div key={item} className="flex items-start gap-3">
-                      <svg className="flex-shrink-0 mt-[4px]" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                        <polyline points="2,7 5.5,10.5 12,4" stroke="#1D3A2F" strokeWidth="1.3" fill="none" strokeLinecap="round"/>
-                      </svg>
-                      <span className="font-sans text-[16px] font-light text-graphite leading-[1.6]">{item}</span>
+                      <span className="font-sans text-[14px] font-light text-parchment/70 leading-[1.55] flex-shrink-0">—</span>
+                      <span className="font-sans text-[14px] font-light text-parchment/90 leading-[1.55]">{item}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              {/* Transskriptions-AI — højre */}
-              <div className="bg-white border border-sand p-6 md:p-8">
+              {/* Transskriptionsbaseret AI — højre */}
+              <div className="bg-parchment border border-sand p-6 md:p-8">
                 <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-6">
-                  Transskriptions-AI
+                  Transskriptionsbaseret AI
                 </div>
                 <div className="flex flex-col gap-4">
                   {transcriberItems.map((item) => (
                     <div key={item} className="flex items-start gap-3">
-                      <svg className="flex-shrink-0 mt-[4px]" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                        <line x1="3.5" y1="3.5" x2="10.5" y2="10.5" stroke="#2C2C2C" strokeWidth="1.3" strokeOpacity="0.4" strokeLinecap="round"/>
-                        <line x1="10.5" y1="3.5" x2="3.5" y2="10.5" stroke="#2C2C2C" strokeWidth="1.3" strokeOpacity="0.4" strokeLinecap="round"/>
-                      </svg>
-                      <span className="font-sans text-[16px] font-light text-graphite leading-[1.6]">{item}</span>
+                      <span className="font-sans text-[14px] font-light text-body/60 leading-[1.55] flex-shrink-0">—</span>
+                      <span className="font-sans text-[14px] font-light text-body leading-[1.55]">{item}</span>
                     </div>
                   ))}
                 </div>
@@ -575,7 +540,7 @@ export default function SikkerhedPage() {
                 Inden du går i gang med JournalKlar, underskrives en databehandleraftale. Den beskriver præcist, hvad der sker med data — og hvad der ikke sker.
               </p>
               <p className="font-sans text-[14px] font-light text-parchment/70 leading-[1.8] mb-8">
-                Aftalen dækker: behandlingsformål, datatyper, behandlingsgrundlag (GDPR art. 28), underleverandørernes rolle, opbevaringsperiode og slettepolitik. Du kan vise den til din leder, DPO eller fagforening.
+                Aftalen dækker: behandlingsformål, datatyper, behandlingsgrundlag (GDPR art. 28), underleverandørernes rolle, opbevaringsperiode og slettepolitik. Du kan vise den til din fagforening eller den du samarbejder med om GDPR.
               </p>
               <div className="flex flex-wrap items-center gap-5">
                 <a
@@ -599,9 +564,17 @@ export default function SikkerhedPage() {
 
         <Rule />
 
-        {/* ── 9. FAQ ──────────────────────────────────────────────── */}
-        <SikkerhedFAQ />
-
+        {/* ── 9. FAQ-link ─────────────────────────────────────────── */}
+        <section className="py-16 px-6 md:py-[80px] md:px-16">
+          <div className="max-w-[1100px] mx-auto text-center">
+            <a
+              href="/faq"
+              className="font-sans text-[15px] font-normal text-evergreen hover:opacity-70 transition-opacity"
+            >
+              Har du spørgsmål? Se alle svar →
+            </a>
+          </div>
+        </section>
 
       </main>
       <Footer />
