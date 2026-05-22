@@ -102,7 +102,7 @@ export default function OmPage() {
         <Rule />
 
         {/* ── 2. Personen bag ─────────────────────────────────────── */}
-        <section className="bg-sand pt-16 px-6 md:pt-[120px] md:px-16">
+        <section className="bg-sand py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Personen bag</SectionLabel>
             <h2 className="max-w-[540px]">Jeg er psykolog — og uddannet bager.</h2>
@@ -132,22 +132,18 @@ export default function OmPage() {
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-0">
                 Ikke kun på grund af datasikkerhed. Men fordi det rejser et fagligt spørgsmål:
               </p>
+              <div className="border-l-[3px] border-orange pl-6 mt-8 mb-0">
+                <p
+                  className="font-serif italic text-evergreen leading-[1.5] mb-0"
+                  style={{ fontSize: "clamp(20px, 2.2vw, 28px)" }}
+                >
+                  Hvem skal lave den faglige vurdering og udvælgelse af, hvad der var vigtigt i samtalen?
+                </p>
+                <p className="font-sans text-[16px] font-normal text-body mt-3 mb-0">
+                  Det skal du selvfølgelig.
+                </p>
+              </div>
             </div>
-          </div>
-        </section>
-
-        {/* ── Spørgsmål-strip ─────────────────────────────────────── */}
-        <section className="bg-evergreen py-[80px] px-6 md:px-16">
-          <div className="max-w-[780px]">
-            <p
-              className="font-serif italic text-parchment/90 leading-[1.5] mb-4"
-              style={{ fontSize: "clamp(24px, 2.8vw, 38px)" }}
-            >
-              Hvem skal lave den faglige vurdering og udvælgelse af, hvad der var vigtigt i samtalen?
-            </p>
-            <p className="font-sans text-[17px] font-normal text-parchment/70 mb-0">
-              Det skal du selvfølgelig.
-            </p>
           </div>
         </section>
 
