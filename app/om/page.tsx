@@ -56,46 +56,49 @@ export default function OmPage() {
 
         {/* ── 1. Hero ─────────────────────────────────────────────── */}
         <section className="py-16 px-6 md:pt-[100px] md:pb-[90px] md:px-16">
-          <div className="max-w-[1100px] mx-auto grid grid-cols-1 gap-12 md:grid-cols-[3fr_2fr] md:gap-16 items-stretch">
+          <div className="max-w-[1100px] mx-auto">
+            <div className="grid grid-cols-1 gap-12 md:grid-cols-[3fr_2fr] md:gap-16 items-stretch">
 
-            {/* Left: copy */}
-            <div className="flex flex-col justify-center">
-              <SectionLabel>Psykologen bag værktøjet</SectionLabel>
-              <h1 className="mb-5">Et dansk fagværktøj med en psykolog bag.</h1>
-              <p className="font-sans text-[16px] font-light text-body leading-[1.85] max-w-[480px] mb-8">
-                JournalKlar er udviklet af Lars Mullert Pedersen, psykolog, som et specialiseret værktøj til privatpraktiserende psykologers journalføringsarbejde.
-              </p>
-              <p className="font-sans text-[13px] font-normal text-evergreen tracking-[0.04em] text-center mt-7 mb-0">
-                Ingen optagelse af sessionen{" "}
-                <span className="text-evergreen/40">·</span>
-                {" "}Server i Skanderborg{" "}
-                <span className="text-evergreen/40">·</span>
-                {" "}Altid et udkast
-              </p>
-            </div>
+              {/* Left: copy */}
+              <div className="flex flex-col justify-center">
+                <SectionLabel>Psykologen bag værktøjet</SectionLabel>
+                <h1 className="mb-5">Et dansk fagværktøj med en psykolog bag.</h1>
+                <p className="font-sans text-[16px] font-light text-body leading-[1.85] max-w-[480px] mb-8">
+                  JournalKlar er udviklet af Lars Mullert Pedersen, psykolog, som et specialiseret værktøj til privatpraktiserende psykologers journalføringsarbejde.
+                </p>
+              </div>
 
-            {/* Right: founder card */}
-            <div className="flex items-center justify-start md:justify-center">
-              <div className="bg-evergreen px-9 py-10 w-full max-w-[300px]">
-                <div className="font-serif text-[48px] font-normal text-parchment leading-none tracking-[-0.02em] mb-7">
-                  LMP
-                </div>
-                <div className="w-8 h-px bg-parchment/20 mb-6" />
-                <div className="font-sans text-[14px] font-normal text-parchment leading-[1.9]">
-                  Lars Mullert Pedersen
-                </div>
-                <div className="font-sans text-[13px] font-light text-parchment/70 leading-[1.8]">
-                  Psykolog, uddannet fra Aalborg Universitet
-                </div>
-                <div className="font-sans text-[13px] font-light text-parchment/70 leading-[1.8]">
-                  Grundlægger af JournalKlar
-                </div>
-                <div className="font-sans text-[13px] font-light text-parchment/70 leading-[1.8]">
-                  Aalborg, Danmark
+              {/* Right: founder card */}
+              <div className="flex items-center justify-start md:justify-center">
+                <div className="bg-evergreen px-9 py-10 w-full max-w-[300px]">
+                  <div className="font-serif text-[48px] font-normal text-parchment leading-none tracking-[-0.02em] mb-7">
+                    LMP
+                  </div>
+                  <div className="w-8 h-px bg-parchment/20 mb-6" />
+                  <div className="font-sans text-[14px] font-normal text-parchment leading-[1.9]">
+                    Lars Mullert Pedersen
+                  </div>
+                  <div className="font-sans text-[13px] font-light text-parchment/70 leading-[1.8]">
+                    Psykolog, uddannet fra Aalborg Universitet
+                  </div>
+                  <div className="font-sans text-[13px] font-light text-parchment/70 leading-[1.8]">
+                    Grundlægger af JournalKlar
+                  </div>
+                  <div className="font-sans text-[13px] font-light text-parchment/70 leading-[1.8]">
+                    Aalborg, Danmark
+                  </div>
                 </div>
               </div>
+
             </div>
 
+            <p className="font-sans text-[13px] font-normal text-evergreen tracking-[0.04em] text-center mt-8 mb-0">
+              Ingen optagelse af sessionen{" "}
+              <span className="text-evergreen/40">·</span>
+              {" "}Server i Skanderborg{" "}
+              <span className="text-evergreen/40">·</span>
+              {" "}Altid et udkast
+            </p>
           </div>
         </section>
 
