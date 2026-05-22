@@ -105,7 +105,7 @@ export default function OmPage() {
         <section className="bg-sand py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Personen bag</SectionLabel>
-            <h2 className="max-w-[540px]">Jeg hedder Lars Mullert Pedersen og er psykolog.</h2>
+            <h2 className="max-w-[540px]">Jeg er psykolog — og uddannet bager.</h2>
 
             <div className="mt-9 max-w-[660px]">
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
@@ -137,8 +137,7 @@ export default function OmPage() {
               </p>
 
               <div className="font-serif italic text-[15px] text-evergreen leading-[1.9]">
-                Lars Mullert Pedersen<br />
-                Psykolog og grundlægger af JournalKlar
+                — Lars
               </div>
             </div>
           </div>
@@ -218,7 +217,7 @@ export default function OmPage() {
                 Jeg har ikke bygget JournalKlar for at gøre journalføring automatisk. Jeg har bygget det fordi jeg mener vi har brug for værktøjer der tager både dokumentationsbyrden og psykologfagligheden alvorligt — på samme tid.
               </p>
               <p className="font-serif italic text-[17px] text-parchment/90 leading-[1.8] mb-2 mt-10">
-                &ldquo;— Lars Mullert Pedersen, psykolog og grundlægger af JournalKlar&rdquo;
+                &ldquo;— Lars Mullert Pedersen&rdquo;
               </p>
 
               <div className="flex flex-wrap items-center gap-6 mt-10">
