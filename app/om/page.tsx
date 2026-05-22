@@ -129,17 +129,27 @@ export default function OmPage() {
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 Men jeg blev kritisk, da jeg begyndte at se AI-journalværktøjer hvor hele sessionen optages, transskriberes og bearbejdes af en model der udvælger det vigtige fra en fortrolig terapeutisk samtale.
               </p>
-              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-0">
                 Ikke kun på grund af datasikkerhed. Men fordi det rejser et fagligt spørgsmål:
               </p>
-              <p className="font-serif italic text-[18px] text-evergreen leading-[1.7] mb-9">
-                Hvem laver egentlig den første udvælgelse af, hvad der var vigtigt i samtalen?
-              </p>
-
-              <div className="font-serif italic text-[15px] text-evergreen leading-[1.9]">
-                — Lars
-              </div>
             </div>
+          </div>
+        </section>
+
+        <Rule />
+
+        {/* ── Spørgsmål-strip ─────────────────────────────────────── */}
+        <section className="bg-evergreen py-[80px] px-6 md:px-16">
+          <div className="max-w-[1100px] mx-auto text-center">
+            <p
+              className="font-serif italic text-parchment/90 leading-[1.5] mb-4"
+              style={{ fontSize: "clamp(20px, 2.4vw, 32px)" }}
+            >
+              Hvem skal lave den faglige vurdering og udvælgelse af, hvad der var vigtigt i samtalen?
+            </p>
+            <p className="font-sans text-[15px] font-normal text-parchment/70 mb-0">
+              Det skal du selvfølgelig.
+            </p>
           </div>
         </section>
 
