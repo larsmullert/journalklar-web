@@ -8,7 +8,7 @@ export const metadata = {
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-evergreen/60 mt-12 mb-4">
+    <h2 className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-evergreen/60 mt-12 mb-5">
       {children}
     </h2>
   );
@@ -16,7 +16,7 @@ function SectionHeading({ children }: { children: React.ReactNode }) {
 
 function SubHeading({ children }: { children: React.ReactNode }) {
   return (
-    <h3 className="font-sans text-[15px] font-medium text-evergreen mb-2 mt-8">
+    <h3 className="font-sans text-[14px] font-medium text-evergreen uppercase tracking-[0.06em] mt-8 mb-3">
       {children}
     </h3>
   );
@@ -32,9 +32,45 @@ function Body({ children }: { children: React.ReactNode }) {
 
 function DataRow({ label, value }: { label: string; value: React.ReactNode }) {
   return (
-    <div className="grid grid-cols-[140px_1fr] gap-4 py-3 border-b border-sand">
-      <span className="font-sans text-[13px] font-medium text-evergreen/70">{label}</span>
+    <div className="grid grid-cols-[160px_1fr] gap-4 py-3 border-b border-sand">
+      <span className="font-sans text-[13px] font-medium text-evergreen/70 self-start pt-0.5">{label}</span>
       <span className="font-sans text-[14px] font-light text-body leading-[1.7]">{value}</span>
+    </div>
+  );
+}
+
+function DataTable({ children }: { children: React.ReactNode }) {
+  return <div className="border-t border-sand mb-6">{children}</div>;
+}
+
+function Table({ headers, rows }: { headers: string[]; rows: string[][] }) {
+  return (
+    <div className="overflow-x-auto mb-6">
+      <table className="w-full border-collapse font-sans text-[14px]">
+        <thead>
+          <tr className="border-b border-sand">
+            {headers.map((h) => (
+              <th
+                key={h}
+                className="text-left font-medium text-evergreen/70 text-[12px] tracking-[0.06em] uppercase py-3 pr-6 last:pr-0"
+              >
+                {h}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row, i) => (
+            <tr key={i} className="border-b border-sand last:border-0">
+              {row.map((cell, j) => (
+                <td key={j} className="font-light text-body leading-[1.65] py-3 pr-6 last:pr-0 align-top">
+                  {cell}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
@@ -46,18 +82,24 @@ export default function PrivatlivspolitikPage() {
       <main>
         <section className="py-16 px-6 md:pt-[100px] md:pb-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
-            <div className="max-w-[680px]">
+            <div className="max-w-[720px]">
 
               <h1 className="mb-6">Privatlivspolitik</h1>
 
-              <p className="font-sans text-[17px] font-light text-body leading-[1.85] mb-0">
-                Denne politik beskriver, hvordan vi behandler personoplysninger i forbindelse
-                med journalklar.dk og JournalKlar-produktet. Vi behandler kun det, vi har
-                brug for, og vi sælger ikke data til tredjeparter.
+              <p className="font-sans text-[17px] font-light text-body leading-[1.85] mb-4">
+                Denne politik beskriver hvordan vi behandler personoplysninger i forbindelse
+                med journalklar.dk og app.journalklar.dk. Vi behandler kun det vi har brug for,
+                og vi sælger ikke data til tredjeparter.
+              </p>
+              <p className="font-sans text-[15px] font-light text-body leading-[1.85] mb-0">
+                Et vigtigt skel: journalklar.dk (marketingsitet) og app.journalklar.dk (appen)
+                behandler meget forskellig data — og involverer forskellige leverandører.
+                Vi har forsøgt at gøre det tydeligt nedenfor.
               </p>
 
+              {/* ── Dataansvarlig ── */}
               <SectionHeading>Dataansvarlig</SectionHeading>
-              <address className="font-sans text-[15px] font-light text-body leading-[1.85] not-italic">
+              <address className="font-sans text-[15px] font-light text-body leading-[1.85] not-italic mb-4">
                 Lars Mullert<br />
                 CVR: 35949542<br />
                 Anneberghøj 1,1<br />
@@ -67,61 +109,110 @@ export default function PrivatlivspolitikPage() {
                   lars@journalklar.dk
                 </a>
               </address>
-
-              <SectionHeading>Hvilke oplysninger behandler vi og hvorfor?</SectionHeading>
-
-              <SubHeading>Besøg på journalklar.dk</SubHeading>
-              <div className="border-t border-sand">
-                <DataRow label="Hvad" value="Anonymiserede besøgsdata (sidevisninger, trafikkilde, enhedstype)." />
-                <DataRow label="Formål" value="Forstå hvordan marketingsitet bruges." />
-                <DataRow label="Retsgrundlag" value="Samtykke (cookiebanner)." />
-                <DataRow label="Opbevaring" value="Styres af Google Analytics — slettes efter 14 måneder." />
-                <DataRow label="Bemærkning" value="Behandles kun hvis du har accepteret statistikcookies." />
-              </div>
-
-              <SubHeading>Abonnement og betaling</SubHeading>
-              <div className="border-t border-sand">
-                <DataRow label="Hvad" value="Navn, e-mailadresse, betalingsoplysninger." />
-                <DataRow label="Formål" value="Oprette og administrere dit abonnement, sende kvitteringer." />
-                <DataRow label="Retsgrundlag" value="Opfyldelse af aftale (GDPR art. 6, stk. 1, litra b)." />
-                <DataRow label="Opbevaring" value="Så længe abonnementet er aktivt + 5 år af hensyn til bogføringsloven." />
-                <DataRow label="Bemærkning" value="Kortoplysninger håndteres udelukkende af vores betalingsudbyder og gemmes aldrig hos os." />
-              </div>
-
-              <SubHeading>Brug af JournalKlar-appen</SubHeading>
-              <div className="border-t border-sand">
-                <DataRow label="Hvad" value="De noter du selv skriver i appen til strukturering." />
-                <DataRow label="Formål" value="Generere journaludkast." />
-                <DataRow label="Retsgrundlag" value="Opfyldelse af aftale (GDPR art. 6, stk. 1, litra b)." />
-                <DataRow label="Opbevaring" value="Intet gemmes. Dine noter behandles og slettes uden logning (zero data retention-arkitektur)." />
-                <DataRow label="Bemærkning" value="Vi opbevarer ikke klientindhold. Det gælder også AI-behandlingen — intet bruges til træning af modeller." />
-              </div>
-
-              <SubHeading>Direkte henvendelser</SubHeading>
-              <div className="border-t border-sand">
-                <DataRow label="Hvad" value="Navn og e-mailadresse når du skriver til os." />
-                <DataRow label="Formål" value="Besvare din henvendelse." />
-                <DataRow label="Retsgrundlag" value="Legitim interesse (GDPR art. 6, stk. 1, litra f)." />
-                <DataRow label="Opbevaring" value="Slettes når henvendelsen er afsluttet og ikke længere relevant." />
-              </div>
-
-              <SectionHeading>Underdatabehandlere</SectionHeading>
-              <Body>Vi bruger følgende underdatabehandlere:</Body>
-              <ul className="font-sans text-[15px] font-light text-body leading-[1.85] mb-4 space-y-1 list-none p-0">
-                <li>Scannet A/S (team.blue group) — serverhosting, Skanderborg, Danmark</li>
-                <li>AWS (Amazon Web Services EMEA SARL) — AI-behandling, eu-central-1 (Frankfurt)</li>
-                <li>Alunta ApS — abonnementsadministration, Danmark</li>
-                <li>Quickpay A/S — betalingsformidling, Danmark</li>
-                <li>Google Ireland Limited — analysedata (kun ved samtykke)</li>
-              </ul>
               <Body>
-                Vi har databehandleraftaler med alle underdatabehandlere.
-                Data behandles inden for EU/EØS.
+                <strong className="font-medium text-evergreen">Bemærkning om appen:</strong> Når du som psykolog bruger JournalKlar til at strukturere
+                noter om dine klienter, er du dataansvarlig for klientdata. JournalKlar er
+                databehandler. Det reguleres af databehandleraftalen der underskrives ved oprettelse.
               </Body>
 
+              {/* ── journalklar.dk ── */}
+              <SectionHeading>journalklar.dk — marketingsitet</SectionHeading>
+
+              <SubHeading>Besøgsstatistik</SubHeading>
+              <DataTable>
+                <DataRow label="Hvad" value="Anonymiserede besøgsdata (sidevisninger, trafikkilde, enhedstype)." />
+                <DataRow label="Formål" value="Forstå hvordan marketingsitet bruges så vi kan forbedre det." />
+                <DataRow label="Retsgrundlag" value="Samtykke (GDPR art. 6, stk. 1, litra a)." />
+                <DataRow label="Opbevaring" value="14 måneder (styret af Google Analytics)." />
+                <DataRow label="Bemærkning" value="Behandles kun hvis du har accepteret statistikcookies. Google Ireland Limited er delvist selvstændig dataansvarlig — ikke udelukkende vores databehandler." />
+              </DataTable>
+
+              <SubHeading>Tilmelding og betaling</SubHeading>
+              <DataTable>
+                <DataRow label="Hvad" value="Navn, e-mailadresse, betalingsoplysninger." />
+                <DataRow label="Formål" value="Oprette og administrere abonnement, sende kvitteringer." />
+                <DataRow label="Retsgrundlag" value="Opfyldelse af aftale (GDPR art. 6, stk. 1, litra b)." />
+                <DataRow label="Opbevaring" value="Abonnementets varighed + 5 år (bogføringsloven)." />
+                <DataRow label="Bemærkning" value="Kortoplysninger håndteres udelukkende af Quickpay og gemmes aldrig hos os." />
+              </DataTable>
+
+              <SubHeading>Direkte henvendelser</SubHeading>
+              <DataTable>
+                <DataRow label="Hvad" value="Navn og e-mailadresse når du skriver til os." />
+                <DataRow label="Formål" value="Besvare henvendelsen." />
+                <DataRow label="Retsgrundlag" value="Legitim interesse (GDPR art. 6, stk. 1, litra f)." />
+                <DataRow label="Opbevaring" value="Slettes når henvendelsen er afsluttet og ikke længere relevant." />
+              </DataTable>
+
+              {/* ── Leverandører marketingsite ── */}
+              <SectionHeading>Leverandører — journalklar.dk</SectionHeading>
+              <Body>Følgende tredjepart modtager data i forbindelse med journalklar.dk:</Body>
+              <Table
+                headers={["Leverandør", "Formål", "Data", "Region"]}
+                rows={[
+                  ["Google Ireland Limited", "Besøgsstatistik (kun ved samtykke)", "Anonymiserede besøgsdata", "EU"],
+                  ["Alunta ApS", "Abonnementsadministration", "Navn, email, abonnementsstatus", "Danmark"],
+                  ["Quickpay A/S", "Betalingsformidling", "Betalingsoplysninger", "Danmark"],
+                ]}
+              />
+              <Body>
+                Google Ireland Limited er ikke en traditionel databehandler — de er delvist
+                selvstændig dataansvarlig for data indsamlet via Google Analytics.
+              </Body>
+
+              {/* ── app.journalklar.dk ── */}
+              <SectionHeading>app.journalklar.dk — appen</SectionHeading>
+
+              <SubHeading>Journalnoter og udkast</SubHeading>
+              <DataTable>
+                <DataRow label="Hvad" value="De noter du selv skriver i appen." />
+                <DataRow label="Formål" value="Generere et struktureret journaludkast." />
+                <DataRow label="Retsgrundlag" value="Opfyldelse af aftale (GDPR art. 6, stk. 1, litra b)." />
+                <DataRow label="Opbevaring" value="Ingen. Dine noter behandles og slettes uden logning. Klientindhold gemmes ikke, logges ikke og bruges ikke til AI-træning." />
+              </DataTable>
+
+              <SubHeading>Brugsmetadata</SubHeading>
+              <DataTable>
+                <DataRow label="Hvad" value="Tidspunkt, svartid, tokenforbrug, flag-antal." />
+                <DataRow label="Formål" value="Drift, fejlfinding og fakturering." />
+                <DataRow label="Retsgrundlag" value="Legitim interesse (GDPR art. 6, stk. 1, litra f)." />
+                <DataRow label="Opbevaring" value="12 måneder." />
+                <DataRow label="Bemærkning" value="Ingen klientindhold indgår i metadata." />
+              </DataTable>
+
+              <SubHeading>Brugerprofil</SubHeading>
+              <DataTable>
+                <DataRow label="Hvad" value="Navn, e-mailadresse, abonnementsstatus." />
+                <DataRow label="Formål" value="Login, adgangskontrol og abonnementsstyring." />
+                <DataRow label="Retsgrundlag" value="Opfyldelse af aftale (GDPR art. 6, stk. 1, litra b)." />
+                <DataRow label="Opbevaring" value="Abonnementets varighed + 5 år (bogføringsloven)." />
+              </DataTable>
+
+              {/* ── Leverandører app ── */}
+              <SectionHeading>Leverandører — app.journalklar.dk</SectionHeading>
+              <Body>
+                Følgende leverandører behandler data som en del af appen.
+                Ingen af disse leverandører modtager data fra journalklar.dk (marketingsitet).
+              </Body>
+              <Table
+                headers={["Leverandør", "Rolle", "Klientindhold", "Region"]}
+                rows={[
+                  ["Scannet A/S (team.blue)", "Serverhosting, database, infrastruktur", "Ingen", "Danmark"],
+                  ["AWS EMEA SARL", "AI-behandling via Bedrock eu-central-1", "Midlertidigt under generering", "Frankfurt, EU"],
+                  ["Alunta ApS", "Abonnementsadministration", "Ingen", "Danmark"],
+                  ["Quickpay A/S", "Betalingsformidling", "Ingen", "Danmark"],
+                ]}
+              />
+              <Body>
+                "Midlertidigt" betyder at klientindhold behandles under selve genereringen
+                og ikke gemmes bagefter. AWS træner ikke modeller på input.
+                Vi har databehandleraftaler med Scannet, AWS og Alunta.
+              </Body>
+
+              {/* ── Rettigheder ── */}
               <SectionHeading>Dine rettigheder</SectionHeading>
               <Body>Du har efter GDPR ret til at:</Body>
-              <ul className="font-sans text-[15px] font-light text-body leading-[1.85] mb-4 space-y-1 list-none p-0">
+              <ul className="font-sans text-[15px] font-light text-body leading-[1.85] space-y-1 list-none p-0 mb-4">
                 <li>— Få indsigt i hvilke oplysninger vi har om dig</li>
                 <li>— Få forkerte oplysninger rettet</li>
                 <li>— Få oplysninger slettet (under visse betingelser)</li>
@@ -133,22 +224,23 @@ export default function PrivatlivspolitikPage() {
                   </a>
                 </li>
               </ul>
-              <Body>
-                Henvendelser rettes til lars@journalklar.dk. Vi svarer inden 30 dage.
-              </Body>
+              <Body>Henvendelser rettes til lars@journalklar.dk. Vi svarer inden 30 dage.</Body>
 
+              {/* ── Cookies ── */}
               <SectionHeading>Cookies</SectionHeading>
               <Body>
+                Vi bruger kun cookies på journalklar.dk — ikke i appen.
                 Læs vores{" "}
                 <a href="/cookiepolitik" className="text-evergreen border-b border-evergreen/30 hover:border-evergreen no-underline">
                   cookiepolitik
                 </a>{" "}
-                for information om cookies og samtykke.
+                for detaljer.
               </Body>
 
+              {/* ── Ændringer ── */}
               <SectionHeading>Ændringer</SectionHeading>
               <Body>
-                Vi opdaterer denne politik, hvis der sker ændringer i vores behandling.
+                Vi opdaterer denne politik hvis der sker ændringer i vores behandling.
                 Den gældende version er altid tilgængelig på denne side.
               </Body>
 

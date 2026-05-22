@@ -8,7 +8,7 @@ export const metadata = {
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-evergreen/60 mt-12 mb-4">
+    <h2 className="font-sans text-[11px] font-medium tracking-[0.14em] uppercase text-evergreen/60 mt-12 mb-5">
       {children}
     </h2>
   );
@@ -16,10 +16,10 @@ function SectionHeading({ children }: { children: React.ReactNode }) {
 
 function SubHeading({ children, badge }: { children: React.ReactNode; badge?: string }) {
   return (
-    <div className="flex items-center gap-3 mb-2 mt-8">
-      <span className="font-sans text-[15px] font-medium text-evergreen">{children}</span>
+    <div className="flex items-center gap-3 mt-8 mb-3">
+      <span className="font-sans text-[14px] font-medium text-evergreen uppercase tracking-[0.06em]">{children}</span>
       {badge && (
-        <span className="font-sans text-[11px] font-medium tracking-[0.1em] uppercase text-muted border border-sand px-2 py-0.5">
+        <span className="font-sans text-[11px] font-medium tracking-[0.08em] uppercase text-muted border border-sand px-2 py-0.5">
           {badge}
         </span>
       )}
@@ -35,6 +35,15 @@ function Body({ children }: { children: React.ReactNode }) {
   );
 }
 
+function CookieRow({ name, description }: { name: string; description: string }) {
+  return (
+    <div className="grid grid-cols-[160px_1fr] gap-4 py-3 border-b border-sand">
+      <code className="font-mono text-[13px] text-evergreen self-start pt-0.5">{name}</code>
+      <span className="font-sans text-[14px] font-light text-body leading-[1.7]">{description}</span>
+    </div>
+  );
+}
+
 export default function CookiepolitikPage() {
   return (
     <>
@@ -46,85 +55,85 @@ export default function CookiepolitikPage() {
 
               <h1 className="mb-6">Cookiepolitik</h1>
 
-              <p className="font-sans text-[17px] font-light text-body leading-[1.85] mb-0">
-                Vi forsøger at holde det enkelt. Denne side forklarer præcist, hvilke cookies
+              <p className="font-sans text-[17px] font-light text-body leading-[1.85] mb-4">
+                Vi forsøger at holde det enkelt. Denne side forklarer præcist hvilke cookies
                 journalklar.dk bruger, hvorfor, og hvad du kan gøre ved det.
+              </p>
+              <p className="font-sans text-[15px] font-light text-body leading-[1.85] mb-0">
+                Cookies bruges KUN på journalklar.dk — marketingsitet.
+                app.journalklar.dk sætter ingen cookies og tracker ingen besøgende.
               </p>
 
               <SectionHeading>Hvad er cookies?</SectionHeading>
               <Body>
-                Cookies er små tekstfiler, der gemmes i din browser, når du besøger en hjemmeside.
-                De kan bruges til at huske dine præferencer, forstå hvordan siden bruges, og måle
+                Cookies er små tekstfiler der gemmes i din browser når du besøger en hjemmeside.
+                De kan bruges til at huske præferencer, forstå hvordan siden bruges, og måle
                 effekten af markedsføring.
               </Body>
 
-              <SectionHeading>Hvilke cookies bruger vi?</SectionHeading>
+              <SectionHeading>De cookies vi bruger</SectionHeading>
 
               <SubHeading badge="Altid aktiv">Nødvendige cookies</SubHeading>
-              <Body>
-                Disse cookies er nødvendige for at siden fungerer. De gemmer dit cookievalg,
-                så vi ikke spørger dig igen ved hvert besøg.
-              </Body>
-              <Body>
-                Eksempel: <code className="font-mono text-[13px] bg-sand px-1.5 py-0.5">jk_consent</code> — gemmer dit samtykkevalg lokalt i din browser.
-                Ingen data sendes til vores server.
-              </Body>
+              <div className="border-t border-sand mb-4">
+                <CookieRow
+                  name="jk_consent"
+                  description="Gemmer dit cookievalg lokalt i din browser. Ingen data sendes til vores server. Udløber efter 12 måneder."
+                />
+              </div>
 
               <SubHeading badge="Kræver samtykke">Statistikcookies</SubHeading>
               <Body>
-                Hvis du accepterer statistikcookies, bruger vi Google Analytics 4 til at forstå,
-                hvordan journalklar.dk bruges — hvilke sider der besøges, hvor brugere kommer fra,
-                og hvor de forlader siden. Dataene er anonymiserede og aggregerede.
+                Hvis du accepterer statistikcookies, bruger vi Google Analytics 4 til at forstå
+                hvordan journalklar.dk bruges — hvilke sider der besøges, hvor besøgende kommer
+                fra, og hvor de forlader siden.
               </Body>
               <Body>
+                <strong className="font-medium text-evergreen">Vigtigt:</strong> Google Analytics 4 er ikke en traditionel databehandler vi har fuld
+                kontrol over. Google Ireland Limited er selvstændig dataansvarlig for en del af
+                de data de indsamler. Du accepterer dermed også Googles egne betingelser.
+              </Body>
+              <Body>
+                Data er anonymiserede. Google sletter data efter 14 måneder.
                 Databehandler: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.
               </Body>
-              <Body>
-                Disse cookies sættes ikke, før du har givet samtykke.
-              </Body>
+              <Body>Disse cookies sættes ikke før du har givet samtykke.</Body>
 
               <SubHeading badge="Kræver samtykke">Marketingcookies</SubHeading>
               <Body>
-                Hvis du accepterer marketingcookies, kan vi bruge annonceringsplatforme som
-                Google Ads og Meta til at måle effekten af vores annoncer. Det betyder, at vi
-                kan se, om en annonce har ført til et besøg på journalklar.dk.
+                Hvis du accepterer marketingcookies, kan vi måle effekten af annoncer på
+                Google Ads og Meta. Vi bruger ikke marketingcookies til at opbygge profiler
+                eller til retargeting — kun til at måle vores egne annoncer.
               </Body>
               <Body>
-                Vi bruger ikke marketingcookies til at opbygge profiler på dig eller til
-                retargeting på tværs af andre hjemmesider — kun til at måle vores egne annoncer.
+                Databehandlere (ved samtykke): Google Ireland Limited og Meta Platforms Ireland Limited.
               </Body>
-              <Body>
-                Databehandlere (når samtykke er givet): Google Ireland Limited og Meta Platforms
-                Ireland Limited.
-              </Body>
-              <Body>
-                Disse cookies sættes ikke, før du har givet samtykke.
-              </Body>
+              <Body>Disse cookies sættes ikke før du har givet samtykke.</Body>
+
+              <SectionHeading>Hvad vi ikke gør</SectionHeading>
+              <ul className="font-sans text-[15px] font-light text-body leading-[1.85] space-y-1 list-none p-0 mb-4">
+                <li>— Vi bruger ikke cookies i JournalKlar-appen (app.journalklar.dk)</li>
+                <li>— Vi sælger ikke data til tredjeparter</li>
+                <li>— Vi bruger ikke cookies til at opbygge personprofiler</li>
+              </ul>
 
               <SectionHeading>Google Consent Mode v2</SectionHeading>
               <Body>
-                journalklar.dk bruger Google Consent Mode v2. Det betyder, at Google som
-                udgangspunkt ikke må sætte analyse- eller reklamecookies, når du besøger siden.
-                Først når du aktivt accepterer de relevante kategorier, opdateres tilladelsen.
+                journalklar.dk bruger Google Consent Mode v2. Det betyder at Google som
+                udgangspunkt ikke må sætte analyse- eller reklamecookies. Først når du
+                aktivt accepterer de relevante kategorier opdateres tilladelsen.
               </Body>
 
               <SectionHeading>Sådan ændrer du dit valg</SectionHeading>
               <Body>
-                Du kan til enhver tid ændre eller trække dit samtykke tilbage ved at klikke på
-                "Cookieindstillinger" i bunden af siden.
-              </Body>
-              <Body>
-                Du kan også slette cookies direkte i din browser under indstillinger →
-                privatliv → cookies.
+                Klik på "Cookieindstillinger" i bunden af siden når som helst.
+                Du kan også slette cookies i din browser under indstillinger → privatliv → cookies.
               </Body>
 
               <SectionHeading>Kontakt</SectionHeading>
-              <Body>Spørgsmål til vores brug af cookies?</Body>
               <address className="font-sans text-[15px] font-light text-body leading-[1.85] not-italic">
                 Lars Mullert<br />
                 CVR: 35949542<br />
-                Anneberghøj 1,1<br />
-                9000 Aalborg<br />
+                Anneberghøj 1,1 · 9000 Aalborg<br />
                 <a href="mailto:lars@journalklar.dk" className="text-evergreen border-b border-evergreen/30 hover:border-evergreen no-underline">
                   lars@journalklar.dk
                 </a>
