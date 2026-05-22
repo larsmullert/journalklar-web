@@ -316,6 +316,14 @@ export default function SikkerhedPage() {
                   </div>
                 ))}
               </div>
+              <div className="border-t border-parchment/20 mt-6 pt-6">
+                <p className="font-serif italic text-[17px] text-parchment/90 leading-[1.7] mb-0">
+                  &ldquo;Det her er vores forsøg på at gøre det ordentligt. Vi håber det mærkes.&rdquo;
+                </p>
+                <p className="font-sans font-normal text-[13px] text-parchment/70 mt-[10px] mb-0">
+                  — Lars Mullert, grundlægger af JournalKlar
+                </p>
+              </div>
             </div>
 
           </div>
