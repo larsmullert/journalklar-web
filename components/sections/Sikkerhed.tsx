@@ -9,17 +9,17 @@ const promises = [
   {
     num: "2",
     title: "AI'en lærer ikke af dine klienter",
-    text: "Den AI-model der genererer dine udkast, bruger ikke dit input til at blive klogere. Det er kontraktuelt fastsat — ikke bare en hensigtserklæring.",
+    text: "Den AI-model der genererer dine udkast, bruger ikke dit input til træning. Det er forskellen på JournalKlar og en åben tilgængelig AI-chat.",
   },
   {
     num: "3",
     title: "Dansk server i Skanderborg",
-    text: "Appen og databasen kører på dansk server i Skanderborg. AI-behandlingen sker hos AWS i Frankfurt — inden for EU. Databehandleraftalen beskriver underleverandører, datastrømme og behandlingsgrundlag.",
+    text: "Appen og databasen kører på dansk server i Skanderborg. AI-behandlingen sker gennem AWS i Frankfurt — inden for EU.",
   },
   {
     num: "4",
-    title: "Du underskriver en databehandleraftale",
-    text: "Inden du går i gang. Den beskriver præcist hvad der sker med data — og hvad der ikke sker. Du kan vise den til din leder, din DPO eller din fagforening.",
+    title: "Overblik gennem databehandleraftalen",
+    text: "Databehandleraftalen er inkluderet fra dag ét. Den beskriver præcist hvad der behandles, af hvem, hvor og på hvilket grundlag. Du kan vise den til din fagforening eller den, du samarbejder med om GDPR.",
   },
 ];
 
@@ -37,11 +37,11 @@ export default function Sikkerhed() {
         <div className="mt-10 mb-2 overflow-x-auto">
           <div className="flex items-center min-w-max">
             {[
+              "app.journalklar.dk (Skanderborg)",
               "Dine noter",
-              "JournalKlar-app",
-              "EU-baseret AI-behandling",
+              "AI-behandling (Frankfurt)",
               "Journaludkast",
-              "Ingen varig opbevaring",
+              "Intet gemmes",
             ].map((step, i, arr) => (
               <div key={step} className="flex items-center">
                 <div className="border border-sand bg-white px-4 py-[9px] font-sans text-[12px] font-light text-evergreen whitespace-nowrap">
@@ -82,7 +82,7 @@ export default function Sikkerhed() {
           {/* Højre: Radikal transparens */}
           <div className="bg-evergreen p-6 md:p-8 flex flex-col">
             <div>
-              <div className="flex items-center gap-[12px] font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-parchment/70 mb-7 before:content-[''] before:block before:w-[18px] before:h-px before:bg-parchment/70 before:shrink-0">
+              <div className="flex items-center gap-[12px] font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-7 before:content-[''] before:block before:w-[18px] before:h-px before:bg-parchment/70 before:shrink-0">
                 Radikal transparens
               </div>
               <div className="font-serif text-[clamp(20px,1.8vw,24px)] font-normal text-parchment leading-[1.35] tracking-[-0.01em] mb-5">
@@ -106,6 +106,26 @@ export default function Sikkerhed() {
                 </span>
                 Læs den fulde tekniske gennemgang
               </a>
+              <a
+                href="/databehandleraftale"
+                className="inline-flex items-center gap-[10px] text-parchment font-sans text-[13px] font-normal opacity-80 hover:opacity-100 transition-opacity mt-4"
+              >
+                <span className="w-[28px] h-[28px] border border-parchment/25 flex items-center justify-center flex-shrink-0 hover:border-parchment/60 transition-colors">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                    <line x1="1" y1="6" x2="11" y2="6" stroke="#F7F4EF" strokeWidth="1.3"/>
+                    <polyline points="7.5,2.5 11,6 7.5,9.5" stroke="#F7F4EF" strokeWidth="1.3" fill="none"/>
+                  </svg>
+                </span>
+                Hent databehandleraftale (PDF)
+              </a>
+              <div className="border-t border-parchment/20 mt-6 pt-6">
+                <p className="font-serif italic text-parchment/90 leading-[1.7] mb-3">
+                  &ldquo;Det her er vores forsøg på at gøre det ordentligt. Vi håber det mærkes.&rdquo;
+                </p>
+                <span className="font-sans text-[13px] text-parchment/70">
+                  — Lars Mullert, grundlægger af JournalKlar
+                </span>
+              </div>
             </div>
           </div>
 
