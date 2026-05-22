@@ -310,14 +310,16 @@ export default function SikkerhedPage() {
 
             <div className="mt-12 max-w-[680px]">
               {steps.map(({ num, title, text, chip }, i) => (
-                <div key={num} className="flex gap-4">
-                  <div className="flex flex-col items-center flex-shrink-0 w-5">
-                    <span className="font-serif text-[13px] text-parchment/40 leading-none mt-[3px]">{num}</span>
+                <div key={num} className="flex gap-6">
+                  <div className="flex flex-col items-center flex-shrink-0 w-8">
+                    <div className="w-6 h-6 border border-sand bg-parchment flex items-center justify-center flex-shrink-0">
+                      <span className="font-serif text-[13px] text-evergreen/40 leading-none">{num}</span>
+                    </div>
                     {i < steps.length - 1 && (
-                      <div className="w-px bg-parchment/15 flex-1 mt-2" />
+                      <div className="w-[2px] bg-parchment/25 flex-1" style={{ minHeight: "16px" }} />
                     )}
                   </div>
-                  <div className={`flex-1 pb-6 ${i < steps.length - 1 ? "border-b border-parchment/15" : ""}`}>
+                  <div className={i < steps.length - 1 ? "flex-1 pb-7" : "flex-1"}>
                     <div className="font-sans text-[15px] font-normal text-parchment mb-[4px]">{title}</div>
                     <p className="font-sans text-[14px] font-light text-parchment/90 leading-[1.7] mb-0">{text}</p>
                     <span className="font-sans text-[12px] text-parchment/40 mt-[5px] block">{chip}</span>
