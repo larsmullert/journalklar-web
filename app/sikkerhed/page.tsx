@@ -6,6 +6,12 @@ export const metadata = {
   title: "Sikkerhed og data — JournalKlar",
   description:
     "Forstå præcist hvad der sker med dine noter. Ingen optagelse, ingen AI-træning, dansk server i Skanderborg og databehandleraftale inkluderet.",
+  openGraph: {
+    title: "Sikkerhed og data — JournalKlar",
+    description:
+      "Forstå præcist hvad der sker med dine noter. Ingen optagelse, ingen AI-træning, dansk server i Skanderborg og databehandleraftale inkluderet.",
+    url: "https://journalklar.dk/sikkerhed",
+  },
 };
 
 function Rule() {

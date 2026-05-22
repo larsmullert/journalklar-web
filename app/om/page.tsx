@@ -6,6 +6,12 @@ export const metadata = {
   title: "Om JournalKlar",
   description:
     "JournalKlar er udviklet af Lars Mullert Pedersen, psykolog og grundlægger, som et specialiseret værktøj til privatpraktiserende psykologers journalføringsarbejde.",
+  openGraph: {
+    title: "Om JournalKlar",
+    description:
+      "JournalKlar er udviklet af Lars Mullert Pedersen, psykolog og grundlægger, som et specialiseret værktøj til privatpraktiserende psykologers journalføringsarbejde.",
+    url: "https://journalklar.dk/om",
+  },
 };
 
 function Rule() {

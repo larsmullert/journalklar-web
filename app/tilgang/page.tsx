@@ -6,6 +6,12 @@ export const metadata = {
   title: "JournalKlars tilgang til AI og journalføring",
   description:
     "JournalKlars faglige tilgang til AI, journalføring og psykologens ansvar: egne noter først, ingen sessionoptagelse og altid journaludkast.",
+  openGraph: {
+    title: "JournalKlars tilgang til AI og journalføring",
+    description:
+      "JournalKlars faglige tilgang til AI, journalføring og psykologens ansvar: egne noter først, ingen sessionoptagelse og altid journaludkast.",
+    url: "https://journalklar.dk/tilgang",
+  },
 };
 
 function Rule() {

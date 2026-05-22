@@ -20,8 +20,20 @@ const sourceSans3 = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
-  title: "JournalKlar",
-  description: "Et journalværktøj til privatpraktiserende psykologer — bygget af en psykolog",
+  metadataBase: new URL("https://journalklar.dk"),
+  title: {
+    default: "JournalKlar",
+    template: "%s — JournalKlar",
+  },
+  description: "Journaludkast fra dine egne faglige noter. Uden optagelse af sessionen.",
+  openGraph: {
+    siteName: "JournalKlar",
+    locale: "da_DK",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({

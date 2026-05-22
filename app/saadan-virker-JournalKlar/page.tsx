@@ -6,6 +6,12 @@ export const metadata = {
   title: "Sådan virker det — JournalKlar",
   description:
     "Se hvordan JournalKlar hjælper privatpraktiserende psykologer fra egne noter til et struktureret journaludkast. Tre trin. Ingen oplæring. Ingen optagelse.",
+  openGraph: {
+    title: "Sådan virker det — JournalKlar",
+    description:
+      "Se hvordan JournalKlar hjælper privatpraktiserende psykologer fra egne noter til et struktureret journaludkast. Tre trin. Ingen oplæring. Ingen optagelse.",
+    url: "https://journalklar.dk/saadan-virker-JournalKlar",
+  },
 };
 
 function Rule() {
