@@ -109,10 +109,31 @@ export default function OmPage() {
 
             <div className="mt-9 max-w-[660px]">
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
-                Jeg har en baggrund i salg og ledelse, inden jeg uddannede mig som psykolog. Det betyder, at jeg forstår både det tekniske i at bygge et produkt og det faglige og etiske i at bruge det i psykologisk praksis.
+                Jeg er uddannet bager, men fik melallergi. Derfor skulle jeg skifte karriere, og efter forskellige erfaringer fra arbejdslivet, endte jeg (heldigvis) som psykolog.
               </p>
-              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-9">
-                Jeg byggede JournalKlar, fordi jeg oplevede, hvor smart AI kan være til afgrænsede opgaver — og blev kritisk, da jeg begyndte at se AI-journalværktøjer der optager hele sessionen og lader en algoritme udvælge det vigtige i en fortrolig terapeutisk samtale.
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
+                Det har ikke været den lige vej, men alligevel hænger det sammen.
+              </p>
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
+                I bagerfaget lærer man hurtigt, at gode hjælpemidler ikke erstatter faglig fornemmelse. En maskine kan ælte. En ovn kan holde temperaturen. En opskrift kan give retning. Men den faglige vurdering ligger stadig i hænderne, blikket og erfaringen: hvordan dejen føles, hvordan den hæver, hvornår noget er klar, og hvornår man skal justere.
+              </p>
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
+                Den erfaring har fulgt mig.
+              </p>
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
+                Teknologi kan være en stor hjælp. Men den skal placeres rigtigt. Det gælder også i psykologisk praksis.
+              </p>
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
+                Jeg har selv oplevet, hvor brugbar AI kan være til afgrænsede opgaver. Når opgaven er tydelig og ansvaret for vurderingen stadig ligger hos mennesket, kan AI være et stærkt arbejdsredskab.
+              </p>
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
+                Men jeg blev kritisk, da jeg begyndte at se AI-journalværktøjer hvor hele sessionen optages, transskriberes og bearbejdes af en model der udvælger det vigtige fra en fortrolig terapeutisk samtale.
+              </p>
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
+                Ikke kun på grund af datasikkerhed. Men fordi det rejser et fagligt spørgsmål:
+              </p>
+              <p className="font-serif italic text-[18px] text-evergreen leading-[1.7] mb-9">
+                Hvem laver egentlig den første udvælgelse af, hvad der var vigtigt i samtalen?
               </p>
 
               <div className="font-serif italic text-[15px] text-evergreen leading-[1.9]">
