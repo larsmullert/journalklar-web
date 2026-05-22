@@ -227,9 +227,8 @@ export default function CookieBanner() {
         left: 0,
         right: 0,
         zIndex: 9999,
-        display: "flex",
-        justifyContent: "center",
-        padding: "0 16px 16px",
+        backgroundColor: "#FFFFFF",
+        borderTop: "1px solid #E8E4DF",
         transform: visible
           ? "translateY(0)"
           : "translateY(calc(100% + 32px))",
@@ -238,12 +237,8 @@ export default function CookieBanner() {
     >
       <div
         style={{
-          width: "100%",
-          maxWidth: "1100px",
-          backgroundColor: "#FFFFFF",
-          borderTop: "1px solid #E8E4DF",
-          borderLeft: "1px solid #E8E4DF",
-          borderRight: "1px solid #E8E4DF",
+          maxWidth: "860px",
+          margin: "0 auto",
           padding: "16px 24px",
         }}
       >
