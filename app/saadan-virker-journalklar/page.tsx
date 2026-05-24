@@ -393,14 +393,14 @@ export default function SaadanVirkerDetPage() {
                 </div>
               </div>
 
-              <div className="bg-evergreen" style={{ padding: "24px 32px" }}>
-                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-4">
+              <div style={{ marginTop: 32, marginBottom: 32 }}>
+                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-3">
                   Kollegatesten
                 </div>
-                <p className="font-serif italic text-parchment/90 mb-0" style={{ fontSize: "clamp(17px, 1.6vw, 21px)" }}>
+                <p className="font-serif italic text-evergreen mb-0" style={{ fontSize: "clamp(17px, 1.6vw, 21px)", marginBottom: 10 }}>
                   &ldquo;Hvad ville en kollega have brug for at vide, hvis de skulle overtage behandlingen af denne klient i morgen? Hverken mere eller mindre.&rdquo;
                 </p>
-                <p className="font-sans text-[14px] font-normal text-parchment/70 mb-0 mt-3">
+                <p className="font-sans text-[14px] font-normal text-muted mb-0">
                   Det er det spørgsmål der styrer hvad JournalKlar skriver — og ikke skriver.
                 </p>
               </div>
