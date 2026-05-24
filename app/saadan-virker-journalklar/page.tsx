@@ -376,48 +376,51 @@ export default function SaadanVirkerDetPage() {
             <h2 className="max-w-[400px]">Hvad sker der præcist?</h2>
 
             <div className="mt-12 max-w-[680px] flex flex-col gap-0">
-              {[
-                {
-                  num: "1",
-                  title: "Du skriver",
-                  text: "Dine noter sendes krypteret til JournalKlars server i Skanderborg.",
-                },
-                {
-                  num: "2",
-                  title: "AI strukturerer",
-                  text: "En AI-model omsætter dine noter til et journaludkast. Inputtet bruges kun til at generere, ikke til modeltræning.",
-                },
-                {
-                  num: "3",
-                  title: "Hallucinationstjek",
-                  text: "Et ekstra trin markerer formuleringer der ikke kan spores til dine noter.",
-                },
-                {
-                  num: "4",
-                  title: "Intet gemmes",
-                  text: "Klientindholdet fjernes fra serveren umiddelbart efter du modtager udkastet.",
-                },
-              ].map(({ num, title, text }, i, arr) => (
-                <div
-                  key={num}
-                  className={`flex gap-6 py-7 ${i < arr.length - 1 ? "border-b border-sand" : ""}`}
-                >
-                  <span
-                    className="font-serif text-[15px] flex-shrink-0 w-5 mt-[2px]"
-                    style={{ color: "#E04500" }}
-                  >
-                    {num}
-                  </span>
-                  <div>
-                    <div className="font-sans text-[15px] font-normal text-evergreen mb-1">
-                      {title}
-                    </div>
-                    <p className="font-sans text-[14px] font-light text-body leading-[1.7] mb-0">
-                      {text}
-                    </p>
-                  </div>
+
+              <div className="flex gap-6 py-7 border-b border-sand">
+                <span className="font-serif text-[15px] flex-shrink-0 w-5 mt-[2px]" style={{ color: "#E04500" }}>1</span>
+                <div>
+                  <div className="font-sans text-[15px] font-normal text-evergreen mb-1">Du skriver</div>
+                  <p className="font-sans text-[14px] font-light text-body leading-[1.7] mb-0">Dine noter sendes krypteret til JournalKlars server i Skanderborg.</p>
                 </div>
-              ))}
+              </div>
+
+              <div className="flex gap-6 py-7 border-b border-sand">
+                <span className="font-serif text-[15px] flex-shrink-0 w-5 mt-[2px]" style={{ color: "#E04500" }}>2</span>
+                <div>
+                  <div className="font-sans text-[15px] font-normal text-evergreen mb-1">AI strukturerer</div>
+                  <p className="font-sans text-[14px] font-light text-body leading-[1.7] mb-0">En AI-model omsætter dine noter til et journaludkast. Inputtet bruges kun til at generere, ikke til modeltræning.</p>
+                </div>
+              </div>
+
+              <div className="bg-evergreen" style={{ padding: "24px 32px" }}>
+                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-4">
+                  Kollegatesten
+                </div>
+                <p className="font-serif italic text-parchment/90 mb-0" style={{ fontSize: "clamp(17px, 1.6vw, 21px)" }}>
+                  &ldquo;Hvad ville en kollega have brug for at vide, hvis de skulle overtage behandlingen af denne klient i morgen? Hverken mere eller mindre.&rdquo;
+                </p>
+                <p className="font-sans text-[14px] font-normal text-parchment/70 mb-0 mt-3">
+                  Det er det spørgsmål der styrer hvad JournalKlar skriver — og ikke skriver.
+                </p>
+              </div>
+
+              <div className="flex gap-6 py-7 border-b border-sand">
+                <span className="font-serif text-[15px] flex-shrink-0 w-5 mt-[2px]" style={{ color: "#E04500" }}>3</span>
+                <div>
+                  <div className="font-sans text-[15px] font-normal text-evergreen mb-1">Hallucinationstjek</div>
+                  <p className="font-sans text-[14px] font-light text-body leading-[1.7] mb-0">Et ekstra trin markerer formuleringer der ikke kan spores til dine noter.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-6 py-7">
+                <span className="font-serif text-[15px] flex-shrink-0 w-5 mt-[2px]" style={{ color: "#E04500" }}>4</span>
+                <div>
+                  <div className="font-sans text-[15px] font-normal text-evergreen mb-1">Intet gemmes</div>
+                  <p className="font-sans text-[14px] font-light text-body leading-[1.7] mb-0">Klientindholdet fjernes fra serveren umiddelbart efter du modtager udkastet.</p>
+                </div>
+              </div>
+
             </div>
 
             <div className="mt-8">
