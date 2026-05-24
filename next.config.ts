@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         destination: "/saadan-virker-journalklar",
         permanent: true,
       },
+      {
+        source: "/saadan-virker-Journalklar",
+        destination: "/saadan-virker-journalklar",
+        permanent: true,
+      },
     ];
   },
 };

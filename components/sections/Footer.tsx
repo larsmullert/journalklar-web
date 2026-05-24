@@ -15,6 +15,7 @@ import CookieSettingsButton from "@/components/ui/CookieSettingsButton";
 const juridisk = [
   { label: "Privatlivspolitik", href: "/privatlivspolitik" },
   { label: "Databehandleraftale", href: "/databehandleraftale" },
+  { label: "Cookiepolitik", href: "/cookiepolitik" },
 ];
 
 function ColLabel({ children }: { children: React.ReactNode }) {
