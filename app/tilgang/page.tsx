@@ -312,6 +312,9 @@ export default function TilgangPage() {
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-12">
                 Det betyder, at den første afgrænsning sker før AI-behandlingen — ikke bagefter.
               </p>
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-12">
+                Det samme gælder for klientoplysninger generelt: JournalKlar behandler dem i det tidsrum det tager at generere udkastet. Ikke længere.
+              </p>
             </div>
 
             {/* Comparison */}

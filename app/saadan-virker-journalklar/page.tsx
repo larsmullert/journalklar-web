@@ -389,7 +389,7 @@ export default function SaadanVirkerDetPage() {
                 <span className="font-serif text-[15px] flex-shrink-0 w-5 mt-[2px]" style={{ color: "#E04500" }}>2</span>
                 <div>
                   <div className="font-sans text-[15px] font-normal text-evergreen mb-1">AI strukturerer</div>
-                  <p className="font-sans text-[14px] font-light text-body leading-[1.7] mb-0">En AI-model omsætter dine noter til et journaludkast. Inputtet bruges kun til at generere, ikke til modeltræning.</p>
+                  <p className="font-sans text-[14px] font-light text-body leading-[1.7] mb-0">En AI-model omsætter dine noter til et journaludkast. Inputtet bruges kun til at generere, ikke til modeltræning. JournalKlars bearbejdning tager typisk 10-15 sekunder.</p>
                 </div>
               </div>
 

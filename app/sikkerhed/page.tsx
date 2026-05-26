@@ -318,7 +318,32 @@ export default function SikkerhedPage() {
 
         <Rule />
 
-        {/* ── 3. Hvad sker der ────────────────────────────────────── */}
+        {/* ── 3. Ingen data at hacke ──────────────────────────────── */}
+        <section className="bg-evergreen py-16 px-6 md:py-[120px] md:px-16">
+          <div className="max-w-[1100px] mx-auto">
+            <SectionLabel>Ingen data at hacke</SectionLabel>
+            <h2 className="max-w-[480px] text-parchment">Der er ikke noget at hacke.</h2>
+
+            <div className="mt-9 max-w-[680px]">
+              <p className="font-sans text-[16px] font-light text-parchment/90 leading-[1.85] mb-5">
+                De fleste datasikkerhedsproblemer opstår fordi følsomme oplysninger er gemt et sted. Hos en leverandør, i en database, i en log.
+              </p>
+              <p className="font-sans text-[16px] font-light text-parchment/90 leading-[1.85] mb-5">
+                JournalKlar er bygget anderledes.
+              </p>
+              <p className="font-sans text-[16px] font-light text-parchment/90 leading-[1.85] mb-5">
+                Dine noter sendes til JournalKlar for at generere et udkast. Når udkastet er leveret, fjernes klientindholdet fra serveren. Der er ingen database med journalnotater. Der er ingen log med klientoplysninger. Der er intet at tilgå, intet at stjæle og intet der kan lækkes.
+              </p>
+              <p className="font-sans text-[16px] font-light text-parchment/90 leading-[1.85] mb-0">
+                Den mest effektive beskyttelse af klientoplysninger er JournalKlars tilgang: at undlade at gemme dem.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <Rule />
+
+        {/* ── 4. Hvad sker der ────────────────────────────────────── */}
         <section id="noter" className="bg-evergreen py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Hvad sker der</SectionLabel>

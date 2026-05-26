@@ -85,7 +85,7 @@ export default function OmPage() {
                     Lars Mullert Pedersen
                   </div>
                   <div className="font-sans text-[13px] font-light text-parchment/70 leading-[1.8]">
-                    Psykolog, uddannet fra Aalborg Universitet
+                    Psykolog, cand.psych., Aalborg Universitet
                   </div>
                   <div className="font-sans text-[13px] font-light text-parchment/70 leading-[1.8]">
                     Grundlægger af JournalKlar
@@ -227,10 +227,10 @@ export default function OmPage() {
 
             <div className="mt-9 max-w-[660px]">
               <p className="font-sans text-[16px] font-light text-parchment/90 leading-[1.85] mb-5">
-                Jeg har ikke bygget JournalKlar for at gøre journalføring automatisk. Jeg har bygget det fordi jeg mener vi har brug for værktøjer der tager både dokumentationsbyrden og psykologfagligheden alvorligt — på samme tid.
+                &ldquo;Jeg har ikke bygget JournalKlar for at gøre journalføring automatisk. Jeg har bygget det fordi jeg mener vi har brug for værktøjer der tager både dokumentationsbyrden og psykologfagligheden alvorligt — på samme tid.&rdquo;
               </p>
               <p className="font-serif italic text-[17px] text-parchment/90 leading-[1.8] mb-2 mt-10">
-                &ldquo;— Lars Mullert Pedersen&rdquo;
+                — Lars Mullert Pedersen
               </p>
 
               <div className="flex flex-wrap items-center gap-6 mt-10">

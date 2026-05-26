@@ -166,7 +166,13 @@ const categories: FAQCategory[] = [
       },
       {
         q: "Hvordan adskiller JournalKlar sig fra at bruge ChatGPT?",
-        a: "Tre afgørende forskelle. For det første optager og transskriberer ChatGPT ikke, men det gør JournalKlar heller ikke, og det er pointen. For det andet bruger ChatGPT, Gemini, Claude mm. dine input til modeltræning, hvilket er grunden til, at det ikke er lovligt med klientoplysninger. I JournalKlar er det kontraktuelt fastsat at input ikke bruges til træning. For det tredje er ChatGPT et generelt værktøj uden databehandleraftale, uden journalspecifik struktur og uden markering af manglende oplysninger. JournalKlar er bygget specifikt til dansk psykologpraksis med de forpligtelser det kræver.",
+        a: (
+          <>
+            <span className="block mb-4">Tre afgørende forskelle. For det første er ChatGPT, Gemini, Claude og lignende generelle AI-tjenester ikke bygget til sundhedsfaglig dokumentation. Der er ingen databehandleraftale, ingen journalspecifik struktur og ingen markering af manglende oplysninger.</span>
+            <span className="block mb-4">For det andet bruger generelle AI-tjenester som udgangspunkt dine input til at forbedre modellerne. Det er grunden til at det ikke er lovligt at indtaste klientoplysninger i dem. I JournalKlar er det kontraktuelt fastsat at input ikke bruges til træning.</span>
+            <span className="block">For det tredje gemmer JournalKlar ikke klientindhold efter generering. Generelle AI-tjenester gemmer samtalerne.</span>
+          </>
+        ),
       },
     ],
   },
