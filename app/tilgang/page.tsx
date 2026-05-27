@@ -18,31 +18,6 @@ function Rule() {
   return <hr className="border-none border-t border-sand m-0" />;
 }
 
-function CheckSm({ light = false }: { light?: boolean }) {
-  return (
-    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true" className="flex-shrink-0 mt-[2px]">
-      <polyline
-        points="1.5,5.5 4,8 9.5,2.5"
-        stroke={light ? "#B5CEC5" : "#1D3A2F"}
-        strokeOpacity={light ? 1 : 0.7}
-        strokeWidth="1.4"
-        fill="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
-
-function CrossSm({ light = false }: { light?: boolean }) {
-  return (
-    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true" className="flex-shrink-0 mt-[2px]">
-      <line x1="3" y1="3" x2="8" y2="8" stroke={light ? "#B5CEC5" : "#A09890"} strokeWidth="1.4" strokeLinecap="round"/>
-      <line x1="8" y1="3" x2="3" y2="8" stroke={light ? "#B5CEC5" : "#A09890"} strokeWidth="1.4" strokeLinecap="round"/>
-    </svg>
-  );
-}
-
 function ArrowRight({ color = "currentColor" }: { color?: string }) {
   return (
     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true" className="flex-shrink-0">
@@ -53,71 +28,6 @@ function ArrowRight({ color = "currentColor" }: { color?: string }) {
 }
 
 // ─── Data ───────────────────────────────────────────────────────────────
-
-
-const aiKanHjaelpe = [
-  "AI kan hjælpe med struktur.",
-  "AI kan hjælpe med formulering.",
-  "AI kan hjælpe med at opdage manglende oplysninger.",
-  "AI kan hjælpe med at omsætte rånoter til et mere brugbart udkast.",
-];
-
-const aiBorIkke = [
-  "Men AI bør ikke afgøre, hvad der var klinisk vigtigt.",
-  "AI bør ikke erstatte psykologens eftertanke.",
-  "AI bør ikke gøre journalføringen til en passiv redigering af en maskines forslag.",
-];
-
-const tilgangGoer = [
-  "Strukturerer dine egne noter",
-  "Omsætter rånoter til journaludkast",
-  "Markerer manglende oplysninger",
-  "Hjælper med sproglig klarhed",
-  "Understøtter en mere systematisk journalføringsproces",
-];
-
-const tilgangGoerIkke = [
-  "Optager sessionen",
-  "Transskriberer samtalen",
-  "Ser eller hører klienten",
-  "Vurderer klienten for dig",
-  "Træffer kliniske beslutninger",
-  "Erstatter dit faglige skøn",
-  "Laver den endelige journal",
-];
-
-const principper = [
-  {
-    num: "01",
-    title: "Psykologens egne noter først",
-    text: "JournalKlar starter ikke med en optagelse. Det starter med det, psykologen selv har valgt at skrive eller indtale efter sessionen.",
-  },
-  {
-    num: "02",
-    title: "Mindre data i omløb",
-    text: "Når sessionen ikke optages, bliver hele samtalen ikke gjort til behandlingsdata. JournalKlar arbejder med det udvalgte input, ikke med alt.",
-  },
-  {
-    num: "03",
-    title: "Struktur før automatik",
-    text: "Systemet hjælper med at skabe struktur og overblik. Det skal ikke fungere som en black-box, der alene afgør, hvad der var vigtigt.",
-  },
-  {
-    num: "04",
-    title: "Mangler skal frem, ikke skjules",
-    text: "Hvis oplysninger mangler, skal det markeres tydeligt. JournalKlar skal ikke gætte sig til huller.",
-  },
-  {
-    num: "05",
-    title: "Udkast betyder udkast",
-    text: "Et journaludkast skal altid gennemgås, justeres og godkendes af psykologen.",
-  },
-  {
-    num: "06",
-    title: "Fagligt ansvar bliver hos psykologen",
-    text: "JournalKlar er et hjælpemiddel. Ansvaret for den endelige journal ligger hos psykologen.",
-  },
-];
 
 const videreLinks = [
   {
@@ -375,143 +285,15 @@ export default function TilgangPage() {
 
         <Rule />
 
-        {/* ── 5. AI med grænser ───────────────────────────────────── */}
-        <section className="py-16 px-6 md:py-[120px] md:px-16">
-          <div className="max-w-[1100px] mx-auto">
-            <SectionLabel>AI med grænser</SectionLabel>
-            <h2 className="max-w-[480px]">
-              AI skal reducere friktion.{" "}
-              <span className="italic text-evergreen/60">Ikke fjerne fagligt arbejde.</span>
-            </h2>
-
-            <div className="mt-9 max-w-[760px]">
-              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
-                Journalføring kan være tungt. Ikke fordi psykologer ikke kan skrive journaler, men fordi arbejdet ofte ligger på et tidspunkt, hvor hovedet allerede er brugt.
-              </p>
-              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-10">
-                Efter sessionen skal du samle trådene, dokumentere korrekt, huske aftaler, formulere dig præcist og sikre, at journalen dækker det, den skal.
-              </p>
-              <p className="font-sans text-[15px] font-normal text-evergreen mb-5">
-                Her kan AI være hjælpsomt.
-              </p>
-            </div>
-
-            {/* Two lists */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
-              <div className="border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-5">
-                  AI må gerne hjælpe med
-                </div>
-                <div className="flex flex-col gap-4">
-                  {aiKanHjaelpe.map((item) => (
-                    <div key={item} className="flex items-start gap-3">
-                      <CheckSm />
-                      <span className="font-sans text-[14px] font-light text-body leading-[1.5]">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="border border-sand bg-sand [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-5">
-                  AI bør ikke overtage
-                </div>
-                <div className="flex flex-col gap-4">
-                  {aiBorIkke.map((item) => (
-                    <div key={item} className="flex items-start gap-3">
-                      <CrossSm />
-                      <span className="font-sans text-[14px] font-light text-body leading-[1.5]">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Statement */}
-            <div className="mt-8 max-w-[760px] border border-sand bg-white px-7 py-6">
-              <p className="font-sans text-[13px] text-muted mb-2">Derfor er JournalKlar bygget med en enkel arbejdsdeling:</p>
-              <p className="font-serif text-[22px] font-normal text-evergreen tracking-[-0.01em] m-0">
-                Din vurdering. Vores struktur.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <Rule />
-
-        {/* ── 6. Afgrænsning ──────────────────────────────────────── */}
-        <section className="bg-sand py-16 px-6 md:py-[120px] md:px-16">
-          <div className="max-w-[1100px] mx-auto">
-            <SectionLabel>Afgrænsning</SectionLabel>
-            <h2 className="max-w-[380px]">Et redskab. Ikke en kollega.</h2>
-            <p className="max-w-[520px] text-body">
-              JournalKlar er ikke bygget til at virke menneskeligt. Det er bygget til at være nyttigt, afgrænset og gennemskueligt.
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
-
-              {/* Gør */}
-              <div className="bg-evergreen p-10">
-                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-parchment/70 mb-6">
-                  Hvad JournalKlar gør
-                </div>
-                <div className="flex flex-col gap-5">
-                  {tilgangGoer.map((item) => (
-                    <div key={item} className="flex items-start gap-3">
-                      <svg className="flex-shrink-0 mt-[4px]" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                        <polyline points="2,7 5.5,10.5 12,4" stroke="#F7F4EF" strokeWidth="1.3" fill="none" strokeLinecap="round"/>
-                      </svg>
-                      <span className="font-sans text-[16px] font-light text-parchment/90 leading-[1.6]">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Gør ikke */}
-              <div className="bg-white border border-sand p-10">
-                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-6">
-                  Hvad JournalKlar ikke gør
-                </div>
-                <div className="flex flex-col gap-5">
-                  {tilgangGoerIkke.map((item) => (
-                    <div key={item} className="flex items-start gap-3">
-                      <svg className="flex-shrink-0 mt-[4px]" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                        <line x1="3.5" y1="3.5" x2="10.5" y2="10.5" stroke="#2C2C2C" strokeWidth="1.3" strokeOpacity="0.4" strokeLinecap="round"/>
-                        <line x1="10.5" y1="3.5" x2="3.5" y2="10.5" stroke="#2C2C2C" strokeWidth="1.3" strokeOpacity="0.4" strokeLinecap="round"/>
-                      </svg>
-                      <span className="font-sans text-[16px] font-light text-graphite leading-[1.6]">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-            </div>
-
-            <div className="mt-10 max-w-[600px]">
-              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-4">
-                Outputtet fra JournalKlar er altid et journaludkast. Ikke en journal. Ikke en vurdering. Ikke en beslutning.
-              </p>
-              <p className="font-sans text-[16px] font-normal text-evergreen leading-[1.85] mb-4">
-                Det er et arbejdsskridt.
-              </p>
-              <p className="font-sans text-[16px] font-light text-body leading-[1.85]">
-                Du læser, vurderer, justerer og godkender, før noget overføres til dit eget journalsystem.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <Rule />
-
-        {/* ── 7. JournalKlar i Praksis ────────────────────────────── */}
+        {/* ── 5. Sådan er JournalKlar bygget ──────────────────────── */}
         <section className="bg-sand py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>JournalKlar i Praksis</SectionLabel>
-            <h2 className="max-w-[480px]">Sådan er JournalKlar instrueret.</h2>
+            <h2 className="max-w-[480px]">Sådan er JournalKlar bygget.</h2>
 
             <div className="mt-9 max-w-[680px]">
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
-                Når du sender dine noter til JournalKlar, modtager systemet ikke bare dine noter. Det modtager også et sæt præcise faglige instruktioner. Den beskriver hvad JournalKlar skal gøre, hvad det ikke må gøre og hvilke principper der styrer outputtet.
+                Når du sender dine noter til JournalKlar, modtager systemet ikke bare dine noter. Det modtager også et sæt præcise faglige instruktioner der beskriver hvad JournalKlar skal gøre, hvad det ikke må gøre og hvilke principper der styrer outputtet.
               </p>
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-0">
                 Her er tre af dem.
@@ -530,7 +312,7 @@ export default function TilgangPage() {
                   </p>
                 </blockquote>
                 <p className="font-sans text-[15px] font-normal text-body m-0">
-                  Det er det spørgsmål der styrer hvad JournalKlar skriver — og ikke skriver.
+                  Det er det spørgsmål der styrer hvad JournalKlar skriver og ikke skriver.
                 </p>
               </div>
 
@@ -555,6 +337,25 @@ export default function TilgangPage() {
             </div>
 
             <div className="mt-8 border-t border-sand pt-6 max-w-[680px]">
+              <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-5">
+                Bygget ind i produktet
+              </div>
+              <div className="flex flex-col gap-3">
+                {[
+                  "Manglende oplysninger markeres tydeligt fremfor at gættes",
+                  "Outputtet hedder altid udkast. Aldrig journal",
+                  "Fagligt ansvar ligger hos psykologen",
+                  "Ingen optagelse. Ingen transskription. Psykologens egne noter er altid udgangspunktet",
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-3">
+                    <span className="font-sans text-[14px] font-light text-muted leading-[1.6] flex-shrink-0">—</span>
+                    <span className="font-sans text-[14px] font-light text-body leading-[1.6]">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-6 border-t border-sand pt-6 max-w-[680px]">
               <p className="font-sans text-[13px] font-normal text-muted m-0">
                 Systemprompten er i aktiv udvikling. Nuværende version: 0.3.8, opdateret 24. maj 2026.
               </p>
@@ -565,36 +366,7 @@ export default function TilgangPage() {
 
         <Rule />
 
-        {/* ── 8. Produktprincipper ────────────────────────────────── */}
-        <section className="py-16 px-6 md:py-[120px] md:px-16">
-          <div className="max-w-[1100px] mx-auto">
-            <SectionLabel>Produktprincipper</SectionLabel>
-            <h2 className="max-w-[480px]">De faglige valg er bygget ind i produktet.</h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-              {principper.map(({ num, title, text }) => (
-                <div
-                  key={num}
-                  className="border border-sand bg-white [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8"
-                >
-                  <div className="font-serif text-[28px] font-normal text-evergreen/40 leading-none mb-5 tracking-[-0.02em]">
-                    {num}
-                  </div>
-                  <div className="font-sans text-[15px] font-normal text-evergreen mb-3 leading-[1.35]">
-                    {title}
-                  </div>
-                  <p className="font-sans text-[14px] font-light text-body leading-[1.7] m-0">
-                    {text}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <Rule />
-
-        {/* ── 8. Standpunktet ─────────────────────────────────────── */}
+        {/* ── 6. Standpunktet ─────────────────────────────────────── */}
         <section className="bg-evergreen py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Standpunktet</SectionLabel>
@@ -622,9 +394,12 @@ export default function TilgangPage() {
               <p className="font-sans text-[16px] font-light text-parchment/90 leading-[1.85] mb-5">
                 Derfor har vi bygget JournalKlar sådan, at AI først kommer ind efter psykologens egen selektion.
               </p>
-              <p className="font-sans text-[16px] font-light text-parchment/90 leading-[1.85] mb-12">
+              <p className="font-sans text-[16px] font-light text-parchment/90 leading-[1.85] mb-5">
                 Ikke for at gøre journalføring automatisk.{" "}
                 <span className="font-normal text-parchment">Men for at gøre det lettere at gøre ordentligt.</span>
+              </p>
+              <p className="font-sans text-[16px] font-light text-parchment/90 leading-[1.85] mb-12">
+                Outputtet fra JournalKlar er altid et journaludkast. Ikke en journal. Ikke en vurdering. Ikke en beslutning.
               </p>
 
               {/* Signature card */}
@@ -642,7 +417,7 @@ export default function TilgangPage() {
 
         <Rule />
 
-        {/* ── 9. Videre læsning ───────────────────────────────────── */}
+        {/* ── 7. Videre læsning ───────────────────────────────────── */}
         <section className="py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Videre læsning</SectionLabel>
