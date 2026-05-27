@@ -21,7 +21,7 @@ export default function Afgrænsning() {
     <section className="py-16 px-6 md:py-[120px] md:px-16">
       <div className="max-w-[1100px] mx-auto">
         <SectionLabel>Hvad JournalKlar er — og ikke er</SectionLabel>
-        <h2>Et værktøj, ikke en autopilot.</h2>
+        <h2>Et værktøj, ikke en autopilot</h2>
 
         <div className="mt-6 max-w-[780px]">
           <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-2">

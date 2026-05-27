@@ -118,7 +118,7 @@ export default function OmPage() {
 
             <div className="mt-9 max-w-[660px]">
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
-                Jeg er uddannet bager, men fik melallergi. Derfor skulle jeg skifte karriere, og efter forskellige erfaringer fra arbejdslivet, endte jeg (heldigvis) som psykolog.
+                Jeg er uddannet bager, men fik melallergi. Derfor skulle jeg skifte karriere, og efter forskellige erfaringer fra arbejdslivet, endte jeg som psykolog.
               </p>
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 Det har ikke været den lige vej, men alligevel hænger det sammen.
@@ -169,7 +169,7 @@ export default function OmPage() {
                 Det er ikke et argument mod teknologi. Men det er et spørgsmål vi bør stille til AI i psykologers journalarbejde.
               </p>
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
-                En klassisk tech-founder ser journalføring som et effektiviseringsproblem der gælder alle sundhedsfagpersoner. Jeg kan ikke sige, hvad der er rigtigt for andre fag. Men for psykologer er efterbehandlingen af en session — der hvor du samler op, udvælger og formulerer din forståelse af klienten — ikke sekretærarbejde. Det er faglig efterbehandling. Det er en faglig muskel vi ikke bevidst bør lade sygne hen.
+                En klassisk tech-founder ser journalføring som et effektiviseringsproblem, der gælder alle sundhedsfagpersoner. Jeg kan ikke sige, hvad der er rigtigt for andre fag, men for psykologer er efterbehandlingen af en session — der hvor du samler op, udvælger og formulerer din forståelse af klienten — ikke sekretærarbejde. Det er faglig efterbehandling. Det er en faglig muskel, vi ikke bevidst bør lade sygne hen.
               </p>
               <p className="font-sans text-[16px] font-light text-body leading-[1.85]">
                 Derfor starter JournalKlar med dine egne noter. Ikke med en optagelse.
@@ -188,7 +188,7 @@ export default function OmPage() {
 
             <div className="mt-9 max-w-[660px]">
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-12">
-                Når man bruger et AI-værktøj i psykologisk praksis bør afsenderen ikke være uklar. Du kan læse om den faglige tilgang, sikkerheden og databehandlingen — og du er altid velkommen til at skrive direkte hvis noget er uklart.
+                Når man bruger et AI-værktøj i psykologisk praksis bør afsenderen ikke være uklar. Du kan læse om den faglige tilgang, sikkerheden og databehandlingen — og du er altid velkommen til at skrive direkte, hvis noget er uklart.
               </p>
             </div>
 
@@ -227,7 +227,7 @@ export default function OmPage() {
 
             <div className="mt-9 max-w-[660px]">
               <p className="font-sans text-[16px] font-light text-parchment/90 leading-[1.85] mb-5">
-                &ldquo;Jeg har ikke bygget JournalKlar for at gøre journalføring automatisk. Jeg har bygget det fordi jeg mener vi har brug for værktøjer der tager både dokumentationsbyrden og psykologfagligheden alvorligt — på samme tid.&rdquo;
+                &ldquo;Jeg har ikke bygget JournalKlar for at gøre journalføring automatisk. Jeg har udviklet systemet, fordi jeg mener, at vi har brug for værktøjer, der tager både dokumentationsbyrden og psykologfagligheden alvorligt — på samme tid.&rdquo;
               </p>
               <p className="font-serif italic text-[17px] text-parchment/90 leading-[1.8] mb-2 mt-10">
                 — Lars Mullert Pedersen

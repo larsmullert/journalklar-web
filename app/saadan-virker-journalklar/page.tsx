@@ -171,11 +171,14 @@ export default function SaadanVirkerDetPage() {
                 Du skriver
               </div>
               <h3 className="mb-4">Du skriver dine noter som du plejer.</h3>
-              <p className="font-sans text-[15px] font-light text-body leading-[1.85] mb-0">
+              <p className="font-sans text-[15px] font-light text-body leading-[1.85]">
                 Umiddelbart efter sessionen skriver eller indtaler du det du
                 som psykolog vurderer er vigtigt: observationer, temaer,
                 intervention, aftaler, plan. Skriv som psykolog, ikke som
                 sekretær. Det er dine faglige noter, ikke en færdig journal.
+              </p>
+              <p className="font-sans text-[15px] font-light text-body leading-[1.85] mb-0">
+                Diktering er ikke det samme som at optage sessionen. Når du dikterer, taler du dine egne noter ind efter sessionen er slut. Ingen optager samtalen. Ingen lytter med.
               </p>
             </div>
             <div className="bg-white border border-[#D4D0CB]">

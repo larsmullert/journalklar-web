@@ -84,7 +84,7 @@ const categories: FAQCategory[] = [
         a: "JournalKlar markerer tydeligt de steder i udkastet, hvor der mangler oplysninger jf. journalføringsbekendtgørelsen eller der kræves aktiv stillingtagen fra dig. Du afgør hvad der skal tilføjes eller justeres.",
       },
       {
-        q: "Hvorfor starter JournalKlar med mine egne noter og ikke en optagelse?",
+        q: "Hvorfor starter JournalKlar med mine egne noter og ikke en optagelse af sessionen?",
         a: "Fordi den faglige efterbehandling af en session, der hvor du samler op, udvælger og formulerer din forståelse af klienten og samtalen, ikke bør outsources til en algoritme. Hvis AI'en optager og transskriberer samtalen og derefter udvælger det vigtige, risikerer du at blive passiv redaktør af en maskines forståelse. JournalKlar starter med dit faglige skøn. Ikke med en optagelse.",
       },
     ],
@@ -162,7 +162,7 @@ const categories: FAQCategory[] = [
       },
       {
         q: "Er der databehandleraftale, og hvornår underskriver jeg den?",
-        a: "Ja. Du underskriver en databehandleraftale inden du går i gang. Den beskriver præcist hvad der behandles, af hvem, hvor og på hvilket grundlag. Du kan vise den til din fagforening eller den du samarbejder med om GDPR.",
+        a: "Ja. Du underskriver en databehandleraftale, inden du går i gang. Den beskriver præcist hvad der behandles af hvem, hvor og på hvilket grundlag. Du kan vise den til din fagforening eller den, du samarbejder med om GDPR.",
       },
       {
         q: "Hvordan adskiller JournalKlar sig fra at bruge ChatGPT?",
@@ -181,7 +181,7 @@ const categories: FAQCategory[] = [
     items: [
       {
         q: "Hvordan bruger jeg JournalKlar efter en session?",
-        a: "Umiddelbart efter sessionen logger du ind og skriver eller indtaler dine noter: det du som psykolog vurderer er vigtigt: observationer, temaer, interventioner, aftaler. JournalKlar strukturerer dem til et journaludkast. Du læser det igennem, retter hvad der skal rettes og overfører til dit journalsystem. Det tager typisk få minutter.",
+        a: "Umiddelbart efter sessionen logger du ind og skriver eller indtaler dine noter: det, du som psykolog vurderer, er vigtigt: observationer, temaer, interventioner, aftaler. JournalKlar strukturerer dem til et journaludkast. Du læser det igennem, retter hvad der skal rettes og overfører til dit journalsystem. Det tager typisk få minutter.",
       },
       {
         q: "Kan jeg indtale mine noter i stedet for at skrive dem?",

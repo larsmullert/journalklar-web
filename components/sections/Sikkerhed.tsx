@@ -28,9 +28,9 @@ export default function Sikkerhed() {
     <section id="sikkerhed" className="bg-evergreen py-16 px-6 md:py-[120px] md:px-16">
       <div className="max-w-[1100px] mx-auto">
         <SectionLabel>Data og fortrolighed</SectionLabel>
-        <h2 className="text-parchment">Dine klienters fortrolighed forbliver fortrolig.</h2>
+        <h2 className="text-parchment">Dine klienters data forbliver fortrolig.</h2>
         <p className="max-w-[520px] text-parchment/90 mb-0">
-          Det er det eneste der reelt betyder noget. Her er fire ting du bør vide — på almindeligt dansk.
+          Det er det eneste der reelt betyder noget. Her er fire ting du bør vide — på jordnær dansk.
         </p>
 
         {/* Dataflow */}

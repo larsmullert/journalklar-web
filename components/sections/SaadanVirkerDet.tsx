@@ -23,7 +23,7 @@ export default function SaadanVirkerDet() {
     <section id="hvordan" className="py-16 px-6 md:py-[120px] md:px-16">
       <div className="max-w-[1100px] mx-auto">
         <SectionLabel>Sådan virker det</SectionLabel>
-        <h2>Tre trin. Ingen oplæring.</h2>
+        <h2>Tre trin. Ingen oplæring</h2>
         <p className="max-w-[520px] text-body">
           Arbejdsgangen er designet til at passe ind i det, du allerede gør umiddelbart efter en session — ikke til at erstatte det.
         </p>

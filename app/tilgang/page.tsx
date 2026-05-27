@@ -66,14 +66,13 @@ export default function TilgangPage() {
             <div className="flex flex-col justify-center">
               <SectionLabel>JournalKlars tilgang</SectionLabel>
               <h1 className="max-w-[560px] mb-5">
-                AI må gerne hjælpe med journalføring.{" "}
-                <span className="italic text-evergreen/60">Men ikke alt bør automatiseres.</span>
+                AI må gerne hjælpe med journalføring, men ikke alt bør automatiseres.
               </h1>
               <p className="font-sans text-[16px] font-light text-body max-w-[480px] leading-[1.85] mb-4">
                 JournalKlar er bygget ud fra et enkelt fagligt standpunkt: AI kan godt hjælpe psykologer med struktur, overblik og formulering — men den første faglige selektion skal blive hos psykologen.
               </p>
               <p className="font-sans text-[16px] font-light text-body max-w-[480px] leading-[1.85] mb-8">
-                Derfor optager JournalKlar ikke sessionen. Det transskriberer ikke samtalen. Det starter med dine egne noter efter sessionen.
+                Derfor optager JournalKlar ikke sessionen. Værktøjet transskriberer ikke samtalen. Det starter med dine egne noter efter sessionen.
               </p>
             </div>
 
@@ -112,7 +111,7 @@ export default function TilgangPage() {
                 Mange AI-værktøjer til sundhedsfaglig dokumentation starter med at optage eller transskribere samtalen. Psykologen får derefter et færdigt forslag, som kan redigeres bagefter.
               </p>
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
-                Det er en effektiv arbejdsgang. Og vi forstår godt, hvorfor den er tiltrækkende.
+                Det er en effektiv arbejdsgang, og vi forstår godt, hvorfor den er tiltrækkende.
               </p>
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 Når næste klient venter, og journalen kan være klar på få minutter, er det svært ikke at se værdien.
@@ -121,7 +120,7 @@ export default function TilgangPage() {
                 JournalKlar bygger bare på en anden præmis.
               </p>
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
-                I psykologisk praksis handler journalføring ikke kun om at fastholde, hvad der blev sagt. Det handler også om at vurdere, hvad der var fagligt væsentligt. Hvad der skal med. Hvad der skal udelades. Hvad der skal formuleres nøgternt, præcist og forsvarligt.
+                I psykologisk praksis handler journalføring ikke kun om at fastholde, hvad der blev sagt. Det handler også om at vurdere, hvad der var fagligt relevant. Hvad der skal med. Hvad der skal udelades. Hvad der skal formuleres nøgternt, præcist og forsvarligt.
               </p>
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-10">
                 Den vurdering bør ikke starte i en transskription. Den bør starte hos psykologen.
@@ -211,6 +210,9 @@ export default function TilgangPage() {
               </p>
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
                 Det arbejder kun med det, psykologen selv vælger at skrive eller indtale efter sessionen.
+              </p>
+              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
+                Det er ikke det samme som at optage sessionen. Diktering sker efter sessionen er slut — det er psykologens egne ord, ikke en optagelse af det fortrolige rum.
               </p>
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-12">
                 Det betyder, at den første afgrænsning sker før AI-behandlingen — ikke bagefter.

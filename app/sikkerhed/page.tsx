@@ -225,7 +225,7 @@ export default function SikkerhedPage() {
               <SectionLabel>Data og fortrolighed</SectionLabel>
               <h1 className="max-w-[560px] mb-5">
                 Sikkerhed, fortrolighed og data —{" "}
-                <span className="italic text-evergreen/60">på almindeligt dansk</span>
+                <span className="italic text-evergreen/60">på jordnær dansk</span>
               </h1>
               <p className="font-sans text-[16px] font-light text-body max-w-[480px] leading-[1.85] mb-0">
                 JournalKlar er bygget til psykologer, der arbejder med fortrolige klientoplysninger. Du skal kunne forstå, hvad der sker med dine data — ikke bare have tillid til, at vi håndterer det.
@@ -249,10 +249,10 @@ export default function SikkerhedPage() {
               </div>
               <div className="border-t border-parchment/20 mt-6 pt-6">
                 <p className="font-serif italic text-[17px] text-parchment/90 leading-[1.7] mb-0">
-                  &ldquo;Det her er vores forsøg på at gøre det ordentligt. Vi håber det mærkes.&rdquo;
+                  &ldquo;Det her er vores forsøg på at gøre det ordentligt. Vi håber, det mærkes.&rdquo;
                 </p>
                 <p className="font-sans font-normal text-[13px] text-parchment/70 mt-[10px] mb-0">
-                  — Lars Mullert, grundlægger af JournalKlar
+                  — Lars Mullert Pedersen, grundlægger af JournalKlar
                 </p>
               </div>
             </div>
@@ -474,7 +474,7 @@ export default function SikkerhedPage() {
               Tre leverandører behandler data som en del af JournalKlar. Ingen andre tredjeparter modtager klientoplysninger.
             </p>
 
-            <div className="mt-12 overflow-x-auto">
+            <div className="mt-12 overflow-x-auto" style={{ WebkitOverflowScrolling: 'touch' }}>
               <div className="min-w-[620px] max-w-[960px]">
 
                 {/* Header */}

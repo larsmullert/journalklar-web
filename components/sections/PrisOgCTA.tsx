@@ -5,7 +5,7 @@ export default function PrisOgCTA() {
     <section id="pris" className="bg-sand py-16 px-6 md:py-[120px] md:px-16">
       <div className="max-w-[1100px] mx-auto">
         <SectionLabel>Kom i gang</SectionLabel>
-        <h2>Prøv det i 30 dage. Mærk efter selv.</h2>
+        <h2>Prøv det i 30 dage. Mærk selv efter</h2>
         <p className="max-w-[520px] text-body">
           Det tager to minutter at komme i gang. Fuld adgang til alle funktioner. Ingen binding. Ingen installation.
         </p>
