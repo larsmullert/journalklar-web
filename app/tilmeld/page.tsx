@@ -297,7 +297,7 @@ export default function TilmeldPage() {
                   color: "#2C2C2C",
                   lineHeight: 1.7,
                 }}>
-                  Jeg accepterer{" "}
+                  Jeg har læst og accepterer{" "}
                   <a
                     href="/databehandleraftale"
                     target="_blank"
@@ -310,6 +310,7 @@ export default function TilmeldPage() {
                   >
                     databehandleraftalen
                   </a>
+                  {" "}— den beskriver hvordan vi håndterer dine oplysninger som databehandler
                 </span>
               </label>
 
@@ -353,6 +354,7 @@ export default function TilmeldPage() {
                   >
                     handelsbetingelserne
                   </a>
+                  {" "}for brug af JournalKlar
                 </span>
               </label>
 
