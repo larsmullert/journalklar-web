@@ -75,13 +75,6 @@ export default function TilgangPage() {
               <p className="font-sans text-[16px] font-light text-body max-w-[480px] leading-[1.85] mb-8">
                 Derfor optager JournalKlar ikke sessionen. Det transskriberer ikke samtalen. Det starter med dine egne noter efter sessionen.
               </p>
-              <p className="font-sans text-[13px] font-normal text-evergreen tracking-[0.04em] text-center mt-7 mb-0">
-                Ingen optagelse af sessionen{" "}
-                <span className="text-evergreen/40">·</span>
-                {" "}Server i Skanderborg{" "}
-                <span className="text-evergreen/40">·</span>
-                {" "}Altid et udkast
-              </p>
             </div>
 
             {/* Right: statement card */}
@@ -227,57 +220,7 @@ export default function TilgangPage() {
               </p>
             </div>
 
-            {/* Comparison */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-              {/* JournalKlar — venstre */}
-              <div className="bg-white border border-sand [border-top:2px_solid_rgba(29,58,47,0.2)] p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-6">
-                  JournalKlar
-                </div>
-                <div className="flex flex-col gap-4">
-                  {[
-                    "Optager ikke samtalen",
-                    "Starter med psykologens egne noter",
-                    "Strukturerer det udvalgte",
-                    "Markerer mangler og kræver godkendelse",
-                  ].map((item) => (
-                    <div key={item} className="flex items-start gap-3">
-                      <svg className="flex-shrink-0 mt-[4px]" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                        <polyline points="2,7 5.5,10.5 12,4" stroke="#1D3A2F" strokeWidth="1.3" fill="none" strokeLinecap="round"/>
-                      </svg>
-                      <span className="font-sans text-[16px] font-light text-graphite leading-[1.6]">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Transskriptionsbaseret AI — højre */}
-              <div className="bg-white border border-sand p-6 md:p-8">
-                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-6">
-                  Transskriptionsbaseret AI
-                </div>
-                <div className="flex flex-col gap-4">
-                  {[
-                    "Optager samtalen",
-                    "Fanger alt først",
-                    "Sorterer bagefter",
-                    "Lader systemet foreslå, hvad der var vigtigt",
-                  ].map((item) => (
-                    <div key={item} className="flex items-start gap-3">
-                      <svg className="flex-shrink-0 mt-[4px]" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                        <line x1="3.5" y1="3.5" x2="10.5" y2="10.5" stroke="#2C2C2C" strokeWidth="1.3" strokeOpacity="0.4" strokeLinecap="round"/>
-                        <line x1="10.5" y1="3.5" x2="3.5" y2="10.5" stroke="#2C2C2C" strokeWidth="1.3" strokeOpacity="0.4" strokeLinecap="round"/>
-                      </svg>
-                      <span className="font-sans text-[16px] font-light text-graphite leading-[1.6]">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-            </div>
-
-            <p className="font-sans text-[14px] font-light text-muted border-t border-sand pt-6 mt-6 max-w-[680px]">
+            <p className="font-sans text-[14px] font-light text-muted max-w-[680px]">
               Det er ikke kun et datasikkerhedsvalg. Det er et fagligt valg.
             </p>
           </div>
