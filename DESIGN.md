@@ -65,7 +65,7 @@ Labels i small caps med letter-spacing, aldrig bold.
 --evergreen-80:   rgba(29,58,47,0.80)
 --evergreen-20:   rgba(29,58,47,0.20)
 --evergreen-08:   rgba(29,58,47,0.08)
---orange:         #E04500   /* Sparsom accent — KUN til "Kræver stillingtagen" */
+--orange:         #E04500   /* Sparsom accent — eyebrow-labels og "Kræver stillingtagen" */
 --sand:           #E8E4DF   /* Sektionsbaggrunde, borders, dividers */
 --graphite:       #2C2C2C   /* Brødtekst på lys baggrund */
 --muted:          #8A8580   /* Labels, sekundær tekst */
@@ -74,9 +74,13 @@ Labels i small caps med letter-spacing, aldrig bold.
 --white:          #FFFFFF   /* Kort, panels, app-frames */
 ```
 
-**Farveprincip:** Parchment dominerer. Evergreen forankrer. Orange er
-reserveret til ét element: "Kræver stillingtagen". Brug aldrig orange
-andre steder — ikke links, ikke headers, ikke highlights.
+**Farveprincip:** Parchment dominerer. Evergreen forankrer. Orange bruges
+til to formål:
+1. Section eyebrow-labels overalt på sitet
+2. "Kræver stillingtagen"-elementet i produktmockups
+
+Orange bruges ikke på: links, knapper, brødtekst, priser eller andre
+UI-elementer.
 
 Sand bruges til at differentiere sektioner der trænger til kontrast
 (manifest-strip, app-demo-baggrund).
