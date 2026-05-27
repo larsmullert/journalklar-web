@@ -289,77 +289,48 @@ export default function TilgangPage() {
         <section className="bg-sand py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>JournalKlar i Praksis</SectionLabel>
-            <h2 className="max-w-[480px]">Sådan er JournalKlar bygget.</h2>
+            <h2 className="max-w-[480px]">Sådan er JournalKlar instrueret.</h2>
 
             <div className="mt-9 max-w-[680px]">
-              <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
-                Når du sender dine noter til JournalKlar, modtager systemet ikke bare dine noter. Det modtager også et sæt præcise faglige instruktioner der beskriver hvad JournalKlar skal gøre, hvad det ikke må gøre og hvilke principper der styrer outputtet.
-              </p>
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-0">
-                Her er tre af dem.
+                Når du sender dine noter til JournalKlar, modtager systemet ikke bare dine noter. Det modtager også præcise faglige instruktioner der beskriver hvad JournalKlar skal gøre, hvad det ikke må gøre og hvilke principper der styrer outputtet.
               </p>
             </div>
 
-            <div className="mt-14 max-w-[680px] flex flex-col gap-10">
+            <div className="mt-14 max-w-[680px] flex flex-col" style={{ gap: 32 }}>
 
               <div>
-                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-4">
+                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange" style={{ marginBottom: 8 }}>
                   Kollegatesten
                 </div>
-                <blockquote className="m-0 mb-4 pl-6" style={{ borderLeft: "3px solid #E04500" }}>
-                  <p className="font-serif italic text-evergreen m-0" style={{ fontSize: "clamp(17px, 1.6vw, 21px)" }}>
-                    &ldquo;Hvad ville en kollega have brug for at vide, hvis de skulle overtage behandlingen af denne klient i morgen? Hverken mere eller mindre.&rdquo;
-                  </p>
-                </blockquote>
-                <p className="font-sans text-[15px] font-normal text-body m-0">
-                  Det er det spørgsmål der styrer hvad JournalKlar skriver og ikke skriver.
+                <p className="font-sans text-[16px] font-normal text-body leading-[1.85] m-0">
+                  JournalKlar skriver efter ét spørgsmål: hvad ville en kollega have brug for at vide, hvis de skulle overtage behandlingen af denne klient i morgen? Hverken mere eller mindre.
                 </p>
               </div>
 
               <div>
-                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-4">
+                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange" style={{ marginBottom: 8 }}>
                   Klientgenkendelighed
                 </div>
-                <p className="font-sans text-[15px] font-normal text-body leading-[1.85] m-0">
-                  Journaludkastet skrives så klienten kan genkende sig selv, hvis klienten beder om aktindsigt. Det betyder at klientens egne ord og udtryk bevares. Ikke omskrives til klinisk sprog.
+                <p className="font-sans text-[16px] font-normal text-body leading-[1.85] m-0">
+                  Klientens egne ord og udtryk bevares. Ikke omskrives til klinisk sprog.
                 </p>
               </div>
 
               <div>
-                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-4">
+                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange" style={{ marginBottom: 8 }}>
                   Bøjning — ikke oversættelse
                 </div>
-                <p className="font-sans text-[15px] font-normal text-body leading-[1.85] m-0">
-                  JournalKlar må gerne bøje dine ord fra talesprog til skriftsprog. Det må ikke oversætte din kliniske vurdering til noget andet. Det du har skrevet er udgangspunktet, ikke et forslag der kan forbedres.
+                <p className="font-sans text-[16px] font-normal text-body leading-[1.85] m-0">
+                  JournalKlar må gerne bøje dine ord fra talesprog til skriftsprog. Det må ikke oversætte din kliniske vurdering til noget andet.
                 </p>
               </div>
 
             </div>
 
-            <div className="mt-8 border-t border-sand pt-6 max-w-[680px]">
-              <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange mb-5">
-                Bygget ind i produktet
-              </div>
-              <div className="flex flex-col gap-3">
-                {[
-                  "Manglende oplysninger markeres tydeligt fremfor at gættes",
-                  "Outputtet hedder altid udkast. Aldrig journal",
-                  "Fagligt ansvar ligger hos psykologen",
-                  "Ingen optagelse. Ingen transskription. Psykologens egne noter er altid udgangspunktet",
-                ].map((item) => (
-                  <div key={item} className="flex items-start gap-3">
-                    <span className="font-sans text-[14px] font-light text-muted leading-[1.6] flex-shrink-0">—</span>
-                    <span className="font-sans text-[14px] font-light text-body leading-[1.6]">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="mt-6 border-t border-sand pt-6 max-w-[680px]">
-              <p className="font-sans text-[13px] font-normal text-muted m-0">
-                Systemprompten er i aktiv udvikling. Nuværende version: 0.3.8, opdateret 24. maj 2026.
-              </p>
-            </div>
+            <p className="font-sans text-[13px] font-normal text-muted m-0 max-w-[680px]" style={{ marginTop: 32 }}>
+              Systemprompten er i aktiv udvikling. Nuværende version: 0.3.8, opdateret 24. maj 2026.
+            </p>
 
           </div>
         </section>
