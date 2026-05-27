@@ -65,6 +65,7 @@ export default function TilmeldPage() {
   const [organizationName, setOrganizationName] = useState("");
   const [password, setPassword] = useState("");
   const [dpaAccepted, setDpaAccepted] = useState(false);
+  const [termsAccepted, setTermsAccepted] = useState(false);
   const [state, setState] = useState<FormState>("idle");
   const [apiError, setApiError] = useState<ApiErrorCode | null>(null);
 
@@ -73,7 +74,8 @@ export default function TilmeldPage() {
     email.trim().length > 0 &&
     organizationName.trim().length > 0 &&
     password.length >= 8 &&
-    dpaAccepted;
+    dpaAccepted &&
+    termsAccepted;
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
@@ -274,7 +276,7 @@ export default function TilmeldPage() {
                 alignItems: "flex-start",
                 gap: "12px",
                 cursor: "pointer",
-                marginBottom: "32px",
+                marginBottom: "16px",
               }}>
                 <input
                   type="checkbox"
@@ -307,6 +309,49 @@ export default function TilmeldPage() {
                     }}
                   >
                     databehandleraftalen
+                  </a>
+                </span>
+              </label>
+
+              {/* Handelsbetingelser-checkbox */}
+              <label style={{
+                display: "flex",
+                alignItems: "flex-start",
+                gap: "12px",
+                cursor: "pointer",
+                marginBottom: "32px",
+              }}>
+                <input
+                  type="checkbox"
+                  checked={termsAccepted}
+                  onChange={(e) => setTermsAccepted(e.target.checked)}
+                  style={{
+                    marginTop: "3px",
+                    width: "16px",
+                    height: "16px",
+                    flexShrink: 0,
+                    accentColor: "#1D3A2F",
+                  }}
+                />
+                <span style={{
+                  fontFamily: "var(--font-source-sans, sans-serif)",
+                  fontSize: "14px",
+                  fontWeight: 300,
+                  color: "#2C2C2C",
+                  lineHeight: 1.7,
+                }}>
+                  Jeg accepterer{" "}
+                  <a
+                    href="/handelsbetingelser"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      color: "#1D3A2F",
+                      borderBottom: "1px solid rgba(29,58,47,0.3)",
+                      textDecoration: "none",
+                    }}
+                  >
+                    handelsbetingelserne
                   </a>
                 </span>
               </label>
