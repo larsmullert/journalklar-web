@@ -29,7 +29,7 @@ export default function PrisOgCTA() {
               <span>Ingen binding</span>
             </div>
             <a
-              href="#"
+              href="/tilmeld"
               className="inline-flex items-center gap-[10px] bg-evergreen text-white font-sans text-[15px] font-normal px-[30px] py-[15px] hover:bg-[#152e23] transition-colors"
             >
               Prøv gratis i 30 dage
@@ -56,7 +56,7 @@ export default function PrisOgCTA() {
               <span>Svarende til 166 kr./md.</span>
             </div>
             <a
-              href="#"
+              href="/tilmeld"
               className="inline-flex items-center gap-[10px] bg-evergreen text-white font-sans text-[15px] font-normal px-[30px] py-[15px] hover:bg-[#152e23] transition-colors"
             >
               Prøv gratis i 30 dage
@@ -84,7 +84,7 @@ export default function PrisOgCTA() {
             Ingen installation, ingen oplæring.
           </p>
           <a
-            href="#"
+            href="/tilmeld"
             className="inline-flex items-center gap-[10px] bg-evergreen text-white font-sans text-[15px] font-normal px-[30px] py-[15px] hover:bg-[#152e23] transition-colors"
           >
             Prøv gratis i 30 dage

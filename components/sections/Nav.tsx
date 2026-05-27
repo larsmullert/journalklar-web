@@ -21,7 +21,7 @@ export default function Nav() {
             Bag om
           </a>
           <a
-            href="/#pris"
+            href="/tilmeld"
             className="inline-flex items-center bg-evergreen text-white font-sans text-[15px] font-normal px-[18px] py-[10px] hover:bg-[#152e23] transition-colors"
           >
             Start prøveperiode
