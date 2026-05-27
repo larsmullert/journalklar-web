@@ -326,11 +326,19 @@ export default function TilgangPage() {
                 </p>
               </div>
 
-            </div>
+              <div>
+                <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange" style={{ marginBottom: 8 }}>
+                  Markering af mangler
+                </div>
+                <p className="font-sans text-[16px] font-normal text-body leading-[1.85] mb-5">
+                  Nogle oplysninger er juridisk nødvendige. Informeret samtykke. Grundlag for videregivelse. Stamdata. Mangler de, markerer JournalKlar det tydeligt med [MANGLER] — det kræver din aktive stillingtagen.
+                </p>
+                <p className="font-sans text-[16px] font-normal text-body leading-[1.85] m-0">
+                  Andre oplysninger indgår typisk i en session, men fraværet kan være et bevidst fagligt valg. En faglig vurdering. En behandlingsplan-status. Her skriver JournalKlar [IKKE I DINE NOTER] — ikke som en fejl, men som en påmindelse. Du afgør om det skal med.
+                </p>
+              </div>
 
-            <p className="font-sans text-[13px] font-normal text-muted m-0 max-w-[680px]" style={{ marginTop: 32 }}>
-              Systemprompten er i aktiv udvikling. Nuværende version: 0.3.8, opdateret 24. maj 2026.
-            </p>
+            </div>
 
           </div>
         </section>
