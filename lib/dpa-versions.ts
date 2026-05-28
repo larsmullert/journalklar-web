@@ -9,14 +9,18 @@
  * Bump version-nøglen ved juridisk væsentlige ændringer — bevar gamle versioner.
  */
 
-export const DPA_VERSIONS = {
-  "1.0": {
-    version: "1.0",
-    effectiveDate: "2026-05",
-    textPath: "/dpa-v1.txt",
-    sha256: "cc038680920e11fda276a05f797f618f850a02ab8ebee9ff8bfba7445044a259",
-  },
+// CURRENT_DPA defineres direkte — ikke via opslag — for at undgå
+// build-fejl i Next.js's server/client module-graph.
+export const CURRENT_DPA = {
+  version: "1.0",
+  effectiveDate: "2026-05",
+  textPath: "/dpa-v1.txt",
+  sha256: "cc038680920e11fda276a05f797f618f850a02ab8ebee9ff8bfba7445044a259",
 } as const;
 
-export const CURRENT_DPA_VERSION = "1.0" as const;
-export const CURRENT_DPA = DPA_VERSIONS[CURRENT_DPA_VERSION];
+export const CURRENT_DPA_VERSION = CURRENT_DPA.version;
+
+// Historisk register — bevar gamle versioner her ved fremtidige opdateringer.
+export const DPA_VERSIONS = {
+  "1.0": CURRENT_DPA,
+} as const;
