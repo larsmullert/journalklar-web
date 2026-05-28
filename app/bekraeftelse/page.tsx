@@ -88,12 +88,32 @@ export default function BekraeftelsePage() {
           fontWeight: 300,
           color: "#505050",
           lineHeight: 1.85,
+          marginBottom: "16px",
+        }}>
+          De første 30 dage er gratis.
+        </p>
+
+        <p style={{
+          fontFamily: "var(--font-source-sans, sans-serif)",
+          fontSize: "16px",
+          fontWeight: 300,
+          color: "#505050",
+          lineHeight: 1.85,
+          marginBottom: "16px",
+        }}>
+          Vi sender en mail 7 dage inden prøveperioden slutter, så du ikke bliver overrasket.
+        </p>
+
+        <p style={{
+          fontFamily: "var(--font-source-sans, sans-serif)",
+          fontSize: "16px",
+          fontWeight: 300,
+          color: "#505050",
+          lineHeight: 1.85,
           marginBottom: "0",
         }}>
-          De første 30 dage er gratis. Vi sender en mail 7 dage inden prøveperioden slutter,
-          så du ikke bliver overrasket. Det er JournalKlars mål, at du bliver glad for
-          værktøjet og fortsætter som betalende kunde. For 199 kr. om måneden håber vi, at
-          det er en god investering.
+          Det er JournalKlars mål, at du bliver så glad for værktøjet, at du gerne vil betale
+          199,- om måneden. Det synes vi er en meget fair pris.
         </p>
 
         {/* Sign-off */}
@@ -128,6 +148,19 @@ export default function BekraeftelsePage() {
             Psykolog og grundlægger af JournalKlar
           </p>
         </div>
+
+        {/* PS */}
+        <p style={{
+          fontFamily: "var(--font-source-sans, sans-serif)",
+          fontSize: "13px",
+          fontWeight: 300,
+          color: "#8A8580",
+          lineHeight: 1.75,
+          marginTop: "32px",
+        }}>
+          PS. Om du fortsætter eller ej, må du ikke blive overrasket, hvis du bliver
+          kontaktet angående feedback. Det er den eneste måde JournalKlar kan blive bedre.
+        </p>
 
       </div>
     </main>
