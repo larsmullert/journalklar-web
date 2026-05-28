@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+import { useRouter } from "next/navigation";
 import { CURRENT_DPA } from "@/lib/dpa-versions";
 
-type FormState = "idle" | "submitting" | "success" | "error";
+type FormState = "idle" | "submitting" | "error";
 type ApiErrorCode =
   | "EMAIL_EXISTS"
   | "RATE_LIMITED"
@@ -62,6 +63,7 @@ function errorMessage(code: ApiErrorCode): React.ReactNode {
 }
 
 export default function TilmeldPage() {
+  const router = useRouter();
   const [email, setEmail] = useState("");
   const [organizationName, setOrganizationName] = useState("");
   const [password, setPassword] = useState("");
@@ -101,7 +103,7 @@ export default function TilmeldPage() {
       const data = await res.json();
 
       if (res.status === 201) {
-        setState("success");
+        router.push("/bekraeftelse");
         return;
       }
 
@@ -136,47 +138,8 @@ export default function TilmeldPage() {
 
       <div style={{ maxWidth: "480px", margin: "0 auto", padding: "60px 24px 80px" }}>
 
-        {state === "success" ? (
-
-          /* ─── Bekræftelse ──────────────────────────────────────────── */
-          <div>
-            <p style={{
-              fontFamily: "var(--font-source-sans, sans-serif)",
-              fontSize: "11px",
-              fontWeight: 500,
-              letterSpacing: "0.14em",
-              textTransform: "uppercase",
-              color: "#1D3A2F",
-              marginBottom: "16px",
-            }}>
-              Konto oprettet
-            </p>
-            <h1 style={{
-              fontFamily: "var(--font-source-serif, serif)",
-              fontSize: "clamp(26px, 3.5vw, 36px)",
-              fontWeight: 400,
-              color: "#1D3A2F",
-              lineHeight: 1.2,
-              marginBottom: "20px",
-            }}>
-              Tjek din indbakke
-            </h1>
-            <p style={{
-              fontFamily: "var(--font-source-sans, sans-serif)",
-              fontSize: "16px",
-              fontWeight: 300,
-              color: "#505050",
-              lineHeight: 1.85,
-            }}>
-              Vi har sendt dig et link til at aktivere din konto.
-              Klik på linket i mailen for at komme i gang.
-            </p>
-          </div>
-
-        ) : (
-
-          /* ─── Formular ─────────────────────────────────────────────── */
-          <>
+        {/* ─── Formular ─────────────────────────────────────────────── */}
+        <>
             <p style={{
               fontFamily: "var(--font-source-sans, sans-serif)",
               fontSize: "11px",
@@ -430,7 +393,6 @@ export default function TilmeldPage() {
 
             </form>
           </>
-        )}
       </div>
     </main>
   );
