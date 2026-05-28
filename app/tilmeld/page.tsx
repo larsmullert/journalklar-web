@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+import { CURRENT_DPA } from "@/lib/dpa-versions";
 
 type FormState = "idle" | "submitting" | "success" | "error";
 type ApiErrorCode =
@@ -92,6 +93,8 @@ export default function TilmeldPage() {
           email: email.trim(),
           password,
           organizationName: organizationName.trim(),
+          dpaVersion: CURRENT_DPA.version,
+          dpaDocHash: CURRENT_DPA.sha256,
         }),
       });
 

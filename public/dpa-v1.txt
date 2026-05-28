@@ -1,0 +1,150 @@
+DATABEHANDLERAFTALE — JOURNALKLAR
+Version 1.0 | Ikrafttrædelse: Maj 2026
+
+PARTERNE
+
+Dataansvarlig
+Den psykolog der opretter og anvender en JournalKlar-konto. Herefter kaldet "den dataansvarlige".
+
+Databehandler
+Navn: Lars Mullert
+CVR: 35949542
+Adresse: Anneberghøj 1,1, 9000 Aalborg, Danmark
+E-mail: lars@journalklar.dk
+Herefter kaldet "databehandleren".
+
+
+1. BAGGRUND OG FORMÅL
+
+Databehandleren stiller JournalKlar til rådighed — et AI-assisteret værktøj der hjælper privatpraktiserende psykologer med at strukturere egne noter til journaludkast i overensstemmelse med BEK nr. 1361 af 24/11/2025.
+
+I forbindelse med brug af JournalKlar behandler databehandleren personoplysninger på vegne af den dataansvarlige. Denne aftale regulerer vilkårene for denne behandling i overensstemmelse med GDPR artikel 28.
+
+
+2. BEHANDLINGENS GENSTAND OG VARIGHED
+
+Genstand
+Databehandleren behandler de rånoter og kliniske oplysninger som den dataansvarlige selv skriver ind i JournalKlar med henblik på generering af et struktureret journaludkast.
+
+Varighed
+Aftalen er gældende så længe den dataansvarlige har et aktivt abonnement på JournalKlar. Ved opsigelse ophører aftalen automatisk.
+
+
+3. BEHANDLINGENS KARAKTER OG FORMÅL
+
+Karakter
+AI-assisteret strukturering af psykologens egne kliniske noter til et journaludkast. Behandlingen sker i RAM og klientindhold gemmes ikke efter generering.
+
+Formål
+At reducere den administrative byrde ved journalføring for den dataansvarlige, uden at den dataansvarliges kliniske selektion og faglige ansvar overtages af et automatiseret system.
+
+
+4. TYPE AF PERSONOPLYSNINGER OG KATEGORIER AF REGISTREREDE
+
+Type af personoplysninger
+Kliniske oplysninger om psykologens klienter, herunder potentielt helbredsoplysninger og andre særligt følsomme personoplysninger i henhold til GDPR artikel 9.
+
+Kategorier af registrerede
+Klienter hos den dataansvarlige psykolog.
+
+Bemærkning: Databehandleren opfordrer den dataansvarlige til at anvende dataminimering — dvs. kun at skrive de oplysninger ind i JournalKlar der er nødvendige for at generere et fagligt forsvarligt journaludkast.
+
+
+5. DEN DATAANSVARLIGES INSTRUKS
+
+Databehandleren må alene behandle personoplysninger efter dokumenteret instruks fra den dataansvarlige.
+
+Den dataansvarliges instruks er:
+— At strukturere de indskrevne noter til et journaludkast
+— At markere manglende oplysninger med [MANGLER: ...]
+— At returnere udkastet til den dataansvarlige
+— At slette klientindholdet umiddelbart efter generering
+
+Databehandleren må ikke:
+— Gemme, logge eller persistere rånoter eller journaludkast
+— Anvende klientindhold til træning af AI-modeller
+— Videregive klientindhold til tredjeparter
+— Behandle klientindhold til andre formål end journaludkastgenerering
+
+
+6. FORTROLIGHED
+
+Databehandleren sikrer at personer med adgang til personoplysninger er underlagt tavshedspligt. Databehandleren er forpligtet til ikke at videregive oplysninger om den dataansvarliges klienter til uvedkommende.
+
+
+7. SIKKERHED
+
+Databehandleren træffer i henhold til GDPR artikel 32 passende tekniske og organisatoriske foranstaltninger, herunder:
+— Klientindhold behandles udelukkende i RAM og slettes via try/finally cleanup efter hver generering — aldrig skrevet til disk eller database
+— Forbindelser beskyttet med HTTPS/TLS 1.3
+— Input valideres og saniteres inden AI-behandling
+— Adgangskontrol med bcrypt-hashede adgangskoder og session-tokens
+— PostgreSQL query-logging deaktiveret for genereringsrequests
+— Response headers: no-cache, no-store, must-revalidate
+— AI-behandling sker inden for EU (AWS Bedrock, eu-central-1, Frankfurt)
+— Serverinfrastruktur: Scannet A/S, Skanderborg, Danmark — ISO 27001
+
+
+8. UNDERDATABEHANDLERE
+
+Databehandleren anvender følgende underdatabehandlere til behandling af klientindhold:
+
+Underdatabehandler: Scannet A/S (team.blue)
+Rolle: Serverhosting og infrastruktur
+Region: Danmark
+Klientindhold: Transiterer krypteret
+
+Underdatabehandler: Amazon Web Services EMEA SARL
+Rolle: AI-behandling via Bedrock eu-central-1
+Region: Frankfurt, EU
+Klientindhold: Midlertidigt under generering — træner ikke modeller
+
+Følgende leverandører er tilknyttet abonnement og betaling og modtager IKKE klientindhold:
+
+Leverandør: Alunta ApS
+Rolle: Abonnementsadministration
+Region: Danmark
+
+Leverandør: Quickpay A/S
+Rolle: Betalingsformidling
+Region: Danmark
+
+Databehandleren har indgået databehandleraftaler med Scannet A/S og Amazon Web Services EMEA SARL.
+
+Ved ændringer i underdatabehandlere varsles den dataansvarlige på lars@journalklar.dk med mindst 30 dages varsel. Den dataansvarlige kan i denne periode gøre indsigelse. Fortsættes brugen af JournalKlar efter fristens udløb anses ændringen for accepteret.
+
+
+9. DEN REGISTREREDES RETTIGHEDER
+
+Databehandleren bistår den dataansvarlige med at overholde forpligtelserne i henhold til GDPR artikel 32-36, herunder indsigtsanmodninger og anmodninger om sletning fra registrerede (klienter).
+
+Da klientindhold ikke gemmes efter generering, vil JournalKlar i de fleste tilfælde ikke have data at udlevere eller slette ud over brugsmetadata uden klientidentifikation.
+
+
+10. SLETNING VED OPHØR
+
+Ved opsigelse af abonnement:
+— Brugerprofil og teknisk metadata slettes 30 dage efter opsigelse
+— Klientindhold er aldrig gemt og kan ikke slettes (eksisterer ikke)
+— Betalingsdata opbevares i 5 år i henhold til bogføringsloven
+
+Den dataansvarlige kan anmode om øjeblikkelig sletning af brugerprofil ved at skrive til lars@journalklar.dk.
+
+
+11. AUDIT OG DOKUMENTATION
+
+Databehandleren stiller de oplysninger til rådighed der er nødvendige for at påvise overholdelse af artikel 28, og giver mulighed for audit og inspektion foretaget af den dataansvarlige eller en af denne bemyndiget revisor med rimeligt varsel.
+
+
+12. LOVVALG OG TVISTER
+
+Aftalen er underlagt dansk ret. Tvister søges løst i mindelighed. Kan parterne ikke nå til enighed, afgøres tvisten ved de danske domstole med Aalborg Byret som værneting.
+
+Klager over behandling af personoplysninger kan indgives til Datatilsynet: dt.dk
+
+
+VERSIONERING
+
+Version: 1.0
+Ikrafttrædelse: Maj 2026
+Opdateres: Ved væsentlige ændringer i behandling eller underdatabehandlere.
