@@ -30,6 +30,8 @@ export default function PrisOgCTA() {
             </div>
             <a
               href="/tilmeld"
+              data-track="cta-tilmeld"
+              data-location="pris-monthly"
               className="inline-flex items-center gap-[10px] bg-evergreen text-white font-sans text-[15px] font-normal px-[30px] py-[15px] hover:bg-[#152e23] transition-colors"
             >
               Prøv gratis i 30 dage
@@ -57,6 +59,8 @@ export default function PrisOgCTA() {
             </div>
             <a
               href="/tilmeld"
+              data-track="cta-tilmeld"
+              data-location="pris-yearly"
               className="inline-flex items-center gap-[10px] bg-evergreen text-white font-sans text-[15px] font-normal px-[30px] py-[15px] hover:bg-[#152e23] transition-colors"
             >
               Prøv gratis i 30 dage
@@ -85,6 +89,8 @@ export default function PrisOgCTA() {
           </p>
           <a
             href="/tilmeld"
+            data-track="cta-tilmeld"
+            data-location="pris-bottom"
             className="inline-flex items-center gap-[10px] bg-evergreen text-white font-sans text-[15px] font-normal px-[30px] py-[15px] hover:bg-[#152e23] transition-colors"
           >
             Prøv gratis i 30 dage

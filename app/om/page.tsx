@@ -2,6 +2,34 @@ import Nav from "@/components/sections/Nav";
 import Footer from "@/components/sections/Footer";
 import SectionLabel from "@/components/ui/SectionLabel";
 
+function JsonLd({ data }: { data: object }) {
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
+}
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Lars Mullert Pedersen",
+  "jobTitle": "Psykolog og grundlægger",
+  "description": "Cand.psych., Aalborg Universitet 2025. Grundlægger af JournalKlar.",
+  "url": "https://journalklar.dk/om",
+  "email": "lars@journalklar.dk",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Aalborg Universitet",
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "JournalKlar",
+    "url": "https://journalklar.dk",
+  },
+};
+
 export const metadata = {
   title: "Om JournalKlar",
   description:
@@ -57,6 +85,7 @@ const gennemsigtighed = [
 export default function OmPage() {
   return (
     <>
+      <JsonLd data={personSchema} />
       <Nav />
       <main>
 

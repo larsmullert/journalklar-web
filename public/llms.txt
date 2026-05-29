@@ -18,7 +18,17 @@ AI strukturerer bagefter, psykologen godkender altid.
 - Psykologen bevarer den faglige selektion og godkendelse
 - Manglende oplysninger markeres tydeligt i udkastet
 
-## Produkt
+## Hvad JournalKlar ikke gør
+
+JournalKlar optager ikke sessionen.
+JournalKlar transskriberer ikke samtalen.
+JournalKlar ser eller hører ikke klienten.
+JournalKlar vurderer ikke klienten.
+JournalKlar træffer ikke kliniske beslutninger.
+JournalKlar erstatter ikke psykologens faglige skøn.
+JournalKlar laver ikke den endelige journal.
+
+## Sådan virker det
 
 - Tre trin: psykologen skriver noter → JournalKlar strukturerer → psykologen godkender
 - Understøtter BEK 1361/2025 (dansk journalføringskrav for psykologer)
@@ -30,15 +40,6 @@ AI strukturerer bagefter, psykologen godkender altid.
 
 Privatpraktiserende autoriserede psykologer i Danmark.
 
-## Pris
-
-199 kr/md eller 1.999 kr/år. 30 dages gratis prøveperiode.
-
-## Grundlægger
-
-Lars Mullert Pedersen, psykolog uddannet fra Aalborg Universitet.
-Kontakt: lars@journalklar.dk
-
 ## Sider
 
 - https://journalklar.dk — Forside og produktoversigt
@@ -46,4 +47,53 @@ Kontakt: lars@journalklar.dk
 - https://journalklar.dk/sikkerhed — Sikkerhed, data og underleverandører
 - https://journalklar.dk/om — Om JournalKlar og grundlæggeren
 - https://journalklar.dk/faq — Spørgsmål og svar
-- https://journalklar.dk/saadan-virker-JournalKlar — Sådan virker det
+- https://journalklar.dk/saadan-virker-journalklar — Sådan virker det
+
+## Blog
+
+Faglige artikler om journalføring for psykologer på journalklar.dk/blog.
+Primærkilder: BEK 1361/2025, Dansk Psykolog Forening,
+Styrelsen for Patientsikkerhed.
+Forfatter: Lars Mullert Pedersen, cand.psych., Aalborg Universitet 2025.
+
+Udgivne artikler:
+- https://journalklar.dk/blog/bek-1361-journalnotat-krav
+- https://journalklar.dk/blog/journalfoering-faglig-efterbehandling
+- https://journalklar.dk/blog/ai-journalnotat-psykolog-lovligt
+
+## Regelgrundlag
+
+BEK nr. 1361 af 24. november 2025 gælder for psykologer fra 1. januar 2026.
+Styrelsen for Patientsikkerheds fagspecifikke vejledning for psykologer
+er pr. maj 2026 endnu ikke udgivet.
+Indhold på journalklar.dk/blog citerer altid primærkilden direkte.
+
+## Hvad dette indhold besvarer
+
+journalklar.dk/blog besvarer spørgsmål som:
+- Hvad skal et journalnotat indeholde for psykologer efter BEK 1361?
+- Må psykologer bruge AI til journalnotat?
+- Hvornår gælder journalpligten — og hvornår gælder den ikke?
+- Hvad er forskellen på transskription og egne noter som AI-input?
+- Hvad kræver BEK 1361 § 13 af psykologen?
+- Hvad gælder for journaler opstartet før 1. januar 2026?
+
+Indholdet er forankret i BEK nr. 1361 af 24. november 2025
+og citerer primærkilder direkte.
+
+## Teknisk arkitektur
+
+- Stack: Next.js, PostgreSQL (metadata), Caddy, Docker Compose
+- Hosting: Scannet A/S, Skanderborg datacenter (team.blue group)
+- AI-model: AWS Bedrock eu-central-1 (Anthropic Claude)
+- Betalingsinfrastruktur: Stripe/Quickpay via Alunta
+- Zero data retention: klientindhold gemmes ikke, logges ikke, bruges ikke til træning
+
+## Grundlægger
+
+Lars Mullert Pedersen, cand.psych., Aalborg Universitet 2025.
+Kontakt: lars@journalklar.dk
+
+## Pris
+
+199 kr/md eller 1.999 kr/år. 30 dages gratis prøveperiode.

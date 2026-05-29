@@ -1,5 +1,39 @@
 import type { Metadata } from "next";
 import Nav from "@/components/sections/Nav";
+
+function JsonLd({ data }: { data: object }) {
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
+}
+
+const softwareApplicationSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "JournalKlar",
+  "applicationCategory": "HealthApplication",
+  "operatingSystem": "Web",
+  "description": "AI-assisteret journalværktøj til privatpraktiserende psykologer i Danmark. Strukturerer psykologens egne noter til journaludkast efter BEK 1361/2025.",
+  "url": "https://journalklar.dk",
+  "inLanguage": "da-DK",
+  "author": {
+    "@type": "Person",
+    "name": "Lars Mullert Pedersen",
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "199",
+    "priceCurrency": "DKK",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "billingIncrement": 1,
+      "unitCode": "MON",
+    },
+  },
+};
 import Hero from "@/components/sections/Hero";
 import ManifestStrip from "@/components/sections/ManifestStrip";
 import SaadanVirkerDet from "@/components/sections/SaadanVirkerDet";
@@ -30,6 +64,7 @@ function Rule() {
 export default function Home() {
   return (
     <>
+      <JsonLd data={softwareApplicationSchema} />
       <Nav />
       <main className="flex-1">
         <Hero />
