@@ -66,12 +66,8 @@ Den afgør hvem der foretager vurderingen — og hvornår.
 
 ## Kilder
 
+- [Bekendtgørelse nr. 1361 af 24. november 2025 om autoriserede sundhedspersoners patientjournaler (journalføring, opbevaring, videregivelse, overdragelse m.v.)](https://www.retsinformation.dk/eli/lta/2025/1361)
 
-- Bekendtgørelse nr. 1361 af 24. november 2025 om autoriserede sundhedspersoners patientjournaler (journalføring, opbevaring, videregivelse, overdragelse m.v.)
-  https://www.retsinformation.dk/eli/lta/2025/1361
+- [Styrelsen for Patientsikkerhed: Journalføring for psykologer](https://stps.dk/sundhedsfaglig/ansvar-og-retningslinjer/sundhedsfaglig-vejledning/journalfoering/journalfoering-for-psykologer)
 
-- Styrelsen for Patientsikkerhed: Journalføring for psykologer
-  https://stps.dk/sundhedsfaglig/ansvar-og-retningslinjer/sundhedsfaglig-vejledning/journalfoering/journalfoering-for-psykologer
-
-- Dansk Psykolog Forening: Journalføringspligt
-  https://www.dp.dk/raadgivning/lovgivning/ny-autorisationsmodel/journalfoeringspligt/
+- [Dansk Psykolog Forening: Journalføringspligt](https://www.dp.dk/raadgivning/lovgivning/ny-autorisationsmodel/journalfoeringspligt/)

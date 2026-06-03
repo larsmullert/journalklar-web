@@ -1,8 +1,11 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import { remark } from 'remark'
-import remarkHtml from 'remark-html'
+import { unified } from 'unified'
+import remarkParse from 'remark-parse'
+import remarkRehype from 'remark-rehype'
+import rehypeExternalLinks from 'rehype-external-links'
+import rehypeStringify from 'rehype-stringify'
 
 const articlesDir = path.join(process.cwd(), 'content', 'blog')
 
@@ -57,8 +60,13 @@ export async function getArticleBySlug(slug: string): Promise<Article> {
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)
 
-  const processed = await remark().use(remarkHtml).process(content)
-  const contentHtml = processed.toString()
+  const processed = await unified()
+    .use(remarkParse)
+    .use(remarkRehype)
+    .use(rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] })
+    .use(rehypeStringify)
+    .process(content)
+  const contentHtml = String(processed)
 
   return {
     slug,
