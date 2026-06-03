@@ -6,8 +6,6 @@ dato: "maj 2026"
 laese_tid: "ca. 8 min."
 ---
 
-# Må psykologer bruge AI til journalnotat? Det siger loven
-
 Spørgsmålet dukker op i faggrupperne, på kurser og i klinikkens pauserum: er det lovligt at bruge AI til at skrive journalnotater?
 
 Det korte svar er, at BEK nr. 1361 af 24. november 2025 ikke forbyder det. Men det er heller ikke det, bekendtgørelsen siger. Den er simpelthen tavs om AI.
@@ -108,12 +106,3 @@ Se også: [Hvad kræver BEK nr. 1361?](/blog/bek-1361-journalnotat-krav)
 
 - Dansk Psykolog Forening: Journalføringspligt
   https://www.dp.dk/raadgivning/lovgivning/ny-autorisationsmodel/journalfoeringspligt/
-
----
-
-**Lars Mullert Pedersen** — Cand.psych., Aalborg Universitet 2025.
-Grundlægger af JournalKlar.
-
-*Denne artikel er skrevet i samarbejde med Claude (Anthropic).
-Faglig vurdering, kildevalg og endelig godkendelse er foretaget
-af Lars Mullert Pedersen.*

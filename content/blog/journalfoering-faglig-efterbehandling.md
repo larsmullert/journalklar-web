@@ -6,8 +6,6 @@ dato: "maj 2026"
 laese_tid: "ca. 6 min."
 ---
 
-# Journalføring som faglig efterbehandling — ikke administration
-
 BEK nr. 1361 af 24. november 2025 § 13 stk. 1 fastslår:
 
 *"Vurderingen af, om en oplysning må anses for at være nødvendig, foretages af den behandlende sundhedsperson og skal tage udgangspunkt i den aktuelle situation og de oplysninger, som sundhedspersonen har på tidspunktet for den behandling, der journalføres."*
@@ -77,12 +75,3 @@ Den afgør hvem der foretager vurderingen — og hvornår.
 
 - Dansk Psykolog Forening: Journalføringspligt
   https://www.dp.dk/raadgivning/lovgivning/ny-autorisationsmodel/journalfoeringspligt/
-
----
-
-**Lars Mullert Pedersen** — Cand.psych., Aalborg Universitet 2025.
-Grundlægger af JournalKlar.
-
-*Denne artikel er skrevet i samarbejde med Claude (Anthropic).
-Faglig vurdering, kildevalg og endelig godkendelse er foretaget
-af Lars Mullert Pedersen.*

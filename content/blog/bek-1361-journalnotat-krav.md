@@ -6,8 +6,6 @@ dato: "maj 2026"
 laese_tid: "ca. 7 min."
 ---
 
-# Hvad skal et journalnotat indeholde? Kravene efter BEK 1361
-
 Fra 1. januar 2026 er privatpraktiserende psykologer for første gang fuldt omfattet af journalføringsbekendtgørelsen — BEK nr. 1361 af 24. november 2025. Den erstatter den regulering, der tidligere gjaldt under psykologloven og BEK nr. 567 af 1997.
 
 Det betyder ikke nødvendigvis, at der er tale om dramatisk anderledes krav. Men det betyder, at kravene nu er præciserede i en bekendtgørelse der gælder for alle 20 autoriserede sundhedsfaglige faggrupper, og at du som psykolog har pligt til at kende dem.
@@ -154,13 +152,4 @@ Det bekendtgørelsen kræver er, at du har taget stilling, og at dine notater do
 
 - Dansk Psykolog Forening: Journalføringspligt
   https://www.dp.dk/raadgivning/lovgivning/ny-autorisationsmodel/journalfoeringspligt/
-
----
-
-**Lars Mullert Pedersen** — Cand.psych., Aalborg Universitet 2025.
-Grundlægger af JournalKlar.
-
-*Denne artikel er skrevet i samarbejde med Claude (Anthropic).
-Faglig vurdering, kildevalg og endelig godkendelse er foretaget
-af Lars Mullert Pedersen.*
 
