@@ -197,7 +197,7 @@ export default function DPAAftaleContent() {
         "PostgreSQL query-logging deaktiveret for genereringsrequests",
         "Response headers: no-cache, no-store, must-revalidate",
         "AI-behandling sker inden for EU (AWS Bedrock, eu-central-1, Frankfurt)",
-        "Serverinfrastruktur: Scannet A/S, Skanderborg, Danmark — ISO 27001",
+        "Serverinfrastruktur: Scannet A/S, Skanderborg, Danmark — ISO 27001-certificeret og med en ISAE 3402 Type 2-revisionserklæring",
       ]} />
 
       {/* 8 */}

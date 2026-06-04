@@ -15,7 +15,7 @@ export const CURRENT_DPA = {
   version: "1.0",
   effectiveDate: "2026-05",
   textPath: "/dpa-v1.txt",
-  sha256: "cc038680920e11fda276a05f797f618f850a02ab8ebee9ff8bfba7445044a259",
+  sha256: "d562b9a5c8014e4a7bda21209ad58a0ab3dd7f500e537bb0acec611247205069",
 } as const;
 
 export const CURRENT_DPA_VERSION = CURRENT_DPA.version;
