@@ -1,3 +1,5 @@
+import MobileMenu from '@/components/sections/MobileMenu'
+
 export default function Nav() {
   return (
     <nav className="sticky top-0 z-[500] bg-parchment/[0.94] backdrop-blur-[14px] border-b border-sand">
@@ -20,6 +22,7 @@ export default function Nav() {
           <a href="/om" className="hidden md:block font-sans text-[14px] font-normal text-evergreen hover:text-evergreen transition-colors">
             Bag om
           </a>
+          <MobileMenu />
           <a
             href="/tilmeld"
             data-track="cta-tilmeld"
