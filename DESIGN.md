@@ -5,6 +5,11 @@ på journalklar.dk. Læs det før du skriver én linje kode eller CSS.
 
 ---
 
+Præcedens: Dette dokument er den autoritative designreference.
+Ved konflikt med CLAUDE.md eller andre filer gælder DESIGN.md.
+
+---
+
 ## Produkt og målgruppe
 
 JournalKlar er et fagligt journalværktøj til privatpraktiserende psykologer i
@@ -46,6 +51,7 @@ Display / Headlines:  Source Serif 4
 Body / UI:            Source Sans 3
                       Vægt: 400 regular overalt — ingen bold undtagen labels
                       Bruges til: brødtekst, navigation, knapper, labels, FAQ
+                      Aldrig italic — italic er forbeholdt Source Serif 4.
 
 Google Fonts import:
 https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300;1,8..60,400&family=Source+Sans+3:wght@300;400;500&display=swap
@@ -134,7 +140,7 @@ Padding:       32–48px
 Font:           Source Sans 3, 11px, weight 500
 Letter-spacing: 0.15em
 Text-transform: uppercase
-Color:          var(--muted)
+Color:          var(--orange)
 Display:        flex med lille streg (22px × 1px, muted-light) foran
 ```
 

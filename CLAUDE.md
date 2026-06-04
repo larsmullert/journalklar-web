@@ -12,7 +12,7 @@ En statisk marketing landing page for JournalKlar.dk. Ingen database, ingen auth
 Next.js 14+ (App Router)
 TypeScript
 Tailwind CSS (konfigureret med custom tokens)
-Google Fonts: Fraunces + DM Sans
+Google Fonts: Source Serif 4 + Source Sans 3
 Vercel (hosting)
 ```
 
@@ -22,6 +22,8 @@ Ingen UI-biblioteker. Ingen animations-biblioteker. Byg komponenterne direkte.
 
 ## Designsystem
 
+Se DESIGN.md for den autoritative og fulde designreference — typografi, spacing, komponenter og forbudte valg. Ved enhver konflikt mellem CLAUDE.md og DESIGN.md gælder DESIGN.md.
+
 ### Farver (tailwind.config.ts)
 
 ```ts
@@ -29,7 +31,7 @@ colors: {
   parchment: '#F7F4EF',   // primær baggrund — aldrig ren hvid
   evergreen: '#1D3A2F',   // headlines, brand, primær tekst
   graphite:  '#2C2C2C',   // brødtekst
-  orange:    '#E04500',   // CTA-knapper og advarselselementer — brug sparsomt
+  orange:    '#E04500',   // Eyebrow-labels og "Kræver stillingtagen"-markering. Aldrig knapper, links eller brødtekst.
   sand:      '#E8E4DF',   // borders, dividers, sekundære baggrunde
 }
 ```
@@ -37,15 +39,17 @@ colors: {
 ### Typografi
 
 ```
-Fraunces (serif)  → h1, h2, store talformater, citater
-DM Sans (sans)    → alt andet
+Source Serif 4 (serif)  → h1, h2, store talformater, citater
+Source Sans 3 (sans)    → alt andet
 ```
 
 ```
-h1:            Fraunces 400, clamp(44px, 6vw, 72px), tracking -0.02em
-h2:            Fraunces 400, clamp(28px, 3.5vw, 44px), tracking -0.015em
-section-label: DM Sans 500, 11px, tracking 0.14em, UPPERCASE, text-evergreen
-body:          DM Sans 300, 17px, leading-relaxed
+h1:            Source Serif 4 400, clamp(44px, 6vw, 72px), tracking -0.02em
+h2:            Source Serif 4 400, clamp(28px, 3.5vw, 44px), tracking -0.015em
+section-label: Source Sans 3 500, 11px, tracking 0.14em, UPPERCASE, text-evergreen
+body:          Source Sans 3 300, 17px, leading-relaxed
+
+Google Fonts:  https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300;1,8..60,400&family=Source+Sans+3:wght@300;400;500&display=swap
 ```
 
 ### Geometri og spacing
@@ -102,7 +106,13 @@ PrisOgCTA           ← pris + primær CTA
 Footer
 ```
 
-Subpages (bygges efter landing page er godkendt): /om · /manifest · /sikkerhed · /gdpr · /faq
+Alle sider er bygget og live. Sitestruktur:
+/ (forside) · /tilgang · /sikkerhed · /saadan-virker-journalklar
+· /om · /faq · /privatlivspolitik · /databehandleraftale · /cookiepolitik
+
+/manifest eksisterer ikke i navigationen og er ikke live.
+/gdpr eksisterer ikke — juridiske sider hedder /privatlivspolitik,
+/databehandleraftale og /cookiepolitik.
 
 ### Filstruktur
 
@@ -111,9 +121,13 @@ Subpages (bygges efter landing page er godkendt): /om · /manifest · /sikkerhed
   layout.tsx
   page.tsx
   /om/page.tsx
+  /tilgang/page.tsx
   /sikkerhed/page.tsx
-  /gdpr/page.tsx
+  /saadan-virker-journalklar/page.tsx
   /faq/page.tsx
+  /privatlivspolitik/page.tsx
+  /databehandleraftale/page.tsx
+  /cookiepolitik/page.tsx
 /components
   /sections
     Nav.tsx · Hero.tsx · Genkendelse.tsx · Tillid.tsx
@@ -161,7 +175,7 @@ Aldrig: "kraftfuld", "revolutionerende", "seamless", unødvendige adjektiver.
 
 - Baggrund er altid parchment — aldrig white eller gray-*
 - Sharp corners — ingen rounded klasser undtagen på app-frames
-- Ingen animationer med mindre det specifikt bedes om
+- Motion: følg DESIGN.md § Motion. Scroll-triggered fade-in og funktionelle overgange er tilladt og specificeret. Ingen scroll-jacking, ingen parallax, ingen auto-play.
 - Ingen eksterne UI-biblioteker
 - Ingen billeder — illustrationer er HTML/SVG
 - Hvis der ikke er leveret konkret copy, brug [PLACEHOLDER]. Hvis promptet indeholder færdig copy, skal den bruges
