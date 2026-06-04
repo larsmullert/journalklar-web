@@ -62,7 +62,7 @@ export default function RootLayout({
     >
       <head>
         <SchemaOrg />
-        {/* Consent Mode v2 — default denied, skal køre FØR GTM og GA4 */}
+        {/* Consent Mode v2: default denied, skal køre FØR GTM og GA4 */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -79,7 +79,7 @@ export default function RootLayout({
             `,
           }}
         />
-        {/* GA4 gtag.js — loader og config, kun hvis NEXT_PUBLIC_GA4_ID er sat */}
+        {/* GA4 gtag.js: loader og config, kun hvis NEXT_PUBLIC_GA4_ID er sat */}
         {process.env.NEXT_PUBLIC_GA4_ID && (
           <>
             {/* eslint-disable-next-line @next/next/no-sync-scripts */}
@@ -96,7 +96,7 @@ export default function RootLayout({
         )}
       </head>
       <body className="min-h-full flex flex-col">
-        {/* GTM noscript fallback — skal stå umiddelbart efter <body> */}
+        {/* GTM noscript fallback: skal stå umiddelbart efter <body> */}
         {process.env.NEXT_PUBLIC_GTM_ID && (
           <noscript>
             <iframe
@@ -110,7 +110,7 @@ export default function RootLayout({
 
         {children}
 
-        {/* GTM loader — ikke i dev medmindre NEXT_PUBLIC_GTM_ID er sat i .env.local */}
+        {/* GTM loader: ikke i dev medmindre NEXT_PUBLIC_GTM_ID er sat i .env.local */}
         {process.env.NEXT_PUBLIC_GTM_ID && (
           <Script
             id="gtm-init"
