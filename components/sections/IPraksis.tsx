@@ -7,7 +7,7 @@ export default function IPraksis() {
         <SectionLabel>I praksis</SectionLabel>
         <h2>Sådan ser det ud i praksis</h2>
         <p className="max-w-[560px] text-body">
-          Dine rånoter til venstre. Et journaludkast til højre — skrevet i løbende prosa, med klientens egne ord bevaret og tydelig markering af det, der kræver din aktive stillingtagen.
+          Dine rånoter til venstre. Et journaludkast til højre, skrevet i løbende prosa, med klientens egne ord bevaret og tydelig markering af det, der kræver din aktive stillingtagen.
         </p>
 
         {/* App-frame */}

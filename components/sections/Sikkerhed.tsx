@@ -14,7 +14,7 @@ const promises = [
   {
     num: "3",
     title: "Dansk server i Skanderborg",
-    text: "Appen og databasen kører på dansk server i Skanderborg. AI-behandlingen sker gennem AWS i Frankfurt — inden for EU.",
+    text: "Appen og databasen kører på dansk server i Skanderborg. AI-behandlingen sker gennem AWS i Frankfurt, inden for EU.",
   },
   {
     num: "4",
@@ -30,7 +30,7 @@ export default function Sikkerhed() {
         <SectionLabel>Data og fortrolighed</SectionLabel>
         <h2 className="text-parchment">Dine klienters data forbliver fortrolig.</h2>
         <p className="max-w-[520px] text-parchment/90 mb-0">
-          Det er det eneste der reelt betyder noget. Her er fire ting du bør vide — på jordnær dansk.
+          Det er det eneste der reelt betyder noget. Her er fire ting du bør vide, på jordnær dansk.
         </p>
 
         {/* Dataflow */}
@@ -89,7 +89,7 @@ export default function Sikkerhed() {
                 Vi skjuler ingenting om, hvordan det virker.
               </div>
               <p className="font-sans text-[14px] font-light text-parchment/90 leading-[1.8] mb-0">
-                Serverplacering, kryptering, underleverandører, datastrømme, journaliseringskrav — alt er dokumenteret og tilgængeligt. Ikke fordi vi er nødt til det. Men fordi du har ret til at vide det.
+                Serverplacering, kryptering, underleverandører, datastrømme, journaliseringskrav: alt er dokumenteret og tilgængeligt. Ikke fordi vi er nødt til det. Men fordi du har ret til at vide det.
               </p>
             </div>
             <div>

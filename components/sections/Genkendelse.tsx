@@ -6,7 +6,7 @@ const problemer = [
     tekst: "Journalen skal være mere præcis, dækkende og systematisk. Men tiden efter sessionen er stadig kort, hovedet er stadig fyldt, og næste klient venter ofte lige om lidt.",
   },
   {
-    label: "AI kan hjælpe — men ikke overtage.",
+    label: "AI kan hjælpe, men ikke overtage.",
     tekst: "Mange psykologer kan godt se værdien i et journalværktøj. Problemet opstår, når værktøjet begynder med en fuld optagelse og lader en black-box afgøre, hvad der var vigtigt i samtalen.",
   },
   {
@@ -22,7 +22,7 @@ export default function Genkendelse() {
         <SectionLabel>Problemet</SectionLabel>
         <h2 className="max-w-[660px]">Journalføringen er blevet mere krævende. Ikke mindre faglig.</h2>
         <p className="max-w-[780px] text-body mb-0">
-          Den nye journalføringsbekendtgørelse stiller skarpere krav til, hvad der skal fremgå af journalen. Samtidig mangler mange psykologer stadig en tydelig psykologfaglig praksis for, hvordan kravene omsættes i hverdagen. JournalKlar er bygget til netop det mellemrum: mere struktur — uden at flytte det faglige skøn væk fra psykologen.
+          Den nye journalføringsbekendtgørelse stiller skarpere krav til, hvad der skal fremgå af journalen. Samtidig mangler mange psykologer stadig en tydelig psykologfaglig praksis for, hvordan kravene omsættes i hverdagen. JournalKlar er bygget til netop det mellemrum: mere struktur, uden at flytte det faglige skøn væk fra psykologen.
         </p>
 
         <div className="mt-14 max-w-[780px]">

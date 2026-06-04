@@ -5,11 +5,11 @@ export default function Tillid() {
     <section id="om" className="py-16 px-6 md:py-[120px] md:px-16">
       <div className="max-w-[1100px] mx-auto">
         <SectionLabel>Hvem står bag</SectionLabel>
-        <h2>Bygget af en psykolog — til psykologer</h2>
+        <h2>Bygget af en psykolog, til psykologer</h2>
 
         <div className="mt-12 max-w-[880px]">
           <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
-            JournalKlar er grundlagt af Lars Mullert Pedersen, psykolog, uddannet fra Aalborg Universitet. Motivationen er klar: AI-værktøjer gør det nemt at sige &lsquo;godt nok&rsquo; — og det er et reelt problem, når det er den faglige efterbehandling der ofres. Ingen moralisering. Blot en bekymring, han har udviklet et bud på en løsning på.
+            JournalKlar er grundlagt af Lars Mullert Pedersen, psykolog, uddannet fra Aalborg Universitet. Motivationen er klar: AI-værktøjer gør det nemt at sige &lsquo;godt nok&rsquo;, og det er et reelt problem, når det er den faglige efterbehandling der ofres. Ingen moralisering. Blot en bekymring, han har udviklet et bud på en løsning på.
           </p>
           <span className="font-serif italic text-[15px] text-evergreen block mb-6">
             Lars Mullert Pedersen, psykolog &amp; grundlægger

@@ -4,7 +4,7 @@ const trin = [
   {
     num: "01",
     title: "Du skriver eller indtaler dine noter",
-    text: "Observationer, temaer, interventioner, aftaler. Indtal eller skriv som psykolog og ikke som en sekretær — umiddelbart efter sessionen. Din faglighed er fundamentet.",
+    text: "Observationer, temaer, interventioner, aftaler. Indtal eller skriv som psykolog og ikke som en sekretær, umiddelbart efter sessionen. Din faglighed er fundamentet.",
   },
   {
     num: "02",
@@ -25,7 +25,7 @@ export default function SaadanVirkerDet() {
         <SectionLabel>Sådan virker det</SectionLabel>
         <h2>Tre trin. Ingen oplæring</h2>
         <p className="max-w-[520px] text-body">
-          Arbejdsgangen er designet til at passe ind i det, du allerede gør umiddelbart efter en session — ikke til at erstatte det.
+          Arbejdsgangen er designet til at passe ind i det, du allerede gør umiddelbart efter en session, ikke til at erstatte det.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 border border-sand mt-12">
