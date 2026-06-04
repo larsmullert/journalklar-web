@@ -11,7 +11,8 @@ export default function Hero() {
             </div>
 
             <h1 className="mb-5">
-              Journaludkast fra dine egne faglige noter, uden optagelse af sessionen
+              Journaludkast fra dine egne faglige noter<br />
+              uden optagelse af sessionen
             </h1>
 
             <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-8">
