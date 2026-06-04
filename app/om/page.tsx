@@ -78,6 +78,12 @@ const gennemsigtighed = [
     text: "Skriv direkte, hvis noget er uklart.",
     href: "mailto:lars@journalklar.dk",
   },
+  {
+    title: "Artikler",
+    text: "Faglige gennemgange af journalføringskrav, BEK 1361 og AI i psykologpraksis.",
+    href: "/blog",
+    linkText: "Læs artikler",
+  },
 ];
 
 // ─── Page ────────────────────────────────────────────────────────────────
@@ -222,7 +228,7 @@ export default function OmPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {gennemsigtighed.map(({ title, text, href }) => (
+              {gennemsigtighed.map(({ title, text, href, linkText = "Læs mere" }) => (
                 <a
                   key={title}
                   href={href}
@@ -237,7 +243,7 @@ export default function OmPage() {
                     </p>
                   </div>
                   <div className="flex items-center gap-2 font-sans text-[13px] font-normal text-evergreen border-b border-evergreen/20 pb-[2px] self-start group-hover:border-evergreen transition-colors">
-                    Læs mere
+                    {linkText}
                     <ArrowRight />
                   </div>
                 </a>

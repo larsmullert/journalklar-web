@@ -247,6 +247,13 @@ const categories: FAQCategory[] = [
             >
               retsinformation.dk
             </a>
+            .{" "}
+            <a
+              href="/blog/bek-1361-journalnotat-krav"
+              className="text-evergreen border-b border-evergreen/30 hover:border-evergreen transition-colors"
+            >
+              Vi har skrevet en grundig gennemgang af kravene
+            </a>
             .
           </>
         ),
@@ -281,6 +288,13 @@ const categories: FAQCategory[] = [
             >
               Journalføringspligt
             </a>
+            .{" "}
+            <a
+              href="/blog/ai-journalnotat-psykolog-lovligt"
+              className="text-evergreen border-b border-evergreen/30 hover:border-evergreen transition-colors"
+            >
+              Vi gennemgår hvad bekendtgørelsen faktisk siger
+            </a>
             .
           </>
         ),
@@ -313,6 +327,7 @@ const categories: FAQCategory[] = [
             <span className="block mb-4">Tre afgørende forskelle. For det første er ChatGPT, Gemini, Claude og lignende generelle AI-tjenester ikke bygget til sundhedsfaglig dokumentation. Der er ingen databehandleraftale, ingen journalspecifik struktur og ingen markering af manglende oplysninger.</span>
             <span className="block mb-4">For det andet bruger generelle AI-tjenester som udgangspunkt dine input til at forbedre modellerne. Det er grunden til at det ikke er lovligt at indtaste klientoplysninger i dem. I JournalKlar er det kontraktuelt fastsat at input ikke bruges til træning.</span>
             <span className="block">For det tredje gemmer JournalKlar ikke klientindhold efter generering. Generelle AI-tjenester gemmer samtalerne.</span>
+            <span className="block mt-4"><a href="/blog/journalfoering-faglig-efterbehandling" className="text-evergreen border-b border-evergreen/30 hover:border-evergreen transition-colors">Artiklen om selektion vs. redigering forklarer distinktionen</a>.</span>
           </>
         ),
       },

@@ -2,6 +2,7 @@ const produkt = [
   { label: "Sådan virker det", href: "/saadan-virker-journalklar" },
   { label: "Priser", href: "/#pris" },
   { label: "FAQ", href: "/faq" },
+  { label: "Artikler", href: "/blog" },
 ];
 
 const journalklar = [

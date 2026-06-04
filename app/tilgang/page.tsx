@@ -48,6 +48,12 @@ const videreLinks = [
     linkText: "Læs om JournalKlar",
     href: "/om",
   },
+  {
+    title: "Journalføring som faglig efterbehandling",
+    text: "Om § 13, klinisk selektion og hvad det indebærer at journalføringen starter med psykologens egne noter.",
+    linkText: "Læs artikel",
+    href: "/blog/journalfoering-faglig-efterbehandling",
+  },
 ];
 
 // ─── Page ────────────────────────────────────────────────────────────────
@@ -347,7 +353,7 @@ export default function TilgangPage() {
             <SectionLabel>Videre læsning</SectionLabel>
             <h2 className="max-w-[440px]">Undersøg selv, hvordan JournalKlar er bygget.</h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
               {videreLinks.map(({ title, text, linkText, href }) => (
                 <a
                   key={title}
