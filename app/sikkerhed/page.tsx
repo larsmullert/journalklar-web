@@ -160,7 +160,7 @@ const systemCards: {
   },
   {
     name: "Scannet VPS",
-    sub: "Hosting · ISO 27001",
+    sub: "Hosting · ISO 27001 · ISAE 3402",
     role: "Infrastruktur, drift og krypteret forbindelse",
     region: "Danmark",
     clientData: "ingen",
@@ -184,27 +184,41 @@ const gemmes = [
   "Driftslogs uden klientindhold",
 ];
 
-const leverandoerer = [
+const leverandoerer: {
+  navn: string;
+  rolle: string;
+  region: string;
+  klientindhold: string;
+  dokumentation: { tekst: string; href?: string };
+}[] = [
   {
-    navn: "Scannet VPS",
+    navn: "Scannet A/S (team.blue)",
     rolle: "App, database og infrastruktur",
     region: "Danmark",
     klientindhold: "Ingen",
-    status: "ISO 27001",
+    dokumentation: {
+      tekst: "ISO 27001-certificeret · ISAE 3402 Type 2-revisionserklæring",
+      href: "https://www.scannet.dk/compliance",
+    },
   },
   {
-    navn: "AWS Bedrock",
+    navn: "Amazon Web Services EMEA SARL",
     rolle: "AI-generering (Sonnet) og validering (Haiku)",
     region: "EU · Frankfurt",
     klientindhold: "Midlertidigt",
-    status: "GDPR-compliant · CRIS EU",
+    dokumentation: {
+      tekst: "Input bruges ikke til træning · behandling i EU",
+      href: "https://aws.amazon.com/bedrock/security-privacy-responsible-ai",
+    },
   },
   {
-    navn: "Alunta / Quickpay",
+    navn: "Alunta ApS / Quickpay A/S",
     rolle: "Abonnement og betalingstransaktioner",
     region: "EU",
     klientindhold: "Ingen",
-    status: "PCI DSS",
+    dokumentation: {
+      tekst: "PCI DSS",
+    },
   },
 ];
 
@@ -343,6 +357,25 @@ export default function SikkerhedPage() {
 
         <Rule />
 
+        {/* ── 3b. Sådan ved du, at det passer ────────────────────── */}
+        <section className="py-16 px-6 md:py-[120px] md:px-16">
+          <div className="max-w-[1100px] mx-auto">
+            <SectionLabel>Verificerbar beskyttelse</SectionLabel>
+            <h2 className="max-w-[480px]">Sådan ved du, at det passer</h2>
+
+            <div className="mt-9 max-w-[680px]">
+              <p className="font-sans text-[16px] font-light text-graphite leading-[1.85] mb-5">
+                Du skal ikke bare tage vores ord for det. De vigtigste løfter på denne side, at dine noter fjernes efter hver generering, at der ikke ligger klientindhold i logfiler, og at forsøg på at manipulere systemet afvises inden noterne sendes videre, er bygget ind som faste, automatiske tjek i koden.
+              </p>
+              <p className="font-sans text-[16px] font-light text-graphite leading-[1.85] mb-0">
+                Tjekkene køres hver gang JournalKlar opdateres. Beskyttelsen afhænger altså ikke af, om nogen husker at gøre det rigtigt i en travl hverdag. Den er en del af måden systemet er bygget på.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <Rule />
+
         {/* ── 4. Hvad sker der ────────────────────────────────────── */}
         <section id="noter" className="bg-evergreen py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
@@ -470,8 +503,8 @@ export default function SikkerhedPage() {
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Leverandørgennemgang</SectionLabel>
             <h2>Underleverandører</h2>
-            <p className="max-w-[520px] text-body">
-              Tre leverandører behandler data som en del af JournalKlar. Ingen andre tredjeparter modtager klientoplysninger.
+            <p className="max-w-[600px] text-body">
+              To leverandører behandler klientindhold som en del af JournalKlar: Scannet (krypteret transit og drift) og AWS (selve AI-genereringen). Hverken Alunta eller Quickpay modtager klientoplysninger. Certificeringer og vilkår kan verificeres direkte hos leverandøren via linkene nedenfor.
             </p>
 
             <div className="mt-12 overflow-x-auto" style={{ WebkitOverflowScrolling: 'touch' }}>
@@ -509,13 +542,29 @@ export default function SikkerhedPage() {
                       </Badge>
                     </div>
                     <div className="px-5 py-4">
-                      <span className="font-sans text-[12px] text-muted">{row.status}</span>
+                      {row.dokumentation.href ? (
+                        <a
+                          href={row.dokumentation.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="font-sans text-[12px] text-evergreen underline decoration-evergreen/30 hover:decoration-evergreen transition-colors leading-[1.6] block"
+                        >
+                          {row.dokumentation.tekst}
+                        </a>
+                      ) : (
+                        <span className="font-sans text-[12px] text-muted">{row.dokumentation.tekst}</span>
+                      )}
                     </div>
                   </div>
                 ))}
 
               </div>
             </div>
+
+            <p className="font-sans text-[11px] text-muted mt-5 max-w-[680px]">
+              ISO 27001 er en certificering. ISAE 3402 er en uafhængig revisionserklæring, ikke en certificering. Begge kan rekvireres hos Scannet.
+            </p>
+
           </div>
         </section>
 
@@ -538,18 +587,15 @@ export default function SikkerhedPage() {
               </p>
               <div className="flex flex-wrap items-center gap-5">
                 <a
-                  href="#"
+                  href="/databehandleraftale"
                   className="inline-flex items-center gap-[10px] border border-parchment/35 text-parchment font-sans text-[14px] font-normal px-6 py-[14px] hover:bg-parchment hover:text-evergreen transition-colors"
                 >
-                  Hent databehandleraftale (PDF)
+                  Læs databehandleraftalen
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
                     <line x1="1" y1="6" x2="11" y2="6" stroke="currentColor" strokeWidth="1.3"/>
                     <polyline points="7.5,2.5 11,6 7.5,9.5" stroke="currentColor" strokeWidth="1.3" fill="none"/>
                   </svg>
                 </a>
-                <span className="font-sans text-[12px] text-parchment/70">
-                  PDF-link tilføjes ved launch
-                </span>
               </div>
             </div>
 
