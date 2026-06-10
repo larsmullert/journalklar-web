@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   title: {
     default: "JournalKlar",
-    template: "%s — JournalKlar",
+    template: "%s · JournalKlar",
   },
   description: "Journaludkast fra dine egne faglige noter. Uden optagelse af sessionen.",
   openGraph: {

@@ -3,11 +3,11 @@ import Footer from "@/components/sections/Footer";
 import SectionLabel from "@/components/ui/SectionLabel";
 
 export const metadata = {
-  title: "Sikkerhed og data — JournalKlar",
+  title: "Sikkerhed og data",
   description:
     "Forstå præcist hvad der sker med dine noter. Ingen optagelse, ingen AI-træning, dansk server i Skanderborg og databehandleraftale inkluderet.",
   openGraph: {
-    title: "Sikkerhed og data — JournalKlar",
+    title: "Sikkerhed og data · JournalKlar",
     description:
       "Forstå præcist hvad der sker med dine noter. Ingen optagelse, ingen AI-træning, dansk server i Skanderborg og databehandleraftale inkluderet.",
     url: "https://journalklar.dk/sikkerhed",
@@ -60,7 +60,7 @@ const steps: { num: string; title: string; text: string; chip: string }[] = [
   {
     num: "1",
     title: "Du skriver dine noter",
-    text: "Du indtaster de oplysninger, du vurderer er relevante for journaludkastet — umiddelbart efter sessionen.",
+    text: "Du indtaster de oplysninger, du vurderer er relevante for journaludkastet, umiddelbart efter sessionen.",
     chip: "Kun det du selv skriver ind",
   },
   {
@@ -78,7 +78,7 @@ const steps: { num: string; title: string; text: string; chip: string }[] = [
   {
     num: "4",
     title: "Noterne sendes til AI-behandling inden for EU",
-    text: "En AI-model strukturerer dine noter til et journaludkast. Inputtet bruges kun til at generere — ikke til modeltræning.",
+    text: "En AI-model strukturerer dine noter til et journaludkast. Inputtet bruges kun til at generere, ikke til modeltræning.",
     chip: "AWS Bedrock Sonnet · eu-central-1, Frankfurt",
   },
   {
@@ -91,13 +91,13 @@ const steps: { num: string; title: string; text: string; chip: string }[] = [
     num: "6",
     title: "Du får udkastet tilbage",
     text: "Udkastet vises i din browser. Klientindholdet gemmes ikke i JournalKlar efter genereringen.",
-    chip: "No-cache · No-store · RAM cleared",
+    chip: "No-cache · No-store · hukommelse ryddet",
   },
   {
     num: "7",
     title: "Kun teknisk brugsmetadata gemmes",
     text: "JournalKlar gemmer tidspunkt, svartid og tokenforbrug. Ikke klientnoter. Ikke journaludkast.",
-    chip: "userId · latency · tokens · flag_count",
+    chip: "userId · svartid · tokens · flag_count",
   },
 ];
 
@@ -147,7 +147,7 @@ const systemCards: {
   {
     name: "PostgreSQL 16",
     sub: "Database",
-    role: "Login, abonnement og teknisk brugsmetadata — ingen journalnoter",
+    role: "Login, abonnement og teknisk brugsmetadata: ingen journalnoter",
     region: "Scannet VPS, Danmark",
     clientData: "ingen",
   },
@@ -238,11 +238,11 @@ export default function SikkerhedPage() {
             <div className="flex flex-col justify-center">
               <SectionLabel>Data og fortrolighed</SectionLabel>
               <h1 className="max-w-[560px] mb-5">
-                Sikkerhed, fortrolighed og data —{" "}
+                Sikkerhed, fortrolighed og data{" "}
                 <span className="italic text-evergreen/60">på jordnær dansk</span>
               </h1>
               <p className="font-sans text-[16px] font-light text-body max-w-[480px] leading-[1.85] mb-0">
-                JournalKlar er bygget til psykologer, der arbejder med fortrolige klientoplysninger. Du skal kunne forstå, hvad der sker med dine data — ikke bare have tillid til, at vi håndterer det.
+                JournalKlar er bygget til psykologer, der arbejder med fortrolige klientoplysninger. Du skal kunne forstå, hvad der sker med dine data, ikke bare have tillid til, at vi håndterer det.
               </p>
             </div>
 
@@ -261,6 +261,10 @@ export default function SikkerhedPage() {
                   </div>
                 ))}
               </div>
+              <p className="font-sans text-[11px] text-parchment/45 mt-4 mb-0 tracking-[0.05em]">
+                Drift i Danmark · AI-behandling i EU
+              </p>
+
               <div className="border-t border-parchment/20 mt-6 pt-6">
                 <p className="font-serif italic text-[17px] text-parchment/90 leading-[1.7] mb-0">
                   &ldquo;Det her er vores forsøg på at gøre det ordentligt. Vi håber, det mærkes.&rdquo;
@@ -346,7 +350,7 @@ export default function SikkerhedPage() {
                 JournalKlar er bygget anderledes.
               </p>
               <p className="font-sans text-[16px] font-light text-parchment/90 leading-[1.85] mb-5">
-                Dine noter sendes til JournalKlar for at generere et udkast. Når udkastet er leveret, fjernes klientindholdet fra serveren. Der er ingen database med journalnotater. Der er ingen log med klientoplysninger. Der er intet at tilgå, intet at stjæle og intet der kan lækkes.
+                Dine noter sendes til JournalKlar for at generere et udkast. Når udkastet er leveret, fjernes klientindholdet fra serveren. Der er ingen database med journalnotater. Der er ingen log med klientoplysninger. Der er intet klientindhold at tilgå, stjæle eller lække.
               </p>
               <p className="font-sans text-[16px] font-light text-parchment/90 leading-[1.85] mb-0">
                 Den mest effektive beskyttelse af klientoplysninger er JournalKlars tilgang: at undlade at gemme dem.
@@ -382,7 +386,7 @@ export default function SikkerhedPage() {
             <SectionLabel>Hvad sker der</SectionLabel>
             <h2 className="max-w-[540px] text-parchment">Hvad sker der, når du genererer et journaludkast?</h2>
             <p className="max-w-[520px] text-parchment/90">
-              Syv trin — fra du skriver dine noter til udkastet er genereret og klientindholdet er fjernet fra serveren.
+              Syv trin: fra du skriver dine noter til udkastet er genereret og klientindholdet er fjernet fra serveren.
             </p>
 
             <div className="mt-12 max-w-[680px]">
@@ -413,7 +417,7 @@ export default function SikkerhedPage() {
         <section className="py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Opbevaring</SectionLabel>
-            <h2>Hvad gemmes — og hvad gemmes ikke?</h2>
+            <h2>Hvad gemmes, og hvad gemmes ikke?</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
 
@@ -464,7 +468,7 @@ export default function SikkerhedPage() {
             <SectionLabel>Systemoverblik</SectionLabel>
             <h2>Hvem rører data?</h2>
             <p className="max-w-[520px] text-body">
-              De systemer der behandler data, hvad de bruges til — og om klientindhold indgår.
+              De systemer der behandler data, hvad de bruges til, og om klientindhold indgår.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
@@ -580,7 +584,7 @@ export default function SikkerhedPage() {
                 Databehandleraftalen underskrives inden brug.
               </h3>
               <p className="font-sans text-[14px] font-light text-parchment/90 leading-[1.8] mb-5">
-                Inden du går i gang med JournalKlar, underskrives en databehandleraftale. Den beskriver præcist, hvad der sker med data — og hvad der ikke sker.
+                Inden du går i gang med JournalKlar, underskrives en databehandleraftale. Den beskriver præcist, hvad der sker med data, og hvad der ikke sker.
               </p>
               <p className="font-sans text-[14px] font-light text-parchment/70 leading-[1.8] mb-8">
                 Aftalen dækker: behandlingsformål, datatyper, behandlingsgrundlag (GDPR art. 28), underleverandørernes rolle, opbevaringsperiode og slettepolitik. Du kan vise den til din fagforening eller den du samarbejder med om GDPR.
@@ -599,6 +603,12 @@ export default function SikkerhedPage() {
               </div>
             </div>
 
+          </div>
+        </section>
+
+        <section className="py-6 px-6 md:px-16">
+          <div className="max-w-[1100px] mx-auto">
+            <p className="font-sans text-[11px] text-muted mb-0">Senest opdateret: juni 2026</p>
           </div>
         </section>
 
