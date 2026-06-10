@@ -16,7 +16,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params
   const article = await getArticleBySlug(slug)
-  const url = `https://journalklar.dk/blog/${slug}`
+  const url = `https://www.journalklar.dk/blog/${slug}`
 
   return {
     title: article.title,

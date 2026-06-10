@@ -7,13 +7,13 @@ export const metadata = {
   description:
     "JournalKlars faglige tilgang til AI, journalføring og psykologens ansvar: egne noter først, ingen sessionoptagelse og altid journaludkast.",
   alternates: {
-    canonical: "https://journalklar.dk/tilgang",
+    canonical: "https://www.journalklar.dk/tilgang",
   },
   openGraph: {
     title: "JournalKlars tilgang til AI og journalføring",
     description:
       "JournalKlars faglige tilgang til AI, journalføring og psykologens ansvar: egne noter først, ingen sessionoptagelse og altid journaludkast.",
-    url: "https://journalklar.dk/tilgang",
+    url: "https://www.journalklar.dk/tilgang",
   },
 };
 

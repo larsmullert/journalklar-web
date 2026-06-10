@@ -2,7 +2,7 @@ const softwareApplication = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "JournalKlar",
-  "url": "https://journalklar.dk",
+  "url": "https://www.journalklar.dk",
   "description": "AI-assisteret journalværktøj til privatpraktiserende psykologer i Danmark. Strukturerer psykologens egne noter til journaludkast efter BEK 1361/2025. Ingen sessionoptagelse — psykologens faglige selektion bevares.",
   "applicationCategory": "MedicalApplication",
   "operatingSystem": "Web",
@@ -37,12 +37,12 @@ const softwareApplication = {
     "@type": "Person",
     "name": "Lars Mullert Pedersen",
     "jobTitle": "Psykolog og grundlægger",
-    "url": "https://journalklar.dk/om",
+    "url": "https://www.journalklar.dk/om",
   },
   "publisher": {
     "@type": "Organization",
     "name": "JournalKlar",
-    "url": "https://journalklar.dk",
+    "url": "https://www.journalklar.dk",
   },
   "featureList": [
     "Ingen sessionoptagelse",
@@ -60,11 +60,11 @@ const person = {
   "name": "Lars Mullert Pedersen",
   "jobTitle": "Psykolog",
   "description": "Grundlægger af JournalKlar. Psykolog uddannet fra Aalborg Universitet.",
-  "url": "https://journalklar.dk/om",
+  "url": "https://www.journalklar.dk/om",
   "worksFor": {
     "@type": "Organization",
     "name": "JournalKlar",
-    "url": "https://journalklar.dk",
+    "url": "https://www.journalklar.dk",
   },
   "alumniOf": {
     "@type": "EducationalOrganization",

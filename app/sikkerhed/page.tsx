@@ -7,13 +7,13 @@ export const metadata = {
   description:
     "Forstå præcist hvad der sker med dine noter. Ingen optagelse, ingen AI-træning, dansk server i Skanderborg og databehandleraftale inkluderet.",
   alternates: {
-    canonical: "https://journalklar.dk/sikkerhed",
+    canonical: "https://www.journalklar.dk/sikkerhed",
   },
   openGraph: {
     title: "Sikkerhed og data · JournalKlar",
     description:
       "Forstå præcist hvad der sker med dine noter. Ingen optagelse, ingen AI-træning, dansk server i Skanderborg og databehandleraftale inkluderet.",
-    url: "https://journalklar.dk/sikkerhed",
+    url: "https://www.journalklar.dk/sikkerhed",
   },
 };
 

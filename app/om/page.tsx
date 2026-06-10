@@ -17,7 +17,7 @@ const personSchema = {
   "name": "Lars Mullert Pedersen",
   "jobTitle": "Psykolog og grundlægger",
   "description": "Cand.psych., Aalborg Universitet 2025. Grundlægger af JournalKlar.",
-  "url": "https://journalklar.dk/om",
+  "url": "https://www.journalklar.dk/om",
   "email": "lars@journalklar.dk",
   "alumniOf": {
     "@type": "CollegeOrUniversity",
@@ -26,7 +26,7 @@ const personSchema = {
   "worksFor": {
     "@type": "Organization",
     "name": "JournalKlar",
-    "url": "https://journalklar.dk",
+    "url": "https://www.journalklar.dk",
   },
 };
 
@@ -35,13 +35,13 @@ export const metadata = {
   description:
     "JournalKlar er udviklet af Lars Mullert Pedersen, psykolog og grundlægger, som et specialiseret værktøj til privatpraktiserende psykologers journalføringsarbejde.",
   alternates: {
-    canonical: "https://journalklar.dk/om",
+    canonical: "https://www.journalklar.dk/om",
   },
   openGraph: {
     title: "Om JournalKlar",
     description:
       "JournalKlar er udviklet af Lars Mullert Pedersen, psykolog og grundlægger, som et specialiseret værktøj til privatpraktiserende psykologers journalføringsarbejde.",
-    url: "https://journalklar.dk/om",
+    url: "https://www.journalklar.dk/om",
   },
 };
 

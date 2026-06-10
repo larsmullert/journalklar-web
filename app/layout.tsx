@@ -21,10 +21,10 @@ const sourceSans3 = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://journalklar.dk"),
+  metadataBase: new URL("https://www.journalklar.dk"),
   alternates: {
     types: {
-      "text/plain": "https://journalklar.dk/llms.txt",
+      "text/plain": "https://www.journalklar.dk/llms.txt",
     },
   },
   title: {
