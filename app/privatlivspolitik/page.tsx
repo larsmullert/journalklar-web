@@ -106,7 +106,7 @@ export default function PrivatlivspolitikPage() {
               </p>
               <p className="font-sans text-[15px] font-light text-body leading-[1.85] mb-0">
                 Et vigtigt skel: journalklar.dk (marketingsitet) og app.journalklar.dk (appen)
-                behandler meget forskellig data — og involverer forskellige leverandører.
+                behandler meget forskellig data, og involverer forskellige leverandører.
                 Vi har forsøgt at gøre det tydeligt nedenfor.
               </p>
 
@@ -129,7 +129,7 @@ export default function PrivatlivspolitikPage() {
               </Body>
 
               {/* ── journalklar.dk ── */}
-              <ContextHeading>journalklar.dk — marketingsitet</ContextHeading>
+              <ContextHeading>journalklar.dk · marketingsitet</ContextHeading>
 
               <SubHeading>Besøgsstatistik</SubHeading>
               <DataTable>
@@ -137,7 +137,7 @@ export default function PrivatlivspolitikPage() {
                 <DataRow label="Formål" value="Forstå hvordan marketingsitet bruges så vi kan forbedre det." />
                 <DataRow label="Retsgrundlag" value="Samtykke (GDPR art. 6, stk. 1, litra a)." />
                 <DataRow label="Opbevaring" value="14 måneder (styret af Google Analytics)." />
-                <DataRow label="Bemærkning" value="Behandles kun hvis du har accepteret statistikcookies. Google Ireland Limited er delvist selvstændig dataansvarlig — ikke udelukkende vores databehandler." />
+                <DataRow label="Bemærkning" value="Behandles kun hvis du har accepteret statistikcookies. Google Ireland Limited er delvist selvstændig dataansvarlig, ikke udelukkende vores databehandler." />
               </DataTable>
 
               <SubHeading>Tilmelding og betaling</SubHeading>
@@ -158,7 +158,7 @@ export default function PrivatlivspolitikPage() {
               </DataTable>
 
               {/* ── Leverandører marketingsite ── */}
-              <SectionHeading>Leverandører — journalklar.dk</SectionHeading>
+              <SectionHeading>Leverandører · journalklar.dk</SectionHeading>
               <Body>Følgende tredjepart modtager data i forbindelse med journalklar.dk:</Body>
               <Table
                 headers={["Leverandør", "Formål", "Data", "Region"]}
@@ -169,12 +169,12 @@ export default function PrivatlivspolitikPage() {
                 ]}
               />
               <Body>
-                Google Ireland Limited er ikke en traditionel databehandler — de er delvist
+                Google Ireland Limited er ikke en traditionel databehandler, de er delvist
                 selvstændig dataansvarlig for data indsamlet via Google Analytics.
               </Body>
 
               {/* ── app.journalklar.dk ── */}
-              <ContextHeading>app.journalklar.dk — appen</ContextHeading>
+              <ContextHeading>app.journalklar.dk · appen</ContextHeading>
 
               <SubHeading>Journalnoter og udkast</SubHeading>
               <DataTable>
@@ -202,7 +202,7 @@ export default function PrivatlivspolitikPage() {
               </DataTable>
 
               {/* ── Leverandører app ── */}
-              <SectionHeading>Leverandører — app.journalklar.dk</SectionHeading>
+              <SectionHeading>Leverandører · app.journalklar.dk</SectionHeading>
               <Body>
                 Følgende leverandører behandler data som en del af appen.
                 Ingen af disse leverandører modtager data fra journalklar.dk (marketingsitet).
@@ -242,7 +242,7 @@ export default function PrivatlivspolitikPage() {
               {/* ── Cookies ── */}
               <SectionHeading>Cookies</SectionHeading>
               <Body>
-                Vi bruger kun cookies på journalklar.dk — ikke i appen.
+                Vi bruger kun cookies på journalklar.dk, ikke i appen.
                 Læs vores{" "}
                 <a href="/cookiepolitik" className="text-evergreen border-b border-evergreen/30 hover:border-evergreen no-underline">
                   cookiepolitik

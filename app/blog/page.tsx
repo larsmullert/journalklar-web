@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: 'https://journalklar.dk/blog',
   },
   openGraph: {
-    title: 'Faglige artikler — JournalKlar',
+    title: 'Faglige artikler · JournalKlar',
     description: 'Artikler om journalføring, lovkrav og AI til privatpraktiserende psykologer i Danmark.',
     url: 'https://journalklar.dk/blog',
     type: 'website',

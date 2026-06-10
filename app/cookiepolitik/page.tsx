@@ -73,7 +73,7 @@ export default function CookiepolitikPage() {
                 journalklar.dk bruger, hvorfor, og hvad du kan gøre ved det.
               </p>
               <p className="font-sans text-[15px] font-light text-body leading-[1.85] mb-0">
-                Cookies bruges KUN på journalklar.dk — marketingsitet.
+                Cookies bruges KUN på journalklar.dk, marketingsitet.
                 app.journalklar.dk sætter ingen cookies og tracker ingen besøgende.
               </p>
 
@@ -84,7 +84,7 @@ export default function CookiepolitikPage() {
                 effekten af markedsføring.
               </Body>
 
-              <ContextHeading>journalklar.dk — marketingsitet</ContextHeading>
+              <ContextHeading>journalklar.dk · marketingsitet</ContextHeading>
 
               <SubHeading badge="Altid aktiv">Nødvendige cookies</SubHeading>
               <div className="border-t border-sand mb-4">
@@ -97,7 +97,7 @@ export default function CookiepolitikPage() {
               <SubHeading badge="Kræver samtykke">Statistikcookies</SubHeading>
               <Body>
                 Hvis du accepterer statistikcookies, bruger vi Google Analytics 4 til at forstå
-                hvordan journalklar.dk bruges — hvilke sider der besøges, hvor besøgende kommer
+                hvordan journalklar.dk bruges: hvilke sider der besøges, hvor besøgende kommer
                 fra, og hvor de forlader siden.
               </Body>
               <Body>
@@ -115,14 +115,14 @@ export default function CookiepolitikPage() {
               <Body>
                 Hvis du accepterer marketingcookies, kan vi måle effekten af annoncer på
                 Google Ads og Meta. Vi bruger ikke marketingcookies til at opbygge profiler
-                eller til retargeting — kun til at måle vores egne annoncer.
+                eller til retargeting, kun til at måle vores egne annoncer.
               </Body>
               <Body>
                 Databehandlere (ved samtykke): Google Ireland Limited og Meta Platforms Ireland Limited.
               </Body>
               <Body>Disse cookies sættes ikke før du har givet samtykke.</Body>
 
-              <ContextHeading>app.journalklar.dk — appen</ContextHeading>
+              <ContextHeading>app.journalklar.dk · appen</ContextHeading>
               <SectionHeading>Hvad vi ikke gør</SectionHeading>
               <ul className="font-sans text-[15px] font-light text-body leading-[1.85] space-y-1 list-none p-0 mb-4">
                 <li>— Vi bruger ikke cookies i JournalKlar-appen (app.journalklar.dk)</li>

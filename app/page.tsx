@@ -46,9 +46,12 @@ import FAQ from "@/components/sections/FAQ";
 import Footer from "@/components/sections/Footer";
 
 export const metadata: Metadata = {
-  title: "JournalKlar",
+  title: { absolute: "JournalKlar" },
   description:
     "Journaludkast fra dine egne faglige noter. Til privatpraktiserende psykologer. Uden optagelse af sessionen.",
+  alternates: {
+    canonical: "https://journalklar.dk",
+  },
   openGraph: {
     title: "JournalKlar",
     description:

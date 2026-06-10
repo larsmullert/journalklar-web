@@ -94,7 +94,7 @@ export default function DPAAftaleContent() {
       {/* 1 */}
       <DPASection>1. Baggrund og formål</DPASection>
       <Body>
-        Databehandleren stiller JournalKlar til rådighed — et AI-assisteret værktøj der hjælper
+        Databehandleren stiller JournalKlar til rådighed: et AI-assisteret værktøj der hjælper
         privatpraktiserende psykologer med at strukturere egne noter til journaludkast i
         overensstemmelse med BEK nr. 1361 af 24/11/2025.
       </Body>
@@ -148,7 +148,7 @@ export default function DPAAftaleContent() {
 
       <Body>
         <strong style={{ fontWeight: 500, color: "#1D3A2F" }}>Bemærkning:</strong> Databehandleren opfordrer den dataansvarlige til at anvende
-        dataminimering — dvs. kun at skrive de oplysninger ind i JournalKlar der er nødvendige for
+        dataminimering, dvs. kun at skrive de oplysninger ind i JournalKlar der er nødvendige for
         at generere et fagligt forsvarligt journaludkast.
       </Body>
 
@@ -190,14 +190,14 @@ export default function DPAAftaleContent() {
         foranstaltninger, herunder:
       </Body>
       <BulletList items={[
-        "Klientindhold behandles udelukkende i RAM og slettes via try/finally cleanup efter hver generering — aldrig skrevet til disk eller database",
+        "Klientindhold behandles udelukkende i RAM og slettes via try/finally cleanup efter hver generering, aldrig skrevet til disk eller database",
         "Forbindelser beskyttet med HTTPS/TLS 1.3",
         "Input valideres og saniteres inden AI-behandling",
         "Adgangskontrol med bcrypt-hashede adgangskoder og session-tokens",
         "PostgreSQL query-logging deaktiveret for genereringsrequests",
         "Response headers: no-cache, no-store, must-revalidate",
         "AI-behandling sker inden for EU (AWS Bedrock, eu-central-1, Frankfurt)",
-        "Serverinfrastruktur: Scannet A/S, Skanderborg, Danmark — ISO 27001-certificeret og med en ISAE 3402 Type 2-revisionserklæring",
+        "Serverinfrastruktur: Scannet A/S, Skanderborg, Danmark, ISO 27001-certificeret og med en ISAE 3402 Type 2-revisionserklæring",
       ]} />
 
       {/* 8 */}
@@ -209,7 +209,7 @@ export default function DPAAftaleContent() {
         headers={["Underdatabehandler", "Rolle", "Region", "Klientindhold"]}
         rows={[
           ["Scannet A/S (team.blue)", "Serverhosting og infrastruktur", "Danmark", "Transiterer krypteret"],
-          ["Amazon Web Services EMEA SARL", "AI-behandling via Bedrock eu-central-1", "Frankfurt, EU", "Midlertidigt under generering — træner ikke modeller"],
+          ["Amazon Web Services EMEA SARL", "AI-behandling via Bedrock eu-central-1", "Frankfurt, EU", "Midlertidigt under generering, træner ikke modeller"],
         ]}
       />
       <Body>

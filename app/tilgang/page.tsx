@@ -6,6 +6,9 @@ export const metadata = {
   title: "JournalKlars tilgang til AI og journalføring",
   description:
     "JournalKlars faglige tilgang til AI, journalføring og psykologens ansvar: egne noter først, ingen sessionoptagelse og altid journaludkast.",
+  alternates: {
+    canonical: "https://journalklar.dk/tilgang",
+  },
   openGraph: {
     title: "JournalKlars tilgang til AI og journalføring",
     description:
@@ -34,7 +37,7 @@ const videreLinks = [
     title: "Sådan virker det",
     text: "Se arbejdsgangen fra egne noter til journaludkast.",
     linkText: "Se arbejdsgangen",
-    href: "/",
+    href: "/saadan-virker-journalklar",
   },
   {
     title: "Sikkerhed og data",
@@ -75,7 +78,7 @@ export default function TilgangPage() {
                 AI må gerne hjælpe med journalføring, men ikke alt bør automatiseres.
               </h1>
               <p className="font-sans text-[16px] font-light text-body max-w-[480px] leading-[1.85] mb-4">
-                JournalKlar er bygget ud fra et enkelt fagligt standpunkt: AI kan godt hjælpe psykologer med struktur, overblik og formulering — men den første faglige selektion skal blive hos psykologen.
+                JournalKlar er bygget ud fra et enkelt fagligt standpunkt: AI kan godt hjælpe psykologer med struktur, overblik og formulering, men den første faglige selektion skal blive hos psykologen.
               </p>
               <p className="font-sans text-[16px] font-light text-body max-w-[480px] leading-[1.85] mb-8">
                 Derfor optager JournalKlar ikke sessionen. Værktøjet transskriberer ikke samtalen. Det starter med dine egne noter efter sessionen.
@@ -218,10 +221,10 @@ export default function TilgangPage() {
                 Det arbejder kun med det, psykologen selv vælger at skrive eller indtale efter sessionen.
               </p>
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
-                Det er ikke det samme som at optage sessionen. Diktering sker efter sessionen er slut — det er psykologens egne ord, ikke en optagelse af det fortrolige rum.
+                Det er ikke det samme som at optage sessionen. Diktering sker efter sessionen er slut: det er psykologens egne ord, ikke en optagelse af det fortrolige rum.
               </p>
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-12">
-                Det betyder, at den første afgrænsning sker før AI-behandlingen — ikke bagefter.
+                Det betyder, at den første afgrænsning sker før AI-behandlingen, ikke bagefter.
               </p>
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-12">
                 Det samme gælder for klientoplysninger generelt: JournalKlar behandler dem i det tidsrum det tager at generere udkastet. Ikke længere.
@@ -270,7 +273,7 @@ export default function TilgangPage() {
 
               <div>
                 <div className="font-sans text-[11px] font-medium tracking-[0.15em] uppercase text-orange" style={{ marginBottom: 8 }}>
-                  Bøjning — ikke oversættelse
+                  Bøjning: ikke oversættelse
                 </div>
                 <p className="font-sans text-[16px] font-normal text-body leading-[1.85] m-0">
                   JournalKlar må gerne bøje dine ord fra talesprog til skriftsprog. Det må ikke oversætte din kliniske vurdering til noget andet.
@@ -282,10 +285,10 @@ export default function TilgangPage() {
                   Markering af mangler
                 </div>
                 <p className="font-sans text-[16px] font-normal text-body leading-[1.85] mb-5">
-                  Nogle oplysninger er juridisk nødvendige. Informeret samtykke. Grundlag for videregivelse. Stamdata. Mangler de, markerer JournalKlar det tydeligt med [MANGLER] — det kræver din aktive stillingtagen.
+                  Nogle oplysninger er juridisk nødvendige. Informeret samtykke. Grundlag for videregivelse. Stamdata. Mangler de, markerer JournalKlar det tydeligt med [MANGLER]: det kræver din aktive stillingtagen.
                 </p>
                 <p className="font-sans text-[16px] font-normal text-body leading-[1.85] m-0">
-                  Andre oplysninger indgår typisk i en session, men fraværet kan være et bevidst fagligt valg. En faglig vurdering. En behandlingsplan-status. Her skriver JournalKlar [IKKE I DINE NOTER] — ikke som en fejl, men som en påmindelse. Du afgør om det skal med.
+                  Andre oplysninger indgår typisk i en session, men fraværet kan være et bevidst fagligt valg. En faglig vurdering. En behandlingsplan-status. Her skriver JournalKlar [IKKE I DINE NOTER]: ikke som en fejl, men som en påmindelse. Du afgør om det skal med.
                 </p>
               </div>
 

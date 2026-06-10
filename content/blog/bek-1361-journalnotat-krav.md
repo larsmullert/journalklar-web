@@ -6,7 +6,7 @@ dato: "maj 2026"
 laese_tid: "ca. 7 min."
 ---
 
-Fra 1. januar 2026 er privatpraktiserende psykologer for første gang fuldt omfattet af journalføringsbekendtgørelsen — BEK nr. 1361 af 24. november 2025. Den erstatter den regulering, der tidligere gjaldt under psykologloven og BEK nr. 567 af 1997.
+Fra 1. januar 2026 er privatpraktiserende psykologer for første gang fuldt omfattet af journalføringsbekendtgørelsen, BEK nr. 1361 af 24. november 2025. Den erstatter den regulering, der tidligere gjaldt under psykologloven og BEK nr. 567 af 1997.
 
 Det betyder ikke nødvendigvis, at der er tale om dramatisk anderledes krav. Men det betyder, at kravene nu er præciserede i en bekendtgørelse der gælder for alle 20 autoriserede sundhedsfaglige faggrupper, og at du som psykolog har pligt til at kende dem.
 
@@ -18,11 +18,11 @@ En vigtig præcisering inden vi begynder: Styrelsen for Patientsikkerhed arbejde
 
 ## Hvad er en patientjournal?
 
-BEK 1361 § 2 definerer patientjournalen som notater, der oplyser om patientens tilstand, den planlagte og udførte behandling mv. Optegnelser der indeholder oplysninger om rent private forhold og andre fortrolige oplysninger er også en del af patientjournalen — men kun hvis disse oplysninger er af betydning for den aktuelle behandling.
+BEK 1361 § 2 definerer patientjournalen som notater, der oplyser om patientens tilstand, den planlagte og udførte behandling mv. Optegnelser der indeholder oplysninger om rent private forhold og andre fortrolige oplysninger er også en del af patientjournalen, men kun hvis disse oplysninger er af betydning for den aktuelle behandling.
 
 Det er en vigtig afgrænsning. Bekendtgørelsen kræver ikke, at alt hvad en klient fortæller, journalføres. Den kræver at det nødvendige journalføres.
 
-Hvad der er nødvendigt, afgøres af den behandlende psykolog — ikke af bekendtgørelsen alene. Det fastslår § 13 stk. 1 direkte: vurderingen foretages af den behandlende sundhedsperson og skal tage udgangspunkt i den aktuelle situation.
+Hvad der er nødvendigt, afgøres af den behandlende psykolog, ikke af bekendtgørelsen alene. Det fastslår § 13 stk. 1 direkte: vurderingen foretages af den behandlende sundhedsperson og skal tage udgangspunkt i den aktuelle situation.
 
 Det er dit faglige skøn der afgør indholdet. Bekendtgørelsen sætter rammen.
 
@@ -32,8 +32,8 @@ Det er dit faglige skøn der afgør indholdet. Bekendtgørelsen sætter rammen.
 
 Visse oplysninger er ikke til diskussion. § 12 stk. 3 fastslår, at patientjournalen for hver patientkontakt skal indeholde:
 
-- **Oplysning om hvem der har haft patientkontakten** — navn eller anden entydig identifikation, titelbetegnelse og om nødvendigt arbejdssted
-- **Hvornår kontakten fandt sted** — dato, og om nødvendigt klokkeslæt
+- **Oplysning om hvem der har haft patientkontakten**: navn eller anden entydig identifikation, titelbetegnelse og om nødvendigt arbejdssted
+- **Hvornår kontakten fandt sted**: dato, og om nødvendigt klokkeslæt
 - **Tidspunktet for journalføringen**, når det er relevant
 
 Derudover skal patientjournalen indeholde klientens navn og CPR-nummer, jf. § 12 stk. 1. Har klienten ikke et dansk CPR-nummer, skal der anføres et centralt genereret erstatningspersonnummer eller en anden unik kode.
@@ -44,7 +44,7 @@ Derudover skal patientjournalen indeholde klientens navn og CPR-nummer, jf. § 1
 
 § 10 stk. 2 fastslår: journalføringen skal ske i forbindelse med eller snarest muligt efter patientkontakten.
 
-"Snarest muligt" er ikke defineret nærmere i bekendtgørelsen. Det er et af de spørgsmål som Dansk Psykolog Forening har rejst officielt over for Styrelsen for Patientsikkerhed — herunder specifikt om psykologer med udkørende funktion, fx i PPR, kan vente til den følgende arbejdsdag. En afklaring foreligger endnu ikke.
+"Snarest muligt" er ikke defineret nærmere i bekendtgørelsen. Det er et af de spørgsmål som Dansk Psykolog Forening har rejst officielt over for Styrelsen for Patientsikkerhed: herunder specifikt om psykologer med udkørende funktion, fx i PPR, kan vente til den følgende arbejdsdag. En afklaring foreligger endnu ikke.
 
 En rimelig fortolkning af ordlyden er, at journalføring samme arbejdsdag er udgangspunktet, og at forsinkelse kræver en konkret begrundelse.
 
@@ -58,7 +58,7 @@ En rimelig fortolkning af ordlyden er, at journalføring samme arbejdsdag er udg
 - Oplysning om hvem der er klientens nærmeste pårørende, og hvordan vedkommende om nødvendigt kan kontaktes
 - Hvis klienten ikke har samtykkekompetence: hvem der kan give samtykke på klientens vegne (stedfortrædende samtykke), jf. sundhedsloven §§ 17 og 18
 - Særlige forhold, fx allergi
-- Eventuel sundhedsfaglig kontaktperson og samarbejdspartnere — fx egen læge, psykiater eller kommunalt tilbud
+- Eventuel sundhedsfaglig kontaktperson og samarbejdspartnere: fx egen læge, psykiater eller kommunalt tilbud
 - Oplysning om klienten har oprettet et behandlings- eller livstestamente
 
 I privatpraksis vil en del af disse punkter kun sjældent være relevante. Men pligten til at overveje dem er din.
@@ -67,13 +67,13 @@ I privatpraksis vil en del af disse punkter kun sjældent være relevante. Men p
 
 ## Hvad der skal noteres ved konkrete konsultationer
 
-§ 15 angiver tilsvarende en vejledende liste for de enkelte patientkontakter. Igen: disse oplysninger *kan* være nødvendige — ikke *skal* altid fremgå. Det faglige skøn om relevans tilhører psykologen:
+§ 15 angiver tilsvarende en vejledende liste for de enkelte patientkontakter. Igen: disse oplysninger *kan* være nødvendige, ikke *skal* altid fremgå. Det faglige skøn om relevans tilhører psykologen:
 
 - Klientens beskrivelse af sin situation og årsagen til kontakten samt eventuelle ønsker for behandling
 - Sygehistorie, nuværende tilstand og aktuel behandling
 - Indikation for undersøgelse og behandling samt symptomer og observationer
 - Diagnose eller sundhedsfagligt skøn om sygdommens art
-- Konsultationsform — herunder video- eller telefonkonsultation
+- Konsultationsform: herunder video- eller telefonkonsultation
 - Behandlingsplan og status for gennemførelse af planen, herunder kontrol og opfølgning
 - Udført behandling, herunder rekvirerede og gennemførte undersøgelser, laboratorie- og prøvesvar
 - Indtrådte komplikationer og bivirkninger mv.
@@ -81,7 +81,7 @@ I privatpraksis vil en del af disse punkter kun sjældent være relevante. Men p
 - Opdrag om psykologfaglige undersøgelser, fx forældrekompetenceundersøgelse eller børnesagkyndig undersøgelse
 - Overvejelser hvis Sundhedsstyrelsens eller Styrelsen for Patientsikkerheds vejledninger fraviges væsentligt
 
-Et punkt der er særligt relevant for psykologer: bekendtgørelsen nævner eksplicit psykologfaglige opdrag som forældrekompetenceundersøgelser. Det er en tydelig markering af, at psykologers journalføring ikke er en tilpasning af lægernes — den er skrevet med psykologers arbejde for øje.
+Et punkt der er særligt relevant for psykologer: bekendtgørelsen nævner eksplicit psykologfaglige opdrag som forældrekompetenceundersøgelser. Det er en tydelig markering af, at psykologers journalføring ikke er en tilpasning af lægernes, den er skrevet med psykologers arbejde for øje.
 
 ---
 
@@ -91,7 +91,7 @@ Et punkt der er særligt relevant for psykologer: bekendtgørelsen nævner ekspl
 
 Hvis klienten har frabedt sig information om behandlingen, skal det fremgå, jf. § 17 stk. 3.
 
-Stiltiende samtykke — som er det normale i en løbende terapeutisk relation — behøver kun fremgå "i nødvendigt omfang", jf. § 17 stk. 2. Det er en lettelse sammenlignet med hvad man måske umiddelbart forestiller sig.
+Stiltiende samtykke (som er det normale i en løbende terapeutisk relation) behøver kun fremgå "i nødvendigt omfang", jf. § 17 stk. 2. Det er en lettelse sammenlignet med hvad man måske umiddelbart forestiller sig.
 
 ---
 
@@ -117,7 +117,7 @@ Det er dit navn, din autorisation og dit ansvar.
 
 § 52 stk. 3 indeholder en overgangsregel: bekendtgørelsen finder ikke anvendelse på patientjournaler, som er oprettet af autoriserede psykologer før 1. januar 2026. For disse journaler gælder stadig de hidtil gældende regler i BEK nr. 567 af 1997.
 
-Det praktiske spørgsmål — hvad der gælder for et igangværende forløb der er startet før 1. januar 2026 — er endnu ikke vejledt officielt. Hverken Styrelsen for Patientsikkerhed eller Dansk Psykolog Forening har udstedt en afklaring af, hvornår et forløb betragtes som reguleret af den nye bekendtgørelse. Det er et uafklaret spørgsmål, og det bør behandles som sådant.
+Det praktiske spørgsmål (hvad der gælder for et igangværende forløb der er startet før 1. januar 2026) er endnu ikke vejledt officielt. Hverken Styrelsen for Patientsikkerhed eller Dansk Psykolog Forening har udstedt en afklaring af, hvornår et forløb betragtes som reguleret af den nye bekendtgørelse. Det er et uafklaret spørgsmål, og det bør behandles som sådant.
 
 ---
 
@@ -125,19 +125,19 @@ Det praktiske spørgsmål — hvad der gælder for et igangværende forløb der 
 
 For psykologer i privatpraksis gælder en opbevaringspligt på mindst 5 år fra den seneste optegnelse, jf. § 35 stk. 2. Det er kortere end de 10 år, der gælder for fx læger og tandlæger.
 
-Opbevaringspligten gælder også efter en klient er afgået ved døden, jf. § 35 stk. 4. Og hvis en journal er af betydning for en klage-, tilsyns- eller erstatningssag, skal den opbevares så længe sagen verserer — uanset om opbevaringsperioden er udløbet.
+Opbevaringspligten gælder også efter en klient er afgået ved døden, jf. § 35 stk. 4. Og hvis en journal er af betydning for en klage-, tilsyns- eller erstatningssag, skal den opbevares så længe sagen verserer, uanset om opbevaringsperioden er udløbet.
 
 ---
 
 ## Det faglige skøn er dit
 
-Det gennemgående træk ved BEK 1361 er, at bekendtgørelsen formulerer rammer og pejlemærker — ikke en fast skabelon. § 13 stk. 1 er central: vurderingen af, om en oplysning er nødvendig, foretages af den behandlende sundhedsperson.
+Det gennemgående træk ved BEK 1361 er, at bekendtgørelsen formulerer rammer og pejlemærker, ikke en fast skabelon. § 13 stk. 1 er central: vurderingen af, om en oplysning er nødvendig, foretages af den behandlende sundhedsperson.
 
-Den lister der gives i §§ 14 og 15, er vejledende. De beskriver hvad der *kan* være nødvendigt — ikke hvad der altid skal noteres.
+Den lister der gives i §§ 14 og 15, er vejledende. De beskriver hvad der *kan* være nødvendigt, ikke hvad der altid skal noteres.
 
 Det er en frihed. Det er også et ansvar.
 
-Hvad der udgør en tilstrækkelig journal, afhænger af den konkrete situation, klienten og behandlingen. En alment praktiserende psykolog, en PPR-psykolog og en psykolog der udfører børnesagkyndige undersøgelser, vil have meget forskellige journaler — og det er korrekt.
+Hvad der udgør en tilstrækkelig journal, afhænger af den konkrete situation, klienten og behandlingen. En alment praktiserende psykolog, en PPR-psykolog og en psykolog der udfører børnesagkyndige undersøgelser, vil have meget forskellige journaler, og det er korrekt.
 
 Det bekendtgørelsen kræver er, at du har taget stilling, og at dine notater dokumenterer den behandling der faktisk er udført.
 
