@@ -88,7 +88,7 @@ BEK 1361 opstiller krav til journalens indhold, ansvar og form. Den opstiller ik
 
 Det der afgør lovligheden, er om det endelige journalnotat lever op til bekendtgørelsens krav: at det er nødvendigt, at det er tilpasset den konkrete patientkontakt, at det er forståeligt for andre sundhedspersoner, og at psykologen er ansvarlig for indholdet.
 
-§ 6 og § 13 stk. 1 fastlægger tilsammen, at det ansvaret ikke kan uddelegeres: til en kollega, en sekretær eller et AI-system. Det der godkendes og overføres til journalen, er psykologens faglige vurdering. Hvad der hjælper til at strukturere den, er et spørgsmål om arbejdsgang.
+§ 6 og § 13 stk. 1 fastlægger tilsammen, at ansvaret ikke kan uddelegeres: til en kollega, en sekretær eller et AI-system. Det der godkendes og overføres til journalen, er psykologens faglige vurdering. Hvad der hjælper til at strukturere den, er et spørgsmål om arbejdsgang.
 
 Officiel vejledning om, hvad det konkret kræver at anvende AI forsvarligt i psykologers journalføring, foreligger ikke. JournalKlar opdaterer dette indhold, når Styrelsen for Patientsikkerhed udgiver vejledningen.
 
