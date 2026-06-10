@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Accepter databehandleraftale — JournalKlar",
+  title: "Accepter databehandleraftale",
   robots: { index: false, follow: false },
 };
 

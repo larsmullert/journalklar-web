@@ -56,7 +56,7 @@ export default function BekraeftelsePage() {
           marginBottom: "16px",
         }}>
           Vi har sendt en bekræftelsesmail til din indbakke. Tjek eventuelt din spam- eller
-          reklame-mappe — den kan godt lande der første gang.
+          reklame-mappe: den kan godt lande der første gang.
         </p>
 
         <p style={{
@@ -113,7 +113,7 @@ export default function BekraeftelsePage() {
           marginBottom: "0",
         }}>
           Det er JournalKlars mål, at du bliver så glad for værktøjet, at du gerne vil betale
-          199,- om måneden. Det synes vi er en meget fair pris.
+          199 kr. om måneden. Det synes vi er en meget fair pris.
         </p>
 
         {/* Sign-off */}

@@ -38,7 +38,7 @@ const faqData = [
   },
   {
     q: "Hvad er det juridiske grundlag for behandling af personoplysninger?",
-    a: "Behandlingsgrundlaget er GDPR artikel 28 (databehandleraftale) og artikel 9 (særlige kategorier — sundhedsoplysninger behandles under tavshedspligtbestemmelsen). Databehandleraftalen beskriver grundlaget i detaljer.",
+    a: "Behandlingsgrundlaget er GDPR artikel 28 (databehandleraftale) og artikel 9 (særlige kategorier, sundhedsoplysninger behandles under tavshedspligtbestemmelsen). Databehandleraftalen beskriver grundlaget i detaljer.",
   },
   {
     q: "Hvad sker der med mine data, hvis jeg opsiger?",

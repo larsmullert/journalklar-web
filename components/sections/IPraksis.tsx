@@ -18,7 +18,7 @@ export default function IPraksis() {
             <div className="w-[10px] h-[10px] rounded-full bg-[#E0B9B9]" />
             <div className="w-[10px] h-[10px] rounded-full bg-[#DFDFB9]" />
             <div className="w-[10px] h-[10px] rounded-full bg-[#B9DFC0]" />
-            <span className="ml-[10px] font-sans text-[12px] text-muted">JournalKlar — Eksempelsession · Første samtale</span>
+            <span className="ml-[10px] font-sans text-[12px] text-muted">JournalKlar · Eksempelsession · Første samtale</span>
           </div>
 
           {/* Panels */}
@@ -49,7 +49,7 @@ export default function IPraksis() {
               </div>
 
               <div className="font-sans text-[14px] font-light text-body leading-[1.65] space-y-[14px]">
-                <p className="text-muted">[STAMDATA: Udfyldes i journalsystem — navn, CPR, psykologens navn/titel/arbejdssted, dato]</p>
+                <p className="text-muted">[STAMDATA: Udfyldes i journalsystem, navn, CPR, psykologens navn/titel/arbejdssted, dato]</p>
                 <p>[DATO]. Første samtale.</p>
                 <p>Klienten er en 34-årig mand henvist af egen læge med henblik på behandling af depression. Han er aktuelt sygemeldt fra sit job som projektleder, sygemeldingen har varet tre måneder.</p>
                 <p>Klienten beskriver nedsat energi, søvnproblemer og tab af lyst. Symptomerne har været til stede i ca. seks måneder og beskrives som udløst af en samlivskonflikt og høj arbejdsbelastning.</p>
@@ -66,7 +66,7 @@ export default function IPraksis() {
                     <line x1="5.5" y1="3" x2="5.5" y2="6.5" stroke="#E04500" strokeWidth="1.2" strokeLinecap="round"/>
                     <circle cx="5.5" cy="8.2" r="0.7" fill="#E04500"/>
                   </svg>
-                  Mangler — kræver stillingtagen
+                  Mangler: kræver stillingtagen
                 </div>
                 <div className="font-sans text-[13px] font-light text-body">
                   Bekræft om informeret samtykke til tavshedspligt og oplysningspligt indgik i informationen.
@@ -82,7 +82,7 @@ export default function IPraksis() {
         </div>
 
         <p className="font-sans text-[13px] text-muted mt-[22px]">
-          Eksemplet er anonymiseret og konstrueret. JournalKlar skriver ikke journalen for dig — det laver et udkast, som du vurderer, redigerer og godkender.
+          Eksemplet er anonymiseret og konstrueret. JournalKlar skriver ikke journalen for dig: det laver et udkast, som du vurderer, redigerer og godkender.
         </p>
       </div>
     </div>

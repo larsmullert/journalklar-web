@@ -17,7 +17,7 @@ const softwareApplicationSchema = {
   "applicationCategory": "HealthApplication",
   "operatingSystem": "Web",
   "description": "AI-assisteret journalværktøj til privatpraktiserende psykologer i Danmark. Strukturerer psykologens egne noter til journaludkast efter BEK 1361/2025.",
-  "url": "https://journalklar.dk",
+  "url": "https://www.journalklar.dk",
   "inLanguage": "da-DK",
   "author": {
     "@type": "Person",
@@ -46,14 +46,17 @@ import FAQ from "@/components/sections/FAQ";
 import Footer from "@/components/sections/Footer";
 
 export const metadata: Metadata = {
-  title: "JournalKlar",
+  title: { absolute: "JournalKlar" },
   description:
     "Journaludkast fra dine egne faglige noter. Til privatpraktiserende psykologer. Uden optagelse af sessionen.",
+  alternates: {
+    canonical: "https://www.journalklar.dk",
+  },
   openGraph: {
     title: "JournalKlar",
     description:
       "Journaludkast fra dine egne faglige noter. Til privatpraktiserende psykologer. Uden optagelse af sessionen.",
-    url: "https://journalklar.dk",
+    url: "https://www.journalklar.dk",
   },
 };
 

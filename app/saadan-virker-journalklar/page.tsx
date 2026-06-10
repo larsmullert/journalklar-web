@@ -3,14 +3,17 @@ import Footer from "@/components/sections/Footer";
 import SectionLabel from "@/components/ui/SectionLabel";
 
 export const metadata = {
-  title: "Sådan virker det — JournalKlar",
+  title: "Sådan virker det",
   description:
     "Se hvordan JournalKlar hjælper privatpraktiserende psykologer fra egne noter til et struktureret journaludkast. Tre trin. Ingen oplæring. Ingen optagelse.",
+  alternates: {
+    canonical: "https://www.journalklar.dk/saadan-virker-journalklar",
+  },
   openGraph: {
-    title: "Sådan virker det — JournalKlar",
+    title: "Sådan virker det · JournalKlar",
     description:
       "Se hvordan JournalKlar hjælper privatpraktiserende psykologer fra egne noter til et struktureret journaludkast. Tre trin. Ingen oplæring. Ingen optagelse.",
-    url: "https://journalklar.dk/saadan-virker-JournalKlar",
+    url: "https://www.journalklar.dk/saadan-virker-journalklar",
   },
 };
 
@@ -25,7 +28,7 @@ function AppTopBar() {
       <div className="w-[10px] h-[10px] rounded-full bg-[#DFDFB9]" />
       <div className="w-[10px] h-[10px] rounded-full bg-[#B9DFC0]" />
       <span className="ml-[10px] font-sans text-[12px] text-muted">
-        JournalKlar — Eksempelsession · Første samtale
+        JournalKlar · Eksempelsession · Første samtale
       </span>
     </div>
   );
@@ -40,7 +43,7 @@ function MangleBadge() {
           <line x1="5.5" y1="3" x2="5.5" y2="6.5" stroke="#E04500" strokeWidth="1.2" strokeLinecap="round" />
           <circle cx="5.5" cy="8.2" r="0.7" fill="#E04500" />
         </svg>
-        Mangler — kræver stillingtagen
+        Mangler: kræver stillingtagen
       </div>
       <div className="font-sans text-[13px] font-light text-body">
         Bekræft om informeret samtykke til tavshedspligt og oplysningspligt indgik i informationen.
@@ -66,7 +69,7 @@ function JournalUdkast() {
   return (
     <>
       <div className="font-sans text-[14px] font-light text-body leading-[1.65] space-y-[14px]">
-        <p className="text-muted">[STAMDATA: Udfyldes i journalsystem — navn, CPR, psykologens navn/titel/arbejdssted, dato]</p>
+        <p className="text-muted">[STAMDATA: Udfyldes i journalsystem, navn, CPR, psykologens navn/titel/arbejdssted, dato]</p>
         <p>[DATO]. Første samtale.</p>
         <p>
           Klienten er en 34-årig mand henvist af egen læge med henblik på
@@ -209,7 +212,7 @@ export default function SaadanVirkerDetPage() {
               <p className="font-sans text-[15px] font-light text-body leading-[1.85] mb-5">
                 Dine noter omsættes til et journaludkast baseret på
                 journalføringsbekendtgørelsens krav. Manglende oplysninger
-                markeres tydeligt, så du aktivt tager stillingtagen.
+                markeres tydeligt, så du aktivt tager stilling.
               </p>
               <p className="font-sans text-[15px] font-light text-body leading-[1.85] mb-0">
                 Inden du ser udkastet, kører JournalKlar et ekstra
@@ -281,7 +284,7 @@ export default function SaadanVirkerDetPage() {
             </div>
             <p className="font-sans text-[13px] text-muted mt-5">
               Eksemplet er anonymiseret og konstrueret. JournalKlar skriver
-              ikke journalen for dig — det laver et udkast, som du vurderer,
+              ikke journalen for dig: det laver et udkast, som du vurderer,
               redigerer og godkender.
             </p>
           </div>
@@ -392,7 +395,7 @@ export default function SaadanVirkerDetPage() {
                 <span className="font-serif text-[15px] flex-shrink-0 w-5 mt-[2px]" style={{ color: "#E04500" }}>2</span>
                 <div>
                   <div className="font-sans text-[15px] font-normal text-evergreen mb-1">AI strukturerer</div>
-                  <p className="font-sans text-[14px] font-light text-body leading-[1.7] mb-0">En AI-model omsætter dine noter til et journaludkast. Inputtet bruges kun til at generere, ikke til modeltræning. JournalKlars bearbejdning tager typisk 10-15 sekunder.</p>
+                  <p className="font-sans text-[14px] font-light text-body leading-[1.7] mb-0">En AI-model omsætter dine noter til et journaludkast. Inputtet bruges kun til at generere, ikke til modeltræning. JournalKlars bearbejdning tager typisk 10–15 sekunder.</p>
                 </div>
               </div>
 
@@ -404,7 +407,7 @@ export default function SaadanVirkerDetPage() {
                   &ldquo;Hvad ville en kollega have brug for at vide, hvis de skulle overtage behandlingen af denne klient i morgen? Hverken mere eller mindre.&rdquo;
                 </p>
                 <p className="font-sans text-[14px] font-normal text-muted mb-0">
-                  Det er det spørgsmål der styrer hvad JournalKlar skriver — og ikke skriver.
+                  Det er det spørgsmål der styrer hvad JournalKlar skriver, og ikke skriver.
                 </p>
               </div>
 

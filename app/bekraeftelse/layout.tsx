@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Konto oprettet — JournalKlar",
+  title: "Konto oprettet",
   robots: { index: false, follow: false },
 };
 

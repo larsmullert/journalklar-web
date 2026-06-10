@@ -17,7 +17,7 @@ const personSchema = {
   "name": "Lars Mullert Pedersen",
   "jobTitle": "Psykolog og grundlægger",
   "description": "Cand.psych., Aalborg Universitet 2025. Grundlægger af JournalKlar.",
-  "url": "https://journalklar.dk/om",
+  "url": "https://www.journalklar.dk/om",
   "email": "lars@journalklar.dk",
   "alumniOf": {
     "@type": "CollegeOrUniversity",
@@ -26,19 +26,22 @@ const personSchema = {
   "worksFor": {
     "@type": "Organization",
     "name": "JournalKlar",
-    "url": "https://journalklar.dk",
+    "url": "https://www.journalklar.dk",
   },
 };
 
 export const metadata = {
-  title: "Om JournalKlar",
+  title: { absolute: "Om JournalKlar" },
   description:
     "JournalKlar er udviklet af Lars Mullert Pedersen, psykolog og grundlægger, som et specialiseret værktøj til privatpraktiserende psykologers journalføringsarbejde.",
+  alternates: {
+    canonical: "https://www.journalklar.dk/om",
+  },
   openGraph: {
     title: "Om JournalKlar",
     description:
       "JournalKlar er udviklet af Lars Mullert Pedersen, psykolog og grundlægger, som et specialiseret værktøj til privatpraktiserende psykologers journalføringsarbejde.",
-    url: "https://journalklar.dk/om",
+    url: "https://www.journalklar.dk/om",
   },
 };
 
@@ -149,7 +152,7 @@ export default function OmPage() {
         <section className="bg-sand py-16 px-6 md:py-[120px] md:px-16">
           <div className="max-w-[1100px] mx-auto">
             <SectionLabel>Personen bag</SectionLabel>
-            <h2 className="max-w-[540px]">Jeg er psykolog — og uddannet bager.</h2>
+            <h2 className="max-w-[540px]">Jeg er psykolog, og uddannet bager.</h2>
 
             <div className="mt-9 max-w-[660px]">
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
@@ -204,7 +207,7 @@ export default function OmPage() {
                 Det er ikke et argument mod teknologi. Men det er et spørgsmål vi bør stille til AI i psykologers journalarbejde.
               </p>
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-5">
-                En klassisk tech-founder ser journalføring som et effektiviseringsproblem, der gælder alle sundhedsfagpersoner. Jeg kan ikke sige, hvad der er rigtigt for andre fag, men for psykologer er efterbehandlingen af en session — der hvor du samler op, udvælger og formulerer din forståelse af klienten — ikke sekretærarbejde. Det er faglig efterbehandling. Det er en faglig muskel, vi ikke bevidst bør lade sygne hen.
+                En klassisk tech-founder ser journalføring som et effektiviseringsproblem, der gælder alle sundhedsfagpersoner. Jeg kan ikke sige, hvad der er rigtigt for andre fag, men for psykologer er efterbehandlingen af en session (der hvor du samler op, udvælger og formulerer din forståelse af klienten) ikke sekretærarbejde. Det er faglig efterbehandling. Det er en faglig muskel, vi ikke bevidst bør lade sygne hen.
               </p>
               <p className="font-sans text-[16px] font-light text-body leading-[1.85]">
                 Derfor starter JournalKlar med dine egne noter. Ikke med en optagelse.
@@ -223,7 +226,7 @@ export default function OmPage() {
 
             <div className="mt-9 max-w-[660px]">
               <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-12">
-                Når man bruger et AI-værktøj i psykologisk praksis bør afsenderen ikke være uklar. Du kan læse om den faglige tilgang, sikkerheden og databehandlingen — og du er altid velkommen til at skrive direkte, hvis noget er uklart.
+                Når man bruger et AI-værktøj i psykologisk praksis bør afsenderen ikke være uklar. Du kan læse om den faglige tilgang, sikkerheden og databehandlingen, og du er altid velkommen til at skrive direkte, hvis noget er uklart.
               </p>
             </div>
 
@@ -262,10 +265,10 @@ export default function OmPage() {
 
             <div className="mt-9 max-w-[660px]">
               <p className="font-sans text-[16px] font-light text-parchment/90 leading-[1.85] mb-5">
-                &ldquo;Jeg har ikke bygget JournalKlar for at gøre journalføring automatisk. Jeg har udviklet systemet, fordi jeg mener, at vi har brug for værktøjer, der tager både dokumentationsbyrden og psykologfagligheden alvorligt — på samme tid.&rdquo;
+                &ldquo;Jeg har ikke bygget JournalKlar for at gøre journalføring automatisk. Jeg har udviklet systemet, fordi jeg mener, at vi har brug for værktøjer, der tager både dokumentationsbyrden og psykologfagligheden alvorligt, på samme tid.&rdquo;
               </p>
               <p className="font-serif italic text-[17px] text-parchment/90 leading-[1.8] mb-2 mt-10">
-                — Lars Mullert Pedersen
+                Lars Mullert Pedersen
               </p>
 
               <div className="flex flex-wrap items-center gap-6 mt-10">

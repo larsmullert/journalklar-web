@@ -11,7 +11,7 @@ export default function Hero() {
             </div>
 
             <h1 className="mb-5">
-              Journaludkast fra dine egne faglige noter - uden optagelse af sessionen
+              Journaludkast fra dine egne faglige noter, uden optagelse af sessionen
             </h1>
 
             <p className="font-sans text-[16px] font-light text-body leading-[1.85] mb-8">
@@ -60,7 +60,7 @@ export default function Hero() {
               <div className="w-[9px] h-[9px] rounded-full bg-[#E0B9B9]" />
               <div className="w-[9px] h-[9px] rounded-full bg-[#DFDFB9]" />
               <div className="w-[9px] h-[9px] rounded-full bg-[#B9DFC0]" />
-              <span className="ml-[10px] font-sans text-[11px] text-muted">JournalKlar — Eksempelsession</span>
+              <span className="ml-[10px] font-sans text-[11px] text-muted">JournalKlar · Eksempelsession</span>
             </div>
 
             <div className="grid grid-cols-2">

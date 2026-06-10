@@ -9,7 +9,7 @@ const promises = [
   {
     num: "2",
     title: "AI'en lærer ikke af dine klienter",
-    text: "Den AI-model der genererer dine udkast, bruger ikke dit input til træning. Det er forskellen på JournalKlar og en åben tilgængelig AI-chat.",
+    text: "Den AI-model der genererer dine udkast, bruger ikke dit input til træning. Det er forskellen på JournalKlar og en åbent tilgængelig AI-chat.",
   },
   {
     num: "3",
@@ -89,7 +89,7 @@ export default function Sikkerhed() {
                 Vi skjuler ingenting om, hvordan det virker.
               </div>
               <p className="font-sans text-[14px] font-light text-parchment/90 leading-[1.8] mb-0">
-                Serverplacering, kryptering, underleverandører, datastrømme, journaliseringskrav: alt er dokumenteret og tilgængeligt. Ikke fordi vi er nødt til det. Men fordi du har ret til at vide det.
+                Serverplacering, kryptering, underleverandører, datastrømme, journalføringskrav: alt er dokumenteret og tilgængeligt. Ikke fordi vi er nødt til det. Men fordi du har ret til at vide det.
               </p>
             </div>
             <div>
@@ -116,14 +116,14 @@ export default function Sikkerhed() {
                     <polyline points="7.5,2.5 11,6 7.5,9.5" stroke="#F7F4EF" strokeWidth="1.3" fill="none"/>
                   </svg>
                 </span>
-                Hent databehandleraftale (PDF)
+                Læs databehandleraftalen
               </a>
               <div className="border-t border-parchment/20 mt-6 pt-6">
                 <p className="font-serif italic text-parchment/90 leading-[1.7] mb-3">
                   &ldquo;Det her er vores forsøg på at gøre det ordentligt. Vi håber det mærkes.&rdquo;
                 </p>
                 <span className="font-sans text-[13px] text-parchment/70">
-                  — Lars Mullert, grundlægger af JournalKlar
+                  Lars Mullert, grundlægger af JournalKlar
                 </span>
               </div>
             </div>

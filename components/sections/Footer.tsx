@@ -96,7 +96,7 @@ export default function Footer() {
             © 2026 JournalKlar · CVR: 35949542 · Aalborg, Danmark
           </p>
           <p className="font-sans text-[12px] font-normal text-muted m-0">
-            Bygget af en psykolog — i Danmark 🇩🇰
+            Bygget af en psykolog · i Danmark 🇩🇰
           </p>
         </div>
 

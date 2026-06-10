@@ -1,5 +1,16 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {};
+const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "journalklar.dk" }],
+        destination: "https://www.journalklar.dk/:path*",
+        permanent: true,
+      },
+    ];
+  },
+};
 
 export default nextConfig;

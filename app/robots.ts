@@ -25,6 +25,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://journalklar.dk/sitemap.xml",
+    sitemap: "https://www.journalklar.dk/sitemap.xml",
   };
 }

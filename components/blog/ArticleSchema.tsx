@@ -18,19 +18,19 @@ export default function ArticleSchema({ title, seo_description, lastModified, sl
       name: 'Lars Mullert Pedersen',
       jobTitle: 'Cand.psych.',
       alumniOf: 'Aalborg Universitet',
-      url: 'https://journalklar.dk/om',
+      url: 'https://www.journalklar.dk/om',
     },
     publisher: {
       '@type': 'Organization',
       name: 'JournalKlar',
-      url: 'https://journalklar.dk',
+      url: 'https://www.journalklar.dk',
     },
-    url: `https://journalklar.dk/blog/${slug}`,
+    url: `https://www.journalklar.dk/blog/${slug}`,
     inLanguage: 'da-DK',
     isPartOf: {
       '@type': 'Blog',
       name: 'JournalKlar — Faglige artikler',
-      url: 'https://journalklar.dk/blog',
+      url: 'https://www.journalklar.dk/blog',
     },
   }
 

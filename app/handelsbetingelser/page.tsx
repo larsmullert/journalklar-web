@@ -3,7 +3,7 @@ import Footer from "@/components/sections/Footer";
 import PrintButton from "@/components/ui/PrintButton";
 
 export const metadata = {
-  title: "Handelsbetingelser — JournalKlar",
+  title: "Handelsbetingelser",
   description: "JournalKlars handelsbetingelser for abonnenter.",
 };
 

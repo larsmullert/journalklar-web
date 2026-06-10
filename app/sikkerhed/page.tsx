@@ -6,11 +6,14 @@ export const metadata = {
   title: "Sikkerhed og data",
   description:
     "Forstå præcist hvad der sker med dine noter. Ingen optagelse, ingen AI-træning, dansk server i Skanderborg og databehandleraftale inkluderet.",
+  alternates: {
+    canonical: "https://www.journalklar.dk/sikkerhed",
+  },
   openGraph: {
     title: "Sikkerhed og data · JournalKlar",
     description:
       "Forstå præcist hvad der sker med dine noter. Ingen optagelse, ingen AI-træning, dansk server i Skanderborg og databehandleraftale inkluderet.",
-    url: "https://journalklar.dk/sikkerhed",
+    url: "https://www.journalklar.dk/sikkerhed",
   },
 };
 
@@ -270,7 +273,7 @@ export default function SikkerhedPage() {
                   &ldquo;Det her er vores forsøg på at gøre det ordentligt. Vi håber, det mærkes.&rdquo;
                 </p>
                 <p className="font-sans font-normal text-[13px] text-parchment/70 mt-[10px] mb-0">
-                  — Lars Mullert Pedersen, grundlægger af JournalKlar
+                  Lars Mullert Pedersen, grundlægger af JournalKlar
                 </p>
               </div>
             </div>

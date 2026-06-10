@@ -276,7 +276,7 @@ export default function TilmeldPage() {
                   >
                     databehandleraftalen
                   </a>
-                  {" "}— den beskriver hvordan vi håndterer dine oplysninger som databehandler
+                  {": den beskriver hvordan vi håndterer dine oplysninger som databehandler"}
                 </span>
               </label>
 
