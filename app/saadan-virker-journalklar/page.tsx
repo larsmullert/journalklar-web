@@ -3,16 +3,16 @@ import Footer from "@/components/sections/Footer";
 import SectionLabel from "@/components/ui/SectionLabel";
 
 export const metadata = {
-  title: "Sådan virker det",
+  title: "Journaludkast fra egne noter: sådan virker det",
   description:
-    "Se hvordan JournalKlar hjælper privatpraktiserende psykologer fra egne noter til et struktureret journaludkast. Tre trin. Ingen oplæring. Ingen optagelse.",
+    "Fra egne noter til journaludkast i tre trin, uden oplæring. JournalKlar strukturerer dine noter efter kravene i BEK 1361. Altid et udkast til gennemsyn.",
   alternates: {
     canonical: "https://www.journalklar.dk/saadan-virker-journalklar",
   },
   openGraph: {
-    title: "Sådan virker det · JournalKlar",
+    title: "Journaludkast fra egne noter: sådan virker det · JournalKlar",
     description:
-      "Se hvordan JournalKlar hjælper privatpraktiserende psykologer fra egne noter til et struktureret journaludkast. Tre trin. Ingen oplæring. Ingen optagelse.",
+      "Fra egne noter til journaludkast i tre trin, uden oplæring. JournalKlar strukturerer dine noter efter kravene i BEK 1361. Altid et udkast til gennemsyn.",
     url: "https://www.journalklar.dk/saadan-virker-journalklar",
   },
 };

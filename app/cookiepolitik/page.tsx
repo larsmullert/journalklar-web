@@ -3,7 +3,7 @@ import Footer from "@/components/sections/Footer";
 
 export const metadata = {
   title: "Cookiepolitik",
-  description: "Læs om hvordan JournalKlar bruger cookies på journalklar.dk.",
+  description: "Cookiepolitik for journalklar.dk: JournalKlar bruger kun nødvendige cookies til session og cookievalg. Ingen sporings- eller markeringscookies.",
 };
 
 function SectionHeading({ children }: { children: React.ReactNode }) {

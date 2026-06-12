@@ -1,5 +1,5 @@
 ---
-title: "Journalføring som faglig efterbehandling: Mere end dokumentation"
+title: "Journalføring som faglig efterbehandling"
 url: journalklar.dk/blog/journalfoering-faglig-efterbehandling
 seo_description: "Journalnotatet er ikke bare dokumentation: det er et fagligt redskab. En artikel om journalføring som integreret del af den terapeutiske praksis."
 dato: "maj 2026"

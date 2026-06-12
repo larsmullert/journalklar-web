@@ -1,14 +1,14 @@
 export const metadata = {
-  title: "FAQ",
+  title: "Ofte stillede spørgsmål om AI-journalnotat",
   description:
-    "De spørgsmål du bør stille, før du bruger AI i psykologisk praksis. Svar om faglighed, ansvar, data, sikkerhed og arbejdsgang.",
+    "Har du spørgsmål om AI i psykologisk praksis? Her finder du svar om faglighed, ansvar, GDPR, datasikkerhed og den daglige arbejdsgang med JournalKlar.",
   alternates: {
     canonical: "https://www.journalklar.dk/faq",
   },
   openGraph: {
-    title: "FAQ · JournalKlar",
+    title: "Ofte stillede spørgsmål om AI-journalnotat · JournalKlar",
     description:
-      "De spørgsmål du bør stille, før du bruger AI i psykologisk praksis. Svar om faglighed, ansvar, data, sikkerhed og arbejdsgang.",
+      "Har du spørgsmål om AI i psykologisk praksis? Her finder du svar om faglighed, ansvar, GDPR, datasikkerhed og den daglige arbejdsgang med JournalKlar.",
     url: "https://www.journalklar.dk/faq",
   },
 };

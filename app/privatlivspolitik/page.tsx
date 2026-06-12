@@ -3,7 +3,7 @@ import Footer from "@/components/sections/Footer";
 
 export const metadata = {
   title: "Privatlivspolitik",
-  description: "Læs om hvordan JournalKlar behandler personoplysninger.",
+  description: "Privatlivspolitik for JournalKlar: vi behandler kontodata, abonnement og teknisk brugsmetadata. Klientindhold behandles ikke som journalindhold.",
 };
 
 function SectionHeading({ children }: { children: React.ReactNode }) {

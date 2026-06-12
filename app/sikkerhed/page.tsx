@@ -3,14 +3,14 @@ import Footer from "@/components/sections/Footer";
 import SectionLabel from "@/components/ui/SectionLabel";
 
 export const metadata = {
-  title: "Sikkerhed og data",
+  title: "Datasikkerhed og GDPR for psykologpraksis",
   description:
     "Forstå præcist hvad der sker med dine noter. Ingen optagelse, ingen AI-træning, dansk server i Skanderborg og databehandleraftale inkluderet.",
   alternates: {
     canonical: "https://www.journalklar.dk/sikkerhed",
   },
   openGraph: {
-    title: "Sikkerhed og data · JournalKlar",
+    title: "Datasikkerhed og GDPR for psykologpraksis · JournalKlar",
     description:
       "Forstå præcist hvad der sker med dine noter. Ingen optagelse, ingen AI-træning, dansk server i Skanderborg og databehandleraftale inkluderet.",
     url: "https://www.journalklar.dk/sikkerhed",

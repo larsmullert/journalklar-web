@@ -5,14 +5,14 @@ import Nav from '@/components/sections/Nav'
 import Footer from '@/components/sections/Footer'
 
 export const metadata: Metadata = {
-  title: 'Faglige artikler',
-  description: 'Artikler om journalføring, lovkrav og AI til privatpraktiserende psykologer i Danmark.',
+  title: 'Journalføring og AI: artikler til psykologer',
+  description: 'Faglige artikler om journalføring, BEK 1361, GDPR og AI-assisterede journalnotater til privatpraktiserende psykologer i Danmark.',
   alternates: {
     canonical: 'https://www.journalklar.dk/blog',
   },
   openGraph: {
-    title: 'Faglige artikler · JournalKlar',
-    description: 'Artikler om journalføring, lovkrav og AI til privatpraktiserende psykologer i Danmark.',
+    title: 'Journalføring og AI: artikler til psykologer · JournalKlar',
+    description: 'Faglige artikler om journalføring, BEK 1361, GDPR og AI-assisterede journalnotater til privatpraktiserende psykologer i Danmark.',
     url: 'https://www.journalklar.dk/blog',
     type: 'website',
   },

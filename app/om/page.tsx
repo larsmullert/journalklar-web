@@ -31,16 +31,16 @@ const personSchema = {
 };
 
 export const metadata = {
-  title: { absolute: "Om JournalKlar" },
+  title: { absolute: "Om JournalKlar: psykolog bag produktet" },
   description:
-    "JournalKlar er udviklet af Lars Mullert Pedersen, psykolog og grundlægger, som et specialiseret værktøj til privatpraktiserende psykologers journalføringsarbejde.",
+    "JournalKlar er bygget af Lars Mullert Pedersen, cand.psych. fra Aalborg Universitet. Et journalnotatværktøj lavet af en psykolog til psykologer.",
   alternates: {
     canonical: "https://www.journalklar.dk/om",
   },
   openGraph: {
-    title: "Om JournalKlar",
+    title: "Om JournalKlar: psykolog bag produktet",
     description:
-      "JournalKlar er udviklet af Lars Mullert Pedersen, psykolog og grundlægger, som et specialiseret værktøj til privatpraktiserende psykologers journalføringsarbejde.",
+      "JournalKlar er bygget af Lars Mullert Pedersen, cand.psych. fra Aalborg Universitet. Et journalnotatværktøj lavet af en psykolog til psykologer.",
     url: "https://www.journalklar.dk/om",
   },
 };

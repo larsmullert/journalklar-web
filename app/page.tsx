@@ -46,16 +46,16 @@ import FAQ from "@/components/sections/FAQ";
 import Footer from "@/components/sections/Footer";
 
 export const metadata: Metadata = {
-  title: { absolute: "JournalKlar" },
+  title: { absolute: "JournalKlar: AI-journalnotat til psykologer" },
   description:
-    "Journaludkast fra dine egne faglige noter. Til privatpraktiserende psykologer. Uden optagelse af sessionen.",
+    "AI-journalnotat til psykologer: skriv egne noter efter sessionen, og få et struktureret udkast klar til gennemsyn. Ingen optagelse af sessionen. Fra 199 kr./md.",
   alternates: {
     canonical: "https://www.journalklar.dk",
   },
   openGraph: {
-    title: "JournalKlar",
+    title: "JournalKlar: AI-journalnotat til psykologer",
     description:
-      "Journaludkast fra dine egne faglige noter. Til privatpraktiserende psykologer. Uden optagelse af sessionen.",
+      "AI-journalnotat til psykologer: skriv egne noter efter sessionen, og få et struktureret udkast klar til gennemsyn. Ingen optagelse af sessionen. Fra 199 kr./md.",
     url: "https://www.journalklar.dk",
   },
 };

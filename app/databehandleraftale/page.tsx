@@ -5,8 +5,8 @@ import DPAAftaleContent from "@/components/DPAAftaleContent";
 import { CURRENT_DPA } from "@/lib/dpa-versions";
 
 export const metadata = {
-  title: "Databehandleraftale",
-  description: "JournalKlars databehandleraftale for privatpraktiserende psykologer.",
+  title: "Databehandleraftale for psykologer",
+  description: "GDPR-korrekt databehandleraftale til din psykologpraksis. Behandling sker inden for EU, server i Skanderborg, ISO 27001. Accepter online som ny abonnent.",
 };
 
 export default function DatabehandleraftalePage() {

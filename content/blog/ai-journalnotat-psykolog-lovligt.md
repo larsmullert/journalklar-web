@@ -1,5 +1,5 @@
 ---
-title: "AI og journalnotat: Er det lovligt som psykolog?"
+title: "AI og journalnotat: lovligt som psykolog?"
 url: journalklar.dk/blog/ai-journalnotat-psykolog-lovligt
 seo_description: "Kan psykologer lovligt bruge AI til journalnotat? Gennemgang af GDPR, databehandleraftaler og de lovmæssige rammer for AI-assisteret journalføring."
 dato: "maj 2026"

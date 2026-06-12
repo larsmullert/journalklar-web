@@ -3,16 +3,16 @@ import Footer from "@/components/sections/Footer";
 import SectionLabel from "@/components/ui/SectionLabel";
 
 export const metadata = {
-  title: "JournalKlars tilgang til AI og journalføring",
+  title: "AI og journalføring: psykologens ansvar",
   description:
-    "JournalKlars faglige tilgang til AI, journalføring og psykologens ansvar: egne noter først, ingen sessionoptagelse og altid journaludkast.",
+    "Journalføring med AI kræver et fagligt fundament. JournalKlar arbejder post-session: dine egne noter, aldrig optagelse, altid et udkast klar til godkendelse.",
   alternates: {
     canonical: "https://www.journalklar.dk/tilgang",
   },
   openGraph: {
-    title: "JournalKlars tilgang til AI og journalføring",
+    title: "AI og journalføring: psykologens ansvar · JournalKlar",
     description:
-      "JournalKlars faglige tilgang til AI, journalføring og psykologens ansvar: egne noter først, ingen sessionoptagelse og altid journaludkast.",
+      "Journalføring med AI kræver et fagligt fundament. JournalKlar arbejder post-session: dine egne noter, aldrig optagelse, altid et udkast klar til godkendelse.",
     url: "https://www.journalklar.dk/tilgang",
   },
 };

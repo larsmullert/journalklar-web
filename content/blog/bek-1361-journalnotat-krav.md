@@ -1,5 +1,5 @@
 ---
-title: "BEK nr. 1361 og journalnotat: Hvad kræver bekendtgørelsen?"
+title: "BEK 1361: krav til journalnotat for psykologer"
 url: journalklar.dk/blog/bek-1361-journalnotat-krav
 seo_description: "Hvad kræver BEK nr. 1361 af 24/11/2025 til journalnotater for psykologer? En gennemgang af lovens krav til indhold, omfang og opbevaring."
 dato: "maj 2026"

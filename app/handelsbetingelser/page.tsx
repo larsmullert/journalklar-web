@@ -4,7 +4,7 @@ import PrintButton from "@/components/ui/PrintButton";
 
 export const metadata = {
   title: "Handelsbetingelser",
-  description: "JournalKlars handelsbetingelser for abonnenter.",
+  description: "Handelsbetingelser for JournalKlar: vilkår for abonnement, priser, fortrydelsesret og opsigelse til privatpraktiserende psykologer i Danmark.",
 };
 
 // ─── Lokale hjælpekomponenter (samme stil som DPAAftaleContent) ──────────────
